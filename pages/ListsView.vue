@@ -64,12 +64,6 @@
                   'Boolean',
                   'False',
                   'Used to set minimum tile height on a single-line list item'
-                ],
-                [
-                  'ripple',
-                  'Boolean',
-                  'False',
-                  'Designates whether the list tiles will attach the ripple directive'
                 ]
               ],
               model: {
