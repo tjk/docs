@@ -35,7 +35,7 @@
       markup(lang="javascript")
         |{
         |   test: /\.styl$/,
-        |   loader: ['style', 'css', 'stylus']
+        |   loader: ['style-loader', 'css-loader', 'stylus-loader']
         |}
       section-text This will tell webpack how to handle a .styl file when imported. Next, we need to create the main entry point. Create a folder called <code>stylus</code> in your src directory with a file named <code>main.styl</code>. Once done, open the .styl file and add this entry.
       markup(lang="stylus")
