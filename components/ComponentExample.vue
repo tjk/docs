@@ -92,7 +92,7 @@
     mounted () {
       this.uid = this._uid
       const vm = this
-      import(`../examples/${this.file}.vue`).then(comp => {
+      import(/* webpackChunkName: "examples" */ `../examples/${this.file}.vue`).then(comp => {
         this.instance = new Vue(comp)
         this.instance.$mount('#example-'+vm.uid)
       })

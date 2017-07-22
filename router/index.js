@@ -9,7 +9,7 @@ function route (path, view) {
   return {
     path: path,
     meta: meta[path],
-    component: () => import(`../pages/${view}View.vue`)
+    component: () => import(/* webpackChunkName: "routes" */`../pages/${view}View.vue`)
   }
 }
 
