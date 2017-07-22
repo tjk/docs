@@ -1,7 +1,7 @@
 <template lang="pug">
   v-toolbar(:class="[color]" fixed dark)#main-toolbar
     v-toolbar-side-icon(
-      v-on:click.native.stop="$store.commit('vuetify/SIDEBAR', !$store.state.sidebar)"
+      v-on:click="$store.commit('vuetify/SIDEBAR', !$store.state.sidebar)"
     )
 
     transition(name="slide" mode="out-in")
