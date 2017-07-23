@@ -61,6 +61,12 @@
                   'Changes select to multiple. Accepts array for v-model'
                 ],
                 [
+                  'min-width',
+                  '[Boolean, Number, String]',
+                  'False',
+                  'Sets the minimum width of the select, overwrites automatic determination'
+                ],
+                [
                   'single-line',
                   'Boolean',
                   'False',
