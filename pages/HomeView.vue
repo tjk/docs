@@ -4,8 +4,8 @@
       img(src="/static/v.png" height="38px")
       v-spacer
       v-toolbar-items
-        v-btn(flat column dark to="/vuetify/quick-start") Documentation
-        v-btn(flat column dark tag="a" href="https://github.com/vuetifyjs/vuetify/releases" target="_blank" rel="noopener") Updates
+        v-btn(flat dark to="/vuetify/quick-start") Documentation
+        v-btn(flat dark tag="a" href="https://github.com/vuetifyjs/vuetify/releases" target="_blank" rel="noopener") Updates
 
     section#hero.elevation-12
       v-parallax(src="/static/doc-images/vbanner.jpg" height="400")
@@ -19,65 +19,82 @@
                 tag="a"
                 href="https://github.com/vuetifyjs/vuetify"
               ).grey.lighten-2
-                v-icon(fa left medium) github
+                v-icon(left medium) fa-github
                 span Github
               v-btn(dark large to="/vuetify/quick-start").green.lighten-2
                 span Get Started
                 v-icon(right dark) chevron_right
 
-    section#development.text-xs-center.py-5
-      v-container(fluid)
-        v-layout(row)
-          v-flex(xs12)
-            img(
-              src="static/doc-images/featured.png"
-              width="100%"
-              style="max-width: 1024px"
-            )
-      h2.display-2 Supercharge your Development
-      span.headline With the power of Vue and Material Design
+    section#features
+      div.text-xs-center
+        h2.display-2 Supercharge your Development
+        span.headline With the power of Vue and Material Design
 
-    v-divider
-
-    section#features.pb-5.pt-3
-      v-container(style="max-width: 1024px")
+      v-container(style="max-width: 1024px").mt-5
         v-layout(row wrap)
-          v-flex(sm12).my-5
-            v-layout(row)
+          v-flex(xs12).my-5
+            v-layout(row wrap)
               v-flex(xs12 sm6 layout row align-center)
                 v-card.transparent.elevation-0.pa-3
                   v-card-title.pl-0.pt-0.headline Premade Templates
                   div.grey--text.text--darken-1 Vuetify comes ready to go with 5 pre-made vue-cli templates. Ranging from a simple html to a full blown SSR (server side rendered) application. No matter what the project, you are ready to go in minutes with your next great idea.
-              v-flex(xs6).hidden-xs-only
-                v-card(height="280px" img="/static/vuetify_cli.svg")
-          v-flex(sm12).my-5
-            v-layout(row)
-              v-flex(xs6).hidden-xs-only
-                v-card(height="280px" img="/static/vuetify_layout2.svg")
+              v-flex(xs12 sm6)
+                router-link(to="/vuetify/quick-start")
+                  v-card(
+                    hover
+                    height="280px"
+                    img="/static/vuetify_cli.svg"
+                  )
+          v-flex(xs12).hidden-sm-and-up
+            v-divider
+          v-flex(xs12).my-5
+            v-layout(row wrap)
+              v-flex(xs12 sm6)
+                router-link(to="/layout/pre-defined")
+                  v-card(
+                    hover
+                    height="280px"
+                    img="/static/vuetify_layout2.svg"
+                  )
               v-flex(xs12 sm6 layout row align-center)
                 v-card.transparent.elevation-0.pa-3
                   v-card-title.pl-0.pt-0.headline Custom layouts
                   div.grey--text.text--darken-1 Each and every available layout from the Material design spec is at your disposal. Create unique and flexible user interfaces that fit the scope of any task.
-          v-flex(sm12).my-5
-            v-layout(row)
+          v-flex(xs12).hidden-sm-and-up
+            v-divider
+          v-flex(xs12).my-5
+            v-layout(row wrap)
               v-flex(xs12 sm6 layout row align-center)
                 v-card.transparent.elevation-0.pa-3
                   v-card-title.pl-0.pt-0.headline Semantic components
                   div.grey--text.text--darken-1 Every component has been meticulously crafted to offer the easiest, most understandable interface and robust api of properties that will customize the experience delivered in your next application.
-              v-flex(xs6).hidden-xs-only
-                v-card(height="280px" img="/static/vuetify_semantic.svg")
-          v-flex(sm12).my-5
-            v-layout(row)
-              v-flex(xs6).hidden-xs-only
-                v-card(height="280px" img="/static/vuetify_sizes.svg")
+              v-flex(xs12 sm6)
+                router-link(to="/components/alerts")
+                  v-card(
+                    hover
+                    height="280px"
+                    img="/static/vuetify_semantic.svg"
+                  )
+          v-flex(xs12).hidden-sm-and-up
+            v-divider
+          v-flex(xs12).my-5
+            v-layout(row wrap)
+              v-flex(xs12 sm6)
+                a(
+                  target="_blank" 
+                  href="https://material.io/guidelines/"
+                )
+                  v-card(
+                    hover
+                    height="280px"
+                    img="/static/vuetify_sizes.svg"
+                  )
               v-flex(xs12 sm6 layout align-center)
                 v-card.transparent.elevation-0.pa-3
                   v-card-title.pl-0.pt-0.headline Material design framework
-                  div.grey--text.text--darken-1 Be prepared to have an armada of specialized components at your disposal. With over 80 in total, there is a solution for any situation.
-
+                  div.grey--text.text--darken-1 Be prepared for an armada of specialized components at your disposal. With over 80 in total, there is a solution for any application.
     v-divider
-
-    section#sponsors.py-5.mb-0
+    section#sponsors.py-3.mb-0
       v-container( fluid)
         v-layout(row wrap)
           v-flex(xs10 offset-xs1).text-xs-center
@@ -93,15 +110,15 @@
         v-layout(row wrap).text-xs-center
           v-flex(xs12).mb-5
             h4.headline.pb-3 Support Vuetify.js
-            p Has Vuetify helped you create an amazing application? You can show your support by making a donation in one of two ways:
-          v-flex(xs12 sm6).mb-3
+            p Has Vuetify helped you create an amazing application?<br>You can show your support by making a <strong>donation</strong> in one of two ways:
+          v-flex(xs12 sm3 offset-sm3).mb-3
             a(
               href="https://www.patreon.com/vuetify"
               target="_blank" rel="noopener"
             ).black--text
               div.display-1.mb-2 Patreon
               img(src="/static/doc-images/patreon.png" width="125px")
-          v-flex(xs12 sm6).mb-3
+          v-flex(xs12 sm3).mb-3
             a(
               href="https://paypal.me/vuetify"
               target="_blank" rel="noopener"
@@ -109,12 +126,40 @@
               div.display-1.mb-2 Paypal
               img(src="/static/doc-images/paypal.png" width="125px")
 
-    v-footer(style="height: 36px;").secondary.white--text
-      v-layout(row flex)
-        v-flex(xs6)
-          span &copy; {{ new Date().getFullYear() }} Vuetify LLC
-        v-flex(xs6).text-xs-right
-          span MIT License
+    v-footer(style="height: auto;").secondary.white--text.py-3
+      v-layout(row justify-center flex wrap)
+        v-flex(xs3 offset-xs2)
+          v-list(dark dense)
+            v-subheader(dark) Useful Links
+            v-list-tile(
+              tag="div"
+              v-for="link in usefulLinks"
+              v-bind:key="link.title"
+            )
+              v-list-tile-content
+                a(
+                  :href="link.href"
+                  target="_blank"
+                  v-text="link.text"
+                ).white--text
+        v-flex(xs3)
+          v-list(dark dense)
+            v-subheader(dark) Legal
+            v-list-tile(tag="div")
+              v-list-tile-content
+                a(
+                  href="https://opensource.org/licenses/MIT"
+                  target="_blank"
+                ).white--text MIT License
+            v-list-tile(tag="div")
+              v-list-tile-content &copy; {{ new Date().getFullYear() }} Vuetify LLC
+        v-flex(xs12).text-xs-center
+          v-btn(icon dark href="https://github.com/vuetifyjs/vuetify")
+            v-icon fa-github
+          v-btn(icon dark href="https://twitter.com/vuetifyjs")
+            v-icon fa-twitter
+          v-btn(icon dark href="https://www.facebook.com/vuetifyjs")
+            v-icon fa-facebook
 </template>
 
 <script>
@@ -125,7 +170,17 @@
           { title: 'BrowserStack', href: 'https://www.browserstack.com/', src: '/static/doc-images/browser-stack.svg' },
           { title: 'Cloudflare', href: 'https://www.cloudflare.com/', src: '/static/doc-images/cloudflare.svg' }
         ],
-        toolbar: false
+        toolbar: false,
+        usefulLinks: [
+          {
+            href: 'https://vuejs.org',
+            text: 'Vue.js'
+          },
+          {
+            href: 'https://material.io/guidelines/',
+            text: 'Material Design'
+          }
+        ]
       }
     },
     mounted () {
