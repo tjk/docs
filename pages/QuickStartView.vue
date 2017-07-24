@@ -106,7 +106,7 @@
           ).px-0
             v-list-tile(avatar tag="ul")
               v-list-tile-avatar
-                v-icon(fa dark).primary {{ browser.icon }}
+                v-icon(dark).primary fa-{{ browser.icon }}
               v-list-tile-content
                 v-list-tile-title {{ browser.title }}
                 v-list-tile-sub-title {{ browser.supported ? 'Supported' : 'Not supported' }}
