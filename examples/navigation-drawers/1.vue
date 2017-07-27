@@ -3,6 +3,7 @@
     height="620px"
     class="grey lighten-4"
     id="navigation-1"
+    style="z-index: 0"
   >
     <v-navigation-drawer
       class="grey lighten-4 pb-0"
