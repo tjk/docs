@@ -27,7 +27,7 @@
               slot="input"
               label="Edit"
               v-bind:value="props.item.name"
-              v-on:change="val => props.item.name = val"
+              v-on:change="e => props.item.name = e.target.value"
               single-line counter="counter"
             ></v-text-field>
           </v-edit-dialog>
