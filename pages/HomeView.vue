@@ -211,7 +211,7 @@
     #hero
       .btn
         width: 190px
-        
+
     #sponsors img
       max-height: 60px
 
