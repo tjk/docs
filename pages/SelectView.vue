@@ -1,4 +1,4 @@
-<template lang="pug">
+﻿<template lang="pug">
   component-view(v-bind:doc="doc")
 </template>
 
@@ -89,6 +89,12 @@
                   'Boolean',
                   'False',
                   'Filter the items in the list based on user input'
+                ],
+                [
+                  'return-object',
+                  'Boolean',
+                  'False',
+                  'Changes the selection behavior to return the object directly rather than the value specified with item-value'
                 ],
               ],
               model: {
