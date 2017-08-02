@@ -47,25 +47,25 @@
           { text: 'Left', icon: 'format_align_left', value: 1 },
           { text: 'Center', icon: 'format_align_center', value: 2 },
           { text: 'Right', icon: 'format_align_right', value: 3 },
-          { text: 'Justify', icon: 'format_align_justify', value: 4 },
+          { text: 'Justify', icon: 'format_align_justify', value: 4 }
         ],
         toggle_text: [
           { text: 'Left', value: 1 },
           { text: 'Center', value: 2 },
           { text: 'Right', value: 3 },
-          { text: 'Justify', value: 4 },
+          { text: 'Justify', value: 4 }
         ],
         toggle_options: [
           { icon: 'format_align_left', value: 1 },
           { icon: 'format_align_center', value: 2 },
           { icon: 'format_align_right', value: 3 },
-          { icon: 'format_align_justify', value: 4 },
+          { icon: 'format_align_justify', value: 4 }
         ],
         toggle_options_multiple: [
           { icon: 'format_bold', value: 1 },
           { icon: 'format_italic', value: 2 },
           { icon: 'format_underlined', value: 3 },
-          { icon: 'format_color_fill', value: 4 },
+          { icon: 'format_color_fill', value: 4 }
         ],
       }
     }
