@@ -22,7 +22,7 @@
                   v-list-tile-action
                     v-icon(dark) fa-github
                   v-list-tile-title Github
-                v-list-tile(href="https://gitter.im/vuetifyjs/Lobby/~chat#" target="_blank")
+                v-list-tile(href="https://chat.vuetifyjs.com" target="_blank")
                   v-list-tile-action
                     v-icon(dark) fa-comments-o
                   v-list-tile-title Chat
@@ -184,7 +184,7 @@
                 action: 'whatshot'
               },
               {
-                href: 'https://gitter.im/vuetifyjs/Lobby/~chat#',
+                href: 'https://chat.vuetifyjs.com',
                 target: '_blank',
                 title: 'Chat'
               }
