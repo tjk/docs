@@ -17,13 +17,16 @@
       v-container(fluid).mb-5
         v-layout(row wrap justify-start align-center)
           a(
-            :href="sponsor.href"
+            :href="`${sponsor.href}?ref=vuetifyjs.com`"
             target="_blank"
             :title="sponsor.title"
             v-for="sponsor in sponsors"
             v-bind:key="sponsor.title"
           ).text-xs-center.mx-3
-            img(:src="sponsor.src" alt="sponsor.title")
+            img(
+              :src="`/static/doc-images/${sponsor.src}`"
+              alt="sponsor.title"
+            )
 
       h2.headline Current backers:
       v-divider
@@ -36,24 +39,28 @@
       v-container(fluid grid-list-md).mb-5
         v-layout(row wrap justify-start align-center)
           a(
-            :href="backer.href"
+            :href="`${backer.href}?ref=vuetifyjs.com`"
             target="_blank"
             :title="backer.title"
             v-for="backer in backers"
             v-bind:key="backer.title"
           ).text-xs-center.mx-3
-            img(:src="backer.src" :alt="backer.title")
+            img(
+              :src="`/static/doc-images/backers/${backer.src}`"
+              :alt="backer.title"
+            )
 </template>
 
 <script>
   export default {
     data: () => ({
       sponsors: [
-        { title: 'BrowserStack', href: 'https://www.browserstack.com/', src: '/static/doc-images/browser-stack.png' },
-        { title: 'Cloudflare', href: 'https://www.cloudflare.com/', src: '/static/doc-images/cloudflare.svg' }
+        { title: 'BrowserStack', href: 'https://www.browserstack.com/', src: 'browser-stack.png' },
+        { title: 'Cloudflare', href: 'https://www.cloudflare.com/', src: 'cloudflare.svg' }
       ],
       backers: [
-        { title: 'Deister Software', href: 'http://www.deister.es/', src: '/static/doc-images/backers/deister-logo-light.png' },
+        { title: 'Deister Software', href: 'http://www.deister.es/', src: 'deister-logo-light.png' },
+        { title: 'Cocoatech', href: 'https://cocoatech.com/', src: 'cocoatechlogo.png' }
       ]
     })
   }
