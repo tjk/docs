@@ -37,8 +37,8 @@
   },
   "/style/colors": {
     "h1": "Colors",
-    "title": "Material color pallete",
-    "description": "Easily apply any color from the material design pallete.",
+    "title": "Material color palette",
+    "description": "Easily apply any color from the material design palette.",
     "keywords": "colors"
   },
   "/style/theme": {
