@@ -44,7 +44,7 @@
             }
           },
           examples: [
-            { header: 'Default', file: 'tooltips/1', desc: 'Tooltips can be applied to any element that does not use the <code>:before</code> psuedo element' },
+            { header: 'Default', file: 'tooltips/1', desc: 'Tooltips can be applied to any element that does not use the <code>:before</code> pseudo element' },
             { header: 'Visibility', file: 'tooltips/2', desc: 'Tooltips can be disabled using the <code>visible</code> property value in the tooltip object.' }
           ]
         }

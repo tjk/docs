@@ -1,7 +1,7 @@
 <template lang="pug">
   component-view(v-bind:doc="doc")
     v-alert(info value slot="top").mb-3
-      span <code>v-icon</code> and <code>v-tooltip</code> directive will not work together due to the :before psuedo element of the icon is used by the font library.
+      span <code>v-icon</code> and <code>v-tooltip</code> directive will not work together due to the :before pseudo element of the icon is used by the font library.
     v-alert(warning value)
       span Custom font libraries such as Icomoon can overwrite the <code>icon-</code> class and cause issues. While other icon packages can work, the only official support is for Material Icons, FontAwesome, and Material Design Icons.
 </template>

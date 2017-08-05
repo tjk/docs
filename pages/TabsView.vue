@@ -13,7 +13,7 @@
           component: 'tabs',
           edit: 'TabsView',
           title: 'Tabs',
-          desc: 'The <code>v-tabs</code> component is used for hiding content behind a selectable item. This can also be used as a psuedo-navigation for a page, where the tabs are links and the tab-items are the content.',
+          desc: 'The <code>v-tabs</code> component is used for hiding content behind a selectable item. This can also be used as a pseudo-navigation for a page, where the tabs are links and the tab-items are the content.',
           examples: [
             { header: 'Toolbar tabs', file: 'tabs/1', desc: 'The <code>v-tabs</code> component is highly customizable to suit your needs. You can get and set the currently active tab by using the <code>v-model</code> prop on the <code>v-tabs</code> component.' },
             { header: 'Centered tabs', file: 'tabs/2', desc: 'Tabs can be centered by using the <code>centered</code> prop. Here we have also applied the <code>fixed</code> prop which gives all tab items a fixed size, regardless of content.' },
