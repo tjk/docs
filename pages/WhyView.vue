@@ -8,7 +8,7 @@
         section-text But now you are the one searching for that perfect framework, and Vuetify is another on a list of many, vying for your attention. While my opinion will be subjective, I will try to outline features that I believe will be valuable to you and/or your organization.
 
       v-flex(xs3)
-        v-card
+        v-card(flat tile)
           v-subheader App Requirements
           v-list
             v-list-tile(
@@ -24,7 +24,7 @@
       v-flex(xs12)
         h2.title Pillars of service
         v-container(fluid grid-list-md)
-          v-layout(row wrap)
+          v-layout(row wrap).pillars
             v-flex(
               xs12
               sm4
@@ -106,10 +106,9 @@
           v-card-text I am extremely humbled that you have considered using Vuetify as your next UI Framework. A lot of care has went into forging the perfect setup for taking any idea from conception to production. I look forward to you joining the Vuetify community and am excited to see what incredible interfaces you create!
           v-card-text.text-xs-right <em>&mdash;John Leider</em>
 
-    v-divider.my-5
-    div.text-xs-center.mb-5
+    div.text-xs-center.my-5
       em Still have questions?<br>
-      v-btn(flat outline round success) Join the Community
+      v-btn(flat outline round success) Ask the Community
 </template>
 
 <script>
@@ -141,3 +140,15 @@
     })
   }
 </script>
+
+<style lang="stylus">
+  .pillars
+    
+    .flex
+      display: flex
+      flex: 1 1 auto
+      flex-direction: column
+      
+      .card
+        flex: 1 1 auto
+</style>
