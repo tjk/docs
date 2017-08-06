@@ -1,15 +1,14 @@
 <template>
-  <v-app id="example-1" standalone>
+  <v-app id="example-1" toolbar footer>
     <v-navigation-drawer
       persistent
       v-model="drawer"
       light
       enable-resize-watcher
       overflow
-      absolute
     >
       <v-list dense>
-        <v-list-tile @click.native.stop="left = !left">
+        <v-list-tile @click.stop="left = !left">
           <v-list-tile-action>
             <v-icon>exit_to_app</v-icon>
           </v-list-tile-action>
@@ -29,7 +28,7 @@
       absolute
     >
       <v-list dense>
-        <v-list-tile @click.native.stop="right = !right">
+        <v-list-tile @click.stop="right = !right">
           <v-list-tile-action>
             <v-icon>exit_to_app</v-icon>
           </v-list-tile-action>
@@ -40,10 +39,10 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar class="indigo" dark>
-      <v-toolbar-side-icon @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
+      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title>Toolbar</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-toolbar-side-icon @click.native.stop="drawerRight = !drawerRight"></v-toolbar-side-icon>
+      <v-toolbar-side-icon @click.stop="drawerRight = !drawerRight"></v-toolbar-side-icon>
     </v-toolbar>
     <main>
       <v-navigation-drawer

@@ -13,27 +13,8 @@
             router-link(to="/")
               img(src="/static/v.png" v-bind:style="filter")
           v-list-tile-content
-            v-menu(transition="v-scale-transition" origin="top")
-              v-list-tile-title(slot="activator")
-                span Vuetify
-                v-icon(dark) arrow_drop_down
-              v-list(class="grey darken-2" dark)
-                v-list-tile(href="https://github.com/vuetifyjs/vuetify" target="_blank")
-                  v-list-tile-action
-                    v-icon(dark) fa-github
-                  v-list-tile-title Github
-                v-list-tile(href="https://gitter.im/vuetifyjs/Lobby/~chat#" target="_blank")
-                  v-list-tile-action
-                    v-icon(dark) fa-comments-o
-                  v-list-tile-title Chat
-                v-list-tile(href="https://twitter.com/vuetifyjs" target="_blank")
-                  v-list-tile-action
-                    v-icon(dark) fa-twitter
-                  v-list-tile-title Twitter
-                v-list-tile(href="https://www.facebook.com/vuetifyjs" target="_blank")
-                  v-list-tile-action
-                    v-icon(dark) fa-facebook
-                  v-list-tile-title Facebook
+            v-list-tile-title Vuetify
+            v-list-tile-sub-title Branch: {{ $store.state.release }}
           v-list-tile-action
             v-btn(icon dark v-on:click.stop="mini = !mini")
               v-icon chevron_left
@@ -88,7 +69,8 @@
               { href: '/vuetify/quick-start', title: 'Quick start' },
               { href: '/vuetify/sandbox', title: 'Sandbox' },
               { href: '/vuetify/frequently-asked-questions', title: 'Frequently asked questions' },
-              { href: '/vuetify/sponsors-and-backers', title: 'Sponsors and backers' }
+              { href: '/vuetify/sponsors-and-backers', title: 'Sponsors and backers' },
+              { href: '/vuetify/contributing', title: 'Contributing' }
             ]
           },
           {
@@ -167,6 +149,7 @@
             group: '/directives',
             items: [
               { href: '/directives/badges', title: 'Badges' },
+              { href: '/directives/touch-support', title: 'Touch Support' },
               { href: '/directives/ripples', title: 'Ripples' },
               { href: '/directives/tooltips', title: 'Tooltips' }
             ]
@@ -184,7 +167,7 @@
                 action: 'whatshot'
               },
               {
-                href: 'https://gitter.im/vuetifyjs/Lobby/~chat#',
+                href: 'https://chat.vuetifyjs.com',
                 target: '_blank',
                 title: 'Chat'
               }

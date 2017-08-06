@@ -81,12 +81,6 @@
                   'The id for your application'
                 ],
                 [
-                  'standalone',
-                  'Boolean',
-                  'False',
-                  'This property is primarily for allowing to display examples properly in the documentation. This property will move the application theme classes from the body to the actual <code>v-app</code> component'
-                ],
-                [
                   'footer',
                   'Boolean',
                   'False',

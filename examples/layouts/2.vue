@@ -1,9 +1,9 @@
 <template>
-  <v-app id="example-2" standalone>
+  <v-app id="example-2" toolbar>
     <v-navigation-drawer permanent light>
-      <v-toolbar flat class="transparent">
-        <v-list class="pa-0">
-          <v-list-tile avatar tag="ul">Test</v-list-tile>
+      <v-toolbar flat>
+        <v-list>
+          <v-list-tile tag="div"></v-list-tile>
         </v-list>
       </v-toolbar>
       <v-divider></v-divider>
