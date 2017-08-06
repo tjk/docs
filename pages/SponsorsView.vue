@@ -53,7 +53,7 @@
 
       div.text-xs-center
         div.mb-3 Have additional questions?
-        v-btn(outline success round href="https://chat.vuetifyjs.com" target="_blank" rel="noopener") Let us know
+        v-btn(outline success round href="mailto:john@vuetifyjs.com") Contact Us
 </template>
 
 <script>

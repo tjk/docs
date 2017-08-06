@@ -19,6 +19,19 @@
             v-btn(icon dark v-on:click.stop="mini = !mini")
               v-icon chevron_left
     v-divider
+    v-card(flat dark).py-2
+      v-layout(fill-height)
+        v-flex.text-xs-center
+          div
+            em Your Logo Here
+          v-btn(
+            round
+            href="https://patreon.com/vuetify"
+            target="_blank"
+            rel="noopener"
+            light
+            small
+          ) Find out how
     v-list(dense)
       template(v-for="item in items")
         v-list-group(v-if="item.items" v-bind:group="item.group")
@@ -67,7 +80,7 @@
             group: 'vuetify',
             items: [
               { href: '/vuetify/quick-start', title: 'Quick start' },
-              { href: '/vuetify/sandbox', title: 'Sandbox' },
+              { href: '/vuetify/why-vuetify', title: 'Why Vuetify?' },
               { href: '/vuetify/frequently-asked-questions', title: 'Frequently asked questions' },
               { href: '/vuetify/sponsors-and-backers', title: 'Sponsors and backers' },
               { href: '/vuetify/contributing', title: 'Contributing' }
@@ -83,7 +96,8 @@
               { href: '/layout/spacing', title: 'Spacing' },
               { href: '/layout/alignment', title: 'Alignment' },
               { href: '/layout/display', title: 'Display' },
-              { href: '/layout/elevation', title: 'Elevation' }
+              { href: '/layout/elevation', title: 'Elevation' },
+              { href: '/layout/sandbox', title: 'Sandbox' }
             ]
           },
           {
@@ -169,7 +183,7 @@
               {
                 href: 'https://chat.vuetifyjs.com',
                 target: '_blank',
-                title: 'Chat'
+                title: 'Community'
               }
             ]
           },

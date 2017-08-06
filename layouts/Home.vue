@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-app(toolbar footer footer-fixed style="padding-bottom: 100px")
+  v-app(toolbar footer)
     main
       v-container(fluid).pa-0
         v-slide-x-transition(mode="out-in")

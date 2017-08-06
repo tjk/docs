@@ -4,21 +4,24 @@
       v-model="drawer"
       dark
       temporary
-      right
     )
       v-list
-        v-list-tile
+        v-list-tile(to="vuetify/quick-start")
           v-list-tile-title Documentation
+        v-list-tile(href="https://github.com/vuetifyjs/vuetify/releases" target="_blank" rel="noopener")
+          v-list-tile-title Releases
+        v-list-tile(href="https://chat.vuetifyjs.com" target="_blank" rel="noopener")
+          v-list-tile-title Support
 
     v-toolbar(fixed :class="[toolbar ? 'toolbar--home' : 'transparent elevation-0']" dark)
       img(src="/static/v.png" height="38px").mr-3
       span.headline Vuetify.js
       v-spacer
-      v-toolbar-side-icon(@click.stop="drawer = !drawer").hidden-lg-and-up
-      v-toolbar-items.hidden-md-and-down
+      v-toolbar-side-icon(@click.stop="drawer = !drawer").hidden-md-and-up
+      v-toolbar-items.hidden-sm-and-down
         v-btn(flat dark to="/vuetify/quick-start") Quick Start
-        v-btn(flat dark tag="a" href="https://github.com/vuetifyjs/vuetify/releases" target="_blank" rel="noopener") Releases
-        v-btn(flat dark to="/vuetify/quick-start") Support
+        v-btn(flat dark href="https://github.com/vuetifyjs/vuetify/releases" target="_blank" rel="noopener") Releases
+        v-btn(flat dark href="https://chat.vuetifyjs.com" target="_blank" rel="noopener") Support
 
     section#hero.elevation-12
       v-parallax(src="/static/doc-images/vbanner.jpg" height="500")
@@ -76,7 +79,7 @@
       v-card(tile flat height="198px").grey.lighten-3
         v-layout(align-center fill-height)
           v-flex
-    v-footer(style="height: 100px;" fixed).secondary.white--text.py-3
+    v-footer(style="height: 100px;").secondary.white--text.py-3
 </template>
 
 <script>
