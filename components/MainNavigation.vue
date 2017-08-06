@@ -29,9 +29,10 @@
             href="https://patreon.com/vuetify"
             target="_blank"
             rel="noopener"
-            light
             small
-          ) Find out how
+            dark
+            primary
+          ).elevation-0 Find out how
     v-list(dense)
       template(v-for="item in items")
         v-list-group(v-if="item.items" v-bind:group="item.group")
