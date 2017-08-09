@@ -7,7 +7,7 @@
           dd(slot="desc") Stuck on a particular problem? Check some of these common gotchas before creating a ticket. If you still cannot find what you are looking for, submit an <a href="https://github.com/vuetifyjs/vuetify/issues/new" target="_blank" rel="noopener">issue</a> on github or ask the community in <a href="https://gitter.im/vuetifyjs/Lobby" target="_blank" rel="noopener">gitter</a>.
       ad
     section#frequently-asked-questions
-      v-expansion-panel.mb-5
+      v-expansion-panel(expand).mb-5
         v-expansion-panel-content(v-for="(faq, i) in faqs" v-bind:key="i")
           div(slot="header").pr-5
             strong Question: &nbsp;
@@ -37,6 +37,10 @@
         {
           q: `I'm using <code>@click</code> on a component and it is not invoking my method.`,
           a: `When Vue 2 was released, it changed how events work on custom components. Native events, like click, hover were are longer explicitly available and must be bound with <code>@click.native</code>. <a href="https://vuejs.org/v2/guide/migration.html#Listening-for-Native-Events-on-Components-with-v-on-changed" target="_blank" rel="noopener">Reference</a>.`
+        },
+        {
+          q: `The scrollbar is showing even though my content is not overflowing verticall.`,
+          a: `Vuetify by default turns on the html scrollbar. This is a design choice and has been debated numerous times. There are pros and cons to having and not having it and as of now, the vote is in favor of leaving it as is.`
         }
       ]
     })

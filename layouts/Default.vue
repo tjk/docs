@@ -7,7 +7,7 @@
         transition(name="slide" mode="out-in")
           router-view
     main-footer
-    v-speed-dial(bottom right direction="top" fixed)
+    //v-speed-dial(bottom right direction="top" fixed)
       v-btn(slot="activator" fab dark @click="toTop").red
         v-icon keyboard_arrow_up
 </template>

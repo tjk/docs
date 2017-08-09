@@ -24,24 +24,32 @@
         v-btn(flat dark href="https://chat.vuetifyjs.com" target="_blank" rel="noopener") Support
 
     section#hero.elevation-12
-      v-parallax(src="/static/doc-images/vbanner.jpg" height="500")
-        v-layout
-          v-flex(offset-md1)
-            h1.white--text.display-2 Material Component Framework
-            div.mb-3 Supercharge your development with the power of Vue and Material Design
-            a(href="https://github.com/vuetifyjs/vuetify" target="_blank" title="Github")
-              v-icon(x-large dark).ml-0.mr-3 fa-github-square
-            a(href="https://twitter.com/vuetifyjs" target="_blank" title="Twitter")
-              v-icon(x-large dark).ml-0.mr-3 fa-twitter-square
-            a(href="https://www.facebook.com/vuetifyjs" target="_blank" title="Facebook")
-              v-icon(x-large dark).ml-0.mr-3 fa-facebook-square
-            a(href="https://chat.vuetifyjs.com" target="_blank" title="Community")
-              v-icon(x-large dark).ml-0.mr-3 fa-comments
+      v-parallax(src="/static/doc-images/vbanner.jpg" height="450")
+        v-container(style="max-width: 1440px" fluid fill-height grid-list-xl)
+          v-layout(align-center justify-space-between wrap)
+            v-flex(xs12 sm12 md8).text-xs-center.text-md-left
+              h1.white--text.display-2.hidden-sm-and-down Material Component Framework
+              h1.white--text.headline.hidden-sm-and-up Material Component Framework
+              div.mb-3 Supercharge your development with the power of Vue and Material Design
+              a(href="https://github.com/vuetifyjs/vuetify" target="_blank" title="Github")
+                v-icon(x-large dark).ml-0.mr-3 fa-github-square
+              a(href="https://twitter.com/vuetifyjs" target="_blank" title="Twitter")
+                v-icon(x-large dark).ml-0.mr-3 fa-twitter-square
+              a(href="https://www.facebook.com/vuetifyjs" target="_blank" title="Facebook")
+                v-icon(x-large dark).ml-0.mr-3 fa-facebook-square
+              a(href="https://chat.vuetifyjs.com" target="_blank" title="Community")
+                v-icon(x-large dark).ml-0.mr-3 fa-comments
+            v-flex(xs12 md4).text-xs-right.my-3
+              v-btn(dark large to="/vuetify/quick-start").px-3.mx-0.blue.lighten-2 Get Started Now
+                v-icon(right) chevron_right
+              br
+              small
+                em Takes less than a minute!
 
     section#features
       v-container(grid-list-xl fluid style="max-width: 1440px")
         v-layout(row wrap justify-space-around)
-          v-flex(xs12 sm6 md4 lg3)
+          v-flex(xs12 sm6 md4)
             v-card
               v-card-media(
                 height="180px"
@@ -50,9 +58,9 @@
               v-card-title.headline Premade Templates
               v-card-text Vuetify comes ready to go with 5 pre-made vue-cli templates. Ranging from a simple html to a full blown SSR (server side rendered) application.
               v-divider
-              v-card-actions.layout.justify-center
-                v-btn(flat primary block) See more
-          v-flex(xs12 sm6 md4 lg3)
+              v-card-actions.layout.justify-center.px-2
+                v-btn(flat primary block to="/layout/pre-defined") See more
+          v-flex(xs12 sm6 md4)
             v-card
               v-card-media(
                 height="180px"
@@ -61,9 +69,9 @@
               v-card-title.headline Custom layouts
               v-card-text Each and every available layout from the Material design spec is at your disposal. Create unique and flexible user interfaces that fit the scope of any task.
               v-divider
-              v-card-actions.layout.justify-center
-                v-btn(flat primary block) See more
-          v-flex(xs12 sm6 md4 lg3)
+              v-card-actions.layout.justify-center.px-2
+                v-btn(flat primary block to="/layout/grid") See more
+          v-flex(xs12 sm6 md4)
             v-card
               v-card-media(
                 height="180px"
@@ -72,14 +80,32 @@
               v-card-title.headline Material design
               v-card-text Be prepared for an armada of specialized components at your disposal. With over 80 in total, there is a solution for any application.
               v-divider
-              v-card-actions.layout.justify-center
-                v-btn(flat primary block) See more
+              v-card-actions.layout.justify-center.px-2
+                v-btn(flat primary block to="style/colors") See more
 
-    section#support
-      v-card(tile flat height="198px").grey.lighten-3
-        v-layout(align-center fill-height)
-          v-flex
-    v-footer(style="height: 100px;").secondary.white--text.py-3
+    section#support.py-5.grey.lighten-4.mb-0
+      v-container(fluid)
+        v-layout(row wrap).text-xs-center
+          v-flex(xs12).mb-5
+            h4.headline.pb-3.grey--text.text--lighten-1 Support Vuetify.js
+            p Has Vuetify helped you create an amazing application?<br>You can show your support by making a <strong>donation</strong> in one of two ways:
+          v-flex(xs12 sm3 offset-sm3).mb-3
+            a(
+              href="https://www.patreon.com/vuetify"
+              target="_blank" rel="noopener"
+            )
+              img(src="/static/doc-images/patreon.png" width="125px" title="Patreon" alt="Patreon")
+          v-flex(xs12 sm3).mb-5
+            a(
+              href="https://paypal.me/vuetify"
+              target="_blank" rel="noopener"
+            )
+              img(src="/static/doc-images/paypal.png" width="125px" title="Paypal" alt="Paypal")
+          v-flex(xs12).text-xs-center
+            v-btn(outline success round to="/vuetify/sponsors-and-backers") Become a backer
+    v-footer(style="height: 50px;").secondary.white--text.pa-3.layout.justify-space-between
+      span &copy; 2017 Vuetify, LLC
+      a(href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener").white--text MIT License
 </template>
 
 <script>
@@ -122,6 +148,12 @@
   @import '../node_modules/vuetify/src/stylus/settings/_colors'
   
   #home-view
+    h1, h1 + div
+      font-weight: 300 !important
+    
+    .parallax__content
+      padding: 0
+
     section
       margin-bottom: 0    
 
@@ -141,26 +173,4 @@
     #features
       .card__text
         height: 140px
-
-  // #home-view
-  //   .toolbar--home
-  //     background: #132563
-
-  //   #support
-  //     a
-  //       text-decoration: none
-
-  //   #hero
-  //     .btn
-  //       width: 190px
-
-  //   #sponsors img
-  //     max-height: 60px
-
-  //   div.grey--text
-  //     line-height: 2
-
-  // #features
-  //   .card__column.transparent
-  //     height: 150px !important
 </style>

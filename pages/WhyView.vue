@@ -5,25 +5,36 @@
       v-flex(xs8)
         section-text Choosing a framework can be a daunting task, and I'm not even talking about component frameworks. You've arrived at Vue and now it's time to start developing your next great idea. There are many options to choose from, and everyone says that they are great. So you have to decide, what are my metrics for success?
         section-text This was me almost a year ago. There were plenty of <strong>UI toolkits</strong> to choose from, but none them had everything that I needed...yeah, you've heard that before. Often enough though, it <em>is</em> the reason individuals attempt to create products that fill gaps, and is why I started working on Vuetify.
-        section-text But now you are the one searching for that perfect framework, and Vuetify is another on a list of many, vying for your attention. While my opinion will be subjective, I will try to outline features that I believe will be valuable to you and/or your organization.
+        section-text.mb-0 But now you are the one searching for that perfect framework, and Vuetify is another on a list of many, vying for your attention. While my opinion will be subjective, I will try to outline features that I believe will be valuable to you and/or your organization.
 
       v-flex(xs3)
-        v-card(flat tile)
-          v-subheader App Requirements
+        v-card(
+          flat
+          tile
+          v-badge="{ value: 'favorite', overlap: true, icon: true }"
+        ).red--after
           v-list
-            v-list-tile(
-              v-for="(item, i) in list"
-              :key="i"
-              tag="div"
-            )
-              v-list-tile-action
-                v-checkbox(:input-value="item.check")
+            v-list-tile(avatar tag="div")
+              v-list-tile-avatar
+                v-avatar
+                  img(src="https://avatars0.githubusercontent.com/u/9064066?v=4&s=460")
               v-list-tile-content
-                v-list-tile-title(v-text="item.text")
-    v-layout(row wrap)
+                v-list-tile-title John Leider
+                v-list-tile-sub-title Author of Vuetify.js
+              v-list-tile-action
+                v-btn(
+                  icon
+                  href="mailto:john@vuetifyjs.com"
+                  v-tooltip:left="{ html: 'Contact Me' }"
+                )
+                  v-icon mail
+          v-card-text I am extremely humbled that you have considered using Vuetify as your next UI Framework. A lot of care has went into forging the perfect setup for taking any idea from conception to production. I look forward to you joining the Vuetify community and am excited to see what incredible interfaces you create!
+          v-card-text.text-xs-right <em>&mdash;John Leider</em>
+    v-divider.my-5
+    v-layout(row wrap).mb-5
       v-flex(xs12)
         h2.title Pillars of service
-        v-container(fluid grid-list-md)
+        v-container(fluid grid-list-md).pa-0
           v-layout(row wrap).pillars
             v-flex(
               xs12
@@ -43,9 +54,8 @@
                 v-card-title(primary).headline.layout.justify-center
                   span(v-text="p.title")
                 v-card-text(v-html="p.caption").caption
-    v-divider.my-5
-    v-layout(row wrap justify-space-between)
-      v-flex(xs8)
+    v-layout(row wrap justify-center)
+      v-flex(xs12 sm12 md7)
         v-card(flat tile).mb-3
           v-card-text
             h2.title.layout.align-center
@@ -81,30 +91,6 @@
                     strong Modular Component Transition System
                   li
                     strong Blazing Fast
-
-      v-flex(xs3)
-        v-card(
-          flat
-          tile
-          v-badge="{ left: true, value: 'favorite', overlap: true, icon: true }"
-        ).red--after
-          v-list
-            v-list-tile(avatar tag="div")
-              v-list-tile-avatar
-                v-avatar
-                  img(src="https://avatars0.githubusercontent.com/u/9064066?v=4&s=460")
-              v-list-tile-content
-                v-list-tile-title John Leider
-                v-list-tile-sub-title Author of Vuetify.js
-              v-list-tile-action
-                v-btn(
-                  icon
-                  href="mailto:john@vuetifyjs.com"
-                  v-tooltip:left="{ html: 'Contact Me' }"
-                )
-                  v-icon mail
-          v-card-text I am extremely humbled that you have considered using Vuetify as your next UI Framework. A lot of care has went into forging the perfect setup for taking any idea from conception to production. I look forward to you joining the Vuetify community and am excited to see what incredible interfaces you create!
-          v-card-text.text-xs-right <em>&mdash;John Leider</em>
 
     div.text-xs-center.my-5
       em Still have questions?<br>
