@@ -275,10 +275,10 @@ $display-breakpoints := {
             h2 Material Component Framework
             v-container(fluid grid-list-xl).pa-0
               v-layout(row wrap)
-                v-flex(xs12 sm3)
+                v-flex(xs12 sm4)
                   v-btn(block dark large to="/vuetify/quick-start").blue
                     span Documentation
-                v-flex(xs12 sm3)
+                v-flex(xs12 sm4)
                   v-btn(
                     large
                     block
@@ -294,55 +294,58 @@ $display-breakpoints := {
     div#section-body
       section#features.mb-3
           v-container
-            v-card.elevation-2.pt-5.px-5
+            v-card.elevation-2
+              v-card-text.py-5
                 v-layout(row wrap)
-                  v-flex(xs12 md4).text-xs-center.px-4.mb-5
+                  v-flex(xs12 md4).text-xs-center.my-3
                     img(src="/static/doc-images/feature1.svg").elevation-1
                     h3.mt-4.mb-3 Vue-CLI Templates
                     p Vuetify comes ready to go with 5 pre-made vue-cli templates. From simple html to full-blown SSR, you are ready to go in minutes.
 
-                  v-flex(xs12 md4).text-xs-center.px-4.mb-5
+                  v-flex(xs12 md4).text-xs-center.my-3
                     img(src="/static/doc-images/feature2.svg").elevation-1
                     h3.mt-4.mb-3 Custom Layouts
                     p Each and every available layout from the Material design spec is at your disposal. Create unique and flexible user interfaces that fit the scope of any project.
 
-                  v-flex(xs12 md4).text-xs-center.px-4.mb-5
+                  v-flex(xs12 md4).text-xs-center.my-3
                     img(src="/static/doc-images/feature3.svg")
                     h3.mt-4.mb-3 Semantic Material Components
                     p Be prepared for an armada of specialized components at your disposal. With over 80 in total, there is a solution for any application.
 
       section#sponsors.mb-3
           v-container
-            v-card.elevation-2.pa-5
-              h2.mb-5.text-xs-center.text-md-left Proudly sponsored by:
-              v-layout(row wrap).pb-4
-                v-flex(xs12 md3 v-for="(sponsor, i) in sponsors" :key="i").text-xs-center
-                    a(:href="sponsor.href" target="_blank" :title="sponsor.title" rel="noopener")
-                      img(:src="sponsor.src").sponsor
-                v-flex(xs12 md3).text-xs-center
-                  v-btn(to="/vuetify/sponsors-and-backers" large).white.primary--text Become a backer
-                    v-icon(right).primary--text fa-arrow-circle-right
+            v-card.elevation-2
+              v-card-text.py-5
+                h2.mb-5.text-xs-center.text-md-left Proudly sponsored by:
+                v-layout(row wrap)
+                  v-flex(xs12 md3 v-for="(sponsor, i) in sponsors" :key="i").text-xs-center
+                      a(:href="sponsor.href" target="_blank" :title="sponsor.title" rel="noopener")
+                        img(:src="sponsor.src").sponsor
+                  v-flex(xs12 md3).text-xs-center
+                    v-btn(to="/vuetify/sponsors-and-backers" large).white.primary--text Become a backer
+                      v-icon(right).primary--text fa-arrow-circle-right
 
       section#support.mb-3
           v-container
-            v-card.elevation-2.pa-5
-              v-layout(row wrap).text-xs-center
-                v-flex(xs12).mb-5.mt-3
-                  h2 Has Vuetify helped you create an amazing application?<br> <br class="hidden-md-and-up"> You can show your support by making a <strong>donation</strong> in one of two ways:
-                v-flex(xs12 sm3 offset-sm3).mb-4
-                  a(
-                    href="https://www.patreon.com/vuetify"
-                    target="_blank" rel="noopener"
-                  )
-                    div.display-1.mb-2 Patreon
-                    img(src="/static/doc-images/patreon.png" width="125px")
-                v-flex(xs12 sm3).mb-4
-                  a(
-                    href="https://paypal.me/vuetify"
-                    target="_blank" rel="noopener"
-                  )
-                    div.display-1.mb-2 PayPal
-                    img(src="/static/doc-images/paypal.png" width="125px")
+            v-card.elevation-2
+              v-card-text.py-5
+                v-layout(row wrap).text-xs-center
+                  v-flex(xs12).mb-5
+                    h2 Has Vuetify helped you create an amazing application?<br> <br class="hidden-md-and-up"> You can show your support by making a <strong>donation</strong> in one of two ways:
+                  v-flex(xs12 sm3 offset-sm3)
+                    a(
+                      href="https://www.patreon.com/vuetify"
+                      target="_blank" rel="noopener"
+                    )
+                      div.display-1.mb-2 Patreon
+                      img(src="/static/doc-images/patreon.png" width="125px")
+                  v-flex(xs12 sm3)
+                    a(
+                      href="https://paypal.me/vuetify"
+                      target="_blank" rel="noopener"
+                    )
+                      div.display-1.mb-2 PayPal
+                      img(src="/static/doc-images/paypal.png" width="125px")
 
       section#footer-hero.mt-5.mb-0
         v-container
