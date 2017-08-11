@@ -199,7 +199,6 @@ $display-breakpoints := {
 
         img
           position relative
-          height 40px
         h2
           position: relative
           font-size 32px
@@ -274,16 +273,22 @@ $display-breakpoints := {
           v-flex(xs12 md8).text-xs-center.text-md-left
             h1 Vuetify
             h2 Material Component Framework
-            div
-              v-btn(dark large to="/vuetify/quick-start").blue
-                span Documentation
-              v-btn(
-                large
-                tag="a"
-                href="https://github.com/vuetifyjs/vuetify"
-              ).white
-                v-icon(left ) fa-github
-                span Github
+            v-container(fluid grid-list-xl).pa-0
+              v-layout(row wrap)
+                v-flex(xs12 sm3)
+                  v-btn(block dark large to="/vuetify/quick-start").blue
+                    span Documentation
+                v-flex(xs12 sm3)
+                  v-btn(
+                    large
+                    block
+                    tag="a"
+                    href="https://github.com/vuetifyjs/vuetify"
+                    target="_blank"
+                    rel="noopener"
+                  ).white.primary--text
+                    v-icon(left).primary--text fa-github
+                    span Github
 
 
     div#section-body
@@ -294,7 +299,7 @@ $display-breakpoints := {
                   v-flex(xs12 md4).text-xs-center.px-4.mb-5
                     img(src="/static/doc-images/feature1.svg").elevation-1
                     h3.mt-4.mb-3 Vue-CLI Templates
-                    p Vuetify comes ready to go with 5 pre-made vue-cli templates. From simple html to full-blown SSR you are ready to go in minutes.
+                    p Vuetify comes ready to go with 5 pre-made vue-cli templates. From simple html to full-blown SSR, you are ready to go in minutes.
 
                   v-flex(xs12 md4).text-xs-center.px-4.mb-5
                     img(src="/static/doc-images/feature2.svg").elevation-1
@@ -312,10 +317,11 @@ $display-breakpoints := {
               h2.mb-5.text-xs-center.text-md-left Proudly sponsored by:
               v-layout(row wrap).pb-4
                 v-flex(xs12 md3 v-for="(sponsor, i) in sponsors" :key="i").text-xs-center
-                    a(:href="sponsor.href" target="_blank" :title="sponsor.title")
+                    a(:href="sponsor.href" target="_blank" :title="sponsor.title" rel="noopener")
                       img(:src="sponsor.src").sponsor
                 v-flex(xs12 md3).text-xs-center
-                  v-btn(white to="/vuetify/sponsors-and-backers") Become a backer
+                  v-btn(to="/vuetify/sponsors-and-backers" large).white.primary--text Become a backer
+                    v-icon(right).primary--text fa-arrow-circle-right
 
       section#support.mb-3
           v-container
@@ -328,31 +334,36 @@ $display-breakpoints := {
                     href="https://www.patreon.com/vuetify"
                     target="_blank" rel="noopener"
                   )
-                    div.mb-2 Patreon
+                    div.display-1.mb-2 Patreon
                     img(src="/static/doc-images/patreon.png" width="125px")
                 v-flex(xs12 sm3).mb-4
                   a(
                     href="https://paypal.me/vuetify"
                     target="_blank" rel="noopener"
                   )
-                    div.mb-2 PayPal
+                    div.display-1.mb-2 PayPal
                     img(src="/static/doc-images/paypal.png" width="125px")
 
       section#footer-hero.mt-5.mb-0
         v-container
           v-layout(row wrap).mb-5
             v-flex(xs12 md8 lg7).mt-4.mb-5
-              img(src="/static/doc-images/logo.svg")
+              img(src="/static/doc-images/logo.svg" width="90px")
               h2.mt-4.mb-5 Supercharge Your Development with the Power of Vue and Material Design
-              v-btn(dark large to="/vuetify/quick-start").blue
-                span Documentation
-              v-btn(
-                large
-                tag="a"
-                href="https://github.com/vuetifyjs/vuetify"
-              ).white
-                v-icon(left ) fa-github
-                span Github
+              v-container(fluid grid-list-xl).pa-0
+              v-layout(row wrap)
+                v-flex(xs12 sm3)
+                  v-btn(block dark large to="/vuetify/quick-start").blue
+                    span Documentation
+                v-flex(xs12 sm3)
+                  v-btn(
+                    large
+                    block
+                    tag="a"
+                    href="https://github.com/vuetifyjs/vuetify"
+                  ).white.primary--text
+                    v-icon(left).primary--text fa-github
+                    span Github
 
     footer
       v-layout(row wrap)
