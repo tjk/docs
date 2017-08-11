@@ -56,8 +56,8 @@
       markup(lang="stylus")
         |@require '../../node_modules/vuetify/src/stylus/settings/_colors'
         |&nbsp;
-        |@require '../../node_modules/vuetify/src/stylus/main'
-      section-text After you have decided on your color pallete, simply create a new hash:
+        |@import '../../node_modules/vuetify/src/stylus/main'
+      section-text After you have decided on your color palette, simply create a new hash:
       markup(lang="stylus")
         |@require '../../node_modules/vuetify/src/stylus/settings/_colors'
         |&nbsp;

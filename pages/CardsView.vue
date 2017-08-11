@@ -17,7 +17,7 @@
            { header: 'Horizontal cards', file: 'cards/3', desc: 'Using <code>v-flex</code>, you can create customized horizontal cards. Use the to the <code>contain</code> property to shrink the <code>v-card-media</code> to fit inside the container, instead of covering.' },
            { header: 'Grids', file: 'cards/4', desc: 'Using grid lists, you can create beautiful layouts.' },
            { header: 'Custom actions', file: 'cards/5', desc: 'With a simple conditional, you can easily add supplementary text that is hidden until opened.' },
-           // { header: 'Colored', file: 'cards/6', desc: 'You can use any color in the Material design pallete as a background of a card.' },
+           // { header: 'Colored', file: 'cards/6', desc: 'You can use any color in the Material design palette as a background of a card.' },
            // { header: 'Hover and raised', file: 'cards/7', desc: 'Use the <code>raised</code> and/or <code>hover</code> props to emphasize a card.' },
           ],
           props: {
