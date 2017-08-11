@@ -108,7 +108,7 @@
           },
           events: {
             'v-radio': {
-              events: [
+              params: [
                 ['change', 'String, Number', 'Input value changed.']
               ]
             },
