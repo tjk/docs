@@ -320,6 +320,12 @@
             'Boolean',
             'False',
             'Hides hint, validation errors'
+          ],
+          [
+            'toggle-keys',
+            'Array',
+            '[13, 32]',
+            "Array of key codes that will toggle the input (if it supports toggling)"
           ]
         ]
       },
