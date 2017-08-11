@@ -46,6 +46,7 @@
       v-bind:key="i"
       v-bind:header="`#${i + 1} ${example.header}`"
       v-bind:file="example.file"
+      v-bind:id="`example-${i + 1}`"
     )
       div(slot="desc" v-html="example.desc" v-if="example.desc")
     slot

@@ -10,7 +10,7 @@
         auto
       )
       v-spacer
-      v-spacer
+      v-spacer.hidden-sm-and-down
       v-text-field(
         append-icon="search"
         label="Search..."

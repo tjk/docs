@@ -11,11 +11,11 @@
     "description": "Get started with Vue and Vuetify in no time.",
     "keywords": "quick start, vuetify templates, get started"
   },
-  "/vuetify/sandbox": {
-    "h1": "Sandbox",
-    "title": "Sandbox",
-    "description": "Play around with the available configuring options for your next application.",
-    "keywords": "sandbox, vuetify, layout sandbox"
+  "/vuetify/why-vuetify": {
+    "h1": "Why use Vuetify?",
+    "title": "Why Vuetify?",
+    "description": "Why you should choose Vuetify over other Vue frameworks.",
+    "keywords": "why vuetify, why vue, why choose vuetify"
   },
   "/vuetify/frequently-asked-questions": {
     "h1": "Frequently asked questions",
@@ -28,6 +28,12 @@
     "title": "Sponsors and backers",
     "description": "Help support Vuetify.js by backing the development of new features",
     "keywords": "sponsor, backer, donations"
+  },
+  "/vuetify/contributing": {
+    "h1": "Contributing",
+    "title": "Contributing",
+    "description": "Help develop Vuetify with new features and functionality.",
+    "keywords": "contribute, contributing, feature request"
   },
   "/motion/transitions": {
     "h1": "Transitions",
@@ -94,6 +100,12 @@
     "title": "Elevation helpers",
     "description": "Elevation helper classes allow you to control relative depth, or distance, between two surfaces along the z-axis.",
     "keywords": "elevation helper classes"
+  },
+  "/layout/sandbox": {
+    "h1": "Sandbox",
+    "title": "Sandbox",
+    "description": "Play around with the available configuring options for your next application.",
+    "keywords": "sandbox, vuetify, layout sandbox"
   },
   "/components/alerts": {
     "h1": "Alerts",
