@@ -10,7 +10,7 @@
         auto
       )
       v-spacer
-      v-spacer
+      v-spacer.hidden-sm-and-down
       v-text-field(
         append-icon="search"
         label="Search..."
@@ -320,6 +320,12 @@
             'Boolean',
             'False',
             'Hides hint, validation errors'
+          ],
+          [
+            'toggle-keys',
+            'Array',
+            '[13, 32]',
+            "Array of key codes that will toggle the input (if it supports toggling)"
           ]
         ]
       },

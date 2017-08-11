@@ -153,6 +153,9 @@
         
       .hljs-string, .hljs-literal, .hljs-number
         color: $red.lighten-2
+      
+      .hljs-comment
+        color: $grey.lighten-1
         
   .tabs
     .markup

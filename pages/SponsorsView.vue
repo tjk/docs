@@ -5,7 +5,8 @@
         section-def
           dt(slot="title") Support Vuetify.js development
           dd(slot="desc") Vuetify.js is an open source project under the MIT license. It is and will always be free to use. However, the amount of effort it takes to maintain the core framework and all supplementing packages is quite considerable. With the goal to continue development of additional functionality even after the completion of Material Design spec, you can help by <a href="https://www.patreon.com/vuetify" target="_blank" rel="noreferrer">pledging on Patreon</a> (recurring, with perks for different tiers) or <a href="https://paypal.me/vuetify" target="_blank" rel="noreferrer">donating with Paypal</a> (one time).
-    section
+
+    section#sponsors-and-backers
       h2.headline Current sponsors:
       v-divider
       v-list.transparent
@@ -49,6 +50,10 @@
               :src="`/static/doc-images/backers/${backer.src}`"
               :alt="backer.title"
             )
+
+      div.text-xs-center
+        div.mb-3 Have additional questions?
+        v-btn(outline success round href="mailto:john@vuetifyjs.com") Contact Us
 </template>
 
 <script>
