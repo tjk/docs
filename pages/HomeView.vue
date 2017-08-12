@@ -403,9 +403,9 @@ $display-breakpoints := {
           h5 Links
           ul
             li
-              a( href="https://opensource.org/licenses/MIT" target="_blank") Vue.js
+              a( href="https://vuejs.org/" target="_blank") Vue.js
             li
-              a( href="https://opensource.org/licenses/MIT" target="_blank") Material Design
+              a( href="https://material.io/guidelines/" target="_blank") Material Design
 
 
 
