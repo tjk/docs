@@ -19,7 +19,7 @@
             v-btn(icon dark v-on:click.stop="mini = !mini")
               v-icon chevron_left
     v-divider
-    v-card(flat dark).py-2
+    v-card(flat dark).py-2.your-logo-here
       v-layout(fill-height)
         v-flex.text-xs-center
           div
@@ -252,7 +252,7 @@
   }
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
   .vuetify
     .router-link-active
       display: flex
@@ -260,4 +260,7 @@
 
     .list__tile__avatar img
       border-radius: 0 !important
+  
+  .navigation-drawer--mini-variant .your-logo-here
+    display: none
 </style>
