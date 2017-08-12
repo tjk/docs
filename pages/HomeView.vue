@@ -111,7 +111,7 @@ $display-breakpoints := {
           height 450px
 
     #section-body
-      background url('/static/doc-images/slant-repeat.svg')  50% 0
+      background url('/static/doc-images/slant-repeat.svg') 50% 0
       background-size 100%
       @media $display-breakpoints.xs-only
         background-size 200%
@@ -348,7 +348,7 @@ $display-breakpoints := {
         v-container
           v-layout(row wrap).mb-5
             v-flex(xs12 md8 lg7).mt-4.mb-5
-              img(src="/static/doc-images/logo.svg" width="90px")
+              img(src="/static/doc-images/logo.svg" height="90px")
               h2.mt-4.mb-5 Supercharge Your Development with the Power of Vue and Material Design
               v-container(fluid grid-list-xl).pa-0
               v-layout(row wrap)
