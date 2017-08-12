@@ -193,7 +193,7 @@
                     'False',
                     'Align content to the space between.'
                   ],
-                [
+                  [
                     'wrap',
                     'Boolean',
                     'False',
