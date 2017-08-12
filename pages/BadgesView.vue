@@ -45,7 +45,7 @@
                   'Overlaps badge on element'
                 ],
                 [
-                  'v-badge:arg.left',
+                  'v-badge:arg.right',
                   'Boolean',
                   'False',
                   'Positions the badge to the right of the element'
