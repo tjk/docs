@@ -16,7 +16,32 @@
           ],
           props: {
             'v-footer': {
-              params: []
+              params: [
+                [
+                  'dark',
+                  'Boolean',
+                  'False',
+                  'Applies the dark theme',
+                ],
+                [
+                  'light',
+                  'Boolean',
+                  'False',
+                  'Applies the light theme',
+                ],
+                [
+                  'absolute',
+                  'Boolean',
+                  'False',
+                  'Sets the position of the footer to absolute',
+                ],
+                [
+                  'fixed',
+                  'Boolean',
+                  'False',
+                  'Sets the position of the footer to fixed',
+                ]
+              ]
             }
           },
           slots: {
