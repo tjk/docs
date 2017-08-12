@@ -40,6 +40,7 @@
           default: this.makeSlot(),
           theme: this.makeTheme(),
           input: this.makeInput(),
+          label: this.makeLabel(),
           overlay: this.makeOverlay(),
           detachable: this.makeDetach(),
           positionable: this.makePosition(),
@@ -136,6 +137,12 @@
         return ['primary', 'secondary', 'success', 'info', 'warning', 'error'].map(c => {
           return [ c, 'Boolean', 'False', `Applies the ${c} contextual color` ]
         })
+      },
+      makeLabel () {
+        return [[
+          'label',
+          'Label slot'
+        ]]
       },
       makeTheme () {
         return [

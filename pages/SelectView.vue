@@ -96,12 +96,23 @@
                   'False',
                   'Changes the selection behavior to return the object directly rather than the value specified with item-value'
                 ],
+                [
+                  'search-input',
+                  'String',
+                  'null',
+                  'Bound when using the autocomplete prop. Use the .sync modifier to catch user input from the autocomplete search input'
+                ],
               ],
               model: {
                 types: ['Array', 'Object'],
                 default: '-',
                 description: 'Single select requires model, multiple requires array'
               }
+            }
+          },
+          slots: {
+            'v-select': {
+              shared: ['label']
             }
           },
           events: {

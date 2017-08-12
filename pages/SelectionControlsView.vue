@@ -106,6 +106,17 @@
               }
             }
           },
+          slots: {
+            'v-checkbox': {
+              shared: ['label']
+            },
+            'v-radio': {
+              shared: ['label']
+            },
+            'v-switch': {
+              shared: ['label']
+            }
+          },
           events: {
             'v-radio': {
               params: [

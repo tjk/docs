@@ -164,10 +164,11 @@
             group: '/directives',
             items: [
               { href: '/directives/badges', title: 'Badges' },
-              { href: '/directives/touch-support', title: 'Touch Support' },
               { href: '/directives/resizing', title: 'Resizing' },
               { href: '/directives/ripples', title: 'Ripples' },
-              { href: '/directives/tooltips', title: 'Tooltips' }
+              { href: '/directives/scrolling', title: 'Scrolling' },
+              { href: '/directives/tooltips', title: 'Tooltips' },
+              { href: '/directives/touch-support', title: 'Touch Support' }
             ]
           },
           { divider: true },

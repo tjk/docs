@@ -132,6 +132,11 @@
               }
             }
           },
+          slots: {
+            'v-text-field': {
+              shared: ['label']
+            }
+          },
           events: {
             'v-text-field': {
               params: [
@@ -142,25 +147,6 @@
               ]
             },
           }
-        }
-      }
-    },
-
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
-    methods: {
-      meta () {
-        return {
-          title: 'Text fields Input Components | Vuetify.js',
-          h1: 'Text fields',
-          description: 'Text fields input components for Vuetify Framework',
-          keywords: 'vuetify, form, components'
         }
       }
     }

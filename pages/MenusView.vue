@@ -177,25 +177,6 @@
           }
         }
       }
-    },
-
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
-    methods: {
-      meta () {
-        return {
-          title: 'Menu Component | Vuetify.js',
-          h1: 'Menus',
-          description: 'Menu component for Vuetify Framework',
-          keywords: 'vuetify, menus, components'
-        }
-      }
     }
   }
 </script>

@@ -73,26 +73,3 @@
         |&nbsp;
         |@require '../../node_modules/vuetify/src/stylus/main'
 </template>
-
-<script>
-  export default {
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
-    methods: {
-      meta () {
-        return {
-          h1: 'Theme',
-          title: 'Theme | Vuetify',
-          description: '',
-          keywords: 'vuetify themes'
-        }
-      }
-    }
-  }
-</script>

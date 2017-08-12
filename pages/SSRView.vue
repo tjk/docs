@@ -72,26 +72,3 @@
       section-header Web App Support
       section-text Vuetify SSR has support for native Web Applications on smart phones. Also known as progressive web apps, your websites can be saved on the homescreen of a device, allowing it to be usable offline and receive push notifications. For more information on Web App Manifest's, navigate to the <a href="https://developer.mozilla.org/en-US/docs/Web/Manifest" target="_blank" rel="noopener">Mozilla Developer Network</a>. To see a live example, add the Vuetify documentation on your mobile device's homescreen.
 </template>
-
-<script>
-  export default {
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
-    methods: {
-      meta () {
-        return {
-          h1: 'Server Side Rendering',
-          title: 'Server Side Rendering | Vuetify.js',
-          description: 'Learn how to setup your first Vue SSR application with Vuetify.js\'s Webpack template',
-          keywords: 'vue cli, vue template, vue ssr, vuetify ssr'
-        }
-      }
-    }
-  }
-</script>

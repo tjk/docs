@@ -49,25 +49,6 @@
           ]
         }
       }
-    },
-
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
-    methods: {
-      meta () {
-        return {
-          title: 'Tooltip Directive | Vuetify.js',
-          h1: 'Tooltips',
-          description: 'Tooltip directive for Vuetify Framework',
-          keywords: 'vuetify, tooltips, directives'
-        }
-      }
     }
   }
 </script>

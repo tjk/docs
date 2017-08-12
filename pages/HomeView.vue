@@ -1,7 +1,4 @@
 <style lang="stylus" scoped>
-
-
-
 //temp fix
 $grid-breakpoints := {
   xs: 0

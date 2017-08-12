@@ -179,7 +179,7 @@
                     'False',
                     'xs:extra small, sm:small, md:medium, lg:large, xl:extra large - 1 through 12'
                   ], [
-                    'offset-[size](1-12)',
+                    'offset-[size](0-12)',
                     'Boolean',
                     'False',
                     'offset-xs:extra small, offset-sm:small, offset-md:medium, offset-lg:large, offset-xl:extra large. Example: offset-xs3'

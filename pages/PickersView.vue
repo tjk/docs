@@ -185,25 +185,6 @@
           }
         }
       }
-    },
-
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
-    methods: {
-      meta () {
-        return {
-          title: 'Pickers | Vuetify.js',
-          h1: 'Pickers',
-          description: 'Pickers directive for Vuetify Framework',
-          keywords: 'vuetify, pickers, directives'
-        }
-      }
     }
   }
 </script>

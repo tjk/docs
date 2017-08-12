@@ -75,8 +75,11 @@ export function createRouter () {
       route('/components/text-fields', 'TextFields'),
       route('/components/toolbars', 'Toolbars'),
       route('/directives/badges', 'Badges'),
+      route('/directives/resizing', 'Resize'),
       route('/directives/ripples', 'Ripples'),
+      route('/directives/scrolling', 'Scroll'),
       route('/directives/tooltips', 'Tooltips'),
+      route('/directives/touch-support', 'Touch'),
       route('/guides/server-side-rendering', 'SSR'),
       // Global redirect for 404
       { path: '*', redirect: '/' }

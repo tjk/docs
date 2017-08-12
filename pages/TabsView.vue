@@ -99,6 +99,12 @@
                   'String',
                   'v-tab-reverse-transition',
                   'Sets the reverse transition'
+                ],
+                [
+                  'lazy',
+                  'Boolean',
+                  'False',
+                  'Will not render contents until is active for the first time'
                 ]
               ]
             }

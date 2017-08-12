@@ -9,12 +9,12 @@
           v-card-actions
             v-btn(
               tag="a"
-              v-bind:href="'https://github.com/vuetifyjs/vuetify/tree/master/src/components/'+doc.component"
+              v-bind:href="'https://github.com/vuetifyjs/vuetify/tree/master/src/'+componentLink"
               target="_blank"
               icon
               light
-              v-tooltip:right="{ html: 'View component' }"
-              v-if="doc.component"
+              v-tooltip:right="{ html: `View ${doc.directive ? 'Directive' : 'Component'}` }"
+              v-if="componentLink"
               v-bind:class="[`${currentColor}--text`]"
             )
               v-icon widgets
@@ -112,6 +112,11 @@
     },
 
     computed: {
+      componentLink () {
+        if (this.doc.component) return `components/${this.doc.component}`
+        if (this.doc.directive) return `directives/${this.doc.directive}`
+        return false
+      },
       currentColor () {
         return this.$store.state.currentColor
       }
