@@ -16,19 +16,8 @@
           ],
           props: {
             'v-footer': {
+              shared: ['theme'],
               params: [
-                [
-                  'dark',
-                  'Boolean',
-                  'False',
-                  'Applies the dark theme',
-                ],
-                [
-                  'light',
-                  'Boolean',
-                  'False',
-                  'Applies the light theme',
-                ],
                 [
                   'absolute',
                   'Boolean',
