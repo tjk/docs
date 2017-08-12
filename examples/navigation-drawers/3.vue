@@ -50,7 +50,7 @@
     </v-navigation-drawer>
     <v-toolbar class="red">
       <v-toolbar-title>
-        <v-toolbar-side-icon @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
+        <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
         <v-icon class="ml-3">fa-youtube</v-icon>
       </v-toolbar-title>
       <v-spacer></v-spacer>
