@@ -164,6 +164,36 @@
                     'Align items to the end.'
                   ],
                   [
+                    'align-content-start',
+                    'Boolean',
+                    'False',
+                    'Align content to the start.'
+                  ],
+                  [
+                    'align-content-end',
+                    'Boolean',
+                    'False',
+                    'Align content to the end.'
+                  ],
+                  [
+                    'align-content-center',
+                    'Boolean',
+                    'False',
+                    'Align content to the center.'
+                  ],
+                  [
+                    'align-content-space-around',
+                    'Boolean',
+                    'False',
+                    'Align content to the space around.'
+                  ],
+                  [
+                    'align-content-space-between',
+                    'Boolean',
+                    'False',
+                    'Align content to the space between.'
+                  ],
+                  [
                     'wrap',
                     'Boolean',
                     'False',
