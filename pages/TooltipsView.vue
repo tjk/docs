@@ -37,7 +37,7 @@
                 [
                   'visible',
                   'Boolean',
-                  'False',
+                  'True',
                   'Tooltip object property for determining visibility, see example #2'
                 ]
               ]
