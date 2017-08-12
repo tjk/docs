@@ -38,15 +38,14 @@
         <td class="text-xs-right">{{ props.item.protein }}</td>
         <td class="text-xs-right">{{ props.item.sodium }}</td>
         <td class="text-xs-right">{{ props.item.calcium }}</td>
-        <td>
+        <td class="text-xs-right">
           <v-edit-dialog
-            class="text-xs-right"
             @open="props.item._iron = props.item.iron"
             @cancel="props.item.iron = props.item._iron || props.item.iron"
             large
             lazy
           >
-            <div class="text-xs-right">{{ props.item.iron }}</div>
+            <div>{{ props.item.iron }}</div>
             <div slot="input" class="mt-3 title">Update Iron</div>
             <v-text-field
               slot="input"
