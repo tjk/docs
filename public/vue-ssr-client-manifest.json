@@ -7,20 +7,20 @@
     "img/materialdesignicons-webfont.292b2f8.ttf",
     "img/materialdesignicons-webfont.633c9b8.svg",
     "img/materialdesignicons-webfont.7f88c63.woff2",
-    "1.7240878f26ef200141b0.js",
+    "1.63ea0d12b6a53c143994.js",
     "vendor.8c27844c36b892ecee63.js",
     "app.a5fd378c296a71358afa.js",
-    "manifest.c7300e2e639a027c876b.js",
+    "manifest.763360147b2e64562445.js",
     "common.a5fd378c296a71358afa.css"
   ],
   "initial": [
-    "manifest.c7300e2e639a027c876b.js",
+    "manifest.763360147b2e64562445.js",
     "vendor.8c27844c36b892ecee63.js",
     "app.a5fd378c296a71358afa.js"
   ],
   "async": [
     "0.483c47b039ca09f402b4.js",
-    "1.7240878f26ef200141b0.js"
+    "1.63ea0d12b6a53c143994.js"
   ],
   "modules": {
     "10173093": [
@@ -6307,16 +6307,10 @@
     "02e00d73": [
       6
     ],
-    "644600c8": [
-      6
-    ],
-    "5ffef8f8": [
-      6
-    ],
     "7e1d1ee9": [
       6
     ],
-    "44ddea3a": [
+    "f0686c28": [
       6
     ],
     "abdda6fa": [
