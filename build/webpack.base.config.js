@@ -80,8 +80,6 @@ module.exports = {
         })
       ]
     : [
-        new FriendlyErrorsPlugin({
-          clean: false
-        })
+        new FriendlyErrorsPlugin()
       ]
 }
