@@ -109,11 +109,14 @@
 
       markup(lang="js")
         |// index.js or main.js
+        |import('path/to/node_modules/vuetify/dist/vuetify.min.css') // Ensure you are using css-loader
         |&nbsp;
         |import Vue from 'vue'
         |import Vuetify from 'vuetify'
         |&nbsp;
         |Vue.use(Vuetify)
+
+      section-text You can also simply include the css file in your index.html or import the actual stylus file.
 
       v-alert(error value) Warning: While Vuetify attempts to not cause any css collision as much as possible, there is no guarantee that your custom styles will not alter your experience when integrating this framework into your existing project.
 
