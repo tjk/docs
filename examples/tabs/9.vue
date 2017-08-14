@@ -20,6 +20,7 @@
       </v-menu>
     </v-tabs-bar>
     <v-tabs-content
+      slot="content"
       v-for="i in 5"
       :key="i"
       :id="'tab-' + i"

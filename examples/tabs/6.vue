@@ -24,6 +24,7 @@
       </v-tabs-item>
     </v-tabs-bar>
     <v-tabs-content
+      slot="content"
       v-for="i in 3"
       :key="i"
       :id="'mobile-tabs-5-' + i"

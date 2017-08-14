@@ -51,7 +51,7 @@
             v-icon cloud_circle
           v-tabs-item(ripple href="#nuxt") NUXT
             v-icon flash_on
-        v-tabs-content(id="simple")
+        v-tabs-content(id="simple" slot="content")
           v-card(flat)
             v-card-text
               h4 Simple HTML Quick Start
@@ -59,45 +59,48 @@
               markup(lang="cli")
                 |$  vue init vuetifyjs/simple
               section-text After the installation is complete, you are ready to go. Open the <code>index.html</code> in any browser to get started.
-        v-tabs-content(id="webpack")
+        v-tabs-content(id="webpack" slot="content")
           v-card(flat)
             v-card-text
               h4 Webpack Quick Start
               section-text This template is intended for users who are already familiar with Vue/Webpack. It contains a very simple webpack setup and is targetted at developers creating prototype or basic applications.
               markup(lang="cli")
                 |$  vue init vuetifyjs/webpack
-        v-tabs-content(id="webpack-advanced")
+              section-text After the vue-cli installation finishes, <kbd>cd</kbd> into your project directory and type <kbd>npm install</kbd>. Alternatively, if you are using Facebook's <a href="https://yarnpkg.com/" target="_blank" rel="noopener">yarn package manager</a>, you can simply type <kbd>yarn</kbd>.
+              section-text Once the package installation is complete, type <kbd>npm run dev</kbd> into your console. This will start a <a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodejs</a> server locally which can be accessed by navigating to <a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a> in your browser.
+        v-tabs-content(id="webpack-advanced" slot="content")
           v-card(flat)
             v-card-text
               h4 Webpack Advanced Quick Start
               section-text This template is intended for users who are looking for out of the box linting and unit testing.
               markup(lang="cli")
                 |$  vue init vuetifyjs/webpack-advanced
-        v-tabs-content(id="webpack-ssr")
+              section-text After the vue-cli installation finishes, <kbd>cd</kbd> into your project directory and type <kbd>npm install</kbd>. Alternatively, if you are using Facebook's <a href="https://yarnpkg.com/" target="_blank" rel="noopener">yarn package manager</a>, you can simply type <kbd>yarn</kbd>.
+              section-text Once the package installation is complete, type <kbd>npm run dev</kbd> into your console. This will start a <a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodejs</a> server locally which can be accessed by navigating to <a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a> in your browser.
+        v-tabs-content(id="webpack-ssr" slot="content")
           v-card(flat)
             v-card-text
               h4 Webpack SSR Quick Start
               section-text This template is for advanced users looking to utilize the new Vue SSR (server-side rendering). Based off of the structure in the Vue.js 2 <a href="https://github.com/vuejs/vue-hackernews-2.0" target="_blank" rel="noopener">Hackernews</a> repository. The Vuetify.js SSR template provides next generation functionality for advanced Vue applications.
               markup(lang="cli")
                 |$  vue init vuetifyjs/webpack-ssr
-        v-tabs-content(id="nuxt")
+              section-text After the vue-cli installation finishes, <kbd>cd</kbd> into your project directory and type <kbd>npm install</kbd>. Alternatively, if you are using Facebook's <a href="https://yarnpkg.com/" target="_blank" rel="noopener">yarn package manager</a>, you can simply type <kbd>yarn</kbd>.
+              section-text Once the package installation is complete, type <kbd>npm run dev</kbd> into your console. This will start a <a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodejs</a> server locally which can be accessed by navigating to <a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a> in your browser.
+        v-tabs-content(id="nuxt" slot="content")
           v-card(flat)
             v-card-text
               h4 NUXT Quick Start
-              section-text Utilizing the power of NUXT, supercharge your development experience with a bootstraped version ready to go with Vuetify out of the box. 
+              section-text Utilizing the power of NUXT, supercharge your development experience with a bootstraped version ready to go with Vuetify out of the box.
               section-text <strong>Note:</strong> NUXT is not always compatible with the newest version of Vue.
               markup(lang="cli")
                 |$  vue init vuetifyjs/nuxt
-
-      section-text After the vue-cli installation finishes, <kbd>cd</kbd> into your project directory and type <kbd>npm install</kbd>. Alternatively, if you are using Facebook's <a href="https://yarnpkg.com/" target="_blank" rel="noopener">yarn package manager</a>, you can simply type <kbd>yarn</kbd>.
-
-      section-text Once the package installation is complete, type <kbd>npm run dev</kbd> into your console. This will start a <a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodejs</a> server locally which can be accessed by navigating to <a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a> in your browser.
+              section-text After the vue-cli installation finishes, <kbd>cd</kbd> into your project directory and type <kbd>npm install</kbd>. Alternatively, if you are using Facebook's <a href="https://yarnpkg.com/" target="_blank" rel="noopener">yarn package manager</a>, you can simply type <kbd>yarn</kbd>.
+              section-text Once the package installation is complete, type <kbd>npm run dev</kbd> into your console. This will start a <a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodejs</a> server locally which can be accessed by navigating to <a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a> in your browser.
 
     section#existing-applications
       section-header Existing applications
       section-text To include Vuetify into an existing project, you must pull it into your node_modules. You can use either <code>npm</code> or <code>yarn</code> to accomplish this task. These are both package managers that allow you to control what resources are available to your application.
 
-      h4.headline NPM and Yarn
       section-text For a detailed explanation of how to get <code>npm</code> running in your environment, check out the <a href="https://docs.npmjs.com/getting-started/what-is-npm" target="_blank" rel="noopener">official documentation</a>. Alternatively, if you wish to use yarn, you can find the official documentation <a href="https://yarnpkg.com/lang/en/docs/" target="_blank" rel="noopener">here</a>. Once setup, you can run either command from your command prompt.
 
       markup(lang="cli")
@@ -108,15 +111,28 @@
       section-text Once Vuetify has been installed, navigate to your applications main entry point. In most cases this will be <code>index.js</code> or <code>main.js</code>. In this file you will import Vuetify and tell Vue to use it.
 
       markup(lang="js")
-        |// index.js or main.js
-        |import('path/to/node_modules/vuetify/dist/vuetify.min.css') // Ensure you are using css-loader
-        |&nbsp;
         |import Vue from 'vue'
         |import Vuetify from 'vuetify'
         |&nbsp;
         |Vue.use(Vuetify)
 
-      section-text You can also simply include the css file in your index.html or import the actual stylus file.
+      section-text You will also need to include the Vuetify css file. Simply include the Vuetify css file in your index.html or import the actual stylus file or the minified css.
+
+      markup(lang="js")
+        |// index.js or main.js
+        |import('path/to/node_modules/vuetify/dist/vuetify.min.css') // Ensure you are using css-loader
+
+      markup(lang="stylus")
+        |// main.styl
+        |@import 'path/to/node_modules/vuetify/src/stylus/main.styl' // Ensure you are using stylus-loader
+        |&nbsp;
+
+      section-text The easiest way to include the Material Design icons is to add a <code>link</code> tag to your <code>index.html</code> file.
+
+      markup(lang="html")
+        |&lt;head&gt;
+        |   &lt;link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet"&gt;
+        |&lt;/head&gt;
 
       v-alert(error value) Warning: While Vuetify attempts to not cause any css collision as much as possible, there is no guarantee that your custom styles will not alter your experience when integrating this framework into your existing project.
 
@@ -147,7 +163,7 @@
       section-text Due to Internet Explorer's limited support for <code>&lt;template&gt;</code> tags, you must take care to send fully compiled dom elements to the browser. This can be done by either building your Vue code in advance or by creating helper components to replace the dom elements. For instance, if sent directly to IE, this will fail:
 
       markup(lang="html")
-        | &lt;template slot="items" scope="props"&gt;
+        |&lt;template slot="items" scope="props"&gt;
         |   &lt;td&gt;{&zwnj;{ props.item.name }&zwnj;}&lt;/td&gt;
         |&lt;/template&gt;
 

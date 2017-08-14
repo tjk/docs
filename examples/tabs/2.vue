@@ -11,6 +11,7 @@
       </v-tabs-item>
     </v-tabs-bar>
     <v-tabs-content
+      slot="content"
       v-for="i in items"
       :key="i"
       :id="'tab-' + i"

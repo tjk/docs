@@ -48,7 +48,7 @@
                 ],
                 [
                   'counter',
-                  'Boolean',
+                  '[String, Number]',
                   'False',
                   'Creates counter for input length'
                 ],
@@ -63,24 +63,6 @@
                   'String',
                   '',
                   'Displays prefix text'
-                ],
-                [
-                  'min',
-                  'Number',
-                  '0',
-                  'Sets minimum value for attribute'
-                ],
-                [
-                  'max',
-                  'Number',
-                  '25',
-                  'Sets maximum value for attribute'
-                ],
-                [
-                  'maxlength',
-                  'Number',
-                  '25',
-                  'Sets maximum value for a text-field'
                 ],
                 [
                   'multi-line',

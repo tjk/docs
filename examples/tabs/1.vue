@@ -13,6 +13,7 @@
         <v-tabs-slider class="yellow"></v-tabs-slider>
       </v-tabs-bar>
       <v-tabs-content
+        slot="content"
         v-for="tab in tabs"
         :key="tab"
         :id="tab"
