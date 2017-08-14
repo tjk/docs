@@ -138,6 +138,7 @@
               { href: '/components/dividers', title: 'Dividers' },
               { href: '/components/expansion-panels', title: 'Expansion panels' },
               { href: '/components/footer', title: 'Footer' },
+              { href: '/components/forms', title: 'Forms' },
               { href: '/components/grid-lists', title: 'Grid Lists' },
               { href: '/components/icons', title: 'Icons' },
               { href: '/components/lists', title: 'Lists' },
@@ -260,7 +261,7 @@
 
     .list__tile__avatar img
       border-radius: 0 !important
-  
+
   .navigation-drawer--mini-variant .your-logo-here
     display: none
 </style>

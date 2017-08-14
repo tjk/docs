@@ -6,6 +6,7 @@ import 'event-source-polyfill'
 import Vue from 'vue'
 import App from './App.vue'
 import Vuetify from 'vuetify'
+import VeeValidate from 'vee-validate'
 import Components from '../components'
 
 import { createStore } from 'store/index'
@@ -13,6 +14,7 @@ import { createRouter } from 'router/index'
 import { sync } from 'vuex-router-sync'
 
 Vue.use(Vuetify)
+Vue.use(VeeValidate, { inject: false })
 
 Object.keys(Components).forEach(key => {
   Vue.component(key, Components[key])

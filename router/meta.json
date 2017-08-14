@@ -185,6 +185,12 @@
     "description": "Footer component for Vuetify Framework",
     "keywords": "footer"
   },
+  "/components/forms": {
+    "h1": "Forms",
+    "title": "Form Component",
+    "description": "Form component for Vuetify Framework",
+    "keywords": "form"
+  },
   "/components/grid-lists": {
     "h1": "Grid lists",
     "title": "Grid List Component",

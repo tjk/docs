@@ -56,6 +56,7 @@ export function createRouter () {
       route('/components/dividers', 'Divider'),
       route('/components/expansion-panels', 'ExpansionPanel'),
       route('/components/footer', 'Footer'),
+      route('/components/forms', 'Forms'),
       route('/components/grid-lists', 'GridList'),
       route('/components/icons', 'Icon'),
       route('/components/lists', 'Lists'),
