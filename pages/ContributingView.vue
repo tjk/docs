@@ -8,7 +8,7 @@
       ad
     section#reporting-issues
       section-header Reporting issues
-      secion-text
+      section-text
         ul
           li The issue list of this repo is exclusively for bug reports and feature requests. Non-conforming issues will be closed immediately.
           ul
@@ -34,5 +34,5 @@
         |git checkout dev
         |npm install // or yarn
         |npm run dev
-      section-text This will start a local node server located at <a href="http://localhost:8080">http://localhost:8080</a>. Now from your code editor you can easily load components and test whatever you want at lightning speed! 
+      section-text This will start a local node server located at <a href="http://localhost:8080">http://localhost:8080</a>. Now from your code editor you can easily load components and test whatever you want at lightning speed!
 </template>
