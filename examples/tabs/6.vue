@@ -23,7 +23,7 @@
         <v-icon>account_box</v-icon>
       </v-tabs-item>
     </v-tabs-bar>
-    <v-tabs-item>
+    <v-tabs-items>
       <v-tabs-content
         v-for="i in 3"
         :key="i"
@@ -33,7 +33,7 @@
           <v-card-text>{{ text }}</v-card-text>
         </v-card>
       </v-tabs-content>
-    </v-tabs-item>
+    </v-tabs-items>
   </v-tabs>
 </template>
 
