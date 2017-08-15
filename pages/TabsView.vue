@@ -125,6 +125,14 @@
                 ['input', 'String', 'Current active tab'],
               ]
             },
+          },
+          slots: {
+            'v-tabs': {
+              params: [
+                ['activators', 'Put your <code>v-tabs-bar</code> here.'],
+                ['content', 'Put your <code>v-tabs-content</code> here.']
+              ]
+            }
           }
         }
       }
