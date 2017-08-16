@@ -34,16 +34,12 @@
           props: {
             'v-btn': {
               shared: ['theme', 'contextual', 'router', 'positionable'],
-              model: {
-                types: ['Boolean'],
-                default: 'False'
-              },
               params: [
                 [
-                  'active-class',
+                  'active',
                   'String',
-                  'btn--active',
-                  'Applies the .btn--active class. This does not alter the button style, but can be used for hooking into.'
+                  '',
+                  'Apples the .btn--active class'
                 ],
                 [
                   'block',
@@ -110,12 +106,6 @@
             'v-btn-toggle': {
               params: [
                 [
-                  'items',
-                  'Array',
-                  '[]',
-                  'Item Props: [text, icon, value]'
-                ],
-                [
                   'multiple',
                   'Boolean',
                   'False',
@@ -135,7 +125,7 @@
                 ]
               ],
               model: {
-                types: ['String'],
+                types: ['Array', 'String', 'Number'],
                 default: '-',
                 description: 'Holds the value(s) for toggled buttons. '
               }
