@@ -9,7 +9,11 @@ function route (path, view) {
   return {
     path: path,
     meta: meta[path],
-    component: () => import(`../pages/${view}View.vue`)
+    component: () => import(
+      /* webpackChunkName: "routes" */
+      /* webpackMode: "lazy-once" */
+      `../pages/${view}View.vue`
+    )
   }
 }
 
@@ -23,15 +27,17 @@ export function createRouter () {
     routes: [
       route('/', 'Home'),
       route('/vuetify/quick-start', 'QuickStart'),
-      route('/vuetify/sandbox', 'Sandbox'),
+      route('/vuetify/why-vuetify', 'Why'),
       route('/vuetify/frequently-asked-questions', 'Faq'),
       route('/vuetify/sponsors-and-backers', 'Sponsors'),
+      route('/vuetify/contributing', 'Contributing'),
       route('/layout/pre-defined', 'Layouts'),
       route('/layout/grid', 'Grid'),
       route('/layout/spacing', 'Spacing'),
       route('/layout/alignment', 'Alignment'),
       route('/layout/display', 'Display'),
       route('/layout/elevation', 'Elevation'),
+      route('/layout/sandbox', 'Sandbox'),
       route('/style/colors', 'Colors'),
       route('/style/theme', 'Theme'),
       route('/style/typography', 'Typography'),
@@ -50,6 +56,7 @@ export function createRouter () {
       route('/components/dividers', 'Divider'),
       route('/components/expansion-panels', 'ExpansionPanel'),
       route('/components/footer', 'Footer'),
+      route('/components/forms', 'Forms'),
       route('/components/grid-lists', 'GridList'),
       route('/components/icons', 'Icon'),
       route('/components/lists', 'Lists'),
@@ -69,8 +76,11 @@ export function createRouter () {
       route('/components/text-fields', 'TextFields'),
       route('/components/toolbars', 'Toolbars'),
       route('/directives/badges', 'Badges'),
+      route('/directives/resizing', 'Resize'),
       route('/directives/ripples', 'Ripples'),
+      route('/directives/scrolling', 'Scroll'),
       route('/directives/tooltips', 'Tooltips'),
+      route('/directives/touch-support', 'Touch'),
       route('/guides/server-side-rendering', 'SSR'),
       // Global redirect for 404
       { path: '*', redirect: '/' }

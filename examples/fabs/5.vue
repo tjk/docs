@@ -15,18 +15,22 @@
         </v-flex>
         <v-flex xs12 sm6 md4>
           <v-subheader>Speed dial direction</v-subheader>
-          <v-radio v-model="direction" value="top" label="Top" hide-details></v-radio>
-          <v-radio v-model="direction" value="right" label="Right" hide-details></v-radio>
-          <v-radio v-model="direction" value="bottom" label="Bottom" hide-details></v-radio>
-          <v-radio v-model="direction" value="left" label="Left" hide-details></v-radio>
+          <v-radio-group v-model="direction" hide-details>
+            <v-radio value="top" label="Top"></v-radio>
+            <v-radio value="right" label="Right"></v-radio>
+            <v-radio value="bottom" label="Bottom"></v-radio>
+            <v-radio value="left" label="Left"></v-radio>
+          </v-radio-group>
         </v-flex>
         <v-flex xs12 sm6 md4>
           <v-subheader>Transition</v-subheader>
-          <v-radio v-model="transition" value="slide-y-transition" label="Slide y" hide-details></v-radio>
-          <v-radio v-model="transition" value="slide-y-reverse-transition" label="Slide y reverse" hide-details></v-radio>
-          <v-radio v-model="transition" value="slide-x-transition" label="Slide x" hide-details></v-radio>
-          <v-radio v-model="transition" value="slide-x-reverse-transition" label="Slide x reverse" hide-details></v-radio>
-          <v-radio v-model="transition" value="scale-transition" label="Scale" hide-details></v-radio>
+          <v-radio-group v-model="transition" hide-details>
+            <v-radio value="slide-y-transition" label="Slide y"></v-radio>
+            <v-radio value="slide-y-reverse-transition" label="Slide y reverse"></v-radio>
+            <v-radio value="slide-x-transition" label="Slide x"></v-radio>
+            <v-radio value="slide-x-reverse-transition" label="Slide x reverse"></v-radio>
+            <v-radio value="scale-transition" label="Scale"></v-radio>
+          </v-radio-group>
         </v-flex>
       </v-layout>
     </v-container>

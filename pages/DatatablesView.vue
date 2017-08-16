@@ -20,11 +20,12 @@
             { header: 'Search with custom page text', file: 'tables/3', desc: 'The data table exposes a <code>search</code> prop that allows you to filter your data.' },
             { header: 'External pagination', file: 'tables/4', desc: 'Pagination can be controlled externally by using the <code>pagination</code> prop. Remember that you must apply the <code>.sync</code> modifier.' },
             { header: 'External sorting', file: 'tables/5', desc: 'Sorting can also be controlled externally by using the <code>pagination</code> prop. Remember that you must apply the <code>.sync</code> modifier. You can also use the prop to set the default sorted column.' },
-            { header: 'Paginate and sort server-side', file: 'tables/6', desc: 'If you\'re loading data from a backend and want to paginate and sort the results before displaying them, you can use the <code>total-items</code> prop. Defining this prop will disable the built-in sorting and pagination, and you will instead need to use the <code>pagination</code> prop to listen for changes. Use the <code>loading</code> prop to display a progress bar while fetching data.'}
+            { header: 'Paginate and sort server-side', file: 'tables/6', desc: 'If you\'re loading data from a backend and want to paginate and sort the results before displaying them, you can use the <code>total-items</code> prop. Defining this prop will disable the built-in sorting and pagination, and you will instead need to use the <code>pagination</code> prop to listen for changes. Use the <code>loading</code> prop to display a progress bar while fetching data.'},
+            { header: 'Theme support', file: 'tables/9', desc: 'The <code>v-data-table</code> component supports the application dark theme.'}
           ],
           props: {
             'v-data-table': {
-              shared: ['filterable'],
+              shared: ['filterable', 'theme'],
               params: [
                 [
                   'headers',
@@ -214,25 +215,9 @@
       }
     },
 
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
     methods: {
       saving () {
         console.log('I saved!')
-      },
-      meta () {
-        return {
-          title: 'Data tables | Vuetify.js',
-          h1: 'Data tables',
-          description: 'The v-data-table component is used for displaying tabular data. Features include sorting, searching, pagination, inline-editing, header tooltips, and row selection.',
-          keywords: 'vuetify, components, data tables'
-        }
       }
     }
   }

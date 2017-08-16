@@ -13,31 +13,26 @@
             router-link(to="/")
               img(src="/static/v.png" v-bind:style="filter")
           v-list-tile-content
-            v-menu(transition="v-scale-transition" origin="top")
-              v-list-tile-title(slot="activator")
-                span Vuetify
-                v-icon(dark) arrow_drop_down
-              v-list(class="grey darken-2" dark)
-                v-list-tile(href="https://github.com/vuetifyjs/vuetify" target="_blank")
-                  v-list-tile-action
-                    v-icon(fa dark) github
-                  v-list-tile-title Github
-                v-list-tile(href="https://gitter.im/vuetifyjs/Lobby/~chat#" target="_blank")
-                  v-list-tile-action
-                    v-icon(fa dark) comments-o
-                  v-list-tile-title Chat
-                v-list-tile(href="https://twitter.com/vuetifyjs" target="_blank")
-                  v-list-tile-action
-                    v-icon(fa dark) twitter
-                  v-list-tile-title Twitter
-                v-list-tile(href="https://www.facebook.com/vuetifyjs" target="_blank")
-                  v-list-tile-action
-                    v-icon(fa dark) facebook
-                  v-list-tile-title Facebook
+            v-list-tile-title Vuetify
+            v-list-tile-sub-title Branch: {{ $store.state.release }}
           v-list-tile-action
-            v-btn(icon dark v-on:click.native.stop="mini = !mini")
+            v-btn(icon dark v-on:click.stop="mini = !mini")
               v-icon chevron_left
     v-divider
+    v-card(flat dark).py-2.your-logo-here
+      v-layout(fill-height)
+        v-flex.text-xs-center
+          div
+            em Your Logo Here
+          v-btn(
+            round
+            href="https://patreon.com/vuetify"
+            target="_blank"
+            rel="noopener"
+            small
+            dark
+            primary
+          ).elevation-0 Find out how
     v-list(dense)
       template(v-for="item in items")
         v-list-group(v-if="item.items" v-bind:group="item.group")
@@ -86,9 +81,10 @@
             group: 'vuetify',
             items: [
               { href: '/vuetify/quick-start', title: 'Quick start' },
-              { href: '/vuetify/sandbox', title: 'Sandbox' },
-              { href: '/vuetify/frequently-asked-questions', title: 'Frequently asked questions' }
-              // { href: '/vuetify/sponsors-and-backers', title: 'Sponsors and backers' }
+              { href: '/vuetify/why-vuetify', title: 'Why Vuetify?' },
+              { href: '/vuetify/frequently-asked-questions', title: 'Frequently asked questions' },
+              { href: '/vuetify/sponsors-and-backers', title: 'Sponsors and backers' },
+              { href: '/vuetify/contributing', title: 'Contributing' }
             ]
           },
           {
@@ -101,7 +97,8 @@
               { href: '/layout/spacing', title: 'Spacing' },
               { href: '/layout/alignment', title: 'Alignment' },
               { href: '/layout/display', title: 'Display' },
-              { href: '/layout/elevation', title: 'Elevation' }
+              { href: '/layout/elevation', title: 'Elevation' },
+              { href: '/layout/sandbox', title: 'Sandbox' }
             ]
           },
           {
@@ -141,6 +138,7 @@
               { href: '/components/dividers', title: 'Dividers' },
               { href: '/components/expansion-panels', title: 'Expansion panels' },
               { href: '/components/footer', title: 'Footer' },
+              { href: '/components/forms', title: 'Forms' },
               { href: '/components/grid-lists', title: 'Grid Lists' },
               { href: '/components/icons', title: 'Icons' },
               { href: '/components/lists', title: 'Lists' },
@@ -167,8 +165,11 @@
             group: '/directives',
             items: [
               { href: '/directives/badges', title: 'Badges' },
+              { href: '/directives/resizing', title: 'Resizing' },
               { href: '/directives/ripples', title: 'Ripples' },
-              { href: '/directives/tooltips', title: 'Tooltips' }
+              { href: '/directives/scrolling', title: 'Scrolling' },
+              { href: '/directives/tooltips', title: 'Tooltips' },
+              { href: '/directives/touch-support', title: 'Touch Support' }
             ]
           },
           { divider: true },
@@ -184,9 +185,9 @@
                 action: 'whatshot'
               },
               {
-                href: 'https://gitter.im/vuetifyjs/Lobby/~chat#',
+                href: 'https://chat.vuetifyjs.com',
                 target: '_blank',
-                title: 'Chat'
+                title: 'Community'
               }
             ]
           },
@@ -252,7 +253,7 @@
   }
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
   .vuetify
     .router-link-active
       display: flex
@@ -260,4 +261,7 @@
 
     .list__tile__avatar img
       border-radius: 0 !important
+
+  .navigation-drawer--mini-variant .your-logo-here
+    display: none
 </style>

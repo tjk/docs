@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-tabs dark v-model="active">
-      <v-tabs-bar slot="activators" class="cyan">
+      <v-tabs-bar class="cyan">
         <v-tabs-item
           v-for="tab in tabs"
           :key="tab"
@@ -12,15 +12,17 @@
         </v-tabs-item>
         <v-tabs-slider class="yellow"></v-tabs-slider>
       </v-tabs-bar>
-      <v-tabs-content
-        v-for="tab in tabs"
-        :key="tab"
-        :id="tab"
-      >
-        <v-card flat>
-          <v-card-text>{{ text }}</v-card-text>
-        </v-card>
-      </v-tabs-content>
+      <v-tabs-items>
+        <v-tabs-content
+          v-for="tab in tabs"
+          :key="tab"
+          :id="tab"
+        >
+          <v-card flat>
+            <v-card-text>{{ text }}</v-card-text>
+          </v-card>
+        </v-tabs-content>
+      </v-tabs-items>
     </v-tabs>
 
     <div class="text-xs-center mt-3">

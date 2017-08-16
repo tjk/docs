@@ -37,7 +37,10 @@
                 v-bind:key="n"
               )
                 v-card-text {{ color }} accent-{{ n }}
-    section
+
+    v-divider.my-5
+
+    section#color-pack
       section-header Color Pack
       section-text Vuetify comes pre-built with a Material Design Color Pack (thanks <a href="http://materializecss.com/color.html" target="_blank" rel="noopener">Materialize.css</a>) by default. While convenient, this also increases the css export size by ~30kb. This can be disabled in both the webpack and webpack-ssr Vue cli templates.
       div(class="title pt-3 pb-3") Webpack

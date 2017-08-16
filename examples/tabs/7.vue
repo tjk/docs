@@ -11,7 +11,7 @@
         <v-icon>more_vert</v-icon>
       </v-btn>
     </v-toolbar>
-    <v-tabs-bar slot="activators" class="cyan">
+    <v-tabs-bar class="cyan">
       <v-tabs-slider class="yellow"></v-tabs-slider>
       <v-tabs-item
         v-for="(item, i) in items"
@@ -36,15 +36,17 @@
         </v-list>
       </v-menu>
     </v-tabs-bar>
-    <v-tabs-content
-      v-for="i in 5"
-      :key="i"
-      :id="'tab-' + i"
-    >
-      <v-card flat>
-        <v-card-text>{{ text }}</v-card-text>
-      </v-card>
-    </v-tabs-content>
+    <v-tabs-items>
+      <v-tabs-content
+        v-for="i in 5"
+        :key="i"
+        :id="'tab-' + i"
+      >
+        <v-card flat>
+          <v-card-text>{{ text }}</v-card-text>
+        </v-card>
+      </v-tabs-content>
+    </v-tabs-items>
   </v-tabs>
 </template>
 

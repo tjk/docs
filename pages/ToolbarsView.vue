@@ -19,16 +19,18 @@
             { header: 'Column width with hierarchy', file: 'toolbar/4', desc: 'Toolbars come in 2 variants, light and dark. Light toolbars have dark tinted buttons and dark text whereas Dark toolbars have white tinted buttons and white text.' },
             { header: 'Flexible toolbar and card toolbar', file: 'toolbar/5', desc: 'With a few custom styles, you can easily create your amazing user interfaces.' },
             { header: 'Floating with search', file: 'toolbar/6', desc: 'A floating toolbar can be placed over the content that it references.' },
-            { header: 'Detached toolbar pallete', file: 'toolbar/7', desc: 'Create unique customized interfaces combining multiple components.' },
+            { header: 'Detached toolbar palette', file: 'toolbar/7', desc: 'Create unique customized interfaces combining multiple components.' },
             { header: 'Variations', file: 'toolbar/8', desc: 'An app-bar has multiple variations that can be applied with themes and helper classes. These range from light and dark themes, colored and transparent.' },
             { header: 'Prominent toolbars', file: 'toolbar/9', desc: 'Prominent toolbars add a slot where you can placed elements in the extended area. The content and extension areas will be locked to 64px in height.' },
             { header: 'Dense toolbars', file: 'toolbar/10', desc: 'Dense toolbars reduce their height to 48px. This is also the default behavior for mobile landscape orientation.' },
             { header: 'Dense prominent toolbars', file: 'toolbar/11', desc: 'You can combine both the prominent and dense to extend a smaller variant of the toolbar.' },
+            { header: 'Scrolling techniques', file: 'toolbar/14', desc: 'A toolbar can transition off screen when scrolling. Here we demonstrate how you can specify the scroll target (default is window). Keep in mind, for this example there is special markup that will not be required in your application.' },
             { header: 'App bar with menu', file: 'toolbar/12', desc: 'You can combine both the prominent and dense' },
             { header: 'System bars - status/window', file: 'toolbar/13', desc: 'System bars are useful for notification icons on mobile and desktop.' }
           ],
           props: {
             'v-toolbar': {
+              shared: ['theme'],
               params: [
                 [
                   'card',
@@ -77,6 +79,24 @@
                   'Boolean',
                   'False',
                   'Increases the height of the toolbar content and extension'
+                ],
+                [
+                  'scroll-off-screen',
+                  'Boolean',
+                  'False',
+                  'Will transition the toolbar off screen when scrolling down'
+                ],
+                [
+                  'scroll-target',
+                  'String',
+                  'window',
+                  'Assign the scroll target for scroll-off-screen'
+                ],
+                [
+                  'scroll-threshold',
+                  'Number',
+                  '100',
+                  'The amount of scroll distance down before the toolbar uses scroll-off-screen'
                 ]
               ]
             },
@@ -138,25 +158,6 @@
               shared: ['default']
             }
           }
-        }
-      }
-    },
-
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
-    methods: {
-      meta () {
-        return {
-          title: 'Toolbar Component | Vuetify.js',
-          h1: 'Toolbars',
-          description: 'Toolbar component for Vuetify Framework',
-          keywords: 'vuetify, toolbars, components'
         }
       }
     }

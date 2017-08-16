@@ -9,12 +9,12 @@
           v-card-actions
             v-btn(
               tag="a"
-              v-bind:href="'https://github.com/vuetifyjs/vuetify/tree/master/src/components/'+doc.component"
+              v-bind:href="'https://github.com/vuetifyjs/vuetify/tree/master/src/'+componentLink"
               target="_blank"
               icon
               light
-              v-tooltip:right="{ html: 'View component' }"
-              v-if="doc.component"
+              v-tooltip:right="{ html: `View ${doc.directive ? 'Directive' : 'Component'}` }"
+              v-if="componentLink"
               v-bind:class="[`${currentColor}--text`]"
             )
               v-icon widgets
@@ -46,13 +46,14 @@
       v-bind:key="i"
       v-bind:header="`#${i + 1} ${example.header}`"
       v-bind:file="example.file"
+      v-bind:id="`example-${i + 1}`"
     )
       div(slot="desc" v-html="example.desc" v-if="example.desc")
     slot
     template(v-if="doc.props")
       section-header.mt-5(id="api") API
       v-tabs(v-model="tabs" dark v-bind:scrollable="false").elevation-1
-        v-tabs-bar(slot="activators" v-bind:class="[currentColor]")
+        v-tabs-bar(v-bind:class="[currentColor]")
           v-tabs-slider(v-bind:class="[currentColor]").lighten-4
           v-tabs-item(
             v-for="(p, i) in ['props', 'slots', 'events', 'functional']"
@@ -111,6 +112,11 @@
     },
 
     computed: {
+      componentLink () {
+        if (this.doc.component) return `components/${this.doc.component}`
+        if (this.doc.directive) return `directives/${this.doc.directive}`
+        return false
+      },
       currentColor () {
         return this.$store.state.currentColor
       }

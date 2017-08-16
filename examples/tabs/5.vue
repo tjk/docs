@@ -1,6 +1,6 @@
 <template>
   <v-tabs dark fixed icons centered>
-    <v-tabs-bar slot="activators" class="cyan">
+    <v-tabs-bar class="cyan">
       <v-tabs-slider class="yellow"></v-tabs-slider>
       <v-tabs-item href="#tab-1">
         <v-icon>phone</v-icon>
@@ -15,15 +15,17 @@
         Nearby
       </v-tabs-item>
     </v-tabs-bar>
-    <v-tabs-content
-      v-for="i in 3"
-      :key="i"
-      :id="'tab-' + i"
-    >
-      <v-card flat>
-        <v-card-text>{{ text }}</v-card-text>
-      </v-card>
-    </v-tabs-content>
+    <v-tabs-items>
+      <v-tabs-content
+        v-for="i in 3"
+        :key="i"
+        :id="'tab-' + i"
+      >
+        <v-card flat>
+          <v-card-text>{{ text }}</v-card-text>
+        </v-card>
+      </v-tabs-content>
+    </v-tabs-items>
   </v-tabs>
 </template>
 

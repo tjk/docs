@@ -1,6 +1,6 @@
 <template>
-  <v-app id="example-2" standalone>
-    <v-navigation-drawer persistent light :mini-variant.sync="mini" v-model="drawer" overflow>
+  <v-app id="example-2" toolbar>
+    <v-navigation-drawer absolute persistent light :mini-variant.sync="mini" v-model="drawer" overflow>
       <v-toolbar flat class="transparent">
         <v-list class="pa-0">
           <v-list-tile avatar tag="div">
@@ -31,7 +31,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar fixed class="indigo darken-4" dark>
-      <v-toolbar-side-icon @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
+      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title>Toolbar</v-toolbar-title>
     </v-toolbar>
     <main>

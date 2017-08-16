@@ -1,4 +1,4 @@
-<template lang="pug">
+﻿<template lang="pug">
   component-view(v-bind:doc="doc")
 </template>
 
@@ -49,6 +49,12 @@
                   'Set property of <code>items</code> define option\'s value'
                 ],
                 [
+                  'item-disable',
+                  'String',
+                  'disabled',
+                  `Set property of <code>items</code>'s disabled value`
+                ],
+                [
                   'max-height',
                   'Number, String',
                   '200',
@@ -59,6 +65,12 @@
                   'Boolean',
                   'False',
                   'Changes select to multiple. Accepts array for v-model'
+                ],
+                [
+                  'min-width',
+                  '[Boolean, Number, String]',
+                  'False',
+                  'Sets the minimum width of the select, overwrites automatic determination'
                 ],
                 [
                   'single-line',
@@ -78,12 +90,29 @@
                   'False',
                   'Filter the items in the list based on user input'
                 ],
+                [
+                  'return-object',
+                  'Boolean',
+                  'False',
+                  'Changes the selection behavior to return the object directly rather than the value specified with item-value'
+                ],
+                [
+                  'search-input',
+                  'String',
+                  'null',
+                  'Bound when using the autocomplete prop. Use the .sync modifier to catch user input from the autocomplete search input'
+                ],
               ],
               model: {
                 types: ['Array', 'Object'],
                 default: '-',
                 description: 'Single select requires model, multiple requires array'
               }
+            }
+          },
+          slots: {
+            'v-select': {
+              shared: ['label']
             }
           },
           events: {

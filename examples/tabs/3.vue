@@ -11,7 +11,7 @@
       </v-btn>
       <v-toolbar-title slot="extension" class="display-2">Page title</v-toolbar-title>
     </v-toolbar>
-    <v-tabs-bar slot="activators" class="cyan">
+    <v-tabs-bar class="cyan">
       <v-tabs-slider class="yellow"></v-tabs-slider>
       <v-tabs-item
         v-for="i in 3"
@@ -21,15 +21,17 @@
         Item {{ i }}
       </v-tabs-item>
     </v-tabs-bar>
-    <v-tabs-content
-      v-for="i in 3"
-      :key="i"
-      :id="'tab-' + i"
-    >
-      <v-card flat>
-        <v-card-text>{{ text }}</v-card-text>
-      </v-card>
-    </v-tabs-content>
+    <v-tabs-items>
+      <v-tabs-content
+        v-for="i in 3"
+        :key="i"
+        :id="'tab-' + i"
+      >
+        <v-card flat>
+          <v-card-text>{{ text }}</v-card-text>
+        </v-card>
+      </v-tabs-content>
+    </v-tabs-items>
   </v-tabs>
 </template>
 

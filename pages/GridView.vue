@@ -164,6 +164,36 @@
                     'Align items to the end.'
                   ],
                   [
+                    'align-content-start',
+                    'Boolean',
+                    'False',
+                    'Align content to the start.'
+                  ],
+                  [
+                    'align-content-end',
+                    'Boolean',
+                    'False',
+                    'Align content to the end.'
+                  ],
+                  [
+                    'align-content-center',
+                    'Boolean',
+                    'False',
+                    'Align content to the center.'
+                  ],
+                  [
+                    'align-content-space-around',
+                    'Boolean',
+                    'False',
+                    'Align content to the space around.'
+                  ],
+                  [
+                    'align-content-space-between',
+                    'Boolean',
+                    'False',
+                    'Align content to the space between.'
+                  ],
+                  [
                     'wrap',
                     'Boolean',
                     'False',
@@ -179,7 +209,7 @@
                     'False',
                     'xs:extra small, sm:small, md:medium, lg:large, xl:extra large - 1 through 12'
                   ], [
-                    'offset-[size](1-12)',
+                    'offset-[size](0-12)',
                     'Boolean',
                     'False',
                     'offset-xs:extra small, offset-sm:small, offset-md:medium, offset-lg:large, offset-xl:extra large. Example: offset-xs3'

@@ -110,6 +110,12 @@
                   'Object',
                   '{ month: \'long\', year: \'numeric\' }',
                   'Allows you to customize the format of the month string that appears in the header of the calendar. The format is equal to the options argument of the <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString">Date.toLocaleString</a> function.'
+                ],
+                [
+                  'year-icon',
+                  'String',
+                  `''`,
+                  'Generates an icon next to the year'
                 ]
               ]
             },
@@ -177,25 +183,6 @@
               ]
             }
           }
-        }
-      }
-    },
-
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
-    methods: {
-      meta () {
-        return {
-          title: 'Pickers | Vuetify.js',
-          h1: 'Pickers',
-          description: 'Pickers directive for Vuetify Framework',
-          keywords: 'vuetify, pickers, directives'
         }
       }
     }

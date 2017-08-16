@@ -11,7 +11,7 @@
         <v-icon>more_vert</v-icon>
       </v-btn>
     </v-toolbar>
-    <v-tabs-bar slot="activators" class="grey lighten-4">
+    <v-tabs-bar class="grey lighten-4">
       <v-tabs-slider class="primary"></v-tabs-slider>
       <v-tabs-item href="#mobile-tabs-5-1" class="primary--text">
         <v-icon>phone</v-icon>
@@ -23,15 +23,17 @@
         <v-icon>account_box</v-icon>
       </v-tabs-item>
     </v-tabs-bar>
-    <v-tabs-content
-      v-for="i in 3"
-      :key="i"
-      :id="'mobile-tabs-5-' + i"
-    >
-      <v-card flat>
-        <v-card-text>{{ text }}</v-card-text>
-      </v-card>
-    </v-tabs-content>
+    <v-tabs-items>
+      <v-tabs-content
+        v-for="i in 3"
+        :key="i"
+        :id="'mobile-tabs-5-' + i"
+      >
+        <v-card flat>
+          <v-card-text>{{ text }}</v-card-text>
+        </v-card>
+      </v-tabs-content>
+    </v-tabs-items>
   </v-tabs>
 </template>
 

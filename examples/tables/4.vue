@@ -25,7 +25,7 @@
       </template>
     </v-data-table>
     <div class="text-xs-center pt-2">
-      <v-pagination v-model="pagination.page" :length="Math.ceil(this.items.length / pagination.rowsPerPage)"></v-pagination>
+      <v-pagination v-model="pagination.page" :length="pages"></v-pagination>
     </div>
   </div>
 </template>
@@ -164,6 +164,11 @@
             iron: '6%'
           }
         ]
+      }
+    },
+    computed: {
+      pages () {
+        return this.pagination.rowsPerPage ? Math.ceil(this.items.length / this.pagination.rowsPerPage) : 0
       }
     }
   }

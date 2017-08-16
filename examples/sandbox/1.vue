@@ -18,7 +18,7 @@
       enable-resize-watcher
     ></v-navigation-drawer>
     <v-toolbar>
-      <v-toolbar-side-icon @click.native.stop="primaryDrawer.model = !primaryDrawer.model" v-if="primaryDrawer.type !== 'permanent'"></v-toolbar-side-icon>
+      <v-toolbar-side-icon @click.stop="primaryDrawer.model = !primaryDrawer.model" v-if="primaryDrawer.type !== 'permanent'"></v-toolbar-side-icon>
       <v-toolbar-title>Vuetify</v-toolbar-title>
     </v-toolbar>
     <main>
@@ -34,14 +34,15 @@
                   </v-flex>
                   <v-flex xs12 md6>
                     <span>Drawer</span>
-                    <v-radio
-                      primary
-                      :label="drawer"
-                      v-model="primaryDrawer.type"
-                      :value="drawer.toLowerCase()"
-                      v-for="drawer in drawers"
-                      :key="drawer"
-                    ></v-radio>
+                    <v-radio-group v-model="primaryDrawer.type" column>
+                      <v-radio
+                        v-for="drawer in drawers"
+                        :key="drawer"
+                        primary
+                        :label="drawer"
+                        :value="drawer.toLowerCase()"
+                      ></v-radio>
+                    </v-radio-group>
                     <v-switch label="Clipped" v-model="primaryDrawer.clipped" primary></v-switch>
                     <v-switch label="Floating" v-model="primaryDrawer.floating" primary></v-switch>
                     <v-switch label="Mini" v-model="primaryDrawer.mini" primary></v-switch>

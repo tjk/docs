@@ -1,6 +1,7 @@
 <template>
   <v-card
     height="415px"
+    style="z-index: 0"
   >
     <v-navigation-drawer
       class="pb-0"

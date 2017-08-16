@@ -11,11 +11,11 @@
     "description": "Get started with Vue and Vuetify in no time.",
     "keywords": "quick start, vuetify templates, get started"
   },
-  "/vuetify/sandbox": {
-    "h1": "Sandbox",
-    "title": "Sandbox",
-    "description": "Play around with the available configuring options for your next application.",
-    "keywords": "sandbox, vuetify, layout sandbox"
+  "/vuetify/why-vuetify": {
+    "h1": "Why use Vuetify?",
+    "title": "Why Vuetify?",
+    "description": "Why you should choose Vuetify over other Vue frameworks.",
+    "keywords": "why vuetify, why vue, why choose vuetify"
   },
   "/vuetify/frequently-asked-questions": {
     "h1": "Frequently asked questions",
@@ -29,6 +29,12 @@
     "description": "Help support Vuetify.js by backing the development of new features",
     "keywords": "sponsor, backer, donations"
   },
+  "/vuetify/contributing": {
+    "h1": "Contributing",
+    "title": "Contributing",
+    "description": "Help develop Vuetify with new features and functionality.",
+    "keywords": "contribute, contributing, feature request"
+  },
   "/motion/transitions": {
     "h1": "Transitions",
     "title": "Transitions",
@@ -37,8 +43,8 @@
   },
   "/style/colors": {
     "h1": "Colors",
-    "title": "Material color pallete",
-    "description": "Easily apply any color from the material design pallete.",
+    "title": "Material color palette",
+    "description": "Easily apply any color from the material design palette.",
     "keywords": "colors"
   },
   "/style/theme": {
@@ -94,6 +100,12 @@
     "title": "Elevation helpers",
     "description": "Elevation helper classes allow you to control relative depth, or distance, between two surfaces along the z-axis.",
     "keywords": "elevation helper classes"
+  },
+  "/layout/sandbox": {
+    "h1": "Sandbox",
+    "title": "Sandbox",
+    "description": "Play around with the available configuring options for your next application.",
+    "keywords": "sandbox, vuetify, layout sandbox"
   },
   "/components/alerts": {
     "h1": "Alerts",
@@ -172,6 +184,12 @@
     "title": "Footer Component",
     "description": "Footer component for Vuetify Framework",
     "keywords": "footer"
+  },
+  "/components/forms": {
+    "h1": "Forms",
+    "title": "Form Component",
+    "description": "Form component for Vuetify Framework",
+    "keywords": "form"
   },
   "/components/grid-lists": {
     "h1": "Grid lists",
@@ -293,17 +311,35 @@
     "description": "Badges directive for the Vuetify framework.",
     "keywords": "badges"
   },
+  "/directives/resizing": {
+    "h1": "Resizing",
+    "title": "Resizing",
+    "description": "Resize directive for the Vuetify framework.",
+    "keywords": "resize, resize directive, window resize directive"
+  },
   "/directives/ripples": {
     "h1": "Ripple",
     "title": "Ripple",
     "description": "Ripple directive for the Vuetify framework.",
     "keywords": "ripples, ink"
   },
+  "/directives/scrolling": {
+    "h1": "Scrolling",
+    "title": "Scrolling",
+    "description": "Scroll directive for the Vuetify framework.",
+    "keywords": "scroll, scroll directive, window scroll directive"
+  },
   "/directives/tooltips": {
     "h1": "Tooltip",
     "title": "Tooltip",
     "description": "Tooltip directive for the Vuetify framework.",
     "keywords": "tooltips"
+  },
+  "/directives/touch-support": {
+    "h1": "Touch Support",
+    "title": "Touch Support",
+    "description": "Touch directive for the Vuetify framework.",
+    "keywords": "touch, touch directive, mobile touch directive"
   },
   "/guides/server-side-rendering": {
     "h1": "Server side rendering",

@@ -16,7 +16,21 @@
           ],
           props: {
             'v-footer': {
-              params: []
+              shared: ['theme'],
+              params: [
+                [
+                  'absolute',
+                  'Boolean',
+                  'False',
+                  'Sets the position of the footer to absolute',
+                ],
+                [
+                  'fixed',
+                  'Boolean',
+                  'False',
+                  'Sets the position of the footer to fixed',
+                ]
+              ]
             }
           },
           slots: {

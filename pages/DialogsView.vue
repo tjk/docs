@@ -55,7 +55,7 @@
                   'scrollable',
                   'Boolean',
                   'False',
-                  'When set to true, expects a card, card-title, card-text and card-row with the actions prop. Will set card-row to scroll'
+                  'When set to true, expects a card, card-title, card-text and card-actions. Will set card-text to overflow-y'
                 ],
                 [
                   'disabled',

@@ -37,35 +37,16 @@
                 [
                   'visible',
                   'Boolean',
-                  'False',
+                  'True',
                   'Tooltip object property for determining visibility, see example #2'
                 ]
               ]
             }
           },
           examples: [
-            { header: 'Default', file: 'tooltips/1', desc: 'Tooltips can be applied to any element that does not use the <code>:before</code> psuedo element' },
+            { header: 'Default', file: 'tooltips/1', desc: 'Tooltips can be applied to any element that does not use the <code>:before</code> pseudo element' },
             { header: 'Visibility', file: 'tooltips/2', desc: 'Tooltips can be disabled using the <code>visible</code> property value in the tooltip object.' }
           ]
-        }
-      }
-    },
-
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
-    methods: {
-      meta () {
-        return {
-          title: 'Tooltip Directive | Vuetify.js',
-          h1: 'Tooltips',
-          description: 'Tooltip directive for Vuetify Framework',
-          keywords: 'vuetify, tooltips, directives'
         }
       }
     }

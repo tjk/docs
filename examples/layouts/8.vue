@@ -1,5 +1,5 @@
 <template>
-  <v-app id="example-8" dark standalone>
+  <v-app id="example-8" dark toolbar>
     <v-navigation-drawer
       temporary
       v-model="drawer" 
@@ -8,7 +8,7 @@
       overflow
       absolute
     >
-      <v-list class="pa-0">
+      <v-list class="pa-1">
         <v-list-tile v-if="mini" @click.native.stop="mini = !mini">
           <v-list-tile-action>
             <v-icon light>chevron_right</v-icon>
@@ -41,7 +41,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar fixed dark>
-      <v-toolbar-side-icon @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
+      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title>Toolbar</v-toolbar-title>
     </v-toolbar>
     <main>
@@ -72,9 +72,3 @@
     }
   }
 </script>
-
-<style>
-  #example-8 .card {
-    background: #424242
-  }
-</style>

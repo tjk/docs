@@ -1,5 +1,5 @@
 <template>
-  <v-app id="example-2" standalone>
+  <v-app id="example-2" toolbar>
     <v-navigation-drawer
       temporary
       v-model="drawer" 
@@ -8,7 +8,7 @@
       overflow
       absolute
     >
-      <v-list class="pa-0">
+      <v-list class="pa-1">
         <v-list-tile avatar tag="div">
           <v-list-tile-avatar>
             <img src="https://randomuser.me/api/portraits/men/85.jpg" />
@@ -36,7 +36,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar fixed class="deep-orange" dark>
-      <v-toolbar-side-icon @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
+      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title>Toolbar</v-toolbar-title>
     </v-toolbar>
     <main>
