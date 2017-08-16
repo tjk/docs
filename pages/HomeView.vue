@@ -116,7 +116,7 @@
             span Vuetify
           ul
             li
-              a( href="https://opensource.org/licenses/MIT")
+              a(href="https://vuetifyjs.com/vuetify/quick-start")
                 span.hidden-sm-only Documentation
                 span.hidden-md-and-up.hidden-xs-only Docs
             li
