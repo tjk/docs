@@ -317,7 +317,7 @@
             'Tabindex of input'
           ],
           [
-            'placholder',
+            'placeholder',
             'String',
             '-',
             'Placeholder text'
