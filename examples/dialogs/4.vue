@@ -26,6 +26,7 @@
             autocomplete
             chips
             :items="['Skiing', 'Ice hockey', 'Soccer', 'Basketball', 'Hockey', 'Reading', 'Writing', 'Coding', 'Basejump']"
+          ></v-select>
           <small>*indicates required field</small>
         </v-card-text>
         <v-card-actions>
