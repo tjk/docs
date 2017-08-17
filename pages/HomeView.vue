@@ -77,36 +77,22 @@
                       href="https://www.patreon.com/vuetify"
                       target="_blank" rel="noopener"
                     )
-                      div.display-1.mb-2 Patreon
+                      div.display-1.my-3 Patreon
                       img(src="/static/doc-images/patreon.png" width="125px")
                   v-flex(xs12 sm3)
                     a(
                       href="https://paypal.me/vuetify"
                       target="_blank" rel="noopener"
                     )
-                      div.display-1.mb-2 PayPal
+                      div.display-1.my-3 PayPal
                       img(src="/static/doc-images/paypal.png" width="125px")
 
-      section#footer-hero.mt-5.mb-0
+      section#footer-hero.mb-0
         v-container
-          v-layout(row wrap).mb-5
-            v-flex(xs12 md8 lg7).mt-4.mb-5
+          v-layout(row wrap)
+            v-flex(xs12 md8 lg10)
               img(src="/static/doc-images/logo.svg" height="90px")
               h2.mt-4.mb-5 Supercharge Your Development with the Power of Vue and Material Design
-              v-container(fluid grid-list-xl).pa-0
-              v-layout(row wrap)
-                v-flex(xs12 sm3)
-                  v-btn(block dark large to="/vuetify/quick-start").blue
-                    span Documentation
-                v-flex(xs12 sm3)
-                  v-btn(
-                    large
-                    block
-                    tag="a"
-                    href="https://github.com/vuetifyjs/vuetify"
-                  ).white.primary--text
-                    v-icon(left).primary--text fa-github
-                    span Github
 
     footer
       v-layout(row wrap)
