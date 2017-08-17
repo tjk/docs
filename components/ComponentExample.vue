@@ -16,14 +16,14 @@
         v-btn(
           dark
           icon
-          v-on:click.native.stop="panel = !panel"
+          v-on:click.stop="panel = !panel"
           v-tooltip:left="{ html: 'View source' }"
         )
           v-icon code
       v-expansion-panel.elevation-0.component-example__panel
         v-expansion-panel-content(v-model="panel")
           v-tabs(ref="tabs" dark :scrollable="false")
-            v-tabs-bar(slot="activators" v-bind:class="[currentColor]" class="darken-4 pl-0")
+            v-tabs-bar(v-bind:class="[currentColor]" class="darken-4 pl-0")
               v-tabs-slider(class="lighten-4" v-bind:class="[currentColor]")
               v-tabs-item(
                 v-for="tab in tabs"
@@ -31,13 +31,14 @@
                 v-bind:href="'#'+tab"
                 v-show="parsed[tab]"
               ) {{ tab }}
-            v-tabs-content(
-              v-for="tab in tabs"
-              v-bind:key="tab"
-              v-bind:id="tab"
-            )
-              markup(:lang="getLang(tab)" v-if="parsed[tab]").ma-0
-                div(v-html="parsed[tab]")
+            v-tabs-items
+              v-tabs-content(
+                v-for="tab in tabs"
+                v-bind:key="tab"
+                v-bind:id="tab"
+              )
+                markup(:lang="getLang(tab)" v-if="parsed[tab]").ma-0
+                  div(v-html="parsed[tab]")
       v-card-text.subheading.justify
         slot(name="desc")
       v-card-text

@@ -2,15 +2,15 @@
   <v-card height="200px">
     <div class="headline text-xs-center pa-5">Active: {{ e1 }}</div>
     <v-bottom-nav absolute :value="true" :active.sync="e1" class="transparent">
-      <v-btn flat light class="teal--text" value="recent">
+      <v-btn flat class="teal--text" value="recent">
         <span>Recent</span>
         <v-icon>history</v-icon>
       </v-btn>
-      <v-btn flat light class="teal--text" value="favorites">
+      <v-btn flat class="teal--text" value="favorites">
         <span>Favorites</span>
         <v-icon>favorite</v-icon>
       </v-btn>
-      <v-btn flat light class="teal--text" value="nearby">
+      <v-btn flat class="teal--text" value="nearby">
         <span>Nearby</span>
         <v-icon>place</v-icon>
       </v-btn>
