@@ -64,6 +64,12 @@
             'v-container': {
               params: [
                 [
+                  'fill-height',
+                  'Boolean',
+                  'False',
+                  'Applies flexbox property <code>align-items: center</code> to container'
+                ],
+                [
                   'fluid',
                   'Boolean',
                   'False',
