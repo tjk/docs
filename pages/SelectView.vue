@@ -49,7 +49,7 @@
                   'Set property of <code>items</code> define option\'s value'
                 ],
                 [
-                  'item-disable',
+                  'item-disabled',
                   'String',
                   'disabled',
                   `Set property of <code>items</code>'s disabled value`
