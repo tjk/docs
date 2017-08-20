@@ -13,10 +13,9 @@
             )
               v-card
                 v-layout(align-center justify-center).pa-5
-                  v-avatar
+                  v-avatar(size="150px")
                     img(
                       :src="p.img"
-                      style="height: 150px; width: 150px;"
                     ).grey.darken-4
                 div.px-3
                   v-divider.indigo.lighten-4

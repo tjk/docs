@@ -12,16 +12,18 @@
           <v-icon>more_vert</v-icon>
         </v-btn>
       </v-toolbar>
-      <v-tabs-bar slot="activators" class="grey lighten-4">
+      <v-tabs-bar class="grey lighten-4">
         <v-tabs-item href="#one">Item One</v-tabs-item>
         <v-tabs-item href="#two">Item Two</v-tabs-item>
         <v-tabs-item href="#three">Item Three</v-tabs-item>
         <v-tabs-slider></v-tabs-slider>
       </v-tabs-bar>
-      <v-tabs-content v-for="content in ['one', 'two', 'three']" :key="content" :id="content">
-        <v-card height="200px" flat>
-        </v-card>
-      </v-tabs-content>
+      <v-tabs-items>
+        <v-tabs-content v-for="content in ['one', 'two', 'three']" :key="content" :id="content">
+          <v-card height="200px" flat>
+          </v-card>
+        </v-tabs-content>
+      </v-tabs-items>
     </v-tabs>
     <v-fab-transition>
       <v-btn
