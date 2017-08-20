@@ -38,12 +38,12 @@
               v-card-text.py-5
                 v-layout(row wrap)
                   v-flex(xs12 md4).text-xs-center.my-3
-                    img(src="/static/doc-images/feature1.svg").elevation-1
+                    img(src="/static/doc-images/feature1.svg")
                     h3.mt-4.mb-3 Vue-CLI Templates
                     p Vuetify comes ready to go with 5 pre-made vue-cli templates. From simple html to full-blown SSR, you are ready to go in minutes.
 
                   v-flex(xs12 md4).text-xs-center.my-3
-                    img(src="/static/doc-images/feature2.svg").elevation-1
+                    img(src="/static/doc-images/feature2.svg")
                     h3.mt-4.mb-3 Custom Layouts
                     p Each and every available layout from the Material design spec is at your disposal. Create unique and flexible user interfaces that fit the scope of any project.
 
@@ -56,12 +56,12 @@
           v-container
             v-card.elevation-2
               v-card-text.py-5
-                h2.mb-5.text-xs-center.text-md-left Proudly sponsored by:
-                v-layout(row wrap)
+                h2.mb-5.text-xs-center Proudly sponsored by:
+                v-layout(row wrap align-center justify-center)
                   v-flex(xs12 md3 v-for="(sponsor, i) in sponsors" :key="i").text-xs-center
                       a(:href="sponsor.href" target="_blank" :title="sponsor.title" rel="noopener")
                         img(:src="sponsor.src").sponsor
-                  v-flex(xs12 md3).text-xs-center
+                  v-flex(xs12).text-xs-center
                     v-btn(to="/vuetify/sponsors-and-backers" large).white.primary--text Become a backer
                       v-icon(right).primary--text fa-arrow-circle-right
 

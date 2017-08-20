@@ -24,7 +24,7 @@
                   @input="data.parent.selectItem(data.item)"
                   @click.native.stop
                   class="chip--select-multi"
-                  :key="data.item"
+                  :key="JSON.stringify(data.item)"
                 >
                   <v-avatar>
                     <img :src="data.item.avatar">

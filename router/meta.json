@@ -113,6 +113,12 @@
     "description": "The v-alert component is used to convey information to the user. Designed to stand out, the alerts come in four contextual styles, success, info, warning, and error.",
     "keywords": "alerts, components"
   },
+  "/components/avatars": {
+    "h1": "Avatars",
+    "title": "Avatar Component",
+    "description": "The v-avatar component is used to control the size and border radius of an image.",
+    "keywords": "avatars, components"
+  },
   "/components/breadcrumbs": {
     "h1": "Breadcrumbs",
     "title": "Breadcrumbs Component",

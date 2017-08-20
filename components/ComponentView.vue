@@ -61,16 +61,17 @@
             v-bind:href="`#${p}`"
             v-bind:key="i"
           ) {{ p }}
-        v-tabs-content(
-          v-for="(p, i) in ['props', 'slots', 'events', 'functional']"
-          v-if="doc[p]"
-          v-bind:id="p"
-          v-bind:key="i"
-        )
-          component-parameters(
-            v-bind:headers="headers[p]"
-            v-bind:data="doc[p]"
+        v-tabs-items
+          v-tabs-content(
+            v-for="(p, i) in ['props', 'slots', 'events', 'functional']"
+            v-if="doc[p]"
+            v-bind:id="p"
+            v-bind:key="i"
           )
+            component-parameters(
+              v-bind:headers="headers[p]"
+              v-bind:data="doc[p]"
+            )
 </template>
 
 <script>

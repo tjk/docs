@@ -31,7 +31,7 @@
           </v-list-tile>
           <v-divider inset></v-divider>
           <v-subheader inset>Files</v-subheader>
-          <v-list-tile v-for="item in items2" v-bind:key="item.title">
+          <v-list-tile v-for="item in items2" v-bind:key="item.title" avatar>
             <v-list-tile-avatar>
               <v-icon v-bind:class="[item.iconClass]">{{ item.icon }}</v-icon>
             </v-list-tile-avatar>

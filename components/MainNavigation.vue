@@ -6,7 +6,7 @@
     dark
     enable-resize-watcher
   )
-    v-toolbar(flat).transparent
+    v-toolbar(flat dark).transparent
       v-list.pa-0.vuetify
         v-list-tile(avatar tag="div")
           v-list-tile-avatar
@@ -16,7 +16,7 @@
             v-list-tile-title Vuetify
             v-list-tile-sub-title Branch: {{ $store.state.release }}
           v-list-tile-action
-            v-btn(icon dark v-on:click.stop="mini = !mini")
+            v-btn(icon v-on:click.stop="mini = !mini")
               v-icon chevron_left
     v-divider
     v-card(flat dark).py-2.your-logo-here
@@ -84,7 +84,8 @@
               { href: '/vuetify/why-vuetify', title: 'Why Vuetify?' },
               { href: '/vuetify/frequently-asked-questions', title: 'Frequently asked questions' },
               { href: '/vuetify/sponsors-and-backers', title: 'Sponsors and backers' },
-              { href: '/vuetify/contributing', title: 'Contributing' }
+              { href: '/vuetify/contributing', title: 'Contributing' },
+              // { href: '/vuetify/roadmap', title: 'Roadmap' }
             ]
           },
           {
@@ -126,6 +127,7 @@
             group: '/components',
             items: [
               { href: '/components/alerts', title: 'Alerts' },
+              { href: '/components/avatars', title: 'Avatars' },
               { href: '/components/breadcrumbs', title: 'Breadcrumbs' },
               { href: '/components/bottom-navigation', title: 'Bottom navigation' },
               { href: '/components/buttons', title: 'Buttons' },
