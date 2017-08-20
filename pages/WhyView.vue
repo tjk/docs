@@ -11,12 +11,12 @@
               v-for="(p, i) in philosophies"
               :key="i"
             )
-              v-card()
-                v-layout(align-center justify-center fill-height).pa-5
+              v-card
+                v-layout(align-center justify-center).pa-5
                   v-avatar
                     img(
                       :src="p.img"
-                      style="width: 150px; height: 150px"
+                      style="height: 150px; width: 150px;"
                     ).grey.darken-4
                 div.px-3
                   v-divider.indigo.lighten-4
