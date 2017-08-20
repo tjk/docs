@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="text-xs-center">
-      <v-btn primary @click.native="alert = !alert">Toggle</v-btn>
+      <v-btn primary @click="alert = !alert">Toggle</v-btn>
     </div>
     <v-alert
       success
-      :value="alert"
+      :input-value="alert"
       transition="scale-transition"
     >
       This is a success alert.

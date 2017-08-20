@@ -16,7 +16,7 @@
         v-btn(
           dark
           icon
-          v-on:click.native.stop="panel = !panel"
+          v-on:click.stop="panel = !panel"
           v-tooltip:left="{ html: 'View source' }"
         )
           v-icon code
