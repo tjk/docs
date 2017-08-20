@@ -11,12 +11,12 @@
               v-for="(p, i) in philosophies"
               :key="i"
             )
-              v-card()
-                v-layout(align-center justify-center fill-height).pa-5
+              v-card
+                v-layout(align-center justify-center).pa-5
                   v-avatar
                     img(
                       :src="p.img"
-                      style="width: 150px; height: 150px"
+                      style="height: 150px; width: 150px;"
                     ).grey.darken-4
                 div.px-3
                   v-divider.indigo.lighten-4
@@ -72,7 +72,7 @@
             v-list-tile(avatar tag="div")
               v-list-tile-avatar
                 v-avatar
-                  img(src="https://avatars0.githubusercontent.com/u/9064066?v=4&s=460")
+                  img(src="/static/doc-images/john.jpg")
               v-list-tile-content
                 v-list-tile-title John Leider
                 v-list-tile-sub-title Author of Vuetify.js

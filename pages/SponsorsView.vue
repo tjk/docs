@@ -65,7 +65,8 @@
       ],
       backers: [
         { title: 'Deister Software', href: 'http://www.deister.es/', src: 'deister-logo-light.png' },
-        { title: 'Cocoatech', href: 'https://cocoatech.com/', src: 'cocoatechlogo.png' }
+        { title: 'Cocoatech', href: 'https://cocoatech.com/', src: 'cocoatechlogo.png' },
+        { title: 'Cycloid', href: 'https://www.cycloid.io/', src: 'cycloid.png' }
       ]
     })
   }
