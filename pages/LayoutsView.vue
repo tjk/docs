@@ -32,42 +32,37 @@
             {
               header: 'Baseline',
               file: 'layouts/1',
-              desc: `The default structure of the Vuetify layout is one of the few opinionated designs you will encounter in the framework. It is done so that each layout is easy to understand and works as expected for any given scenario. Below is the <strong>baseline</strong> structure for a layout. It includes a navigation drawer w/ right variant, toolbar, temporary navigation drawer w/ right variant, content and footer.`
+              desc: 'The default structure of the Vuetify layout is one of the few opinionated designs you will encounter in the framework. It is done so that each layout is easy to understand and works as expected for any given scenario. Below is a <strong>baseline</strong> structure for a layout. It includes a navigation drawer, toolbar, content and footer.'
             },
             {
-              header: 'Permanent drawer',
+              header: 'Baseline - Flipped',
               file: 'layouts/2',
-              desc: `Permanent navigation drawers are default open. These are used for applications that are desktop only and are not openable or closeable.`
+              desc: 'Here is a flipped version of the <strong>baseline</strong> layout.'
             },
             {
-              header: 'Permanent clipped drawer',
+              header: 'Complex',
               file: 'layouts/3',
-              desc: `A clipped drawer rests under the application toolbar.`
-            },
-            {
-              header: 'Permanent floating drawer',
-              file: 'layouts/4',
-              desc: `A floating drawer has no visible container (no border-right).`
-            },
-            {
-              header: 'Permanent floating drawer in a card',
-              file: 'layouts/5',
-              desc: `A card can be used to contain a navigation drawer's items.`
-            },
-            {
-              header: 'Persistent',
-              file: 'layouts/6',
-              desc: `A persistent drawer can be opened or closed. This is recommended sidebar for an application that supports both desktop and mobile.`
-            },
-            {
-              header: 'Temporary',
-              file: 'layouts/7',
-              desc: `A temporary drawer sits above its application and uses a scrim (overlay) to darken the background. This drawer behavior is mimicked on the persistent drawer when on mobile. Clicking outside of the drawer will cause it to close.`
+              desc: 'More complex layouts are also supported. This one includes a navigation drawer w/ right variant, toolbar, temporary navigation drawer w/ right variant, content and footer.'
             },
             {
               header: 'Dark theme',
-              file: 'layouts/8',
-              desc: `Vuetify also supports the dark application theme. This will not override components that have default themes so in some cases it will be necessary to manually set the dark theme accents.`
+              file: 'layouts/4',
+              desc: 'Vuetify also supports the dark application theme. This will not override components that have default themes so in some cases it will be necessary to manually set the dark theme accents.'
+            },
+            {
+              header: 'Example - Google Keep',
+              file: 'layouts/5',
+              desc: ''
+            },
+            {
+              header: 'Example - Google Contacts',
+              file: 'layouts/6',
+              desc: ''
+            },
+            {
+              header: 'Example - Youtube',
+              file: 'layouts/7',
+              desc: ''
             }
           ],
           props: {
@@ -137,7 +132,6 @@
       [data-app]
         border: 1px solid rgba(#000, .1)
         overflow: hidden
-        min-height: 0
         elevation(2)
 
         .navigation-drawer, .toolbar:not(.elevation-0), .overlay
