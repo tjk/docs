@@ -54,7 +54,7 @@
                   'Applies the flat style'
                 ],
                 [
-                  'floating',
+                  'fab',
                   'Boolean',
                   'False',
                   'Applies the floating / round style'
