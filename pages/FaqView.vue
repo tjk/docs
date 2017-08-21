@@ -35,10 +35,6 @@
           a: `Ensure that your components are wrapped with a <code>v-app</code> element. If you are using an element to activate the component that is not placed into the <kbd>activator</kbd> slot, ensure that you stop propagation of the click event. These components utilize the <code>v-outside-click</code> directive and will immediately close.`
         },
         {
-          q: `I'm using <code>@click</code> on a component and it is not invoking my method.`,
-          a: `When Vue 2 was released, it changed how events work on custom components. Native events, like click, hover were are longer explicitly available and must be bound with <code>@click.native</code>. <a href="https://vuejs.org/v2/guide/migration.html#Listening-for-Native-Events-on-Components-with-v-on-changed" target="_blank" rel="noopener">Reference</a>.`
-        },
-        {
           q: `The scrollbar is showing even though my content is not overflowing vertically.`,
           a: `Vuetify by default turns on the html scrollbar. This is a design choice and has been debated numerous times. There are pros and cons to having and not having it and as of now, the vote is in favor of leaving it as is.`
         }
