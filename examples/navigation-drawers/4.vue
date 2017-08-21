@@ -1,12 +1,6 @@
 <template>
-  <v-app id="example-2" toolbar>
-    <v-navigation-drawer permanent light>
-      <v-toolbar flat>
-        <v-list>
-          <v-list-tile tag="div"></v-list-tile>
-        </v-list>
-      </v-toolbar>
-      <v-divider></v-divider>
+  <v-app id="example-3" toolbar>
+    <v-navigation-drawer permanent floating light>
       <v-list dense class="pt-0">
         <v-list-tile v-for="item in items" :key="item.title">
           <v-list-tile-action>
@@ -18,7 +12,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar class="cyan" dark>
+    <v-toolbar class="green" dark>
       <v-toolbar-title>Toolbar</v-toolbar-title>
     </v-toolbar>
     <main>
