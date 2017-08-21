@@ -117,7 +117,7 @@
         |&nbsp;
         |Vue.use(Vuetify)
 
-      section-text You will also need to include the Vuetify css file. Simply include the Vuetify css file in your index.html or import the actual stylus file or the minified css.
+      section-text You will also need to include the Vuetify css file. Simply include the Vuetify css file in your <code>index.html</code> or import the actual stylus file or the minified css.
 
       markup(lang="js")
         |// index.js or main.js
