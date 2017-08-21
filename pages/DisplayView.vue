@@ -6,6 +6,7 @@
           dt(slot="title") Display
           dd(slot="desc") The display helpers allow you to control the displaying of content based upon viewport width.
       ad
+    grid
     section
       h6 Viewport sizes
       ul.mb-5

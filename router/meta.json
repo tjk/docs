@@ -35,6 +35,12 @@
     "description": "Help develop Vuetify with new features and functionality.",
     "keywords": "contribute, contributing, feature request"
   },
+  "/vuetify/roadmap": {
+    "h1": "Roadmap",
+    "title": "Roadmap",
+    "description": "The upcoming planned features and new functionality coming to Vuetify. New vue components, new directives, and much much more!.",
+    "keywords": "roadmap, future plans"
+  },
   "/motion/transitions": {
     "h1": "Transitions",
     "title": "Transitions",

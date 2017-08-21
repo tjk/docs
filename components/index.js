@@ -4,6 +4,7 @@ import ComponentExample from './ComponentExample'
 import ComponentParameters from './ComponentParameters'
 import ComponentView from './ComponentView'
 import DocView from './DocView'
+import Grid from './Grid'
 import Markup from './Markup'
 import SectionHeader from './SectionHeader'
 import SectionText from './SectionText'
@@ -16,6 +17,7 @@ export default {
   ComponentParameters,
   ComponentView,
   DocView,
+  Grid,
   Markup,
   SectionHeader,
   SectionText,

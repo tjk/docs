@@ -18,9 +18,9 @@
         <v-card class="secondary elevation-0">
           <v-card-text>
             <p class="white--text">{{ ex9 || 'null' }}</p>
-            <v-radio-group v-model="ex9" :mandatory="false" dark>
-              <v-radio label="Radio 3" value="radio-3"></v-radio>
-              <v-radio label="Radio 4" value="radio-4"></v-radio>
+            <v-radio-group v-model="ex9" :mandatory="false">
+              <v-radio label="Radio 3" value="radio-3" dark></v-radio>
+              <v-radio label="Radio 4" value="radio-4" dark></v-radio>
             </v-radio-group>
           </v-card-text>
         </v-card>

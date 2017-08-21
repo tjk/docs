@@ -85,7 +85,7 @@
               { href: '/vuetify/frequently-asked-questions', title: 'Frequently asked questions' },
               { href: '/vuetify/sponsors-and-backers', title: 'Sponsors and backers' },
               { href: '/vuetify/contributing', title: 'Contributing' },
-              // { href: '/vuetify/roadmap', title: 'Roadmap' }
+              { href: '/vuetify/roadmap', title: 'Roadmap' }
             ]
           },
           {
@@ -130,6 +130,7 @@
               { href: '/components/avatars', title: 'Avatars' },
               { href: '/components/breadcrumbs', title: 'Breadcrumbs' },
               { href: '/components/bottom-navigation', title: 'Bottom navigation' },
+              { href: '/components/bottom-sheets', title: 'Bottom sheets' },
               { href: '/components/buttons', title: 'Buttons' },
               { href: '/components/floating-action-buttons', title: 'Buttons: Floating Action Buttons' },
               { href: '/components/cards', title: 'Cards' },
