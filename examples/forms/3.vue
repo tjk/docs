@@ -7,6 +7,7 @@
       :counter="10"
       @input="$v.name.$touch()"
       @blur="$v.name.$touch()"
+      required
     ></v-text-field>
     <v-text-field
       label="E-mail"
@@ -14,6 +15,7 @@
       :error-messages="emailErrors"
       @input="$v.email.$touch()"
       @blur="$v.email.$touch()"
+      required
     ></v-text-field>
     <v-select
       label="Item"
@@ -22,6 +24,7 @@
       :error-messages="selectErrors"
       @change="$v.select.$touch()"
       @blur="$v.select.$touch()"
+      required
     ></v-select>
     <v-checkbox
       label="Do you agree?"
@@ -29,6 +32,7 @@
       :error-messages="checkboxErrors"
       @change="$v.checkbox.$touch()"
       @blur="$v.checkbox.$touch()"
+      required
     ></v-checkbox>
 
     <v-btn @click="submit">submit</v-btn>
@@ -38,7 +42,6 @@
 
 <script>
   import { validationMixin } from 'vuelidate'
-  console.log(validationMixin)
   import { required, maxLength, email } from 'vuelidate/lib/validators'
 
   export default {

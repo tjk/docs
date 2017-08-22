@@ -7,6 +7,7 @@
       :error-messages="errors.collect('name')"
       v-validate="'required|max:10'"
       data-vv-name="name"
+      required
     ></v-text-field>
     <v-text-field
       v-model="email"
@@ -14,6 +15,7 @@
       :error-messages="errors.collect('email')"
       v-validate="'required|email'"
       data-vv-name="email"
+      required
     ></v-text-field>
     <v-select
       v-bind:items="items"
@@ -22,6 +24,7 @@
       :error-messages="errors.collect('select')"
       v-validate="'required'"
       data-vv-name="select"
+      required
     ></v-select>
     <v-checkbox
       v-model="checkbox"
@@ -30,6 +33,7 @@
       :error-messages="errors.collect('checkbox')"
       v-validate="'required'"
       data-vv-name="checkbox"
+      required
     ></v-checkbox>
 
     <v-btn @click="submit">submit</v-btn>
@@ -59,6 +63,10 @@
         this.$validator.validateAll()
       },
       clear () {
+        this.name = ''
+        this.email = ''
+        this.select = null
+        this.checkbox = false
         this.$validator.clean()
       }
     }
