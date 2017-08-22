@@ -3,23 +3,15 @@
     <v-card-text>
       <v-container fluid>
         <v-layout row wrap>
-          <v-flex xs6 sm2>
-            <v-radio v-model="context" value="success" label="Success" light></v-radio>
-          </v-flex>
-          <v-flex xs6 sm2>
-            <v-radio v-model="context" value="info" label="Info" light></v-radio>
-          </v-flex>
-          <v-flex xs6 sm2>
-            <v-radio v-model="context" value="warning" label="Warning" light></v-radio>
-          </v-flex>
-          <v-flex xs6 sm2>
-            <v-radio v-model="context" value="error" label="Error" light></v-radio>
-          </v-flex>
-          <v-flex xs6 sm2>
-            <v-radio v-model="context" value="primary" label="Primary" light></v-radio>
-          </v-flex>
-          <v-flex xs6 sm2>
-            <v-radio v-model="context" value="secondary" label="Secondary" light></v-radio>
+          <v-flex xs12>
+            <v-radio-group v-model="context" row>
+              <v-radio value="success" label="Success" light class="success--text"></v-radio>
+              <v-radio value="info" label="Info" light class="info--text"></v-radio>
+              <v-radio value="warning" label="Warning" light class="warning--text"></v-radio>
+              <v-radio value="error" label="Error" light class="error--text"></v-radio>
+              <v-radio value="primary" label="Primary" light class="primary--text"></v-radio>
+              <v-radio value="secondary" label="Secondary" light class="secondary--text"></v-radio>
+            </v-radio-group>
           </v-flex>
           <v-flex xs12 sm3>
             <v-checkbox v-model="mode" value="multi-line" label="Multi-line (mobile)" light></v-checkbox>
