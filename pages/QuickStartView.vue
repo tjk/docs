@@ -139,7 +139,7 @@
 
     section#existing-applications
       section-header Vuetify Starter Templates
-      section-text Below is a list of starter Vuetify template so that you can easily start developing.
+      section-text Below is a list of starter Vuetify template so that you can easily start developing. Each one of them has a demo and source code.
       v-layout(row wrap)
         v-flex(
           xs12 sm6
@@ -153,8 +153,8 @@
                 h3.headline.mb-0 {{ template.title }}
                 div {{ template.description }}
             v-card-actions
-              v-btn.orange--text(flat :href="template.sourceUrl") Source Code
-              v-btn.orange--text(flat :href="template.demoUrl") Demo
+              v-btn.blue--text(flat :href="template.sourceUrl") Source Code
+              v-btn.blue--text(flat :href="template.demoUrl") Demo
 
     
     section
