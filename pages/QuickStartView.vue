@@ -229,6 +229,13 @@
             description:'This is a Parallax starter template for vuetify',
             sourceUrl: 'https://github.com/vwxyzjn/vuetify-parallax-starter',
             demoUrl: 'https://codepen.io/vwxyzjn/pen/gxzgaJ'
+          },
+          { 
+            screenshot: '/static/doc-images/starter/adminify.png',
+            title: 'Adminify',
+            description:'An Admin dashboard based on Vuetify',
+            sourceUrl: 'https://github.com/wxs77577/adminify',
+            demoUrl: 'http://adminify.genyii.com/#/'
           }
         ]
       }
