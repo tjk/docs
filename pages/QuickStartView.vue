@@ -137,6 +137,26 @@
 
       v-alert(error value) Warning: While Vuetify attempts to not cause any css collision as much as possible, there is no guarantee that your custom styles will not alter your experience when integrating this framework into your existing project.
 
+    section#existing-applications
+      section-header Vuetify Starter Templates
+      section-text Below is a list of starter Vuetify template so that you can easily start developing.
+      v-layout(row wrap)
+        v-flex(
+          xs12 sm6
+          v-for="template in starterTemplates"
+          v-bind:key="template.title"
+        )
+          v-card
+            v-card-media(:src='template.screenshot' height='350px')
+            v-card-title(primary-title)
+              div
+                h3.headline.mb-0 {{ template.title }}
+                div {{ template.description }}
+            v-card-actions
+              v-btn.orange--text(flat :href="template.sourceUrl") Source Code
+              v-btn.orange--text(flat :href="template.demoUrl") Demo
+
+    
     section
       section-header Support Browsers
       section-text Vuetify.js is a progressive framework that attempts to push web development to the next level. In order to best accomplish this task, some sacrifices had to be made in terms of support for older versions of Internet Explorer.
@@ -194,6 +214,22 @@
           { icon: 'chrome', title: 'Chrome', supported: true },
           { icon: 'firefox', title: 'Firefox', supported: true },
           { icon: 'safari', title: 'Safari 9+', supported: true },
+        ],
+        starterTemplates: [
+          { 
+            screenshot: '/static/doc-images/starter/vuetify-landing-starter.PNG',
+            title: 'Landing starter',
+            description:'This is a landing starter template for vuetify',
+            sourceUrl: 'https://github.com/vwxyzjn/vuetify-landing-starter',
+            demoUrl: 'https://codepen.io/vwxyzjn/pen/JyvEra'
+          },
+          { 
+            screenshot: '/static/doc-images/starter/vuetify-parallax-starter.PNG',
+            title: 'Parallax starter',
+            description:'This is a Parallax starter template for vuetify',
+            sourceUrl: 'https://github.com/vwxyzjn/vuetify-parallax-starter',
+            demoUrl: 'https://codepen.io/vwxyzjn/pen/gxzgaJ'
+          }
         ]
       }
     }
