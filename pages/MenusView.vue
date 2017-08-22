@@ -17,7 +17,8 @@
             { header: 'Absolute position without activator', file: 'menus/5', desc: 'Menus can also be used without an activator by using <code>position-absolutely</code> together with the props <code>position-x</code> and <code>position-y</code>. Try right-clicking anywhere on the image.' },
             { header: 'Hover', file: 'menus/6', desc: 'Menus can be accessed using hover instead of clicking with the <code>open-on-hover</code> prop.' },
             { header: 'Menus', file: 'menus/2', desc: 'Menus can be placed within almost any component.' },
-            { header: 'Custom transitions', file: 'menus/3', desc: `Vuetify comes with 3 standard transitions, <strong>scale</strong>, <strong>slide-x</strong> and <strong>slide-y</strong>. You can also create your own and pass it as the transition argument. For an example of how the stock transitions are constructed, visit <a href="https://github.com/vuetifyjs/vuetify/blob/master/src/util/helpers.js#L13" target="_blank" rel="noopener">here</a>.` }
+            { header: 'Custom transitions', file: 'menus/3', desc: `Vuetify comes with 3 standard transitions, <strong>scale</strong>, <strong>slide-x</strong> and <strong>slide-y</strong>. You can also create your own and pass it as the transition argument. For an example of how the stock transitions are constructed, visit <a href="https://github.com/vuetifyjs/vuetify/blob/master/src/util/helpers.js#L13" target="_blank" rel="noopener">here</a>.` },
+            { header: 'Popover menu', file: 'menus/7', desc: 'A menu can be configured to be static when opened, allowing it to function as a popover. This can be useful when there are multiple interactable items within the menu contents.' }
           ],
           props: {
             'v-menu': {
@@ -130,6 +131,12 @@
                   'Boolean',
                   'True',
                   'Designates if menu should close on outside-activator click'
+                ],
+                [
+                  'close-on-content-click',
+                  'Boolean',
+                  'True',
+                  'Designates if menu should close when its content is clicked'
                 ],
                 [
                   'origin',
