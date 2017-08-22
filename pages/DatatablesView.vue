@@ -16,6 +16,7 @@
             { header: 'Standard', file: 'tables/1', desc: 'The standard data-table contains data with no additional functionality. You can opt out of displaying table actions that allow you to control the pagination of information with the <code>hide-actions</code> prop.' },
             { header: 'Slots: items and headers', file: 'tables/7', desc: 'The <code>items</code> and <code>headers</code> slots can accept either a collection of <kbd>td/th</kbd> tags, or if you want control of the entire row, a <kbd>tr</kbd> tag.' },
             { header: 'Slots: headerCell', file: 'tables/8', desc: 'If you only want to apply some common markup or effect on each of the header cells, you can use the slot <code>headerCell</code>. In this example is has been used to apply a tooltip to each header.' },
+            { header: 'Slots: footer', file: 'tables/10', desc: 'There is also a <code>footer</code> slot for when you want to add some extra functionality to tables, for example per column filtering or search.' },
             { header: 'Selectable rows', file: 'tables/2', desc: 'Selectable rows allow you to perform an action on specific and all rows.' },
             { header: 'Search with custom page text', file: 'tables/3', desc: 'The data table exposes a <code>search</code> prop that allows you to filter your data.' },
             { header: 'External pagination', file: 'tables/4', desc: 'Pagination can be controlled externally by using the <code>pagination</code> prop. Remember that you must apply the <code>.sync</code> modifier.' },
