@@ -141,7 +141,7 @@
               { href: '/components/dividers', title: 'Dividers' },
               { href: '/components/expansion-panels', title: 'Expansion panels', action: 'file_upload' },
               { href: '/components/footer', title: 'Footer' },
-              { href: '/components/forms', title: 'Forms', action: 'new' },
+              { href: '/components/forms', title: 'Forms', action: 'fiber_new' },
               { href: '/components/grid-lists', title: 'Grid Lists' },
               { href: '/components/icons', title: 'Icons' },
               { href: '/components/lists', title: 'Lists' },
