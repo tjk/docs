@@ -79,7 +79,7 @@
         return new Promise((resolve, reject) => {
           const { sortBy, descending, page, rowsPerPage } = this.pagination
 
-          let items = this.getUsers()
+          let items = this.getDesserts()
           const total = items.length
 
           if (this.pagination.sortBy) {
@@ -112,7 +112,7 @@
           }, 1000)
         })
       },
-      getUsers () {
+      getDesserts () {
         return [
           {
             value: false,
