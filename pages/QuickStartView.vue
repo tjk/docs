@@ -141,7 +141,7 @@
       section-header Vuetify Starter Templates
       section-text Below is a list of starter Vuetify template so that you can easily start developing. Each one of them has a demo and source code.
       v-layout(row wrap)
-        v-flex(
+        v-flex.my-3(
           xs12 sm6
           v-for="template in starterTemplates"
           v-bind:key="template.title"
