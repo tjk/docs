@@ -5,7 +5,7 @@
     </div>
     <v-alert
       success
-      :input-value="alert"
+      :value="alert"
       transition="scale-transition"
     >
       This is a success alert.

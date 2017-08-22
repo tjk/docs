@@ -48,6 +48,7 @@ export function createRouter () {
       route('/components/avatars', 'Avatars'),
       route('/components/breadcrumbs', 'Breadcrumbs'),
       route('/components/bottom-navigation', 'BottomNavigation'),
+      route('/components/bottom-sheets', 'BottomSheets'),
       route('/components/buttons', 'Buttons'),
       route('/components/floating-action-buttons', 'Fabs'),
       route('/components/cards', 'Cards'),
