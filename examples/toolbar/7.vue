@@ -28,10 +28,20 @@
               </v-list-tile-title>
             </v-list-tile>
             <li>
-              <v-btn-toggle
-                :items="items"
-                v-model="toggle"
-              ></v-btn-toggle>
+              <v-btn-toggle v-model="toggle">
+                <v-btn flat :value="1">
+                  <v-icon>format_align_left</v-icon>
+                </v-btn>
+                <v-btn flat :value="2">
+                  <v-icon>format_align_center</v-icon>
+                </v-btn>
+                <v-btn flat :value="3">
+                  <v-icon>format_align_right</v-icon>
+                </v-btn>
+                <v-btn flat :value="4">
+                  <v-icon>format_align_justify</v-icon>
+                </v-btn>
+              </v-btn-toggle>
             </li>
           </v-list>
         </v-card>
@@ -44,13 +54,7 @@
 <script>
   export default {
     data: () => ({
-      toggle: null,
-      items: [
-        { icon: 'format_align_left', value: 1 },
-        { icon: 'format_align_center', value: 2 },
-        { icon: 'format_align_right', value: 3 },
-        { icon: 'format_align_justify', value: 4 }
-      ]
+      toggle: null
     })
   }
 </script>
