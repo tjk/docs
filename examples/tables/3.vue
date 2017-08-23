@@ -19,16 +19,15 @@
       <template slot="items" scope="props">
         <td>
           <v-edit-dialog
-            @open="props.item._name = props.item.name"
-            @cancel="props.item.name = props.item._name || props.item.name"
             lazy
           > {{ props.item.name }}
             <v-text-field
               slot="input"
               label="Edit"
-              v-bind:value="props.item.name"
-              v-on:change="e => props.item.name = e.target.value"
-              single-line counter="counter"
+              v-model="props.item.name"
+              single-line
+              counter
+              :rules="[max25chars]"
             ></v-text-field>
           </v-edit-dialog>
         </td>
@@ -40,8 +39,8 @@
         <td class="text-xs-right">{{ props.item.calcium }}</td>
         <td class="text-xs-right">
           <v-edit-dialog
-            @open="props.item._iron = props.item.iron"
-            @cancel="props.item.iron = props.item._iron || props.item.iron"
+            @open="tmp = props.item.iron"
+            @save="props.item.iron = tmp || props.item.iron"
             large
             lazy
           >
@@ -50,10 +49,11 @@
             <v-text-field
               slot="input"
               label="Edit"
-              v-model="props.item.iron"
+              v-model="tmp"
               single-line
               counter
               autofocus
+              :rules="[max25chars]"
             ></v-text-field>
           </v-edit-dialog>
         </td>
@@ -69,6 +69,8 @@
   export default {
     data () {
       return {
+        max25chars: (v) => v.length <= 25 || 'Input too long!',
+        tmp: '',
         search: '',
         pagination: {},
         headers: [
