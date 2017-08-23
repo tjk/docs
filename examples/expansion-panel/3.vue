@@ -12,7 +12,7 @@
         </v-expansion-panel>
       </v-flex>
       <v-flex xs12 lg5 offset-lg2>
-        <v-expansion-panel popout inset>
+        <v-expansion-panel inset>
           <v-expansion-panel-content v-for="(item,i) in 5" :key="i">
             <div slot="header">Item</div>
             <v-card>
