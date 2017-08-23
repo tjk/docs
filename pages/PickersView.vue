@@ -71,9 +71,9 @@
                 ],
                 [
                   'formatted-value',
-                  'Function',
-                  'val => new Date(val).toISOString().substr(0, 10)',
-                  'This is the formatted value.'
+                  'null, String',
+                  '',
+                  'Selected date formatted with date-format function.'
                 ],
                 [
                   'scrollable',
