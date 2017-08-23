@@ -4,7 +4,7 @@
       <v-btn slot="activator">Click me</v-btn>
       <v-list>
         <v-subheader>Open in</v-subheader>
-        <v-list-tile v-for="tile in tiles" :key="tile.title">
+        <v-list-tile v-for="tile in tiles" :key="tile.title" @click="">
           <v-list-tile-avatar>
             <v-avatar size="32px" tile>
               <img :src="`/static/doc-images/bottom-sheets/${tile.img}`" :alt="tile.title">

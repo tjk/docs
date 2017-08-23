@@ -3,12 +3,12 @@
     <v-navigation-drawer permanent light>
       <v-toolbar flat>
         <v-list>
-          <v-list-tile tag="div"></v-list-tile>
+          <v-list-tile></v-list-tile>
         </v-list>
       </v-toolbar>
       <v-divider></v-divider>
       <v-list dense class="pt-0">
-        <v-list-tile v-for="item in items" :key="item.title">
+        <v-list-tile v-for="item in items" :key="item.title" @click="">
           <v-list-tile-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-tile-action>

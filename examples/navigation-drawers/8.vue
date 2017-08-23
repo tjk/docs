@@ -8,7 +8,7 @@
       absolute
     >
       <v-list class="pa-1">
-        <v-list-tile avatar tag="div">
+        <v-list-tile avatar>
           <v-list-tile-avatar>
             <img src="https://randomuser.me/api/portraits/men/85.jpg" />
           </v-list-tile-avatar>
@@ -20,7 +20,7 @@
       </v-list>
       <v-list class="pt-0" dense>
         <v-divider></v-divider>
-        <v-list-tile v-for="item in items" :key="item.title">
+        <v-list-tile v-for="item in items" :key="item.title" @click="">
           <v-list-tile-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-tile-action>

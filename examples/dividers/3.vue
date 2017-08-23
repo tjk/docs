@@ -14,7 +14,7 @@
           <template v-for="item in items.slice(0, 6)">
             <v-subheader v-if="item.header" v-text="item.header"></v-subheader>
             <v-divider v-else-if="item.divider" v-bind:inset="item.inset"></v-divider>
-            <v-list-tile avatar v-else>
+            <v-list-tile avatar v-else @click="">
               <v-list-tile-avatar>
                 <img v-bind:src="item.avatar" />
               </v-list-tile-avatar>

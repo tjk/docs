@@ -30,6 +30,7 @@
             tag="a"
             v-for="n in 4"
             :key="n"
+            @click=""
           >
             Item {{ n }}
           </v-list-tile>

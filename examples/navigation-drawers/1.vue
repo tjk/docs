@@ -8,7 +8,7 @@
       overflow
     >
       <v-list dense>
-        <v-list-tile>
+        <v-list-tile @click="">
           <v-list-tile-action>
             <v-icon>home</v-icon>
           </v-list-tile-action>

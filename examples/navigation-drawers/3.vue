@@ -2,7 +2,7 @@
   <v-app id="example-3" toolbar>
     <v-navigation-drawer permanent clipped light>
       <v-list dense class="pt-0">
-        <v-list-tile v-for="item in items" :key="item.title">
+        <v-list-tile v-for="item in items" :key="item.title" @click="">
           <v-list-tile-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-tile-action>

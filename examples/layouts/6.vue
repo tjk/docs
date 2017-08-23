@@ -25,7 +25,7 @@
             </v-flex>
           </v-layout>
           <v-list-group v-else-if="item.children" v-model="item.model" no-action>
-            <v-list-tile slot="item">
+            <v-list-tile slot="item" @click="">
               <v-list-tile-action>
                 <v-icon>{{ item.model ? item.icon : item['icon-alt'] }}</v-icon>
               </v-list-tile-action>
@@ -38,6 +38,7 @@
             <v-list-tile
               v-for="(child, i) in item.children"
               :key="i"
+              @click=""
             >
               <v-list-tile-action v-if="child.icon">
                 <v-icon>{{ child.icon }}</v-icon>
@@ -49,7 +50,7 @@
               </v-list-tile-content>
             </v-list-tile>
           </v-list-group>
-          <v-list-tile v-else>
+          <v-list-tile v-else @click="">
             <v-list-tile-action>
               <v-icon>{{ item.icon }}</v-icon>
             </v-list-tile-action>

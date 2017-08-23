@@ -33,6 +33,7 @@
           <v-list-tile
             :key="i"
             v-else
+            @click=""
           >
             <v-list-tile-action>
               <v-icon>{{ item.icon }}</v-icon>

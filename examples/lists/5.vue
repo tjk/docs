@@ -12,7 +12,7 @@
         </v-toolbar>
         <v-list subheader>
           <v-subheader>Recent chat</v-subheader>
-            <v-list-tile avatar v-for="item in items" v-bind:key="item.title">
+            <v-list-tile avatar v-for="item in items" v-bind:key="item.title" @click="">
               <v-list-tile-avatar>
                 <img v-bind:src="item.avatar"/>
               </v-list-tile-avatar>
@@ -27,7 +27,7 @@
         <v-divider></v-divider>
         <v-list subheader>
           <v-subheader>Previous chats</v-subheader>
-          <v-list-tile avatar v-for="item in items2" v-bind:key="item.title">
+          <v-list-tile avatar v-for="item in items2" v-bind:key="item.title" @click="">
             <v-list-tile-avatar>
               <img v-bind:src="item.avatar"/>
             </v-list-tile-avatar>

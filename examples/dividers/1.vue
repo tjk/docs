@@ -15,7 +15,7 @@
         </v-toolbar>
         <v-list two-line>
           <template v-for="(item, index) in items">
-            <v-list-tile avatar ripple v-bind:key="index">
+            <v-list-tile avatar ripple v-bind:key="index" @click="">
               <v-list-tile-content>
                 <v-list-tile-title>{{ item.title }}</v-list-tile-title>
                 <v-list-tile-sub-title class="grey--text text--darken-4">{{ item.headline }}</v-list-tile-sub-title>

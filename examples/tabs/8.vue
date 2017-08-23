@@ -15,7 +15,7 @@
           <v-icon>arrow_drop_down</v-icon>
         </v-tabs-item>
         <v-list v-for="n in 4" v-bind:key="n">
-          <v-list-tile href="javascript:;">Item {{ n }}</v-list-tile>
+          <v-list-tile @click="">Item {{ n }}</v-list-tile>
         </v-list>
       </v-menu>
     </v-tabs-bar>

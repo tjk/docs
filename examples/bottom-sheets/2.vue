@@ -5,7 +5,7 @@
       <v-card tile>
         <v-progress-linear height="3" :value="50" class="my-0"></v-progress-linear>
         <v-list>
-          <v-list-tile tag="div">
+          <v-list-tile>
             <v-list-tile-content>
               <v-list-tile-title>The Walker</v-list-tile-title>
               <v-list-tile-sub-title>Fitz & The Trantrums</v-list-tile-sub-title>
