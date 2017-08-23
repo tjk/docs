@@ -1,5 +1,5 @@
 <template>
-  <div id="example-4">
+  <div id="example-4g">
     <v-container fluid>
       <v-layout row justify-space-between>
         <v-card dark class="primary">
@@ -28,12 +28,12 @@
 </template>
 
 <style>
-  #example-4 {
+  #example-4g {
     color: #fff;
     text-align: center;
   }
 
-  #example-4 .card {
+  #example-4g .card {
     margin-bottom: 16px;
   }
 </style>

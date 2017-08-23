@@ -1,5 +1,5 @@
 <template>
-  <div id="example-3">
+  <div id="example-3g">
     <v-container fluid>
       <v-layout row>
         <v-flex xs6 order-xs2>
@@ -57,12 +57,12 @@
 </template>
 
 <style>
-  #example-3 {
+  #example-3g {
     color: #fff;
     text-align: center;
   }
 
-  #example-3 .flex {
+  #example-3g .flex {
     margin-bottom: 16px;
   }
 </style>

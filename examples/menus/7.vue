@@ -9,7 +9,7 @@
       <v-btn class="indigo" dark slot="activator">Menu as Popover</v-btn>
       <v-card>
         <v-list>
-          <v-list-tile avatar tag="div">
+          <v-list-tile avatar>
             <v-list-tile-avatar>
               <img src="/static/doc-images/john.jpg" alt="John">
             </v-list-tile-avatar>
@@ -30,13 +30,13 @@
         </v-list>
         <v-divider></v-divider>
         <v-list>
-          <v-list-tile tag="div">
+          <v-list-tile>
             <v-list-tile-action>
               <v-switch v-model="message" color="purple"></v-switch>
             </v-list-tile-action>
             <v-list-tile-title>Enable messages</v-list-tile-title>
           </v-list-tile>
-          <v-list-tile tag="div">
+          <v-list-tile>
             <v-list-tile-action>
               <v-switch v-model="hints" color="purple"></v-switch>
             </v-list-tile-action>

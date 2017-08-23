@@ -92,6 +92,12 @@
             'String',
             'No data available',
             'Display text when there is no data'
+          ],
+          [
+            'filter',
+            'Function',
+            'See component file',
+            'The function used for filtering items'
           ]
         ]
       },
