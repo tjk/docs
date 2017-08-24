@@ -33,6 +33,17 @@
             dark
             primary
           ).elevation-0 Find out how
+    v-divider
+    v-layout(row justify-center)
+      v-btn(
+        icon
+        dark
+        target="_blank"
+        v-bind:href="social.href"
+        v-for="social in socials"
+        v-bind:key="social.icon"
+      )
+        v-icon(v-html="social.icon")
     v-list(dense)
       template(v-for="item in items")
         v-list-group(v-if="item.items" v-bind:group="item.group")
@@ -73,6 +84,12 @@
     data () {
       return {
         mini: false,
+        socials: [
+          { icon: 'fa-github-square', href: 'https://github.com/vuetifyjs/vuetify' },
+          { icon: 'fa-twitter-square', href: 'https://twitter.com/vuetifyjs' },
+          { icon: 'fa-facebook-square', href: 'https://www.facebook.com/vuetifyjs' },
+          { icon: 'fa-comment', href: 'https://chat.vuetifyjs.com' }
+        ],
         items: [
           { header: 'Core documentation' },
           {
@@ -178,6 +195,12 @@
           { divider: true },
           { header: 'Additional resources' },
           {
+            title: 'Themes',
+            action: 'color_lens',
+            href: '/themes',
+            subAction: 'fiber_new'
+          },
+          {
             title: 'Ecosystem',
             action: 'public',
             items: [
@@ -204,20 +227,7 @@
                 title: 'Server Side Rendering'
               }
             ]
-          },
-          {
-            title: 'Examples',
-            action: 'web',
-            items: [
-              {
-                href: 'https://github.com/nuxt/nuxt.js/tree/master/examples/with-vuetify',
-                target: '_blank',
-                title: 'NUXT'
-              }
-            ]
-          },
-          // { title: 'Optimization', action: 'flash_on', disabled: true },
-          // { title: 'Deployment', action: 'important_devices', disabled: true }
+          }
         ]
       }
     },

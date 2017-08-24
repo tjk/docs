@@ -359,6 +359,12 @@
     "description": "Touch directive for the Vuetify framework.",
     "keywords": "touch, touch directive, mobile touch directive"
   },
+  "/themes": {
+    "h1": "Pre-made themes",
+    "title": "Free / Premium Themes",
+    "description": "Vuetify offers numerous pre-build starter and premium themes. Kickstart your next application today, no design skills needed.",
+    "keywords": "vuetify themes, pre-built material themes, premium themes"
+  },
   "/guides/server-side-rendering": {
     "h1": "Server side rendering",
     "title": "Server side rendering",

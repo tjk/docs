@@ -136,26 +136,6 @@
         |&lt;/head&gt;
 
       v-alert(error value) Warning: While Vuetify attempts to not cause any css collision as much as possible, there is no guarantee that your custom styles will not alter your experience when integrating this framework into your existing project.
-
-    section#existing-applications
-      section-header Vuetify Starter Templates
-      section-text Below is a list of starter Vuetify template so that you can easily start developing. Each one of them has a demo and source code.
-      v-layout(row wrap)
-        v-flex.my-3(
-          xs12 sm6
-          v-for="template in starterTemplates"
-          v-bind:key="template.title"
-        )
-          v-card
-            v-card-media(:src='template.screenshot' height='350px')
-            v-card-title(primary-title)
-              div
-                h3.headline.mb-0 {{ template.title }}
-                div {{ template.description }}
-            v-card-actions
-              v-btn.blue--text(flat :href="template.sourceUrl") Source Code
-              v-btn.blue--text(flat :href="template.demoUrl") Demo
-
     
     section
       section-header Support Browsers
@@ -214,22 +194,6 @@
           { icon: 'chrome', title: 'Chrome', supported: true },
           { icon: 'firefox', title: 'Firefox', supported: true },
           { icon: 'safari', title: 'Safari 9+', supported: true },
-        ],
-        starterTemplates: [
-          { 
-            screenshot: '/static/doc-images/starter/vuetify-blog-starter.PNG',
-            title: 'Blog starter',
-            description:'This is a simple blog template written in vuetify',
-            sourceUrl: 'https://github.com/vwxyzjn/vuetify-blog-starter',
-            demoUrl: '' // needs to be hosted
-          },
-          { 
-            screenshot: '/static/doc-images/starter/vuetify-parallax-starter.PNG',
-            title: 'Parallax starter',
-            description:'This is a Parallax starter template for vuetify',
-            sourceUrl: 'https://github.com/vwxyzjn/vuetify-parallax-starter',
-            demoUrl: '' // needs to be hosted
-          },
         ]
       }
     }

@@ -84,6 +84,7 @@ export function createRouter () {
       route('/directives/scrolling', 'Scroll'),
       route('/directives/tooltips', 'Tooltips'),
       route('/directives/touch-support', 'Touch'),
+      route('/themes', 'Themes'),
       route('/guides/server-side-rendering', 'SSR'),
       // Global redirect for 404
       { path: '*', redirect: '/' }
