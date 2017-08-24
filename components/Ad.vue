@@ -6,6 +6,7 @@
   export default {
     mounted () {
       if (process.env.NODE_ENV === 'development') return
+
       const script = document.createElement('script')
       script.type = 'text/javascript'
       script.src = '//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=vuetifyjscom'
@@ -23,7 +24,7 @@
     display: flex
     justify-content: center
     position: fixed
-    bottom: 124px
+    bottom: 140px
     right: 24px
     padding: 1em;
     background-color: hsla(0, 0%, 98%, .9)
