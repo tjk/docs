@@ -87,7 +87,7 @@
 
     div.text-xs-center.my-5
       em Still have questions?<br>
-      v-btn(flat outline round success) Ask the Community
+      v-btn(flat outline round success href="https://chat.vuetifyjs.com" target="_blank") Ask the Community
 </template>
 
 <script>
