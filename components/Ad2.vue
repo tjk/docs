@@ -1,20 +1,31 @@
-<template>
-  <div class="ad2 ma-0">
-    <script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
-    <div class="bsa-cpc"></div>
-    <script>
-      (function(){
-        if(typeof _bsa !== 'undefined' && _bsa) {
-        _bsa.init('default', 'CKYD6KQN', 'placement:vuetifyjscom', {
-          target: '.bsa-cpc',
-          align: 'horizontal',
-          disable_css: 'true'
-        });
-          }
-      })();
-    </script>
-  </div>
+<template lang="pug">
+  div.ad2.ma-0
+    div.bsa-cpc
 </template>
+
+<script>
+  export default {
+    mounted () {
+      if (process.env.NODE_ENV === 'development') return
+
+      const script = document.createElement('script')
+      script.type = 'text/javascript'
+      script.src = '//m.servedby-buysellads.com/monetization.js'
+
+      this.$el.appendChild(script)
+
+      setTimeout(() => {
+        if(typeof _bsa !== 'undefined' && _bsa) {
+          _bsa.init('default', 'CKYD6KQN', 'placement:vuetifyjscom', {
+            target: '.bsa-cpc',
+            align: 'horizontal',
+            disable_css: 'true'
+          })
+        }
+      }, 1000)
+    }
+  }
+</script>
 
 <style>
   .ad2 {
