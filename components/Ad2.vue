@@ -5,6 +5,12 @@
 
 <script>
   export default {
+    watch: {
+      '$route' () {
+        _bsa.reload()
+      }
+    },
+
     mounted () {
       if (process.env.NODE_ENV === 'development') return
 
