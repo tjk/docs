@@ -26,7 +26,7 @@
     data: () => ({
       templates: [
         {
-          screenshot: '',
+          screenshot: '/static/doc-images/starter/vuetify-premium.jpg',
           title: 'Startup',
           description: 'Showcase your Company or personal portfolio with this beautifully hand-crafted Material design template.',
           sourceUrl: '',
