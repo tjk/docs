@@ -35,6 +35,7 @@
         component: Object.keys(this.data)[0],
         search: '',
         shared: {
+          dialog: this.makeDialog(),
           contextual: this.makeContextual(),
           router: this.makeRouter(),
           default: this.makeSlot(),
@@ -84,6 +85,40 @@
             desc: d[3]
           }
         })
+      },
+      makeDialog () {
+        return [
+          [
+            'persistent',
+            'Boolean',
+            'False',
+            'Clicking outside will not dismiss the dialog'
+          ],
+          [
+            'lazy',
+            'Boolean',
+            'False',
+            'Lazily load dialog contents'
+          ],
+          [
+            'scrollable',
+            'Boolean',
+            'False',
+            'When set to true, expects a card, card-title, card-text and card-actions. Will set card-text to overflow-y'
+          ],
+          [
+            'disabled',
+            'Boolean',
+            'False',
+            'Disabled the ability to open the dialog.'
+          ],
+          [
+            'width',
+            '[String, Number]',
+            '320',
+            'The modal width. Cannot exceed 90% of the screen'
+          ]
+        ]
       },
       makeFilter () {
         return [

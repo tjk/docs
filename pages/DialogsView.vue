@@ -25,43 +25,13 @@
           ],
           props: {
             'v-dialog': {
-              shared: ['overlay', 'detachable'],
+              shared: ['overlay', 'detachable', 'dialog'],
               params: [
-                [
-                  'persistent',
-                  'Boolean',
-                  'False',
-                  'Clicking outside will not dismiss the dialog'
-                ],
                 [
                   'fullscreen',
                   'Boolean',
                   'False',
                   'Changes layout for fullscreen display'
-                ],
-                [
-                  'lazy',
-                  'Boolean',
-                  'False',
-                  'Lazily load dialog contents'
-                ],
-                [
-                  'transition',
-                  '[Boolean, String]',
-                  'v-modal-transition',
-                  'Defines show/hide transition. Set to false for no transition'
-                ],
-                [
-                  'scrollable',
-                  'Boolean',
-                  'False',
-                  'When set to true, expects a card, card-title, card-text and card-actions. Will set card-text to overflow-y'
-                ],
-                [
-                  'disabled',
-                  'Boolean',
-                  'False',
-                  'Disabled the ability to open the dialog.'
                 ],
                 [
                   'origin',
@@ -70,10 +40,10 @@
                   'Defines transition origin'
                 ],
                 [
-                  'width',
-                  '[String, Number]',
-                  '320',
-                  'The modal width. Cannot exceed 90% of the screen'
+                  'transition',
+                  '[Boolean, String]',
+                  'v-modal-transition',
+                  'Defines show/hide transition. Set to false for no transition'
                 ]
               ],
               model: {

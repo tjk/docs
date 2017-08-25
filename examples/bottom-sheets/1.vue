@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="text-xs-center">
     <v-bottom-sheet>
-      <v-btn slot="activator">Click me</v-btn>
+      <v-btn slot="activator" class="purple" dark>Click me</v-btn>
       <v-list>
         <v-subheader>Open in</v-subheader>
         <v-list-tile v-for="tile in tiles" :key="tile.title" @click="">
