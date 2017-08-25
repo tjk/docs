@@ -7,8 +7,18 @@
         transition(name="slide" mode="out-in")
           router-view
     main-footer
-    //v-speed-dial(bottom right direction="top" fixed)
-      v-btn(slot="activator" fab dark @click="toTop").red
+    v-fab-transition
+      v-btn(
+        fab
+        dark
+        fixed
+        bottom
+        right
+        class="red"
+        v-scroll="onScroll"
+        v-show="fab"
+        @click="toTop"
+      )
         v-icon keyboard_arrow_up
 </template>
 
@@ -24,7 +34,24 @@
       MainFooter
     },
 
+    data: () => ({
+      fab: false
+    }),
+
+    mounted () {
+      this.$vuetify.load(this.onScroll)
+    },
+
     methods: {
+      onScroll () {
+        if (typeof window === 'undefined') return
+
+        const top = window.pageYOffset ||
+          document.documentElement.offsetTop ||
+          0
+
+        this.fab = top > 300
+      },
       toTop () {
         window.scrollTo(0, 0)
       }
