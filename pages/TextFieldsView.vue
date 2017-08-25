@@ -28,7 +28,8 @@
             { header: 'Hint text', file: 'text-fields/14', desc: 'Light theme' },
             { header: 'Prefixes & suffixes', file: 'text-fields/15', desc: 'Light theme' },
             { header: 'Custom validation', file: 'text-fields/16', desc: 'If you want to skip the built in validation and use your own or a plugin such as <a href="https://github.com/monterail/vuelidate" target="_blank" rel="noopener">vuelidate</a> or <a href="https://github.com/logaretm/vee-validate" target="_blank" rel="noopener">vee-validation</a>, you can use the <strong>error-messages</strong> or <strong>error</strong> props. Errors accepts a string or array and error simply places the field in an error state.' },
-            { header: 'Textarea', file: 'text-fields/17', desc: 'Textarea text-fields have an alternate style.'}
+            { header: 'Textarea', file: 'text-fields/17', desc: 'Textarea text-fields have an alternate style.'},
+            { header: 'Box style', file: 'text-fields/18', desc: 'Text-fields can be used with an alternative box design. Append and prepend icon props are <strong>not</strong> supported in this mode.' }
           ],
           props: {
             'v-text-field': {
