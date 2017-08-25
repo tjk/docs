@@ -7,6 +7,8 @@
   export default {
     watch: {
       '$route' () {
+        if (process.env.NODE_ENV === 'development') return
+
         _bsa.reload()
       }
     },
