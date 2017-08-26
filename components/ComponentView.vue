@@ -8,7 +8,6 @@
           v-divider
           v-card-actions
             v-btn(
-              tag="a"
               v-bind:href="'https://github.com/vuetifyjs/vuetify/tree/master/src/'+componentLink"
               target="_blank"
               icon

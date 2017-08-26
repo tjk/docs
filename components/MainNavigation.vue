@@ -2,7 +2,6 @@
   v-navigation-drawer(
     v-model="isActive"
     persistent
-    :mini-variant.sync="mini"
     dark
     enable-resize-watcher
   )
@@ -14,10 +13,24 @@
               img(src="/static/v.png" v-bind:style="filter")
           v-list-tile-content
             v-list-tile-title Vuetify
-            v-list-tile-sub-title Branch: {{ $store.state.release }}
-          v-list-tile-action
-            v-btn(icon v-on:click.stop="mini = !mini")
-              v-icon chevron_left
+            v-list-tile-sub-title
+              v-menu
+                span(flat slot="activator") Version: {{ release === releases[0] ? `Latest (${release})` : release }}
+                  v-icon(dark) arrow_drop_down
+                v-list
+                  v-list-tile(
+                    to="/"
+                    v-for="(release, i) in releases"
+                    v-if="i === 0"
+                    v-bind:key="release"
+                  )
+                    v-list-tile-title {{ release }}
+                  v-list-tile(
+                    tag="a"
+                    v-else
+                    :href="`/releases/${release}`"
+                  )
+                    v-list-tile-title {{ release }}
     v-divider
     v-card(flat dark).py-2.your-logo-here
       v-layout(fill-height)
@@ -80,10 +93,11 @@
 </template>
 
 <script>
+  import { mapState } from 'vuex'
+
   export default {
     data () {
       return {
-        mini: false,
         socials: [
           { icon: 'fa-github-square', href: 'https://github.com/vuetifyjs/vuetify' },
           { icon: 'fa-twitter-square', href: 'https://twitter.com/vuetifyjs' },
@@ -195,9 +209,9 @@
           { divider: true },
           { header: 'Additional resources' },
           {
-            title: 'Themes',
+            title: 'Pre-made Themes',
             action: 'color_lens',
-            href: '/themes',
+            href: '/pre-made-themes',
             subAction: 'fiber_new'
           },
           {
@@ -233,6 +247,10 @@
     },
 
     computed: {
+      ...mapState([
+        'releases',
+        'release'
+      ]),
       filter () {
         const color = this.$store.state.currentColor
         let hue = 0

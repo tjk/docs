@@ -1,5 +1,6 @@
 import Ad from './Ad'
 import Ad2 from './Ad2'
+import Codepen from './Codepen'
 import ComponentHeader from './ComponentHeader'
 import ComponentExample from './ComponentExample'
 import ComponentParameters from './ComponentParameters'
@@ -14,6 +15,7 @@ import SectionDef from './SectionDef'
 export default {
   Ad,
   Ad2,
+  Codepen,
   ComponentHeader,
   ComponentExample,
   ComponentParameters,

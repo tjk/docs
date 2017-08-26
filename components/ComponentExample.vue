@@ -1,8 +1,9 @@
 <template lang="pug">
   div.component-example
+    codepen(ref="codepen" :pen="pen")
     v-card
-      v-card-title(v-bind:class="[currentColor]")
-        span.headline.white--text(v-text="header")
+      v-toolbar(v-bind:class="[currentColor]" flat dense)
+        span.title.white--text(v-text="header")
         v-spacer
         v-btn(
           dark
@@ -10,9 +11,16 @@
           tag="a"
           v-bind:href="'https://github.com/vuetifyjs/docs/tree/master/examples/'+file+'.vue'"
           target="_blank"
-          v-tooltip:left="{ html: 'Edit this example' }"
+          v-tooltip:left="{ html: 'View on Github' }"
         )
-          v-icon edit
+          v-icon fa-github
+        v-btn(
+          dark
+          icon
+          v-on:click="sendToCodepen"
+          v-tooltip:left="{ html: 'Edit in codepen' }"
+        )
+          v-icon fa-codepen
         v-btn(
           dark
           icon
@@ -61,6 +69,11 @@
         uid: null,
         panel: false,
         parsed: {
+          script: null,
+          style: null,
+          template: null
+        },
+        pen: {
           script: null,
           style: null,
           template: null
@@ -116,20 +129,32 @@
         const parsed = regex.exec(template)
 
         return parsed
-          ? parsed[1].replace(/</g, '&lt;').replace(/>/g, '&gt;')
-          : false
+          ? parsed[1]
+          : ''
       },
-
+      replaceCharacters (str) {
+        return str.replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      },
       boot (res) {
-        this.parsed.template = this.parseTemplate('template', res)
-        this.parsed.script = this.parseTemplate('script', res)
-        this.parsed.style = this.parseTemplate('style', res)
-      },
+        const template = this.parseTemplate('template', res)
+        const script = this.parseTemplate('script', res)
+        const style = this.parseTemplate('style', res)
 
+        this.parsed = {
+          template: this.replaceCharacters(template),
+          script: this.replaceCharacters(script),
+          style: this.replaceCharacters(style)
+        }
+
+        this.pen = {
+          template,
+          script,
+          style
+        }
+      },
       toggle () {
         this.active = !this.active
       },
-
       request (file, cb) {
         const xmlhttp = new XMLHttpRequest()
         const vm = this
@@ -144,6 +169,9 @@
           }
         }
         xmlhttp.send()
+      },
+      sendToCodepen () {
+        this.$refs.codepen.submit()
       }
     }
   }
