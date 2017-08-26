@@ -34,7 +34,7 @@
         let template = this.pen.template || ''
         template = template.replace('/static/', 'https://vuetifyjs.com/static/')
 
-        return (template).replace(/(<template>|<\/template>)/g, '').trim()
+        return (template).replace(/(<template>|<\/template>([^<\/template>]*)$)/g, '').trim()
       },
       value () {
 
