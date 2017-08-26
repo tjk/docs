@@ -1,49 +1,67 @@
 <template>
-  <div>
-    <v-data-table
+  <v-data-table
+      v-model="selected"
       v-bind:headers="headers"
       v-bind:items="items"
-      v-bind:search="search"
+      select-all
       v-bind:pagination.sync="pagination"
+      item-key="name"
       class="elevation-1"
     >
-      <template slot="headerCell" scope="props">
-        <span v-tooltip:bottom="{ 'html': props.header.text }">
-          {{ props.header.text }}
-        </span>
-      </template>
-      <template slot="items" scope="props">
+    <template slot="headers" scope="props">
+      <tr>
+        <th>
+          <v-checkbox
+            primary
+            hide-details
+            @click.native="toggleAll"
+            :input-value="props.all"
+            :indeterminate="props.indeterminate"
+          ></v-checkbox>
+        </th>
+        <th v-for="header in props.headers" :key="header.text"
+          :class="['column sortable', pagination.descending ? 'desc' : 'asc', header.value === pagination.sortBy ? 'active' : '']"
+          @click="changeSort(header.value)"
+        >
+          <v-icon>arrow_upward</v-icon>
+          {{ header.text }}
+        </th>
+      </tr>
+    </template>
+    <template slot="items" scope="props">
+      <tr :active="props.selected" @click="props.selected = !props.selected">
+        <td>
+          <v-checkbox
+            primary
+            hide-details
+            :input-value="props.selected"
+          ></v-checkbox>
+        </td>
         <td>{{ props.item.name }}</td>
-        <td  class="text-xs-right">{{ props.item.calories }}</td>
-        <td  class="text-xs-right">{{ props.item.fat }}</td>
-        <td  class="text-xs-right">{{ props.item.carbs }}</td>
-        <td  class="text-xs-right">{{ props.item.protein }}</td>
-        <td  class="text-xs-right">{{ props.item.sodium }}</td>
-        <td  class="text-xs-right">{{ props.item.calcium }}</td>
-        <td  class="text-xs-right">{{ props.item.iron }}</td>
-      </template>
-    </v-data-table>
-    <div class="text-xs-center pt-2">
-      <v-btn primary @click.native="toggleOrder">Toggle sort order</v-btn>
-      <v-btn primary @click.native="nextSort">Sort next column</v-btn>
-    </div>
-  </div>
+        <td class="text-xs-right">{{ props.item.calories }}</td>
+        <td class="text-xs-right">{{ props.item.fat }}</td>
+        <td class="text-xs-right">{{ props.item.carbs }}</td>
+        <td class="text-xs-right">{{ props.item.protein }}</td>
+        <td class="text-xs-right">{{ props.item.sodium }}</td>
+        <td class="text-xs-right">{{ props.item.calcium }}</td>
+        <td class="text-xs-right">{{ props.item.iron }}</td>
+      </tr>
+    </template>
+  </v-data-table>
 </template>
 
 <script>
   export default {
     data () {
       return {
-        search: '',
         pagination: {
-          sortBy: 'fat'
+          sortBy: 'name'
         },
         selected: [],
         headers: [
           {
             text: 'Dessert (100g serving)',
             align: 'left',
-            sortable: false,
             value: 'name'
           },
           { text: 'Calories', value: 'calories' },
@@ -169,14 +187,17 @@
       }
     },
     methods: {
-      toggleOrder () {
-        this.pagination.descending = !this.pagination.descending
+      toggleAll () {
+        if (this.selected.length) this.selected = []
+        else this.selected = this.items.slice()
       },
-      nextSort () {
-        let index = this.headers.findIndex(h => h.value === this.pagination.sortBy)
-        index = (index + 1) % this.headers.length
-        index = index === 0 ? index + 1 : index
-        this.pagination.sortBy = this.headers[index].value
+      changeSort (column) {
+        if (this.pagination.sortBy === column) {
+          this.pagination.descending = !this.pagination.descending
+        } else {
+          this.pagination.sortBy = column
+          this.pagination.descending = false
+        }
       }
     }
   }

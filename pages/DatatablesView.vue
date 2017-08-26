@@ -13,16 +13,17 @@
           id: '#data-tables-view',
           desc: `The <code>v-data-table</code> component is used for displaying tabular data. Features include sorting, searching, pagination, inline-editing, header tooltips, and row selection.`,
           examples: [
-            { header: 'Standard', file: 'tables/1', desc: 'The standard data-table contains data with no additional functionality. You can opt out of displaying table actions that allow you to control the pagination of information with the <code>hide-actions</code> prop.' },
-            { header: 'Slots: items and headers', file: 'tables/7', desc: 'The <code>items</code> and <code>headers</code> slots can accept either a collection of <kbd>td/th</kbd> tags, or if you want control of the entire row, a <kbd>tr</kbd> tag.' },
-            { header: 'Slots: headerCell', file: 'tables/8', desc: 'If you only want to apply some common markup or effect on each of the header cells, you can use the slot <code>headerCell</code>. In this example is has been used to apply a tooltip to each header.' },
-            { header: 'Slots: footer', file: 'tables/10', desc: 'There is also a <code>footer</code> slot for when you want to add some extra functionality to tables, for example per column filtering or search.' },
-            { header: 'Selectable rows', file: 'tables/2', desc: 'Selectable rows allow you to perform an action on specific and all rows.' },
-            { header: 'Search with custom page text', file: 'tables/3', desc: 'The data table exposes a <code>search</code> prop that allows you to filter your data.' },
-            { header: 'External pagination', file: 'tables/4', desc: 'Pagination can be controlled externally by using the <code>pagination</code> prop. Remember that you must apply the <code>.sync</code> modifier.' },
-            { header: 'External sorting', file: 'tables/5', desc: 'Sorting can also be controlled externally by using the <code>pagination</code> prop. Remember that you must apply the <code>.sync</code> modifier. You can also use the prop to set the default sorted column.' },
-            { header: 'Paginate and sort server-side', file: 'tables/6', desc: 'If you\'re loading data from a backend and want to paginate and sort the results before displaying them, you can use the <code>total-items</code> prop. Defining this prop will disable the built-in sorting and pagination, and you will instead need to use the <code>pagination</code> prop to listen for changes. Use the <code>loading</code> prop to display a progress bar while fetching data.'},
-            { header: 'Theme support', file: 'tables/9', desc: 'The <code>v-data-table</code> component supports the application dark theme.'}
+            { header: 'Standard', file: 'tables/standard', desc: 'The standard data-table contains data with no additional functionality. You can opt out of displaying table actions that allow you to control the pagination of information with the <code>hide-actions</code> prop.' },
+            { header: 'Slots: items and headers', file: 'tables/headers', desc: 'The <code>items</code> and <code>headers</code> slots can accept either a collection of <kbd>td/th</kbd> tags, or if you want control of the entire row, a <kbd>tr</kbd> tag.' },
+            { header: 'Slots: headerCell', file: 'tables/headerCell', desc: 'If you only want to apply some common markup or effect on each of the header cells, you can use the slot <code>headerCell</code>. In this example is has been used to apply a tooltip to each header.' },
+            { header: 'Slots: footer', file: 'tables/footer', desc: 'There is also a <code>footer</code> slot for when you want to add some extra functionality to tables, for example per column filtering or search.' },
+            { header: 'Slots: expand', file: 'tables/expand', desc: 'The <code>v-data-table</code> component also supports expandable rows using the <code>expand</code> slot. You can use the prop <code>expand</code> to prevent expanded rows from closing when clicking on another row.'},
+            { header: 'Selectable rows', file: 'tables/select', desc: 'Selectable rows allow you to perform an action on specific and all rows.' },
+            { header: 'Search with custom page text', file: 'tables/search', desc: 'The data table exposes a <code>search</code> prop that allows you to filter your data.' },
+            { header: 'External pagination', file: 'tables/paginate', desc: 'Pagination can be controlled externally by using the <code>pagination</code> prop. Remember that you must apply the <code>.sync</code> modifier.' },
+            { header: 'External sorting', file: 'tables/sort', desc: 'Sorting can also be controlled externally by using the <code>pagination</code> prop. Remember that you must apply the <code>.sync</code> modifier. You can also use the prop to set the default sorted column.' },
+            { header: 'Paginate and sort server-side', file: 'tables/server', desc: 'If you\'re loading data from a backend and want to paginate and sort the results before displaying them, you can use the <code>total-items</code> prop. Defining this prop will disable the built-in sorting and pagination, and you will instead need to use the <code>pagination</code> prop to listen for changes. Use the <code>loading</code> prop to display a progress bar while fetching data.'},
+            { header: 'Theme support', file: 'tables/theme', desc: 'The <code>v-data-table</code> component supports the application dark theme.'}
           ],
           props: {
             'v-data-table': {
