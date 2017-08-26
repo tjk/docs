@@ -206,14 +206,14 @@
               { href: '/directives/touch-support', title: 'Touch Support' }
             ]
           },
-          { divider: true },
-          { header: 'Additional resources' },
           {
             title: 'Pre-made Themes',
             action: 'color_lens',
             href: '/pre-made-themes',
             subAction: 'fiber_new'
           },
+          { divider: true },
+          { header: 'Additional resources' },
           {
             title: 'Ecosystem',
             action: 'public',

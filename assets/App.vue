@@ -92,6 +92,8 @@
           color = 'cyan'
         } else if (this.match(path, /directives/)) {
           color = 'teal'
+        } else if (this.match(path, /pre-made-themes/)) {
+          color = 'blue-grey'
         }
 
         return color
