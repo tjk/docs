@@ -10,19 +10,19 @@
       <v-btn icon>
         <v-icon>more_vert</v-icon>
       </v-btn>
+      <v-tabs-bar class="grey lighten-4" slot="extension">
+        <v-tabs-slider class="primary"></v-tabs-slider>
+        <v-tabs-item href="#mobile-tabs-5-1" class="primary--text">
+          <v-icon>phone</v-icon>
+        </v-tabs-item>
+        <v-tabs-item href="#mobile-tabs-5-2" class="primary--text">
+          <v-icon>favorite</v-icon>
+        </v-tabs-item>
+        <v-tabs-item href="#mobile-tabs-5-3" class="primary--text">
+          <v-icon>account_box</v-icon>
+        </v-tabs-item>
+      </v-tabs-bar>
     </v-toolbar>
-    <v-tabs-bar class="grey lighten-4">
-      <v-tabs-slider class="primary"></v-tabs-slider>
-      <v-tabs-item href="#mobile-tabs-5-1" class="primary--text">
-        <v-icon>phone</v-icon>
-      </v-tabs-item>
-      <v-tabs-item href="#mobile-tabs-5-2" class="primary--text">
-        <v-icon>favorite</v-icon>
-      </v-tabs-item>
-      <v-tabs-item href="#mobile-tabs-5-3" class="primary--text">
-        <v-icon>account_box</v-icon>
-      </v-tabs-item>
-    </v-tabs-bar>
     <v-tabs-items>
       <v-tabs-content
         v-for="i in 3"

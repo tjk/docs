@@ -7,17 +7,17 @@
         append-icon="keyboard_voice"
         prepend-icon="search"
       ></v-text-field>
+      <v-tabs-bar class="cyan" slot="extension">
+        <v-tabs-slider class="yellow"></v-tabs-slider>
+        <v-tabs-item
+          v-for="i in 3"
+          :key="i"
+          :href="'#tab-' + i"
+        >
+          Item {{ i }}
+        </v-tabs-item>
+      </v-tabs-bar>
     </v-toolbar>
-    <v-tabs-bar class="cyan">
-      <v-tabs-slider class="yellow"></v-tabs-slider>
-      <v-tabs-item
-        v-for="i in 3"
-        :key="i"
-        :href="'#tab-' + i"
-      >
-        Item {{ i }}
-      </v-tabs-item>
-    </v-tabs-bar>
     <v-tabs-items>
       <v-tabs-content
         v-for="i in 3"

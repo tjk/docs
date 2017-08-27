@@ -10,7 +10,7 @@
         v-list-tile(avatar tag="div")
           v-list-tile-avatar
             router-link(to="/")
-              img(src="/static/v.png" v-bind:style="filter")
+              img(src="/static/doc-images/logo.svg" v-bind:style="filter")
           v-list-tile-content
             v-list-tile-title Vuetify
             v-list-tile-sub-title
@@ -188,7 +188,7 @@
               { href: '/components/snackbars', title: 'Snackbars & toasts' },
               { href: '/components/steppers', title: 'Steppers' },
               { href: '/components/subheaders', title: 'Subheaders' },
-              { href: '/components/tabs', title: 'Tabs' },
+              { href: '/components/tabs', title: 'Tabs', action: 'file_upload' },
               { href: '/components/text-fields', title: 'Text fields', action: 'file_upload' },
               { href: '/components/toolbars', title: 'Toolbars' }
             ]
@@ -207,7 +207,7 @@
             ]
           },
           {
-            title: 'Pre-made Themes',
+            title: 'Pre-made themes',
             action: 'color_lens',
             href: '/pre-made-themes',
             subAction: 'fiber_new'

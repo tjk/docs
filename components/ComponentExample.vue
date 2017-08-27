@@ -2,7 +2,7 @@
   div.component-example
     codepen(ref="codepen" :pen="pen")
     v-card
-      v-toolbar(v-bind:class="[currentColor]" flat dense)
+      v-toolbar(v-bind:class="[currentColor]" flat dense dark)
         span.title.white--text(v-text="header")
         v-spacer
         v-btn(

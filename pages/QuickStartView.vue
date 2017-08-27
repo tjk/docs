@@ -152,7 +152,7 @@
                 v-icon(dark).primary fa-{{ browser.icon }}
               v-list-tile-content
                 v-list-tile-title {{ browser.title }}
-                v-list-tile-sub-title {{ browser.supported ? 'Supported' : 'Not supported' }}
+                v-list-tile-sub-title {{ browser.supported }}
               v-list-tile-action
                 v-icon(v-if="!browser.supported").error--text clear
                 v-icon(v-else).success--text check
@@ -188,12 +188,12 @@
     data () {
       return {
         browsers: [
-          { icon: 'internet-explorer', title: 'IE9 / IE10', supported: false },
-          { icon: 'internet-explorer', title: 'IE11', supported: true },
-          { icon: 'edge', title: 'Edge', supported: true },
-          { icon: 'chrome', title: 'Chrome', supported: true },
-          { icon: 'firefox', title: 'Firefox', supported: true },
-          { icon: 'safari', title: 'Safari 9+', supported: true },
+          { icon: 'internet-explorer', title: 'IE9 / IE10', supported: 'Not Supported' },
+          { icon: 'internet-explorer', title: 'IE11', supported: 'Supported w/ polyfill' },
+          { icon: 'edge', title: 'Edge', supported: 'Supported' },
+          { icon: 'chrome', title: 'Chrome', supported: 'Supported' },
+          { icon: 'firefox', title: 'Firefox', supported: 'Supported' },
+          { icon: 'safari', title: 'Safari 9+', supported: 'Supported' },
         ]
       }
     }
