@@ -90,6 +90,12 @@
                   'Label does not move on focus/dirty'
                 ],
                 [
+                  'solo',
+                  'Boolean',
+                  'False',
+                  'Changes the style of the text-field for use in toolbars'
+                ],
+                [
                   'textarea',
                   'Boolean',
                   'False',

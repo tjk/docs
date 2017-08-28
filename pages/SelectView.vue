@@ -79,6 +79,12 @@
                   'Removes floating label'
                 ],
                 [
+                  'solo',
+                  'Boolean',
+                  'False',
+                  'Changes the style of the text-field for use in toolbars'
+                ],
+                [
                   'auto',
                   'Boolean',
                   'False',
