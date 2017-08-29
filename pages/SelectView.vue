@@ -25,6 +25,12 @@
               shared: ['input', 'filterable'],
               params: [
                 [
+                  'allow-overflow',
+                  'Boolean',
+                  'False',
+                  'Removes content/window overflow detection'
+                ],
+                [
                   'chips',
                   'Boolean',
                   'False',
