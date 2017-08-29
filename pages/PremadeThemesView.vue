@@ -15,22 +15,21 @@
             v-card-title(primary-title).layout.align-center
               h2.headline.mb-0 {{ template.title }}
                 v-chip(label small class="indigo white--text" v-if="template.tag") {{ template.tag }}
-                v-chip(label small class="blue-grey white--text" v-else) Free
+                v-chip(label small class="blue-grey white--text" v-else) FREE
               v-spacer
               v-avatar(v-if="template.buy").green.lighten-2
                 span.white--text.title 25$
             v-divider
             v-card-text {{ template.description }}
             v-card-actions
-              v-btn(flat success :href="template.demoUrl") Demo
+              v-btn(flat success :href="template.demoUrl" v-if="!template.price") Demo
               v-spacer
               v-btn(
                 flat
-                success
                 href="javascript:;"
+                disabled
                 v-if="template.price"
-              ) Purchase
-                v-icon(right success) chevron_right
+              ) Coming Soon
               v-btn(
                 flat
                 success
@@ -48,7 +47,7 @@
         {
           screenshot: '/static/doc-images/starter/vuetify-premium.jpg',
           title: 'Startup',
-          tag: 'Premium',
+          tag: 'PREMIUM',
           description: 'Showcase your Company or personal portfolio with this beautifully hand-crafted Material design template.',
           price: '25$',
           demoUrl: ''

@@ -83,13 +83,29 @@
               v-icon(dark :class="[subItem.actionClass || 'success--text']") {{ subItem.action }}
         v-subheader(v-else-if="item.header" dark) {{ item.header }}
         v-divider(v-else-if="item.divider")
-        v-list-tile(:to="item.href" ripple v-bind:disabled="item.disabled" v-else)
+        v-list-tile(
+          v-bind="{ \
+            to: !item.target ? item.href : null, \
+            href: item.target && item.href \
+          }"
+          ripple
+          v-bind:disabled="item.disabled"
+          v-bind:target="item.target"
+          rel="noopener"
+          v-else
+        )
           v-list-tile-action
             v-icon(dark) {{ item.action }}
           v-list-tile-content
             v-list-tile-title {{ item.title }}
           v-list-tile-action(v-if="item.subAction")
             v-icon(dark class="success--text") {{ item.subAction }}
+          v-chip(
+            v-else-if="item.chip"
+            label
+            small
+            class="caption blue lighten-2 white--text mx-0"
+          ) {{ item.chip }}
 </template>
 
 <script>
@@ -210,13 +226,20 @@
             title: 'Pre-made themes',
             action: 'color_lens',
             href: '/pre-made-themes',
-            subAction: 'fiber_new'
+            chip: 'NEW'
+          },
+          {
+            href: 'https://vuetify.threadless.com',
+            title: 'Shop',
+            target: '_blank',
+            action: 'shopping_cart',
+            chip: 'NEW'
           },
           { divider: true },
           { header: 'Additional resources' },
           {
-            title: 'Ecosystem',
-            action: 'public',
+            title: 'Community',
+            action: 'people',
             items: [
               {
                 href: 'https://vuejobs.com/?ref=vuetify',
@@ -227,7 +250,7 @@
               {
                 href: 'https://chat.vuetifyjs.com',
                 target: '_blank',
-                title: 'Community'
+                title: 'Chat and support'
               }
             ]
           },
