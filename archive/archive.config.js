@@ -15,9 +15,19 @@ const isProd = process.env.NODE_ENV === 'production'
 const release = (process.env.RELEASE).toString()
 const rimraf = require('rimraf')
 const copyTo = `releases/${release}/`
+const fs = require('fs')
 
 // Remove release if already exists
 rimraf(resolve(`../releases/${release}`), err => err && console.log(err))
+
+const releases = require('../router/releases.json')
+
+releases.indexOf(process.env.NEXT) < 0 &&
+  releases.unshift(process.env.NEXT)
+
+fs.writeFile(resolve('../router/releases.json'), JSON.stringify(releases), err => {
+  err && console.log(err)
+})
 
 module.exports = {
   entry: resolve('./archive.js'),
