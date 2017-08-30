@@ -12,28 +12,26 @@
               <v-icon class="white--text">more_vert</v-icon>
             </v-btn>
           </v-toolbar>
-          <v-card-text>
-            <v-container fluid>
-              <v-layout row wrap>
-                <v-flex xs12>
-                  <v-text-field
-                    label="Title"
-                    v-model="title"
-                    counter
-                    max="15"
-                    :rules="[rules.required]"
-                  ></v-text-field>
-                </v-flex>
-                <v-flex xs12>
-                  <v-text-field
-                    label="E-mail"
-                    v-model="email"
-                    :rules="[rules.required, rules.email]"
-                  ></v-text-field>
-                </v-flex>
-              </v-layout>
-            </v-container>
-          </v-card-text>
+          <v-container fluid>
+            <v-layout row wrap>
+              <v-flex xs12>
+                <v-text-field
+                  label="Title"
+                  v-model="title"
+                  counter
+                  max="15"
+                  :rules="[rules.required]"
+                ></v-text-field>
+              </v-flex>
+              <v-flex xs12>
+                <v-text-field
+                  label="E-mail"
+                  v-model="email"
+                  :rules="[rules.required, rules.email]"
+                ></v-text-field>
+              </v-flex>
+            </v-layout>
+          </v-container>
         </v-card>
       </v-flex>
     </v-layout>
