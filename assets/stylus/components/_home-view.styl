@@ -21,15 +21,9 @@ $display-breakpoints := {
   xl-only: "only screen and (min-width: %s)" % $grid-breakpoints.xl
 }
 
-  //might want to edit vuetify grid to make bigger container gutters at biggers sizes. tiny gutters look pretty bad
-  #home-view
-    @media $display-breakpoints.md-and-up
-      .container
-        padding-left: 80px
-        padding-right: 80px
-
   #home-view
     background white
+
     .toolbar
       opacity 1
       transition opacity .25s ease-in-out
@@ -53,10 +47,8 @@ $display-breakpoints := {
         color #1697F6
         font-weight 400
         margin-top .4em
-        margin-bottom .3em
       h2
         font-size 24px
-        margin-bottom 2.5em
         line-height 1.1em
         color #767676
         font-weight 300
@@ -76,8 +68,7 @@ $display-breakpoints := {
 
       @media $display-breakpoints.md-only
         padding-top: 4em
-        h1, h2, .btn
-          margin-left: 20px
+
         h1
           font-size 50px
           margin-top 0

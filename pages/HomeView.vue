@@ -7,29 +7,32 @@
       v-btn(flat tag="a" href="https://github.com/vuetifyjs/vuetify/releases" target="_blank" rel="noopener").hidden-xs-only Updates
 
     section#hero
-      v-container
+      v-container(grid-list-xl)
         v-layout(row wrap)
           v-flex(xs12 md4).text-xs-center
             img(src="/static/doc-images/logo.svg").logo
           v-flex(xs12 md8).text-xs-center.text-md-left
-            h1 Vuetify
-            h2 Material Component Framework
-            v-container(fluid grid-list-xl).pa-0
-              v-layout(row wrap)
-                v-flex(xs12 sm4)
-                  v-btn(block dark large to="/vuetify/quick-start").blue
-                    span Documentation
-                v-flex(xs12 sm4)
-                  v-btn(
-                    large
-                    block
-                    tag="a"
-                    href="https://github.com/vuetifyjs/vuetify"
-                    target="_blank"
-                    rel="noopener"
-                  ).white.primary--text
-                    v-icon(left).primary--text fa-github
-                    span Github
+            v-layout(row wrap :class="{\
+              'justify-center': $vuetify.breakpoint.smAndDown\
+            }")
+              v-flex(xs12)
+                h1 Vuetify
+              v-flex(xs12)
+                h2 Material Component Framework
+              v-flex(xs12 sm8 md6 lg4)
+                v-btn(block dark large to="/vuetify/quick-start").blue
+                  span Documentation
+              v-flex(xs12 sm8 md6 lg4)
+                v-btn(
+                  large
+                  block
+                  tag="a"
+                  href="https://github.com/vuetifyjs/vuetify"
+                  target="_blank"
+                  rel="noopener"
+                ).white.primary--text
+                  v-icon(left).primary--text fa-github
+                  span Github
 
     div#section-body
       section#features.mb-3
