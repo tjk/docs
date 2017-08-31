@@ -15,9 +15,9 @@
             v-layout(row wrap :class="{\
               'justify-center': $vuetify.breakpoint.smAndDown\
             }")
-              v-flex(xs12)
-                h1 Vuetify
-              v-flex(xs12)
+              v-flex(xs12).py-1
+                h1.mb-0 Vuetify
+              v-flex(xs12).py-1
                 h2 Material Component Framework
               v-flex(xs12 sm8 md6 lg4)
                 v-btn(block dark large to="/vuetify/quick-start").blue
