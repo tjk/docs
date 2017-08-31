@@ -11,7 +11,6 @@
               v-bind:href="'https://github.com/vuetifyjs/vuetify/tree/master/src/'+componentLink"
               target="_blank"
               icon
-              light
               v-tooltip:right="{ html: `View ${doc.directive ? 'Directive' : 'Component'}` }"
               v-if="componentLink"
               v-bind:class="[`${currentColor}--text`]"
@@ -22,7 +21,6 @@
               v-bind:href="'https://github.com/vuetifyjs/docs/tree/master/pages/'+doc.edit+'.vue'"
               target="_blank"
               icon
-              light
               v-tooltip:right="{ html: 'Edit this page' }"
               v-if="doc.edit"
               v-bind:class="[`${currentColor}--text`]"

@@ -18,7 +18,9 @@
             { header: 'Offset', file: 'grid/2', desc: `Offsets are useful for compensating for elements that may not be visible yet, or to control the position of content. Just as with breakpoints, you can set an offset for any available sizes.` },
             { header: 'Order', file: 'grid/3', desc: 'You can control the ordering of grid items. As with offsets, you can set different orders for different sizes' },
             { header: 'Direction and Align', file: 'grid/4', desc: 'Designate the direction and alignment in a variety of ways.' },
-            { header: 'Row and column based on breakpoint', file: 'grid/5', desc: 'Dynamically change your layout based upon resolution. <strong>(resize your screen and watch the layout change on small breakpoints)</strong>' }
+            { header: 'Row and column based on breakpoint', file: 'grid/5', desc: 'Dynamically change your layout based upon resolution. <strong>(resize your screen and watch the layout change on small breakpoints)</strong>' },
+            { header: 'Nested grid', file: 'grid/6', desc: 'Grids can be nested, similar to other frameworks, in order to achieve very custom layouts.'},
+            { header: 'Unique layouts', file: 'grid/7', desc: 'The power and flexiblity of the Vuetify grid system allows you to create amazing user interfaces.'}
           ],
           props: {
             'v-container': {

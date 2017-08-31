@@ -1,5 +1,5 @@
 <template>
-  <div id="g-example-1">
+  <v-container grid-list-md text-xs-center>
     <v-layout row wrap>
       <v-flex xs12>
         <v-card dark class="primary">
@@ -32,16 +32,5 @@
         </v-card>
       </v-flex>
     </v-layout>
-  </div>
+  </v-container>
 </template>
-
-<style>
-  #g-example-1 {
-    color: #fff;
-    text-align: center;
-  }
-
-  #g-example-1 .flex {
-    margin-bottom: 16px;
-  }
-</style>
