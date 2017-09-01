@@ -17,7 +17,6 @@
             :rules="[
               () => !!address || 'This field is required',
               () => !!address && address.length <= 25 || 'Address must be less than 25 characters',
-              this.formCheck,
               this.addressCheck
             ]"
             v-model="address"
@@ -126,7 +125,7 @@
       resetForm () {
         this.errorMessages = []
         this.formHasErrors = false
-        
+
         Object.keys(this.form).forEach(f => {
           this.$refs[f].reset()
         })

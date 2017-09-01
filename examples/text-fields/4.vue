@@ -67,7 +67,8 @@
               name="input-3-5"
               label="Hint Text"
               value="Input text"
-              v-bind:rules="[() => 'Username or Password is incorrect.']"
+              :rules="[() => 'Username or Password is incorrect.']"
+              error
               class="input-group--focused"
               dark
               single-line
