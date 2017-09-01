@@ -1,7 +1,7 @@
 <template>
   <v-card class="grey lighten-4 elevation-0">
     <v-card-text>
-      <v-container fluid>
+      <v-container fluid grid-list-md>
         <v-layout row wrap>
           <v-flex xs4>
             <v-subheader>Normal with hint text</v-subheader>

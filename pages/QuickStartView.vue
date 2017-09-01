@@ -7,6 +7,7 @@
           dd(slot="desc") Use one of the Vuetify.js Vue CLI packages <em>(based on the official examples)</em> to get your project started in no time. Vuetify.js supports <strong>SSR</strong> (server-side rendering), <strong>SPA</strong> (single page application), <strong>PWA</strong> (progressive web application) and standard <strong>HTML</strong> pages.
       ad
 
+    v-alert(error value).mb-4 In order for your application to work properly, you <strong>must</strong> wrap it in a <code>v-app</code> component. If you absolutely cannot wrap your application, you must add corresponding class for your chosen theme. <strong>"application--light"</strong> or <strong>"application--dark"</strong>.
     section#cdn-install
       section-header CDN Install
       section-text To test using Vuetify.js without installing a template from Vue CLI, copy the code below into your <code>index.html</code>. This will pull the latest version of Vue and Vuetify, allowing you to start playing with components.

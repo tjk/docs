@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid>
+  <v-container fluid grid-list-xl>
     <v-layout row wrap>
       <v-flex xs12 sm12 md6 class="my-3">
         <v-card>

@@ -68,7 +68,6 @@
               label="Hint Text"
               value="Input text"
               v-bind:rules="[() => 'Username or Password is incorrect.']"
-              class="input-group--focused"
               dark
               single-line
             ></v-text-field>
