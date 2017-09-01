@@ -37,66 +37,72 @@
     section#new-applications
       section-header New applications
 
-      section-text Vuetify has 5 pre-made Vue CLI templates, 3 which are forked from <a href="https://github.com/vuejs-templates" target="_blank" rel="noopener">official Vue.js templates</a>. They contain small modifications to help you get started with Vuetify even faster. These packages require <code>vue-cli</code>. For more information on vue-cli, visit the official <a href="https://github.com/vuejs/vue-cli" target="_blank" rel="noopener">Github</a> repository.
-      v-tabs(class="elevation-1 mb-3" grow icons dark)
-        v-tabs-bar
-          v-tabs-slider.yellow
-          v-tabs-item(ripple href="#simple") Simple HTML
-            v-icon landscape
-          v-tabs-item(ripple href="#webpack") Webpack
-            v-icon web
-          v-tabs-item(ripple href="#webpack-advanced") Webpack Advanced
-            v-icon layers
-          v-tabs-item(ripple href="#webpack-ssr") Webpack SSR
-            v-icon cloud_circle
-          v-tabs-item(ripple href="#nuxt") NUXT
-            v-icon flash_on
-        v-tabs-items
-          v-tabs-content(id="simple")
-            v-card(flat)
-              v-card-text
-                h4 Simple HTML Quick Start
-                section-text This template is intended for users who want to try out Vue.js and Vuetify.js in the most simplistic way. It contains a basic index.html with no additional functionality. This is useful for developers who want to easily preview the features of the framework.
-                markup(lang="cli")
-                  |$  vue init vuetifyjs/simple
-                section-text After the installation is complete, you are ready to go. Open the <code>index.html</code> in any browser to get started.
-          v-tabs-content(id="webpack")
-            v-card(flat)
-              v-card-text
-                h4 Webpack Quick Start
-                section-text This template is intended for users who are already familiar with Vue/Webpack. It contains a very simple webpack setup and is targetted at developers creating prototype or basic applications.
-                markup(lang="cli")
-                  |$  vue init vuetifyjs/webpack
-                section-text After the vue-cli installation finishes, <kbd>cd</kbd> into your project directory and type <kbd>npm install</kbd>. Alternatively, if you are using Facebook's <a href="https://yarnpkg.com/" target="_blank" rel="noopener">yarn package manager</a>, you can simply type <kbd>yarn</kbd>.
-                section-text Once the package installation is complete, type <kbd>npm run dev</kbd> into your console. This will start a <a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodejs</a> server locally which can be accessed by navigating to <a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a> in your browser.
-          v-tabs-content(id="webpack-advanced")
-            v-card(flat)
-              v-card-text
-                h4 Webpack Advanced Quick Start
-                section-text This template is intended for users who are looking for out of the box linting and unit testing.
-                markup(lang="cli")
-                  |$  vue init vuetifyjs/webpack-advanced
-                section-text After the vue-cli installation finishes, <kbd>cd</kbd> into your project directory and type <kbd>npm install</kbd>. Alternatively, if you are using Facebook's <a href="https://yarnpkg.com/" target="_blank" rel="noopener">yarn package manager</a>, you can simply type <kbd>yarn</kbd>.
-                section-text Once the package installation is complete, type <kbd>npm run dev</kbd> into your console. This will start a <a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodejs</a> server locally which can be accessed by navigating to <a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a> in your browser.
-          v-tabs-content(id="webpack-ssr")
-            v-card(flat)
-              v-card-text
-                h4 Webpack SSR Quick Start
-                section-text This template is for advanced users looking to utilize the new Vue SSR (server-side rendering). Based off of the structure in the Vue.js 2 <a href="https://github.com/vuejs/vue-hackernews-2.0" target="_blank" rel="noopener">Hackernews</a> repository. The Vuetify.js SSR template provides next generation functionality for advanced Vue applications.
-                markup(lang="cli")
-                  |$  vue init vuetifyjs/webpack-ssr
-                section-text After the vue-cli installation finishes, <kbd>cd</kbd> into your project directory and type <kbd>npm install</kbd>. Alternatively, if you are using Facebook's <a href="https://yarnpkg.com/" target="_blank" rel="noopener">yarn package manager</a>, you can simply type <kbd>yarn</kbd>.
-                section-text Once the package installation is complete, type <kbd>npm run dev</kbd> into your console. This will start a <a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodejs</a> server locally which can be accessed by navigating to <a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a> in your browser.
-          v-tabs-content(id="nuxt")
-            v-card(flat)
-              v-card-text
-                h4 NUXT Quick Start
-                section-text Utilizing the power of NUXT, supercharge your development experience with a bootstraped version ready to go with Vuetify out of the box.
-                section-text <strong>Note:</strong> NUXT is not always compatible with the newest version of Vue.
-                markup(lang="cli")
-                  |$  vue init vuetifyjs/nuxt
-                section-text After the vue-cli installation finishes, <kbd>cd</kbd> into your project directory and type <kbd>npm install</kbd>. Alternatively, if you are using Facebook's <a href="https://yarnpkg.com/" target="_blank" rel="noopener">yarn package manager</a>, you can simply type <kbd>yarn</kbd>.
-                section-text Once the package installation is complete, type <kbd>npm run dev</kbd> into your console. This will start a <a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodejs</a> server locally which can be accessed by navigating to <a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a> in your browser.
+      section-text Vuetify has 8 pre-made Vue CLI templates, 3 which are forked from <a href="https://github.com/vuejs-templates" target="_blank" rel="noopener">official Vue.js templates</a>. They contain small modifications to help you get started with Vuetify even faster. These packages require <code>vue-cli</code>. For more information on vue-cli, visit the official <a href="https://github.com/vuejs/vue-cli" target="_blank" rel="noopener">Github</a> repository. These templates are designed to get you started as fast as possible with your next project
+
+      div.elevation-2
+        v-layout(wrap)
+          input(
+            type="hidden"
+            v-model="copy"
+            ref="copy"
+          )
+          v-flex(
+            xs12
+            sm4
+            md3
+            v-for="(template, i) in templates"
+            :key="i"
+          )
+            div(style="display: none" v-html="template.desc")
+            v-list(two-line).pa-0
+              v-list-tile(
+                href="javascript:;"
+                @click="selectedIndex = i"
+                :value="selectedIndex === i"
+              )
+                v-list-tile-action
+                  v-icon(v-html="template.icon")
+                v-list-tile-content
+                  v-list-tile-title(v-text="template.title")
+                  v-list-tile-sub-title vue init {{ template.init }}
+        v-expansion-panel.elevation-0
+          v-expansion-panel-content(value)
+            v-card(
+              tile
+              flat
+              dark
+              style="min-height: 75px"
+            ).blue.darken-3.hide-overflow
+              v-fade-transition(mode="out-in")
+                v-layout(
+                  row
+                  justify-space-between
+                  :key="selectedIndex"
+                )
+                  v-flex(xs10).layout.align-center
+                    v-card-text(v-html="selectedTemplate.desc")
+                    v-snackbar(
+                      absolute
+                      v-model="copied" 
+                      top 
+                      left
+                    ) Init copied!
+                      v-btn(flat @click="copied = !copied").indigo--text close
+                  v-flex(xs2).layout.column.align-end.pa-3
+                    v-btn(
+                      icon
+                      dark
+                      :href="`https://github.com/vuetifyjs/${selectedTemplate.init}`"
+                      target="_blank"
+                      rel="noopener"
+                    ).secondary
+                      v-icon fa-github
+                    v-btn(
+                      icon
+                      dark
+                      @click="copyMarkup"
+                    ).secondary
+                      v-icon content_copy
 
     section#existing-applications
       section-header Existing applications
@@ -194,7 +200,94 @@
           { icon: 'chrome', title: 'Chrome', supported: 'Supported' },
           { icon: 'firefox', title: 'Firefox', supported: 'Supported' },
           { icon: 'safari', title: 'Safari 9+', supported: 'Supported' },
-        ]
+        ],
+        copied: false,
+        copy: null,
+        copyTimeout: null,
+        templates: [
+          {
+              icon: 'landscape', 
+              title: 'Simple HTML', 
+              init: 'simple', 
+              desc: 'This template is intended for users who want to try out Vue.js and Vuetify.js in the most simplistic way. It contains a basic index.html with no additional functionality. This is useful for developers who want to easily preview the features of the framework.',
+          },
+          { 
+            icon: 'web', 
+            title: 'Webpack', 
+            init: 'webpack', 
+            desc: 'This template is intended for users who are already familiar with Vue/Webpack. It contains a very simple webpack setup and is targetted at developers creating prototype or basic applications.' 
+          },
+          { 
+            icon: 'layers', 
+            title: 'Webpack Advanced', 
+            init: 'webpack-advanced', 
+            desc: 'This template is intended for users who are looking for out of the box linting and unit testing.' 
+          },
+          { 
+            icon: 'cloud_circle', 
+            title: 'Webpack SSR', 
+            init: 'webpack-ssr', 
+            desc: 'This template is for advanced users looking to utilize the new Vue SSR (server-side rendering). Based off of the structure in the Vue.js 2 <a class="white--text" href="https://github.com/vuejs/vue-hackernews-2.0" target="_blank" rel="noopener">Hackernews</a> repository. The Vuetify.js SSR template provides next generation functionality for advanced Vue applications.' 
+          },
+          { 
+            icon: 'flash_on', 
+            title: 'NUXT', 
+            init: 'nuxt', 
+            desc: 'Utilizing the power of NUXT, supercharge your development experience with a bootstraped version ready to go with Vuetify out of the box.' 
+          },
+          { 
+            icon: 'featured_video', 
+            title: 'PWA', 
+            init: 'pwa', 
+            desc: 'A pre-configured PWA (Persistent Web Application) template is at your disposal. Bootstraped with service workers, application manifest, and a 90+/100 Lighthouse score.' 
+          },
+          { 
+            icon: 'power', 
+            title: 'Electron', 
+            init: 'electron', 
+            desc: "Vuetify's official Electron template for creating desktop applications." 
+          },
+          { 
+            icon: 'call_split', 
+            title: 'A La Carte', 
+            init: 'a-la-carte', 
+            desc: 'In this template you can see an example of how to select only the components you want to use. This is useful for reducing package size with unused components.' 
+          }
+        ],
+        selectedIndex: 0
+      }
+    },
+
+    computed: {
+      markupText () {
+        return `vue init ${this.selectedTemplate.init}`
+      },
+      selectedText () {
+        return this.selectedTemplate.desc
+      },
+      selectedTemplate () {
+        return this.templates[this.selectedIndex]
+      }
+    },
+
+    watch: {
+      copied (val) {
+        !val && clearTimeout(this.copyTimeout)
+      }
+    },
+
+    methods: {
+      copyMarkup () {
+        this.copy = this.markupText
+
+        this.$nextTick(() => {
+          clearTimeout(this.copyTimeout)
+          this.$refs.copy.select()
+          document.execCommand('copy')
+          this.copy = ''
+          this.copied = true
+          this.copyTimeout = setTimeout(() => this.copied = false, 2000)
+        })
       }
     }
   }

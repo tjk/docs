@@ -12,7 +12,8 @@
           div(slot="header").pr-5
             strong Question: &nbsp;
             span(v-html="faq.q") 
-          v-card
+          v-divider
+          v-card.grey.lighten-4
             v-card-text
               strong Answer: &nbsp;
               div(v-html="faq.a")
@@ -26,6 +27,10 @@
   export default {
     data: () => ({
       faqs: [
+        {
+          q: `My application does not look correct`,
+          a: `Vuetify requires the use of the <code>v-app</code> component. It should wrap your entire application and is the center point for much of the framework functionality. If for whatever reason you cannot use this element, you can mimic it from attributes and classes. Set the <code>data-app</code> attribute to true on the highest element available (not including body), and the <strong>application application--{light|dark}</strong> classes.`
+        },
         {
           q: `The Dark or Light theme are not working.`,
           a: `Vuetify requires a mounting point in order to perform tasks such as theme styling. Ensure that you have a <code>v-app</code> wrapping your application. In the event that this is not possible, for whatever reason, you can mimic its behavior by applying <strong>data-app</strong> and <strong>class="application application--light (or dark)</strong> to the highest element that you can within your application.`

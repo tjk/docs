@@ -132,7 +132,8 @@
               { href: '/vuetify/frequently-asked-questions', title: 'Frequently asked questions' },
               { href: '/vuetify/sponsors-and-backers', title: 'Sponsors and backers' },
               { href: '/vuetify/contributing', title: 'Contributing' },
-              { href: '/vuetify/roadmap', title: 'Roadmap' }
+              { href: '/vuetify/roadmap', title: 'Roadmap' },
+              { href: '/vuetify/a-la-carte', title: 'A la carte', action: 'fiber_new' }
             ]
           },
           {
@@ -141,7 +142,7 @@
             group: 'layout',
             items: [
               { href: '/layout/pre-defined', title: 'Pre-defined', action: 'star', actionClass: 'white--text' },
-              { href: '/layout/grid', title: 'Grid' },
+              { href: '/layout/grid', title: 'Grid & breakpoints' },
               { href: '/layout/spacing', title: 'Spacing' },
               { href: '/layout/alignment', title: 'Alignment' },
               { href: '/layout/display', title: 'Display' },

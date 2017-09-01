@@ -7,7 +7,7 @@
         v-html="$store.state.h1"
         style="position: relative"
         v-bind:key="$store.state.h1"
-        class="flexbox"
+        class="d-flex"
       )
     v-spacer
 </template>

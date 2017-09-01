@@ -2,6 +2,44 @@
   component-view(v-bind:doc="doc")
     v-alert(info value="true" slot="top") If you are looking for <strong>Grid lists</strong>, please navigate <router-link class="white--text" to="/components/grid-lists">here</router-link>.
     grid(slot="top").mt-5
+    v-alert(info value).mb-4 Vuetify breakpoint functionality requires the use of the <code>v-app</code> component.
+    section-header Breakpoint object
+    section-text Vuetify converts the available breakpoints into an accessible object from within your application. This will allow you to assign/apply specific properties and attributes based upon viewport size. The object can be accessed from:
+    markup(lang="js")
+      |export default {
+      |    mounted () {
+      |      console.log(this.$vuetify.breakpoint)
+      |    }
+      |}
+    section-text This object contains the same semantic properties that you are already used to using from the grid system. Let's try a real world example. You have a <code>v-dialog</code> component that you want to convert to a <strong>full-screen</strong> dialog on mobile devices. Normally you would need to bind watchers for the viewport size, and/or check whenever the page loads.
+    markup(lang="js")
+      |export default {
+      |    data: () => ({
+      |       isMobile: false
+      |    }),
+      |    mounted () {
+      |      this.$vuetify.load(this.init)
+      |    },
+      |    beforeDestroy () {
+      |      if (typeof window !== 'undefined') {
+      |         window.removeEventListener('resize', this.onResize, { passive: true })
+      |      }
+      |    },
+      |    methods: {
+      |      init () {
+      |         this.onResize()
+      |         window.addEventListener('resize', this.onResize, { passive: true })
+      |      },
+      |      onResize () {
+      |         this.isMobile = window.innerWidth < 600
+      |      }
+      |    }
+      |}
+    section-text That's a lot of boilerplate to write. Even if you opt to use the built in <router-link to="/directives/resizing">v-resize</router-link> directive, you are still going to have to define a resize method. With the <strong>breakpoint</strong> object you can completely skip this logic and get back to building your application.
+    markup(lang="html")
+      |&lt;v-dialog :full-screen="$vuetify.breakpoint.xsOnly"&gt;
+      |&nbsp;&nbsp;&nbsp;&nbsp;...
+      |&lt;/v-dialog&gt;
 </template>
 
 <script>

@@ -15,8 +15,8 @@
           |   &lt;/main&gt;
           |   &lt;v-footer&gt;&lt;/v-footer&gt;
           |&lt;/v-app&gt;
-        v-alert(info value="true") Keep in mind that for the purposes of these docs, the <code>v-navigation-drawer</code>'s have had their overflow removed and set to absolute positioning. In your application, you can choose to omit these properties.
-    v-alert(error value="true") In order for your application to work properly, you <strong>must</strong> wrap it in a <code>v-app</code> component. If you absolutely cannot wrap your application, you must add corresponding class for your chosen theme. <strong>"application--light"</strong> or <strong>"application--dark"</strong>.
+        v-alert(error value="true") In order for your application to work properly, you <strong>must</strong> wrap it in a <code>v-app</code> component. If you absolutely cannot wrap your application, you must add corresponding class for your chosen theme. <strong>"application--light"</strong> or <strong>"application--dark"</strong>.
+    v-alert(info value="true") Keep in mind that for the purposes of these docs, the <code>v-navigation-drawer</code>'s have had their overflow removed and set to absolute positioning. In your application, you can choose to omit these properties.
 </template>
 
 <script>
