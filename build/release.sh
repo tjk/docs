@@ -28,7 +28,12 @@ git co dev
 git stash pop
 git merge master
 
+# Reset packages
+rm -rf node_modules
+yarn
 npm run build
+
+# npm run build
 # git add -A
 # git commit -m "[build]"
 

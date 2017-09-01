@@ -22,7 +22,7 @@ export function createStore () {
         route: '/components/breadcrumbs'
       },
       releases,
-      release: '0.14'
+      release: releases[0]
     },
 
     actions: {},
