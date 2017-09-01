@@ -15,7 +15,6 @@ const isProd = process.env.NODE_ENV === 'production'
 const release = (process.env.RELEASE).toString()
 const rimraf = require('rimraf')
 const copyTo = `releases/${release}/`
-const fs = require('fs')
 
 // Remove release if already exists
 rimraf(resolve(`../releases/${release}`), err => err && console.log(err))
