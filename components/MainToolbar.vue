@@ -10,6 +10,15 @@
         class="d-flex"
       )
     v-spacer
+    v-btn(
+      icon
+      href="https://www.twitch.tv/johnleider"
+      target="_blank"
+      rel="noopener"
+      large
+      v-tooltip:left="{ html: 'Twitch stream' }"
+    ).mr-3
+      v-icon fa-fw fa-twitch
 </template>
 
 <script>

@@ -44,8 +44,7 @@
             rel="noopener"
             small
             dark
-            primary
-          ).elevation-0 Find out how
+          ).elevation-0.blue.lighten-2 Support Vuetify
     v-divider
     v-layout(row justify-center)
       v-btn(

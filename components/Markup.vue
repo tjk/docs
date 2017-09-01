@@ -5,8 +5,8 @@
         slot
     div(class="markup__copy")
       v-icon(v-on:click="copyMarkup") content_copy
-    v-slide-x-transition
-      span(class="component-example-copied" v-if="copied") Copied
+      v-slide-x-transition
+        span(class="component-example-copied" v-if="copied") Copied
     textarea(
       ref="copy" 
       v-if="copy" 
@@ -79,10 +79,15 @@
     position: relative
     align-items: center
     
+    .component-example-copied
+      position: absolute
+      top: 12px
+      right: 50px
+    
     &__copy
       position: absolute
-      right: 1rem
-      top: 1rem
+      right: 25px
+      top: 12px
       cursor: pointer
       width: 25px
       height: 25px
@@ -90,13 +95,13 @@
       
     &:after
       position: absolute
-      right: 1rem
+      right: 25px
       transition: opacity .2s ease-in
       content: attr(data-lang)
       color: rgba(#000, 0.3)
       font-size: 1rem
       font-weight: 700
-      top: .5rem
+      top: 25px
         
     &:hover
       background: rgba(#000, 0.08)
