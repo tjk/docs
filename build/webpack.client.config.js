@@ -5,6 +5,7 @@ const SWPrecachePlugin = require('sw-precache-webpack-plugin')
 const VueSSRClientPlugin = require('vue-server-renderer/client-plugin')
 const fs = require('fs')
 const releases = require('../router/releases.json')
+const resolve = (file) => path.resolve(__dirname, file)
 
 if (process.env.NEXT && releases.indexOf(process.env.NEXT) < 0) {
   releases.unshift(process.env.NEXT)
