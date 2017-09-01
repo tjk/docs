@@ -1,15 +1,15 @@
 <template>
   <v-card class="elevation-0 py-5">
     <v-card-text>
-      <v-container fluid class="pa-0">
+      <v-container fluid grid-list-md>
         <v-layout row wrap>
-          <v-flex xs12 sm4 class="py-2">
+          <v-flex xs12 sm4>
             <v-select label="State" v-bind:items="dropdown.slice(0, 4)" overflow></v-select>
           </v-flex>
-          <v-flex xs12 sm4 class="py-2">
+          <v-flex xs12 sm4>
             <v-select label="State" v-bind:items="dropdown.slice(0, 7)"></v-select>
           </v-flex>
-          <v-flex xs12 sm4 class="py-2">
+          <v-flex xs12 sm4>
             <v-select label="State" v-bind:items="dropdown"></v-select>
           </v-flex>
         </v-layout>

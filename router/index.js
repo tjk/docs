@@ -32,6 +32,7 @@ export function createRouter () {
       route('/vuetify/sponsors-and-backers', 'Sponsors'),
       route('/vuetify/contributing', 'Contributing'),
       route('/vuetify/roadmap', 'Roadmap'),
+      route('/vuetify/a-la-carte', 'ALaCarte'),
       route('/layout/pre-defined', 'Layouts'),
       route('/layout/grid', 'Grid'),
       route('/layout/spacing', 'Spacing'),

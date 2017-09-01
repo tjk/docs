@@ -41,6 +41,12 @@
     "description": "The upcoming planned features and new functionality coming to Vuetify. New vue components, new directives, and much much more!.",
     "keywords": "roadmap, future plans"
   },
+  "/vuetify/a-la-carte": {
+    "h1": "A La Carte",
+    "title": "A La Carte",
+    "description": "Use only the components you need. Single component importing allows you to select what you want and leave the rest.",
+    "keywords": "a la carte, a-la-carte, vuetify single import, vuetify import, component importing"
+  },
   "/motion/transitions": {
     "h1": "Transitions",
     "title": "Transitions",
