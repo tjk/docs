@@ -28,7 +28,7 @@ git co dev
 git stash pop
 git merge master
 
-# npm run build
+npm run build
 # git add -A
 # git commit -m "[build]"
 
