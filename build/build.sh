@@ -5,6 +5,10 @@ set -e
 echo "Enter archive version: "
 read RELEASE
 
+# Set release version for new docs
+echo "Enter release version: "
+read NEXT
+
 # Remove any local bindings
 yarn unlink vuetify
 
