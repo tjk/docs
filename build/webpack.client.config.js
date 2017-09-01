@@ -3,8 +3,7 @@ const merge = require('webpack-merge')
 const base = require('./webpack.base.config')
 const SWPrecachePlugin = require('sw-precache-webpack-plugin')
 const VueSSRClientPlugin = require('vue-server-renderer/client-plugin')
-
-
+const fs = require('fs')
 const releases = require('../router/releases.json')
 
 if (process.env.NEXT && releases.indexOf(process.env.NEXT) < 0) {
