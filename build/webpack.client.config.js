@@ -4,6 +4,17 @@ const base = require('./webpack.base.config')
 const SWPrecachePlugin = require('sw-precache-webpack-plugin')
 const VueSSRClientPlugin = require('vue-server-renderer/client-plugin')
 
+
+const releases = require('../router/releases.json')
+
+if (process.env.NEXT && releases.indexOf(process.env.NEXT) < 0) {
+  releases.unshift(process.env.NEXT)
+
+  fs.writeFile(resolve('../router/releases.json'), JSON.stringify(releases), err => {
+    err && console.log(err)
+  })
+}
+
 const config = merge(base, {
   entry: {
     app: './assets/entry-client.js'
