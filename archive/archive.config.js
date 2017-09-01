@@ -22,12 +22,13 @@ rimraf(resolve(`../releases/${release}`), err => err && console.log(err))
 
 const releases = require('../router/releases.json')
 
-releases.indexOf(process.env.NEXT) < 0 &&
+if (releases.indexOf(process.env.NEXT) < 0) {
   releases.unshift(process.env.NEXT)
 
-fs.writeFile(resolve('../router/releases.json'), JSON.stringify(releases), err => {
-  err && console.log(err)
-})
+  fs.writeFile(resolve('../router/releases.json'), JSON.stringify(releases), err => {
+    err && console.log(err)
+  })
+}
 
 module.exports = {
   entry: resolve('./archive.js'),
