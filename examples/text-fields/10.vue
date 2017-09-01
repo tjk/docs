@@ -69,7 +69,7 @@
               :append-icon-cb="() => (e4 = !e4)"
               value="Pa"
               v-bind:rules="[() => ('The email and password you entered don\'t match')]"
-              class="input-group--focused"
+              error
             ></v-text-field>
           </v-flex>
         </v-layout>

@@ -96,7 +96,7 @@
       comparisons: [
         { title: 'Semantic Helper Components' },
         { title: 'SSR and PWA Support' },
-        { title: '5 Vue-CLI templates' },
+        { title: '8 Vue-CLI templates' },
         { title: 'Chat Support' },
         { title: 'Modular Component Transition System' },
         { title: 'Blazing Fast Framework' },

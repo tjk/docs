@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-card class="grey lighten-4 elevation-0">
-      <v-card-text>
+      <v-container grid-list-md>
         <v-layout row wrap>
           <v-flex xs12>
             <div class="body-2">Light Theme</div>
@@ -26,10 +26,10 @@
             <v-text-field box multi-line label="Bio"></v-text-field>
           </v-flex>
         </v-layout>
-      </v-card-text>
+      </v-container>
     </v-card>
     <v-card dark>
-      <v-card-text>
+      <v-container grid-list-md>
         <v-layout row wrap>
           <v-flex xs12>
             <div class="body-2 white--text">Dark Theme</div>
@@ -54,7 +54,7 @@
             <v-text-field box dark multi-line label="Bio"></v-text-field>
           </v-flex>
         </v-layout>
-      </v-card-text>
+      </v-container>
     </v-card>
   </div>
 </template>
