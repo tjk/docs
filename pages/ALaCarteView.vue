@@ -83,7 +83,7 @@
       markup(lang="cli")
         |npm install --save-dev stylus-loader
         |// or
-        |yarn add stylus-loader
+        |yarn add --dev stylus-loader
       v-alert(value info).mb-4 For a more detailed explanation on how to setup your application to handle stylus, please navigate to the <router-link to="/style/theme" class="white--text">theme page</router-link>.
       section-text Now you will need a main entry point for the stylus file. Even if you don't use/understand stylus, don't worry! Just create a <kbd>main.styl</kbd> file in your assets directory. Once created, open it and add this line:
       markup(lang="stylus")
