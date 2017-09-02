@@ -43,6 +43,27 @@
         |  "plugins": [...]
         |}
     section
+      section-header Webpack configuration
+      section-text In order to make sure that Webpack will run the Vuetify source files through the correct loaders, it's necessary to explicitly include the <code>node_modules/vuetify</code> folder for both <code>.vue</code> and <code>.js</code> files.
+      markup(lang="js")
+        |{
+        |  test: /\.vue$/,
+        |  loader: 'vue-loader',
+        |  options: vueLoaderConfig,
+        |  include: [
+        |    path.resolve(__dirname, 'src'),
+        |    path.resolve(__dirname, 'node_modules/vuetify')
+        |  ]
+        |},
+        |{
+        |  test: /\.js$/,
+        |  loader: 'babel-loader',
+        |  include: [
+        |    path.resolve(__dirname, 'src'),
+        |    path.resolve(__dirname, 'node_modules/vuetify')
+        |  ]
+        |}
+    section
       section-header Required components
       section-text There are 2 required imports for the package to work when stripped apart. This is <code>Vuetify</code> and <code>VApp</code>.
       markup(lang="js")
