@@ -13,7 +13,7 @@
       markup(lang="cli")
         |npm install --save-dev babel-plugin-transform-imports
         |// or
-        |yarn add babel-plugin-transform-imports
+        |yarn add --dev babel-plugin-transform-imports
       section-text Next, we need to tell the transpiler how to handle this plugin. If your project does not already contain a <kbd>.babelrc</kbd> file in the base of your project, simply create the file. Once created, add the transform plugin:
       markup(lang="cli")
         |{
@@ -31,8 +31,8 @@
         |npm install --save-dev babel-preset-es2015
         |npm install --save-dev babel-preset-stage-2
         |// or
-        |yarn add babel-preset-es2015
-        |yarn add babel-preset-stage-2
+        |yarn add --dev babel-preset-es2015
+        |yarn add --dev babel-preset-stage-2
       section-text Once installed, add them to the presets array in your .babelrc
       markup(lang="cli")
         |{
