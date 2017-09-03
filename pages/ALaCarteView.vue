@@ -9,15 +9,38 @@
     v-alert(value info).mb-4 For a pre-built project demonstrating single component imports, install the <strong>a-la-carte</strong> template from the cli, <code>vue init vuetifyjs/a-la-carte</code>
     section
       section-header Required packages
-      section-text In order to properly tree-shake the Vuetify imports, a npm package is required, <a href="https://www.npmjs.com/package/babel-plugin-transform-imports" target="_blank" rel="noopener">babel-plugin-transform-imports</a>. To install, from the cli:
+      section-text In order to properly tree-shake the Vuetify imports, a few npm packages are required:
+      ul
+        li(
+          v-for="plugin in plugins"
+          v-bind:key="plugin.text"
+        )
+          a(
+            v-bind:href="plugin.href"
+            target="_blank" 
+            rel="noopener"
+            v-text="plugin.name"
+          )
       markup(lang="cli")
         |npm install --save-dev babel-plugin-transform-imports
-        |// or
+        |npm install --save-dev babel-preset-es2015
+        |npm install --save-dev babel-preset-stage-2
+        |npm install --save-dev babel-plugin-add-filehash
+      div // or
+      markup(lang="cli")
         |yarn add --dev babel-plugin-transform-imports
-      section-text Next, we need to tell the transpiler how to handle this plugin. If your project does not already contain a <kbd>.babelrc</kbd> file in the base of your project, simply create the file. Once created, add the transform plugin:
+        |yarn add --dev babel-preset-es2015
+        |yarn add --dev babel-preset-stage-2
+        |yarn add --dev babel-plugin-add-filehash
+      section-text Next, we need to tell the transpiler how to handle this plugin. If your project does not already contain a <kbd>.babelrc</kbd> file in the base of your project, simply create the file. Once created, add the following:
       markup(lang="cli")
         |{
+        |  "presets": [
+        |     ["es2015", {"modules":false}],
+        |     ["stage-2"]
+        |  ],
         |  "plugins": [
+        |    "add-filehash",
         |    ["transform-imports", {
         |        "vuetify": {
         |            "transform": "vuetify/src/components/${member}",
@@ -26,23 +49,8 @@
         |    }]
         |  ]
         |}
-      section-text If you did not already have a .babelrc, it's possible you may need additional arguments to aid in the transpiling of your project. All Vue and Vuetify <strong>vue-cli</strong> templates come with a pre-configured .babelrc. If your project does not, you may need to install 2 additional npm packages, <a href="https://www.npmjs.com/package/babel-preset-es2015" target="_blank" rel="noopener">babel-preset-es2015</a> and <a href="https://www.npmjs.com/package/babel-preset-stage-2" target="_blank" rel="noopener">babel-preset-stage-2</a>.
-      markup(lang="cli")
-        |npm install --save-dev babel-preset-es2015
-        |npm install --save-dev babel-preset-stage-2
-        |// or
-        |yarn add --dev babel-preset-es2015
-        |yarn add --dev babel-preset-stage-2
-      section-text Once installed, add them to the presets array in your .babelrc
-      markup(lang="cli")
-        |{
-        |  "presets": [
-        |     ["es2015", {"modules":false}],
-        |     ["stage-2"]
-        |  ],
-        |  "plugins": [...]
-        |}
     section
+      v-alert(error value).mb-4 Currently, single component imports are <strong>NOT</strong> supported in <strong>SSR</strong>.
       section-header Webpack configuration
       section-text In order to make sure that Webpack will run the Vuetify source files through the correct loaders, it's necessary to explicitly include the <code>node_modules/vuetify</code> folder for both <code>.vue</code> and <code>.js</code> files.
       markup(lang="js")
@@ -110,6 +118,13 @@
 
 <script>
   export default {
-    //
+    data: () => ({
+      plugins: [
+        { name: 'babel-plugin-transform-imports', href: 'https://www.npmjs.com/package/babel-plugin-transform-imports' },
+        { name: 'babel-preset-es2015', href: 'https://www.npmjs.com/package/babel-preset-es2015' },
+        { name: 'babel-preset-stage-2', href: 'https://www.npmjs.com/package/babel-preset-stage-2' },
+        { name: 'babel-plugin-add-filehash', href: 'https://www.npmjs.com/package/babel-plugin-add-filehash' },
+      ]
+    })
   }
 </script>
