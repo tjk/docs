@@ -30,19 +30,19 @@
                   'focusable',
                   'Boolean',
                   'False',
-                  'Leaves expansion-panel open when selecting another'
+                  'Makes the expansion panel headers focusable'
                 ],
                 [
                   'inset',
                   'Boolean',
                   'False',
-                  'Leaves expansion-panel open when selecting another'
+                  'Makes the expansion panel open with an popout style'
                 ],
                 [
                   'popout',
                   'Boolean',
                   'False',
-                  'Leaves expansion-panel open when selecting another'
+                  'Makes the expansion panel open with an inset style'
                 ]
               ]
             },
