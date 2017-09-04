@@ -36,7 +36,7 @@
                   'inset',
                   'Boolean',
                   'False',
-                  'Makes the expansion panel open with an popout style'
+                  'Makes the expansion panel open with a popout style'
                 ],
                 [
                   'popout',
