@@ -104,6 +104,7 @@
               ]
             },
             'v-btn-toggle': {
+              shared: ['theme'],
               params: [
                 [
                   'multiple',

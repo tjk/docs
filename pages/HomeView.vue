@@ -170,6 +170,7 @@
       }
     },
     mounted() {
+      // TODO: change this to v-scroll
       window.addEventListener('scroll', this.onScroll, { passive: true })
     },
     beforeDestroy() {

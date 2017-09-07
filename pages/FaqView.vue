@@ -41,7 +41,7 @@
         },
         {
           q: `The scrollbar is showing even though my content is not overflowing vertically.`,
-          a: `Vuetify by default turns on the html scrollbar. This is a design choice and has been debated numerous times. There are pros and cons to having and not having it and as of now, the vote is in favor of leaving it as is.`
+          a: `Vuetify by default turns on the html scrollbar. This is a design choice and has been debated numerous times. There are pros and cons to having and not having it and as of now, the vote is in favor of leaving it as is. If you wish to disable this functionality, simply add <code>html { overflow-y: auto }</code> to your style file.`
         }
       ]
     })
