@@ -239,7 +239,7 @@
             icon: 'featured_video',
             title: 'PWA',
             init: 'pwa',
-            desc: 'A pre-configured PWA (Persistent Web Application) template is at your disposal. Bootstraped with service workers, application manifest, and a 90+/100 Lighthouse score.'
+            desc: 'A pre-configured PWA (Progressive Web Application) template is at your disposal. Bootstraped with service workers, application manifest, and a 90+/100 Lighthouse score.'
           },
           {
             icon: 'power',
