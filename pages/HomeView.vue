@@ -164,6 +164,11 @@
             title: 'Cloudflare',
             href: 'https://www.cloudflare.com/',
             src: '/static/doc-images/cloudflare.svg'
+          },
+          {
+            title: 'LMAX Exchange',
+            href: 'https://careers.lmax.com/',
+            src: '/static/doc-images/backers/lmax-exchange.png'
           }
         ],
         toolbar: false
