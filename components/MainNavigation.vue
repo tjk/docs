@@ -32,7 +32,7 @@
                   )
                     v-list-tile-title {{ release }}
     v-divider
-    v-layout(justify-center).py-3
+    v-layout(justify-center wrap).pt-3
       a(
         href="https://careers.lmax.com"
         target="_blank"
@@ -47,6 +47,8 @@
                   width="150px"
                   src="/static/doc-images/backers/lmax-exchange.png"
                 )
+      v-flex(xs12).layout.justify-center.pt-3.pb-1
+        v-btn(to="/vuetify/sponsors-and-backers" round dark small).blue.lighten-2 Support Vuetify
     v-layout(row justify-center)
       v-btn(
         icon
