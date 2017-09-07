@@ -32,20 +32,21 @@
                   )
                     v-list-tile-title {{ release }}
     v-divider
-    v-card(flat dark).py-2.your-logo-here
-      v-layout(fill-height)
-        v-flex.text-xs-center
-          div
-            em Your Logo Here
-          v-btn(
-            round
-            href="https://patreon.com/vuetify"
-            target="_blank"
-            rel="noopener"
-            small
-            dark
-          ).elevation-0.blue.lighten-2 Support Vuetify
-    v-divider
+    v-layout(justify-center).py-3
+      a(
+        href="https://careers.lmax.com"
+        target="_blank"
+        rel="noopener"
+      )
+        v-card(flat hover).your-logo-here
+          v-card-text
+            v-layout(justify-center)
+              v-flex.text-xs-center
+                div.body-2.mb-2 Diamond Sponsor
+                img(
+                  width="150px"
+                  src="/static/doc-images/backers/lmax-exchange.png"
+                )
     v-layout(row justify-center)
       v-btn(
         icon
