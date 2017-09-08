@@ -20,7 +20,7 @@
             { header: 'Dark theme with icon', file: 'text-fields/6', desc: 'The icon inherits the applications primary color on text-field focus.' },
             { header: 'Multi-Line', file: 'text-fields/7', desc: 'A multi-line text-field is useful for larger amounts of text.' },
             { header: 'Dark theme multi-line', file: 'text-fields/8', desc: 'Multi-line text-fields can be set to autogrow allowing the field to scale with the input.' },
-            { header: 'Character counter', file: 'text-fields/9', desc: 'Use a counter to inform a user of the maximum or minium character limit.' },
+            { header: 'Character counter', file: 'text-fields/9', desc: 'Use a counter to inform a user of the character limit.' },
             { header: 'Password input', file: 'text-fields/10', desc: 'A password input can be used with an appended icon and callback to control the visibility.' },
             { header: 'Validation', file: 'text-fields/11', desc: `Vuetify includes simple validation through the <code>rules</code> prop. The prop accepts an array of callbacks. While validating rules, the current v-model value will be passed to the callback. This callback should return either <code>true</code> or a <code>String</code>, the error message.` },
             { header: 'Full-width text field with character counter', file: 'text-fields/12', desc: 'Light theme' },
@@ -49,9 +49,9 @@
                 ],
                 [
                   'counter',
-                  '[String, Number]',
+                  '[Boolean, Number]',
                   'False',
-                  'Creates counter for input length'
+                  'Creates counter for input length. If no Number is specified, it defaults to 25. Does not apply any validation.'
                 ],
                 [
                   'full-width',

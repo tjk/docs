@@ -343,7 +343,7 @@
             'required',
             'Boolean',
             'False',
-            'Designates the input as required'
+            'Designates the input as required. Does not perform any validation.'
           ],
           [
             'rules',

@@ -19,9 +19,8 @@
                   <v-flex xs12>
                     <v-text-field
                       label="Title"
-                      counter
+                      :counter="50"
                       v-model="title"
-                      max="50"
                     ></v-text-field>
                   </v-flex>
                   <v-flex xs12>
@@ -60,8 +59,7 @@
                       label="Title"
                       class="input-group--focused"
                       v-model="title2"
-                      counter
-                      max="50"
+                      :counter="50"
                     ></v-text-field>
                   </v-flex>
                   <v-flex xs12>
