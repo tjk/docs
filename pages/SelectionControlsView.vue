@@ -77,6 +77,22 @@
                 description: 'Current radio value'
               }
             },
+            'v-radio-group': {
+              params: [
+                [
+                  'column',
+                  'Boolean',
+                  'True',
+                  'Displays radio buttons in column'
+                ],
+                [
+                  'row',
+                  'Boolean',
+                  'False',
+                  'Displays radio buttons in row'
+                ]
+              ]
+            },
             'v-switch': {
               shared: ['colorable', 'input'],
               params: [
