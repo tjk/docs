@@ -47,6 +47,12 @@
                   'Sets icon for carousel delimiter'
                 ],
                 [
+                  'hide-controls',
+                  'Boolean',
+                  'False',
+                  'Hides the panel with carousel delimiters'
+                ],
+                [
                   'left-control-icon',
                   '[Boolean, String]',
                   'chevron_left',
