@@ -69,11 +69,17 @@
 
     methods: {
       parseComponent (c) {
-        let params = (c.params || []).slice()
+        let params = []
 
         c.shared && c.shared.forEach(s => {
           params = params.concat(this.shared[s])
         })
+
+        params = params.filter(p => !c.params.find(pp => {
+          return pp[0] === p[0]
+        }))
+
+        params = params.concat(c.params || [])
 
         c.model && params.push(this.makeModel(c.model))
 

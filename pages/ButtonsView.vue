@@ -100,6 +100,12 @@
                   'Boolean',
                   'True',
                   'Applies the raised style'
+                ],
+                [
+                  'ripple',
+                  '[Boolean, Object]',
+                  'True',
+                  'Applies ripple effect'
                 ]
               ]
             },
