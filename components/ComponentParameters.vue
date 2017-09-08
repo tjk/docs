@@ -374,6 +374,12 @@
             'Array',
             '[13, 32]',
             "Array of key codes that will toggle the input (if it supports toggling)"
+          ],
+          [
+            'validate-on-blur',
+            'Boolean',
+            'false',
+            'Delays validation until blur event'
           ]
         ]
       },
