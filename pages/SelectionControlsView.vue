@@ -10,7 +10,7 @@
         test2: false,
         doc: {
           title: 'Selection controls',
-          component: 'selectioncontrols',
+          component: '',
           edit: 'SelectionControlsView',
           desc: 'Selection control components allow a user to select options. These components <strong>must</strong> be used with the <code>v-model</code> prop as they do not maintain their own state.',
           examples: [

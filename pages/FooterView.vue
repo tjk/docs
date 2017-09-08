@@ -8,7 +8,7 @@
       return {
         doc: {
           title: 'Footer',
-          component: 'footer',
+          component: 'VFooter',
           edit: 'FooterView',
           desc: 'The <code>v-footer</code> component is used for displaying general information that a user might want to access from any page within your site.',
           examples: [
@@ -49,7 +49,7 @@
     .component-example__container
       > div
         width: 100%
-      
+
     footer
       max-height: 36px
 </style>

@@ -9,7 +9,7 @@
     data () {
       return {
         doc: {
-          component: 'buttons',
+          component: 'VBtn',
           edit: 'ButtonsView',
           title: 'Button',
           desc: `

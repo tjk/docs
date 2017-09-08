@@ -7,7 +7,7 @@
     data () {
       return {
         doc: {
-          component: 'slider',
+          component: 'VSlider',
           edit: 'SliderView',
           title: 'Slider',
           desc: 'The <code>v-slider</code> component is a better visualization of the number input. It is used for gathering numerical user data.',

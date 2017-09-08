@@ -8,7 +8,7 @@
       return {
         doc: {
           title: 'Grid list',
-          component: 'grid-lists',
+          component: 'VGrid',
           edit: 'GridListView',
           desc: 'Grid lists are an addon for the <code>v-container</code> component that add gutter control between items.',
           examples: [

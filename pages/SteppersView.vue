@@ -7,7 +7,7 @@
     data () {
       return {
         doc: {
-          component: 'steppers',
+          component: 'VStepper',
           edit: 'SteppersView',
           title: 'stepper',
           desc: 'The <code>v-stepper</code> component displays progress through numbered steps.',

@@ -7,7 +7,7 @@
     data () {
       return {
         doc: {
-          component: 'tables',
+          component: 'VDataTable',
           edit: 'DatatablesView',
           title: 'Data tables',
           id: '#data-tables-view',

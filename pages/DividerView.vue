@@ -8,7 +8,7 @@
       return {
         doc: {
           title: 'Dividers',
-          component: 'divider',
+          component: 'VDivider',
           edit: 'DividerView',
           desc: 'The <code>v-divider</code> component is used to separate sections of lists.',
           examples: [

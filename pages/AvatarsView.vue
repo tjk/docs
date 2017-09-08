@@ -9,7 +9,7 @@
     data () {
       return {
         doc: {
-          component: 'avatars',
+          component: 'VAvatar',
           edit: 'AvatarsView',
           title: 'Avatar',
           desc: 'The <code>v-avatar</code> component is used to control the size and border radius of responsive images, typically used to show profile pictures.',

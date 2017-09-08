@@ -9,7 +9,7 @@
         doc: {
           title: 'Bottom navigation',
           edit: 'BottomNavigationView',
-          component: 'bottom-navigation/BottomNavigation.js',
+          component: 'VBottomNav',
           desc: `The <code>v-bottom-nav</code> is an alternative to the sidebar. It is primarily used on mobile and comes in two variants, icons and text, and shift.`,
           examples: [
             { header: 'Icons and text', file: 'bottom-navigation/1', desc: `While the bottom nav is meant to be used with the <code>vue-router</code>, you can also programmatically control the active state of the buttons by using the <code>active.sync</code> prop. You can change a button's value by using its <code>value</code> attribute.` },

@@ -8,7 +8,7 @@
       return {
         doc: {
           title: 'Menu',
-          component: 'menu',
+          component: 'VMenu',
           edit: 'MenusView',
           desc: 'The <code>v-menu</code> component shows a menu at the position of the element used to activate it.',
           examples: [
