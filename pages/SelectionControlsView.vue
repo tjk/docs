@@ -77,6 +77,22 @@
                 description: 'Current radio value'
               }
             },
+            'v-radio-group': {
+              params: [
+                [
+                  'column',
+                  'Boolean',
+                  'True',
+                  'Displays radio buttons in column'
+                ],
+                [
+                  'row',
+                  'Boolean',
+                  'False',
+                  'Displays radio buttons in row'
+                ]
+              ],
+            },
             'v-switch': {
               shared: ['colorable', 'input'],
               params: [
@@ -113,6 +129,9 @@
             'v-radio': {
               shared: ['label']
             },
+            'v-radio-group': {
+              shared: ['default']
+            },
             'v-switch': {
               shared: ['label']
             }
@@ -121,6 +140,12 @@
             'v-radio': {
               params: [
                 ['change', 'String, Number', 'Input value changed.']
+              ]
+            },
+            'v-radio-group': {
+              params: [
+                ['change', 'String, Number', 'Input value changed.'],
+                ['blur', 'String, Number', 'Last active input value.']
               ]
             },
           }
