@@ -89,9 +89,9 @@
       section-header Required styles
       section-text In order to obtain all the required styles, we need to import them in <strong>stylus</strong>. In order for webpack to handle this, you will need to install the <code>stylus-loader</code> from npm.
       markup(lang="cli")
-        |npm install --save-dev stylus-loader
+        |npm install --save-dev stylus stylus-loader
         |// or
-        |yarn add --dev stylus-loader
+        |yarn add --dev stylus stylus-loader
       v-alert(value info).mb-4 For a more detailed explanation on how to setup your application to handle stylus, please navigate to the <router-link to="/style/theme" class="white--text">theme page</router-link>.
       section-text Now you will need a main entry point for the stylus file. Even if you don't use/understand stylus, don't worry! Just create a <kbd>main.styl</kbd> file in your assets directory. Once created, open it and add this line:
       markup(lang="stylus")
