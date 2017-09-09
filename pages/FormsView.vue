@@ -25,6 +25,12 @@
                   'Boolean',
                   'false',
                   'Current validation state of form'
+                ],
+                [
+                  'lazy-validation',
+                  'Boolean',
+                  'false',
+                  'If enabled, <code>value</code> will always be true unless there are visible validation errors. You can still call <code>validate()</code> to manually trigger validation'
                 ]
               ],
               model: {
