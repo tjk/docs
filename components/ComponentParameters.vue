@@ -75,7 +75,7 @@
           params = params.concat(this.shared[s])
         })
 
-        params = params.filter(p => !c.params.find(pp => {
+        params = params.filter(p => !(c.params || []).find(pp => {
           return pp[0] === p[0]
         }))
 
