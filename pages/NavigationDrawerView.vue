@@ -99,10 +99,10 @@
                   'A floating drawer has no visible container (no border-right)'
                 ],
                 [
-                  'mini-variant.sync',
+                  'mini-variant',
                   'Boolean',
                   'False',
-                  'Condenses sidebar width',
+                  'Condenses sidebar width, also accepts the <strong>.sync</strong> modifier. With this, the drawer will re-open when clicking it',
                 ],
                 [
                   'permanent',
@@ -128,6 +128,12 @@
                   'False',
                   'A temporary drawer sits above its application and uses a scrim (overlay) to darken the background',
                 ],
+                [
+                  'touchless',
+                  'Boolean',
+                  'False',
+                  'Disable mobile touch functionality'
+                ]
               ]
             }
           },

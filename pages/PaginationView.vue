@@ -40,6 +40,24 @@
                   'Number',
                   '0',
                   'The length of the paginator',
+                ],
+                [
+                  'total-visible',
+                  '[Number, String]',
+                  'null',
+                  'Specify the max total visible pagination numbers'
+                ],
+                [
+                  'next-icon',
+                  'String',
+                  'chevron_right',
+                  'Specify the icon to use for the next icon'
+                ],
+                [
+                  'prev-icon',
+                  'String',
+                  'chevron_left',
+                  'Specify the icon to use for the prev icon'
                 ]
               ],
               model: {

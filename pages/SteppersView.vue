@@ -23,7 +23,8 @@
             { header: "Alternate labels", file: "steppers/9", desc: 'Steppers also have an alternative label style which places the title under the step itself.' },
             { header: "Multi-line error state", file: "steppers/10", desc: 'An error state can be displayed to notify the user of some action that must be taken.' },
             { header: "Alternative label multi-line error state", file: "steppers/11", desc: 'The error state can also be applied to the alternative label style.' },
-            { header: "Vertical multi-line error state", file: "steppers/12", desc: 'The same state also applies to Vertical steppers.' }
+            { header: "Vertical multi-line error state", file: "steppers/12", desc: 'The same state also applies to Vertical steppers.' },
+            { header: "Dynamic steps", file: "steppers/13", new: "0.15.3", desc: 'Steppers can have their steps dynamically added or removed. If a currently active step is removed, be sure to account for this by changing the applied model.' }
           ],
           props: {
             'v-stepper': {

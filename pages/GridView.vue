@@ -200,6 +200,12 @@
                   'Boolean',
                   'False',
                   'Make sure that col element height is filled with parent and child. Important for Safari/Firefox if children is column element.'
+                ],
+                [
+                  'display-helpers',
+                  'Boolean',
+                  'False',
+                  'Specify to display an element as flex/inline-flex/block etc. Syntax is <code>d-{display-type}</code>. For example <code>d-flex</code>.'
                 ]
               ]
             }

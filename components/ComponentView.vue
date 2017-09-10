@@ -42,6 +42,7 @@
       v-for="(example, i) in doc.examples"
       v-bind:key="i"
       v-bind:header="`#${i + 1} ${example.header}`"
+      v-bind:new-in="example.new"
       v-bind:file="example.file"
       v-bind:id="`example-${i + 1}`"
     )

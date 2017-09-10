@@ -22,7 +22,7 @@
                 <v-chip
                   close
                   @input="data.parent.selectItem(data.item)"
-                  @click.native.stop
+                  :selected="data.selected"
                   class="chip--select-multi"
                   :key="JSON.stringify(data.item)"
                 >

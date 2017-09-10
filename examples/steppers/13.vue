@@ -2,6 +2,7 @@
   <div>
     <v-card class="mb-3">
       <v-card-text>
+        <div>{{ typeof steps }}</div>
         <v-text-field
           label="# of steps"
           v-model="steps"

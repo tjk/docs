@@ -2,7 +2,7 @@
   <v-card class="e4">
     <v-card-media height="300px" v-bind:style="{ background: `rgb(${red}, ${green}, ${blue})` }"></v-card-media>
     <v-card-text>
-      <v-container fluid>
+      <v-container fluid grid-list-md>
         <v-layout row wrap>
           <v-flex xs9>
             <v-slider label="R" v-bind:max="255" v-model="red"></v-slider>
