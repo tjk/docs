@@ -6,6 +6,7 @@
           dt(slot="title") Single component importing
           dd(slot="desc") Being a component framework, Vuetify will always grow horizontally. Depending on your project requirements, <strong>package size</strong> may be heavily scrutinized and important for your particular use-case. Vuetify allows you to easily import only what you need, drastically lowering its footprint.
       ad
+    v-alert(value warning).mb-4 The implementation details for this feature will very likely change drastically in future versions. The <strong>a-la-carte</strong> feature should be considered to be in <strong>beta</strong>
     v-alert(value info).mb-4 For a pre-built project demonstrating single component imports, install the <strong>a-la-carte</strong> template from the cli, <code>vue init vuetifyjs/a-la-carte</code>
     section
       section-header Required packages
@@ -17,7 +18,7 @@
         )
           a(
             v-bind:href="plugin.href"
-            target="_blank" 
+            target="_blank"
             rel="noopener"
             v-text="plugin.name"
           )
@@ -87,7 +88,7 @@
       section-text After importing the required files, we install the plugin as we would normally. We then supply an object containing a property <code>components</code>, which is an object containing all of the components we use to use.
     section
       section-header Required styles
-      section-text In order to obtain all the required styles, we need to import them in <strong>stylus</strong>. In order for webpack to handle this, you will need to install the <code>stylus-loader</code> from npm.
+      section-text In order to obtain all the required styles, we need to import them in <strong>stylus</strong>. In order for webpack to handle this, you will need to install <code>stylus</code> and the <code>stylus-loader</code> from npm.
       markup(lang="cli")
         |npm install --save-dev stylus stylus-loader
         |// or
