@@ -5,7 +5,7 @@
       v-model="drawer"
       light
       enable-resize-watcher
-      overflow
+      absolute
       dark
     >
       <v-list dense>
@@ -19,7 +19,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar dark>
+    <v-toolbar dark fixed>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title>Toolbar</v-toolbar-title>
     </v-toolbar>

@@ -5,7 +5,7 @@
       v-model="drawer"
       light
       enable-resize-watcher
-      overflow
+      absolute
     >
       <v-list dense>
         <v-list-tile @click.stop="left = !left">
@@ -24,7 +24,6 @@
       light
       right
       enable-resize-watcher
-      overflow
       absolute
     >
       <v-list dense>
@@ -38,7 +37,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar class="indigo" dark>
+    <v-toolbar class="indigo" dark fixed>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title>Toolbar</v-toolbar-title>
       <v-spacer></v-spacer>
@@ -48,7 +47,6 @@
       <v-navigation-drawer
         temporary
         v-model="left"
-        overflow
         absolute
       ></v-navigation-drawer>
       <v-container fluid>
@@ -58,7 +56,6 @@
         right
         temporary
         v-model="right"
-        overflow
         absolute
       ></v-navigation-drawer>
     </main>

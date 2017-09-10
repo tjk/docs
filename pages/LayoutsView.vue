@@ -15,8 +15,7 @@
           |   &lt;/main&gt;
           |   &lt;v-footer&gt;&lt;/v-footer&gt;
           |&lt;/v-app&gt;
-        v-alert(error value="true") In order for your application to work properly, you <strong>must</strong> wrap it in a <code>v-app</code> component. If you absolutely cannot wrap your application, you must add corresponding class for your chosen theme. <strong>"application--light"</strong> or <strong>"application--dark"</strong>.
-    v-alert(info value="true") Keep in mind that for the purposes of these docs, the <code>v-navigation-drawer</code>'s have had their overflow removed and set to absolute positioning. In your application, you can choose to omit these properties.
+        v-alert(error value="true") In order for your application to work properly, you <strong>must</strong> wrap it in a <code>v-app</code> component. If you absolutely cannot wrap your application, you must add corresponding class for your chosen theme. <strong>"application--light"</strong> or <strong>"application--dark"</strong>. Also, keep note, all of the examples below have the <strong>absolute</strong> prop on <code>v-navigation-drawer</code> set to <strong>true</strong>. This is simply for the purpose of the documentation and in most cases <strong>SHOULD</strong> be removed when using these exact examples in your application.
 </template>
 
 <script>
