@@ -34,17 +34,17 @@
         <v-stepper-step step="3">Name of step 3</v-stepper-step>
       </v-stepper-header>
       <v-stepper-content step="1">
-        <v-card class="grey lighten-1 mb-5" height="200px"></v-card>
+        <v-card class="secondary mb-5" height="200px"></v-card>
         <v-btn primary @click.native="e1 = 2">Continue</v-btn>
         <v-btn flat dark>Cancel</v-btn>
       </v-stepper-content>
       <v-stepper-content step="2">
-        <v-card class="grey lighten-1 mb-5" height="200px"></v-card>
+        <v-card class="secondary mb-5" height="200px"></v-card>
         <v-btn primary @click.native="e1 = 3">Continue</v-btn>
         <v-btn flat dark>Cancel</v-btn>
       </v-stepper-content>
       <v-stepper-content step="3">
-        <v-card class="grey lighten-1 mb-5" height="200px"></v-card>
+        <v-card class="secondary mb-5" height="200px"></v-card>
         <v-btn primary @click.native="e1 = 1">Continue</v-btn>
         <v-btn flat dark>Cancel</v-btn>
       </v-stepper-content>

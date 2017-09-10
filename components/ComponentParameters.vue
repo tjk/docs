@@ -117,6 +117,12 @@
             '[String, Number]',
             '320',
             'The modal width. Cannot exceed 90% of the screen'
+          ],
+          [
+            'full-width',
+            'Boolean',
+            'False',
+            'Specifies the modal to force 100% width'
           ]
         ]
       },
@@ -283,7 +289,7 @@
             'error',
             'Boolean',
             'False',
-            'Puts the input in an error state'
+            'Puts the input in a manual error state'
           ],
           [
             'error-messages',

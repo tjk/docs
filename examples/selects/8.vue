@@ -31,6 +31,7 @@
                   @input="data.parent.selectItem(data.item)"
                   class="chip--select-multi"
                   :selected="data.selected"
+                  :disabled="data.disabled"
                   :key="JSON.stringify(data.item)"
                 >
                   <v-avatar class="accent">{{ data.item.slice(0, 1).toUpperCase() }}</v-avatar>

@@ -1,7 +1,7 @@
 <template>
   <v-parallax
-    src="/static/doc-images/parallax/material2.jpg"
-    height="300"
+    src="/static/doc-images/bg.jpg"
+    height="700"
     jumbotron
   ></v-parallax>
 </template>

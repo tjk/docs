@@ -25,10 +25,22 @@
               shared: ['detachable'],
               params: [
                 [
+                  'allow-overflow',
+                  'Boolean',
+                  'False',
+                  'Removes overflow re-positioning for menu content'
+                ],
+                [
                   'full-width',
                   'Boolean',
                   'False',
                   'Changes the menu display to block, useful for filling available width in forms'
+                ],
+                [
+                  'min-width',
+                  '[Number, String]',
+                  'null',
+                  `Set's the minimum width for the menu content`
                 ],
                 [
                   'max-width',
@@ -121,6 +133,12 @@
                   'Nudge the menu from the right'
                 ],
                 [
+                  'open-on-hover',
+                  'Boolean',
+                  'False',
+                  'Designates whether menu should open on activator hover'
+                ],
+                [
                   'open-on-click',
                   'Boolean',
                   'True',
@@ -167,6 +185,12 @@
                   'Number',
                   '0',
                   'Used to position the menu when not using an activator slot'
+                ],
+                [
+                  'z-index',
+                  '[Number, String]',
+                  '6',
+                  'Specify the z-index of the menu, useful when stacking multiple layers of components such as <code>v-dialog</code> with an inner <code>v-menu</code>'
                 ]
               ]
             }

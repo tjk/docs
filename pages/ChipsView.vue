@@ -58,7 +58,7 @@
                   'selected',
                   'Boolean',
                   'False',
-                  'Applies a selection color to the chip'
+                  'Applies a selection color to the chip. Primarily used for displaying highlight context in <code>v-select</code>'
                 ]
               ],
               model: {

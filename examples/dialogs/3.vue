@@ -33,7 +33,7 @@
           <v-subheader>General</v-subheader>
           <v-list-tile avatar>
             <v-list-tile-action>
-              <v-checkbox></v-checkbox>
+              <v-checkbox v-model="notifications"></v-checkbox>
             </v-list-tile-action>
             <v-list-tile-content>
               <v-list-tile-title>Notifications</v-list-tile-title>
@@ -42,7 +42,7 @@
           </v-list-tile>
           <v-list-tile avatar>
             <v-list-tile-action>
-              <v-checkbox></v-checkbox>
+              <v-checkbox v-model="sound"></v-checkbox>
             </v-list-tile-action>
             <v-list-tile-content>
               <v-list-tile-title>Sound</v-list-tile-title>
@@ -51,7 +51,7 @@
           </v-list-tile>
           <v-list-tile avatar>
             <v-list-tile-action>
-              <v-checkbox></v-checkbox>
+              <v-checkbox v-model="widgets"></v-checkbox>
             </v-list-tile-action>
             <v-list-tile-content>
               <v-list-tile-title>Auto-add widgets</v-list-tile-title>
@@ -68,7 +68,10 @@
   export default {
     data () {
       return {
-        dialog: false
+        dialog: false,
+        notifications: false,
+        sound: true,
+        widgets: false
       }
     }
   }
