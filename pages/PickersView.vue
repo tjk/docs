@@ -101,15 +101,15 @@
                 ],
                 [
                   'title-date-format',
-                  'Object',
+                  '[Object, Function]',
                   '{ weekday: \'short\', month: \'short\', day: \'numeric\' }',
-                  'Allows you to customize the format of the date string that appears in the title of the date picker. The format is equal to the options argument of the <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString">Date.toLocaleString</a> function.'
+                  'Allows you to customize the format of the date string that appears in the title of the date picker. If the format is Object it will be passed as the options argument to the <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString">Date.toLocaleString</a> function, otherwise (if it\'s a function) it will be called with Date argument.'
                 ],
                 [
                   'header-date-format',
-                  'Object',
+                  '[Object, Function]',
                   '{ month: \'long\', year: \'numeric\' }',
-                  'Allows you to customize the format of the month string that appears in the header of the calendar. The format is equal to the options argument of the <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString">Date.toLocaleString</a> function.'
+                  'Allows you to customize the format of the month string that appears in the header of the calendar. If the format is Object it will be passed as the options argument to the <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString">Date.toLocaleString</a> function, otherwise (if it\'s a function) it will be called with Date argument.'
                 ],
                 [
                   'year-icon',
