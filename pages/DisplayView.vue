@@ -8,13 +8,6 @@
       ad
     grid
     section
-      h6 Viewport sizes
-      ul.mb-5
-        li <code>xs</code> - extra small viewport devices (&lt; 576px)
-        li <code>sm</code> - small viewport devices (&lt; 768px)
-        li <code>md</code> - medium viewport devices (&lt; 992px)
-        li <code>lg</code> - large viewport devices (&lt; 1200px)
-        li <code>xl</code> - extra large viewport devices (&gt; 1200px)
       h6 Classes
       ul.mb-5
         li <code>hidden-xs-only</code> - hidden on extra small viewports only
