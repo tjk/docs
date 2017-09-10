@@ -3,7 +3,8 @@
     codepen(ref="codepen" :pen="pen")
     v-card
       v-toolbar(v-bind:class="[currentColor]" flat dense dark)
-        span.title.white--text(v-text="header")
+        span.title.white--text.layout.align-end {{ header }}
+          span(v-if="newIn").ml-2.body-2.red--text.text--lighten-2 (New in {{ newIn }}+)
         v-spacer
         v-btn(
           dark
@@ -84,7 +85,8 @@
 
     props: {
       file: String,
-      header: String
+      header: String,
+      newIn: String
     },
 
     computed: {

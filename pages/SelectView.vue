@@ -18,7 +18,9 @@
             { header: 'Multiple', file: 'selects/4', desc: `A multi-select can utilize v-chip as the display for selected items.` },
             { header: 'Autocomplete', file: 'selects/5', desc: `Provides type-ahead autocomplete functionality.` },
             { header: 'Scoped slots', file: 'selects/6', desc: `With the power of scoped slots, you can customize the visual output of the select. In this example we add a profile picture for both the chips and list items.` },
-            { header: 'Customized item text and value', file: 'selects/7', desc: `You can specify the specific properties within your items array correspond to the text and value fields. By default, this is <strong>text</strong> and <strong>value</strong>. In this example we also use the <code>return-object</code> prop which will return the entire object of the selected item on selection.` }
+            { header: 'Customized item text and value', file: 'selects/7', desc: `You can specify the specific properties within your items array correspond to the text and value fields. By default, this is <strong>text</strong> and <strong>value</strong>. In this example we also use the <code>return-object</code> prop which will return the entire object of the selected item on selection.` },
+            { header: 'Tags', new: '0.15.3', file: 'selects/8', desc: `With tags you can allow a user to create new values that may not be present in a provided items list. Keep in mind, tags only supports arrays of <strong>primitive</strong> items and cannot be used with props such as <code>item-text</code>, <code>item-value</code> for example.` },
+            { header: 'Asynchronous items', new: '0.15.3', file: 'selects/9', desc: 'Sometimes you need to load data externally based upon a search query. Use the <code>search-input</code> prop with the <strong>.sync</strong> modifier when using the <code>autocomplete</code> prop. We also make use of the new <code>cache-items</code> prop. This will keep a unique list of all items that have been passed to the <code>items</code> prop and is <strong>REQUIRED</strong> when using asynchronous items and the <strong>multiple</strong> prop.' }
           ],
           props: {
             'v-select': {
@@ -29,6 +31,24 @@
                   'Boolean',
                   'False',
                   'Removes content/window overflow detection'
+                ],
+                [
+                  'clearable',
+                  'Boolean',
+                  'False',
+                  'Add input clear functionality'
+                ],
+                [
+                  'cache-items',
+                  'Boolean',
+                  'False',
+                  'Keeps a local <strong>unique</strong> copy of all items that have been passed through the <code>items</code> prop.'
+                ],
+                [
+                  'debounce-search',
+                  '[Number, String]',
+                  '200',
+                  'Debounces the search input value being emitted'
                 ],
                 [
                   'chips',
@@ -89,6 +109,12 @@
                   'Boolean',
                   'False',
                   'Changes the style of the text-field for use in toolbars'
+                ],
+                [
+                  'tags',
+                  'Boolean',
+                  'False',
+                  'Tagging functionality, allows you to enter/navigate/delete items'
                 ],
                 [
                   'auto',

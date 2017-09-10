@@ -135,7 +135,7 @@
               { href: '/vuetify/sponsors-and-backers', title: 'Sponsors and backers' },
               { href: '/vuetify/contributing', title: 'Contributing' },
               { href: '/vuetify/roadmap', title: 'Roadmap' },
-              { href: '/vuetify/a-la-carte', title: 'A la carte', action: 'fiber_new' }
+              { href: '/vuetify/a-la-carte', title: 'A la carte' }
             ]
           },
           {
@@ -177,28 +177,28 @@
             group: '/components',
             items: [
               { href: '/components/alerts', title: 'Alerts' },
-              { href: '/components/avatars', title: 'Avatars', action: 'fiber_new' },
+              { href: '/components/avatars', title: 'Avatars' },
               { href: '/components/breadcrumbs', title: 'Breadcrumbs' },
               { href: '/components/bottom-navigation', title: 'Bottom navigation' },
-              { href: '/components/bottom-sheets', title: 'Bottom sheets', action: 'fiber_new' },
+              { href: '/components/bottom-sheets', title: 'Bottom sheets' },
               { href: '/components/buttons', title: 'Buttons' },
               { href: '/components/floating-action-buttons', title: 'Buttons: Floating Action Buttons' },
               { href: '/components/cards', title: 'Cards' },
               { href: '/components/carousels', title: 'Carousel' },
-              { href: '/components/chips', title: 'Chips' },
+              { href: '/components/chips', title: 'Chips', action: 'file_upload' },
               { href: '/components/data-tables', title: 'Data tables' },
               { href: '/components/dialogs', title: 'Dialogs' },
               { href: '/components/dividers', title: 'Dividers' },
-              { href: '/components/expansion-panels', title: 'Expansion panels', action: 'file_upload' },
+              { href: '/components/expansion-panels', title: 'Expansion panels' },
               { href: '/components/footer', title: 'Footer' },
-              { href: '/components/forms', title: 'Forms', action: 'fiber_new' },
+              { href: '/components/forms', title: 'Forms' },
               { href: '/components/grid-lists', title: 'Grid Lists' },
               { href: '/components/icons', title: 'Icons' },
               { href: '/components/lists', title: 'Lists' },
               { href: '/components/menus', title: 'Menus' },
               { href: '/components/navigation-drawers', title: 'Navigation drawers' },
-              { href: '/components/pagination', title: 'Pagination', action: 'file_upload' },
-              { href: '/components/parallax', title: 'Parallax' },
+              { href: '/components/pagination', title: 'Pagination' },
+              { href: '/components/parallax', title: 'Parallax', action: 'file_upload' },
               { href: '/components/pickers', title: 'Pickers' },
               { href: '/components/progress', title: 'Progress & activity' },
               { href: '/components/selects', title: 'Selects', action: 'file_upload' },
@@ -207,7 +207,7 @@
               { href: '/components/snackbars', title: 'Snackbars & toasts' },
               { href: '/components/steppers', title: 'Steppers' },
               { href: '/components/subheaders', title: 'Subheaders' },
-              { href: '/components/tabs', title: 'Tabs', action: 'file_upload' },
+              { href: '/components/tabs', title: 'Tabs' },
               { href: '/components/text-fields', title: 'Text fields', action: 'file_upload' },
               { href: '/components/toolbars', title: 'Toolbars' }
             ]
