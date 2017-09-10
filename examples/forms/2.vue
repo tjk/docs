@@ -27,7 +27,7 @@
       required
     ></v-checkbox>
 
-    <v-btn @click="submit">submit</v-btn>
+    <v-btn @click="submit" :class="{ green: valid, red: !valid }">submit</v-btn>
     <v-btn @click="clear">clear</v-btn>
   </v-form>
 </template>
@@ -59,7 +59,9 @@
     },
     methods: {
       submit () {
-        this.$refs.form.validate()
+        if (this.$refs.form.validate()) {
+          this.$refs.form.$el.submit()
+        }
       },
       clear () {
         this.$refs.form.reset()
