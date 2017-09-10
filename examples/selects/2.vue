@@ -36,7 +36,7 @@
               label="Select"
               v-bind:items="items"
               v-model="e3"
-              v-bind:rules="[() => e3 && e3.text && e3.text.length > 0 || 'Please select an option']"
+              v-bind:error-messages="['Please select an option']"
               dark
               item-value="text"
             ></v-select>
