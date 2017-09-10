@@ -58,6 +58,12 @@
                   'Boolean',
                   'True',
                   'Displays pagination controls when content overflows'
+                ],
+                [
+                  'mobile-break-point',
+                  '[Number, String]',
+                  '1280',
+                  'Sets the designated mobile breakpoint'
                 ]
               ],
               model: {

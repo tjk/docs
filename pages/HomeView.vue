@@ -3,8 +3,9 @@
     v-toolbar(fixed :class="[toolbar ? 'toolbar--home' : 'hidden']" ).white.text-xs-center
       img(src="/static/doc-images/header-logo.svg" height="38px")
       v-spacer
-      v-btn(flat to="/vuetify/quick-start") Documentation
-      v-btn(flat tag="a" href="https://github.com/vuetifyjs/vuetify/releases" target="_blank" rel="noopener").hidden-xs-only Updates
+      v-toolbar-items
+        v-btn(flat to="/vuetify/quick-start") Documentation
+        v-btn(flat tag="a" href="https://github.com/vuetifyjs/vuetify/releases" target="_blank" rel="noopener").hidden-xs-only Updates
 
     section#hero
       v-container(grid-list-xl)

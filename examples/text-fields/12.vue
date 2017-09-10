@@ -9,7 +9,7 @@
             <v-spacer></v-spacer>
             <v-icon class="white--text">send</v-icon>
           </v-toolbar>
-          <v-container fluid class="pa-0">
+          <v-container fluid class="pa-0 mt-2">
             <v-layout wrap>
               <v-flex xs2>
                 <v-subheader>To</v-subheader>

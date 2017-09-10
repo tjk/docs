@@ -12,7 +12,7 @@
               label="Legal first name"
               class="mt-5"
               v-model="first"
-              :rules="[() => first || 'This field is required']"
+              :rules="[() => first.length > 0 || 'This field is required']"
               required
             ></v-text-field>
             <v-text-field
@@ -25,7 +25,7 @@
               hint="example of persistent helper text"
               persistent-hint
               v-model="last"
-              :rules="[() => last || 'This field is required']"
+              :rules="[() => last.length > 0 || 'This field is required']"
               required
             ></v-text-field>
             <small>*indicates required field</small>

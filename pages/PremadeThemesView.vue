@@ -12,7 +12,7 @@
         )
           v-card(height="100%")
             v-card-media(:src='template.screenshot' height="350px")
-            v-card-title.layout.align-center
+            v-card-title.align-center
               h2.headline.mb-0 {{ template.title }}
                 v-chip(label small class="indigo white--text" v-if="template.tag") {{ template.tag }}
                 v-chip(label small class="blue-grey white--text" v-else) FREE
