@@ -28,7 +28,8 @@
           examples: [
             { header: 'Default', file: 'carousel/1', desc: 'A carousel by default has a slide transition.' },
             { header: 'Custom transition', file: 'carousel/2', desc: 'You can also apply your own custom transition.' },
-            { header: 'Custom delimiter', file: 'carousel/3', desc: 'You can also change the icon for the carousel delimiter.' }
+            { header: 'Custom delimiter', file: 'carousel/3', desc: 'You can also change the icon for the carousel delimiter.' },
+            { header: 'Hide controls', file: 'carousel/4', desc: 'You can hide the bottom controls with the <code>hide-controls</code> prop.' }
           ],
           props: {
             'v-carousel': {
