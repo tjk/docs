@@ -33,6 +33,12 @@
                   'Removes content/window overflow detection'
                 ],
                 [
+                  'browser-autocomplete',
+                  'String',
+                  'on',
+                  'Set the autocomplete prop for the search input when using the <code>autocomplete</code> prop'
+                ],
+                [
                   'clearable',
                   'Boolean',
                   'False',

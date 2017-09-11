@@ -9,6 +9,7 @@
               label="Select a favorite activity or create a new one"
               multiple
               tags
+              :items="items"
             ></v-select>
           </v-flex>
           <v-flex xs12>
@@ -17,6 +18,7 @@
               label="I use chips"
               chips
               tags
+              :items="items"
             ></v-select>
           </v-flex>
           <v-flex xs12>
@@ -25,6 +27,7 @@
               label="I use a scoped slot"
               chips
               tags
+              :items="items"
             >
               <template slot="selection" scope="data">
                 <v-chip
