@@ -83,7 +83,7 @@
         { title: 'Cloudflare', href: 'https://www.cloudflare.com/', src: 'cloudflare.svg' }
       ],
       backers: [
-        { title: 'LMAX Exchange', href: 'https://careers.lmax.com/', src: 'lmax-exchange.png' }
+        { title: 'LMAX Exchange', href: 'https://careers.lmax.com/?utm_source=vuetify&utm_medium=logo-link&utm_campaign=lmax-careers', src: 'lmax-exchange.png' }
       ],
       backers2: [
         { title: 'Deister Software', href: 'http://www.deister.es/', src: 'deister-logo-light.png' },

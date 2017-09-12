@@ -34,7 +34,7 @@
     v-divider
     v-layout(justify-center wrap).pt-3
       a(
-        href="https://careers.lmax.com"
+        href="https://careers.lmax.com/?utm_source=vuetify&utm_medium=logo-link&utm_campaign=lmax-careers"
         target="_blank"
         rel="noopener"
       )
