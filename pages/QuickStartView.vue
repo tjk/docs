@@ -17,6 +17,7 @@
         |&lt;head&gt;
         |  &lt;link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet"&gt;
         |  &lt;link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet"&gt;
+        |  &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"&gt;
         |&lt;/head&gt;
         |&lt;body&gt;
         |  &lt;div id="app"&gt;

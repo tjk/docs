@@ -25,7 +25,7 @@
     v-layout(row wrap justify-space-between)
       v-flex(xs12 md8)
         section-text Choosing a framework can be a daunting task, and I'm not even talking about component frameworks. You've arrived at Vue and now it's time to start developing your next great idea. There are many options to choose from, and everyone says that they are great. So you have to decide, what are my metrics for success?
-        section-text This was me almost a year ago. There were plenty of <strong>UI toolkits</strong> to choose from, but none them had everything that I needed...yeah, you've heard that before. Often enough though, it <em>is</em> the reason individuals attempt to create products that fill gaps, and is why I started working on Vuetify.
+        section-text This was me almost a year ago. There were plenty of <strong>UI toolkits</strong> to choose from, but none them had everything that I needed...yeah, you've heard that before. Often enough though, it <em>is</em> the reason individual's attempts to create products that fill gaps, and is why I started working on Vuetify.
         section-text.mb-0 But now you are the one searching for that perfect framework, and Vuetify is another on a list of many, vying for your attention. While my opinion will be subjective, I will try to outline features that I believe will be valuable to you and/or your organization.
         section-header.title
           v-icon.mr-3.purple--text brush

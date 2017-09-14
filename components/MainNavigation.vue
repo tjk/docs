@@ -4,6 +4,7 @@
     persistent
     dark
     enable-resize-watcher
+    app
   )
     v-toolbar(flat dark).transparent
       v-list.pa-0.vuetify

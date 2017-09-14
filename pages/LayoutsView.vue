@@ -6,16 +6,36 @@
         section-text This is the default application markup for Vuetify. The key is that drawer, toolbar, main and footer exist on the same level in the DOM. Using any one of the 5 pre-made vue-cli templates will automatically include this structure:
         markup(lang='html')
           |&lt;v-app&gt;
-          |   &lt;v-navigation-drawer&gt;&lt;/v-navigation-drawer&gt;
-          |   &lt;v-toolbar&gt;&lt;/v-toolbar&gt;
+          |   &lt;v-navigation-drawer app&gt;&lt;/v-navigation-drawer&gt;
+          |   &lt;v-toolbar app&gt;&lt;/v-toolbar&gt;
           |   &lt;main&gt;
-          |     &lt;v-container fluid&gt;
-          |       &lt;router-view&gt;&lt;/router-view&gt;
-          |     &lt;/v-container&gt;
+          |     &lt;v-content&gt;
+          |       &lt;v-container fluid&gt;
+          |         &lt;router-view&gt;&lt;/router-view&gt;
+          |       &lt;/v-container&gt;
+          |     &lt;/v-content&gt;
           |   &lt;/main&gt;
-          |   &lt;v-footer&gt;&lt;/v-footer&gt;
+          |   &lt;v-footer app&gt;&lt;/v-footer&gt;
           |&lt;/v-app&gt;
-        v-alert(error value="true") In order for your application to work properly, you <strong>must</strong> wrap it in a <code>v-app</code> component. If you absolutely cannot wrap your application, you must add corresponding class for your chosen theme. <strong>"application--light"</strong> or <strong>"application--dark"</strong>. Also, keep note, all of the examples below have the <strong>absolute</strong> prop on <code>v-navigation-drawer</code> set to <strong>true</strong>. This is simply for the purpose of the documentation and in most cases <strong>SHOULD</strong> be removed when using these exact examples in your application.
+        v-alert(error value="true") In order for your application to work properly, you <strong>must</strong> wrap it in a <code>v-app</code> component. This component is required for determining grid breakpoints for the layout. This can exist <strong>anywhere</strong> above 
+    section#layouts
+      v-container(fluid grid-list-xl).pa-0
+        v-layout(row wrap)
+          v-flex(
+            xs12 sm6 md4 lg3
+            v-for="layout in layouts"
+            :key="layout.name"
+          )
+            v-card(
+              hover
+              :href="layout.href"
+              target="_blank"
+              rel="noopener"
+            )
+              v-card-media(height="300px").grey.lighten-2
+                v-layout(align-center)
+                  v-flex.text-xs-center
+                    div.title {{ layout.name }}
 </template>
 
 <script>
@@ -27,43 +47,7 @@
           edit: 'LayoutsView',
           component: 'app',
           desc: 'The layout system is the heart of every application. Below are the officially supported examples, ranging from desktop to mobile applications. While Vuetify.js aims to be as un-opinionated as possible, the layout structure must be <strong>explicitly</strong> followed to receive the expected results.',
-          examples: [
-            {
-              header: 'Baseline',
-              file: 'layouts/1',
-              desc: 'The default structure of the Vuetify layout is one of the few opinionated designs you will encounter in the framework. It is done so that each layout is easy to understand and works as expected for any given scenario. Below is a <strong>baseline</strong> structure for a layout. It includes a navigation drawer, toolbar, content and footer.'
-            },
-            {
-              header: 'Baseline - Flipped',
-              file: 'layouts/2',
-              desc: 'Here is a flipped version of the <strong>baseline</strong> layout.'
-            },
-            {
-              header: 'Complex',
-              file: 'layouts/3',
-              desc: 'More complex layouts are also supported. This one includes a navigation drawer w/ right variant, toolbar, temporary navigation drawer w/ right variant, content and footer.'
-            },
-            {
-              header: 'Dark theme',
-              file: 'layouts/4',
-              desc: 'Vuetify also supports the dark application theme. This will not override components that have default themes so in some cases it will be necessary to manually set the dark theme accents.'
-            },
-            {
-              header: 'Example - Google Keep',
-              file: 'layouts/5',
-              desc: ''
-            },
-            {
-              header: 'Example - Google Contacts',
-              file: 'layouts/6',
-              desc: ''
-            },
-            {
-              header: 'Example - Youtube',
-              file: 'layouts/7',
-              desc: ''
-            }
-          ],
+          examples: [],
           props: {
             'v-app': {
               shared: ['theme'],
@@ -73,30 +57,6 @@
                   'String',
                   'app',
                   'The id for your application'
-                ],
-                [
-                  'footer',
-                  'Boolean',
-                  'False',
-                  'Configures the application to have a footer'
-                ],
-                [
-                  'fixed-footer',
-                  'Boolean',
-                  'False',
-                  'Configures the application to have a fixed footer'
-                ],
-                [
-                  'toolbar',
-                  'Boolean',
-                  'False',
-                  'Configures the application to have a fixed toolbar'
-                ],
-                [
-                  'fill-height',
-                  'Boolean',
-                  'False',
-                  'Container will fill all available height and center its contents vertically'
                 ]
               ]
             }
@@ -116,7 +76,16 @@
               ]
             }
           }
-        }
+        },
+        layouts: [
+          { name: 'Baseline', href: '/examples/layouts/baseline.html' },
+          { name: 'Baseline Flipped', href: '/examples/layouts/baseline-flipped.html' },
+          { name: 'Complex', href: '/examples/layouts/complex.html' },
+          { name: 'Dark Theme', href: '/examples/layouts/dark.html' },
+          { name: 'Google Contacts', href: '/examples/layouts/google-contacts.html' },
+          { name: 'Google Keep', href: '/examples/layouts/google-keep.html' },
+          { name: 'Google Youtube', href: '/examples/layouts/google-youtube.html' }
+        ]
       }
     }
   }

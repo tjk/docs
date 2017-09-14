@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-footer.white.main-footer.layout.wrap
+  v-footer(app).white.main-footer.layout.wrap
     ad2
     v-layout(row grow).ma-0
       v-flex(

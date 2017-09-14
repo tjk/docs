@@ -1,5 +1,10 @@
 <template lang="pug">
-  v-toolbar(:class="[$store.state.currentColor]" fixed dark)#main-toolbar
+  v-toolbar(
+    :class="[$store.state.currentColor]"
+    fixed
+    dark
+    app
+  )#main-toolbar
     v-toolbar-side-icon(@click.stop="toggleSidebar")
 
     transition(name="slide" mode="out-in")

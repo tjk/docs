@@ -1,11 +1,12 @@
 <template lang="pug">
-  v-app(toolbar footer)
+  v-app
     main-navigation
     main-toolbar
     main
-      v-container(fluid)
-        transition(name="slide" mode="out-in")
-          router-view
+      v-content
+        v-container(fluid)
+          transition(name="slide" mode="out-in")
+            router-view
     main-footer
     v-fab-transition
       v-btn(
