@@ -9,7 +9,7 @@
           </v-flex>
           <v-flex xs12 sm4>
             <p>Segmented</p>
-            <v-select v-bind:items="dropdown_icon" label="Select" segmented></v-select>
+            <v-select v-bind:items="dropdown_segmented" label="Select" segmented></v-select>
           </v-flex>
           <v-flex xs12 sm4>
             <p>Editable</p>
@@ -26,7 +26,11 @@
     data () {
       return {
         dropdown_font: ['Arial', 'Calibri', 'Courier', 'Verdana'],
-        dropdown_icon: ['list', 'favorite', 'delete'],
+        dropdown_segmented: [
+          { text: 'Arial', callback: () => {} },
+          { text: 'Calibri', callback: () => {} },
+          { text: 'Verdana', callback: () => {} },
+        ],
         dropdown_edit: [
           { text: '100%' },
           { text: '75%' },
