@@ -48,7 +48,8 @@
           events: {
             'v-form': {
               params: [
-                ['input', 'Boolean', 'Validation state changed']
+                ['input', 'Boolean', 'Validation state changed'],
+                ['submit', '-', 'Form has been submitted. You can use <code>@submit.prevent</code> to suppress this event and disable form submission (e.g. to avoid reloading the page)']
               ]
             },
           }
