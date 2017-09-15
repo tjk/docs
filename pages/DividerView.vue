@@ -25,7 +25,7 @@
                   'inset',
                   'Boolean',
                   'False',
-                  'Adds identation (72px)'
+                  'Adds indentation (72px)'
                 ]
               ]
             }
