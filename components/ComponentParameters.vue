@@ -110,7 +110,7 @@
             'scrollable',
             'Boolean',
             'False',
-            'When set to true, expects a card, card-title, card-text and card-actions. Will set card-text to overflow-y'
+            'When set to true, expects a card, card-title, card-text and card-actions. Additionally card-text should have specified height. Will set card-text to overflow-y'
           ],
           [
             'disabled',
