@@ -36,12 +36,6 @@
               shared: ['theme', 'contextual', 'router', 'positionable'],
               params: [
                 [
-                  'active',
-                  'String',
-                  '',
-                  'Apples the .btn--active class'
-                ],
-                [
                   'block',
                   'Boolean',
                   'False',
