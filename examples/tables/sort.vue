@@ -1,36 +1,28 @@
 <template>
-  <v-data-table
-    v-bind:headers="headers"
-    v-bind:items="items"
-    v-bind:search="search"
-    v-model="selected"
-    selected-key="name"
-    select-all
-    class="elevation-1"
-  >
-    <template slot="headerCell" scope="props">
-      <span v-tooltip:bottom="{ 'html': props.header.text }">
-        {{ props.header.text }}
-      </span>
-    </template>
-    <template slot="items" scope="props">
-      <td>
-        <v-checkbox
-          primary
-          hide-details
-          v-model="props.selected"
-        ></v-checkbox>
-      </td>
-      <td>{{ props.item.name }}</td>
-      <td class="text-xs-right">{{ props.item.calories }}</td>
-      <td class="text-xs-right">{{ props.item.fat }}</td>
-      <td class="text-xs-right">{{ props.item.carbs }}</td>
-      <td class="text-xs-right">{{ props.item.protein }}</td>
-      <td class="text-xs-right">{{ props.item.sodium }}</td>
-      <td class="text-xs-right">{{ props.item.calcium }}</td>
-      <td class="text-xs-right">{{ props.item.iron }}</td>
-    </template>
-  </v-data-table>
+  <div>
+    <v-data-table
+      v-bind:headers="headers"
+      v-bind:items="items"
+      v-bind:search="search"
+      v-bind:pagination.sync="pagination"
+      class="elevation-1"
+    >
+      <template slot="items" scope="props">
+        <td>{{ props.item.name }}</td>
+        <td class="text-xs-right">{{ props.item.calories }}</td>
+        <td class="text-xs-right">{{ props.item.fat }}</td>
+        <td class="text-xs-right">{{ props.item.carbs }}</td>
+        <td class="text-xs-right">{{ props.item.protein }}</td>
+        <td class="text-xs-right">{{ props.item.sodium }}</td>
+        <td class="text-xs-right">{{ props.item.calcium }}</td>
+        <td class="text-xs-right">{{ props.item.iron }}</td>
+      </template>
+    </v-data-table>
+    <div class="text-xs-center pt-2">
+      <v-btn primary @click.native="toggleOrder">Toggle sort order</v-btn>
+      <v-btn primary @click.native="nextSort">Sort next column</v-btn>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -38,6 +30,9 @@
     data () {
       return {
         search: '',
+        pagination: {
+          sortBy: 'fat'
+        },
         selected: [],
         headers: [
           {
@@ -166,6 +161,17 @@
             iron: '6%'
           }
         ]
+      }
+    },
+    methods: {
+      toggleOrder () {
+        this.pagination.descending = !this.pagination.descending
+      },
+      nextSort () {
+        let index = this.headers.findIndex(h => h.value === this.pagination.sortBy)
+        index = (index + 1) % this.headers.length
+        index = index === 0 ? index + 1 : index
+        this.pagination.sortBy = this.headers[index].value
       }
     }
   }
