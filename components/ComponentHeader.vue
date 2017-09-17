@@ -1,8 +1,10 @@
 <template lang="pug">
   h6.component-header
     div(class="text-xs-right")
-      span(class="source" v-tooltip="{ value: location, html: 'View source' }" v-on:click="$emit('source')")
-        v-icon code
+      v-tooltip
+        span(slot="activator" class="source" v-on:click="$emit('source')")
+          v-icon code
+        span View Source
     div
       slot
 </template>

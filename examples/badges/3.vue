@@ -1,7 +1,13 @@
 <template>
   <div class="text-xs-center">
-    <span v-badge:2.left>Examples</span>
+    <v-badge left>
+      <span slot="badge">2</span>
+      <span>Examples</span>
+    </v-badge>
     &nbsp;&nbsp;
-    <span v-badge:list.icon class="green--after">Lists</span>
+    <v-badge color="green">
+      <v-icon slot="badge" dark>list</v-icon>
+      <span>Lists</span>
+    </v-badge>
   </div>
 </template>

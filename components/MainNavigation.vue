@@ -179,6 +179,7 @@
             items: [
               { href: '/components/alerts', title: 'Alerts' },
               { href: '/components/avatars', title: 'Avatars' },
+              { href: '/components/badges', title: 'Badges' },
               { href: '/components/breadcrumbs', title: 'Breadcrumbs' },
               { href: '/components/bottom-navigation', title: 'Bottom navigation' },
               { href: '/components/bottom-sheets', title: 'Bottom sheets' },
@@ -210,7 +211,8 @@
               { href: '/components/subheaders', title: 'Subheaders' },
               { href: '/components/tabs', title: 'Tabs' },
               { href: '/components/text-fields', title: 'Text fields', action: 'file_upload' },
-              { href: '/components/toolbars', title: 'Toolbars' }
+              { href: '/components/toolbars', title: 'Toolbars' },
+              { href: '/components/tooltips', title: 'Tooltips' }
             ]
           },
           {
@@ -218,11 +220,9 @@
             action: 'polymer',
             group: '/directives',
             items: [
-              { href: '/directives/badges', title: 'Badges' },
               { href: '/directives/resizing', title: 'Resizing' },
               { href: '/directives/ripples', title: 'Ripples' },
               { href: '/directives/scrolling', title: 'Scrolling' },
-              { href: '/directives/tooltips', title: 'Tooltips' },
               { href: '/directives/touch-support', title: 'Touch Support' }
             ]
           },

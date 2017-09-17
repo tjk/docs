@@ -5,8 +5,14 @@
         <v-btn @click.native="show = !show">toggle</v-btn>
       </v-flex>
       <v-flex xs12 class="mt-5">
-        <v-icon large v-badge="{ value: 6, left: true, visible: show}" class="grey--text text--lighten-1">shopping_cart</v-icon>
-        <v-icon large v-badge="badge" class="grey--text red--after">mail</v-icon>
+        <v-badge color="cyan" v-model="show" left>
+          <span slot="badge">6</span>
+          <v-icon large class="grey--text text--lighten-1">shopping_cart</v-icon>
+        </v-badge>
+        <v-badge color="indigo" v-model="show">
+          <span slot="badge">6</span>
+          <v-icon large class="grey--text">mail</v-icon>
+        </v-badge>
       </v-flex>
     </v-layout>
   </v-container>

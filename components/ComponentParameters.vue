@@ -25,7 +25,11 @@
       hide-actions
     )
       template(slot="items" scope="{ item }")
-          td(v-for="(opt, i) in item" v-bind:key="i" v-html="opt")
+        td(
+          v-for="(opt, i) in item"
+          v-bind:key="i"
+          v-html="opt"
+        )
 </template>
 
 <script>

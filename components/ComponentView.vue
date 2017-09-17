@@ -7,25 +7,29 @@
           dd(slot="desc" v-html="doc.desc")
           v-divider
           v-card-actions
-            v-btn(
-              v-bind:href="'https://github.com/vuetifyjs/vuetify/tree/master/src/'+componentLink"
-              target="_blank"
-              icon
-              v-tooltip:right="{ html: `View ${doc.directive ? 'Directive' : 'Component'}` }"
-              v-if="componentLink"
-              v-bind:class="[`${currentColor}--text`]"
-            )
-              v-icon widgets
-            v-btn(
-              tag="a"
-              v-bind:href="'https://github.com/vuetifyjs/docs/tree/master/pages/'+doc.edit+'.vue'"
-              target="_blank"
-              icon
-              v-tooltip:right="{ html: 'Edit this page' }"
-              v-if="doc.edit"
-              v-bind:class="[`${currentColor}--text`]"
-            )
-              v-icon edit
+            v-tooltip(bottom)
+              v-btn(
+                v-bind:href="'https://github.com/vuetifyjs/vuetify/tree/master/src/'+componentLink"
+                target="_blank"
+                icon
+                slot="activator"
+                v-if="componentLink"
+                v-bind:class="[`${currentColor}--text`]"
+              )
+                v-icon widgets
+              span {{ `View ${doc.directive ? 'Directive' : 'Component'}` }}
+            v-tooltip(bottom)
+              v-btn(
+                tag="a"
+                v-bind:href="'https://github.com/vuetifyjs/docs/tree/master/pages/'+doc.edit+'.vue'"
+                target="_blank"
+                icon
+                slot="activator"
+                v-if="doc.edit"
+                v-bind:class="[`${currentColor}--text`]"
+              )
+                v-icon edit
+              span Edit this page
             v-spacer
             v-btn(
               flat

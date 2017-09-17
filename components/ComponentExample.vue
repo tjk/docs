@@ -6,29 +6,35 @@
         span.title.white--text.layout.align-end {{ header }}
           span(v-if="newIn").ml-2.body-2.red--text.text--lighten-2 (New in {{ newIn }}+)
         v-spacer
-        v-btn(
-          dark
-          icon
-          tag="a"
-          v-bind:href="'https://github.com/vuetifyjs/docs/tree/master/examples/'+file+'.vue'"
-          target="_blank"
-          v-tooltip:left="{ html: 'View on Github' }"
-        )
-          v-icon fa-github
-        v-btn(
-          dark
-          icon
-          v-on:click="sendToCodepen"
-          v-tooltip:left="{ html: 'Edit in codepen' }"
-        )
-          v-icon fa-codepen
-        v-btn(
-          dark
-          icon
-          v-on:click.stop="panel = !panel"
-          v-tooltip:left="{ html: 'View source' }"
-        )
-          v-icon code
+        v-tooltip(bottom)
+          v-btn(
+            dark
+            icon
+            tag="a"
+            v-bind:href="'https://github.com/vuetifyjs/docs/tree/master/examples/'+file+'.vue'"
+            target="_blank"
+            slot="activator"
+          )
+            v-icon fa-github
+          span View on Github
+        v-tooltip(bottom)
+          v-btn(
+            dark
+            icon
+            v-on:click="sendToCodepen"
+            slot="activator"
+          )
+            v-icon fa-codepen
+          span Edit in codepen
+        v-tooltip(bottom)
+          v-btn(
+            dark
+            icon
+            v-on:click.stop="panel = !panel"
+            slot="activator"
+          )
+            v-icon code
+          span View source
       v-expansion-panel.elevation-0.component-example__panel
         v-expansion-panel-content(v-model="panel")
           v-tabs(ref="tabs" dark :scrollable="false")

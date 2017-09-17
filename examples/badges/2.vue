@@ -1,19 +1,23 @@
 <template>
   <div class="text-xs-center">
-    <v-icon 
-      large 
-      v-badge:done.overlap.icon.left 
-      class="grey--text text--lighten-1"
-    >
-      account_circle
-    </v-icon>
+    <v-badge overlay left color="purple" overlap>
+      <v-icon slot="badge" dark>done</v-icon>
+      <v-icon 
+        large
+        class="grey--text text--lighten-1"
+      >
+        account_circle
+      </v-icon>
+    </v-badge>
 
-    <v-icon 
-      large 
-      v-badge:notifications.icon.overlap
-      class="grey--text text--darken-1 orange--after"
-    >
-      account_box
-    </v-icon>
+    <v-badge overlap color="orange">
+      <v-icon slot="badge" dark>notifications</v-icon>
+      <v-icon
+        large
+        class="grey--text text--darken-1"
+      >
+        account_box
+      </v-icon>
+    </v-badge>
   </div>
 </template>

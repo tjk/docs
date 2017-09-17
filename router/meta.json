@@ -131,6 +131,12 @@
     "description": "The v-avatar component is used to control the size and border radius of an image.",
     "keywords": "avatars, components"
   },
+  "/components/badges": {
+    "h1": "Badges",
+    "title": "Badges",
+    "description": "Badge component for the Vuetify framework.",
+    "keywords": "badges"
+  },
   "/components/breadcrumbs": {
     "h1": "Breadcrumbs",
     "title": "Breadcrumbs Component",
@@ -329,11 +335,11 @@
     "description": "Toolbars component for the Vuetify framework.",
     "keywords": "toolbars"
   },
-  "/directives/badges": {
-    "h1": "Badges",
-    "title": "Badges",
-    "description": "Badges directive for the Vuetify framework.",
-    "keywords": "badges"
+  "/components/tooltips": {
+    "h1": "Tooltip",
+    "title": "Tooltip",
+    "description": "Tooltip components for the Vuetify framework.",
+    "keywords": "tooltips"
   },
   "/directives/resizing": {
     "h1": "Resizing",
@@ -352,12 +358,6 @@
     "title": "Scrolling",
     "description": "Scroll directive for the Vuetify framework.",
     "keywords": "scroll, scroll directive, window scroll directive"
-  },
-  "/directives/tooltips": {
-    "h1": "Tooltip",
-    "title": "Tooltip",
-    "description": "Tooltip directive for the Vuetify framework.",
-    "keywords": "tooltips"
   },
   "/directives/touch-support": {
     "h1": "Touch Support",
