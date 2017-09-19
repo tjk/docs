@@ -60,6 +60,12 @@
               shared: ['router'],
               params: [
                 [
+                  'active',
+                  'Boolean',
+                  'True',
+                  'If set to false the list tile will not be rendered as a link even if it has to/href prop or @click handler'
+                ],
+                [
                   'avatar',
                   'Boolean',
                   'False',
