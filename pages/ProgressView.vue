@@ -26,6 +26,7 @@
           ],
           props: {
             'v-progress-circular': {
+              shared: ['colorable'],
               params: [
                 [
                   'fill',
