@@ -92,10 +92,7 @@
                 [
                   'filter',
                   'Function',
-                  `(val, search) => {
-                  defined', 'boolean'].indexOf(typeof val) === -1 &&
-                      val.toString().toLowerCase().indexOf(search) !== -1
-                  }`,
+                  `(val, search) => { return val !== null && ['undefined', 'boolean'].indexOf(typeof val) === -1 && val.toString().toLowerCase().indexOf(search) !== -1 }`,
                   'The filtering method for search'
                 ],
                 [
