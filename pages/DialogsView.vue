@@ -42,7 +42,7 @@
                 [
                   'transition',
                   '[Boolean, String]',
-                  'v-modal-transition',
+                  'v-dialog-transition',
                   'Defines show/hide transition. Set to false for no transition'
                 ]
               ],
