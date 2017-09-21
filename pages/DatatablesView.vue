@@ -111,6 +111,12 @@
                   'Custom sort filter'
                 ],
                 [
+                  'must-sort',
+                  'Boolean',
+                  'false',
+                  'Ensures that column is always sorted instead of toggling between <code>sorted ascending</code>/<code>sorted descending</code>/<code>unsorted</code> states'
+                ],
+                [
                   'total-items',
                   'Number',
                   '-',
