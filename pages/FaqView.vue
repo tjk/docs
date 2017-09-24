@@ -96,6 +96,10 @@
         {
           q: `My dialog closes immediately after clicking the button`,
           a: `When not using the <strong>activator</strong> slot for <code>v-menu</code> and <code>v-dialog</code> for example, you must manually stop the <em>propagation</em> of the click event. To do this, simply add the <em>.stop</em> modifier to the click event, <code>@click.stop="myMethod"</code>.`
+        },
+        {
+          q: `Relative images are not working in <code>v-card</code> components`,
+          a: `Vue loader converts relative paths into require functions automatically for you. Unfortunately, this is not the case when it comes to custom components. In order to use relative paths, you must use the <code>require</code> function, e.g. <code>:src="require('/path/to/relative/asset')"</code>`
         }
       ],
       search: ''
