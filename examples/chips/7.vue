@@ -12,6 +12,7 @@
     <template slot="selection" scope="data">
       <v-chip
         close
+        @input="remove(data.item)"
         :selected="data.selected"
       >
         <strong>{{ data.item }}</strong>&nbsp;
@@ -25,7 +26,14 @@
   export default {
     data () {
       return {
-        chips: ['Progamming', 'Playing video games']
+        chips: ['Progamming', 'Playing video games', 'Watching', 'Sleeping']
+      }
+    },
+
+    methods: {
+      remove(item) {
+        this.chips.splice(this.chips.indexOf(item), 1)
+        this.chips = [...this.chips]
       }
     }
   }
