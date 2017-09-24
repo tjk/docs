@@ -22,8 +22,9 @@
           <v-date-picker v-model="e3" no-title scrollable actions>
             <template scope="{ save, cancel }">
               <v-card-actions>
+                <v-spacer></v-spacer>
                 <v-btn flat primary @click.native="cancel()">Cancel</v-btn>
-                <v-btn flat primary @click.native="save()">Save</v-btn>
+                <v-btn flat primary @click.native="save()">OK</v-btn>
               </v-card-actions>
             </template>
           </v-date-picker>
@@ -43,11 +44,12 @@
             prepend-icon="event"
             readonly
           ></v-text-field>
-          <v-date-picker v-model="e3" scrollable >
+          <v-date-picker v-model="e3" scrollable actions>
             <template scope="{ save, cancel }">
               <v-card-actions>
+                <v-spacer></v-spacer>
                 <v-btn flat primary @click.native="cancel()">Cancel</v-btn>
-                <v-btn flat primary @click.native="save()">Save</v-btn>
+                <v-btn flat primary @click.native="save()">OK</v-btn>
               </v-card-actions>
             </template>
           </v-date-picker>
