@@ -39,6 +39,7 @@
         component: Object.keys(this.data)[0],
         search: '',
         shared: {
+          app: this.makeApp(),
           dialog: this.makeDialog(),
           contextual: this.makeContextual(),
           router: this.makeRouter(),
@@ -51,7 +52,8 @@
           positionable: this.makePosition(),
           transitionable: this.makeTransition(),
           colorable: this.makeColorable(),
-          filterable: this.makeFilter()
+          filterable: this.makeFilter(),
+          menu: this.makeMenu()
         }
       }
     },
@@ -95,6 +97,98 @@
             desc: d[3]
           }
         })
+      },
+      makeApp () {
+        return [
+          [
+            'app',
+            'Boolean',
+            'False',
+            'Designates the component as part of the application layout. Used for dynamically adjusting content sizing'
+          ]
+        ]
+      },
+      makeMenu () {
+        return [
+          [
+            'allow-overflow',
+            'Boolean',
+            'False',
+            'Removes overflow re-positioning for the content'
+          ],
+          [
+            'min-width',
+            '[Number, String]',
+            'null',
+            `Set's the minimum width for the content`
+          ],
+          [
+            'max-width',
+            '[Number, String]',
+            'null',
+            `Set's the maximum width for the content`
+          ],
+          [
+            'top',
+            'Boolean',
+            'False',
+            'Designates content to open up'
+          ],
+          [
+            'right',
+            'Boolean',
+            'False',
+            'Designates content to open right'
+          ],
+          [
+            'bottom',
+            'Boolean',
+            'False',
+            'Designates content to open down'
+          ],
+          [
+            'left',
+            'Boolean',
+            'False',
+            'Designates content to open left'
+          ],
+          [
+            'nudge-top',
+            'Number',
+            '0',
+            'Nudge the content from the top'
+          ],
+          [
+            'nudge-bottom',
+            'Number',
+            '0',
+            'Nudge the content from the bottom'
+          ],
+          [
+            'nudge-left',
+            'Number',
+            '0',
+            'Nudge the content from the left'
+          ],
+          [
+            'nudge-right',
+            'Number',
+            '0',
+            'Nudge the content from the right'
+          ],
+          [
+            'position-x',
+            'Number',
+            '0',
+            'Used to position the content when not using an activator slot'
+          ],
+          [
+            'position-y',
+            'Number',
+            '0',
+            'Used to position the content when not using an activator slot'
+          ]
+        ]
       },
       makeDialog () {
         return [

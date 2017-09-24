@@ -75,21 +75,14 @@
               v-card-text.py-5
                 v-layout(row wrap).text-xs-center
                   v-flex(xs12).mb-5
-                    h2 Has Vuetify helped you create an amazing application?<br> <br class="hidden-md-and-up"> You can show your support by making a <strong>donation</strong> in one of two ways:
-                  v-flex(xs12 sm3 offset-sm3)
+                    h2 Has Vuetify helped you create an amazing application?<br> <br class="hidden-md-and-up"> You can show your support by backing the project on Patreon:
+                  v-flex(xs12)
                     a(
                       href="https://www.patreon.com/vuetify"
                       target="_blank" rel="noopener"
                     )
                       div.display-1.my-3 Patreon
                       img(src="/static/doc-images/patreon.png" width="125px")
-                  v-flex(xs12 sm3)
-                    a(
-                      href="https://paypal.me/vuetify"
-                      target="_blank" rel="noopener"
-                    )
-                      div.display-1.my-3 PayPal
-                      img(src="/static/doc-images/paypal.png" width="125px")
 
       section#footer-hero.mb-0
         v-container
@@ -121,8 +114,6 @@
           ul
             li
               a(href="https://www.patreon.com/vuetify" target="_blank") Patreon
-            li
-              a(href="https://www.paypal.me/vuetify" target="_blank") PayPal
 
         v-flex(xs6 sm3)
           h5 Sponsors

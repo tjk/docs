@@ -6,12 +6,14 @@
     <v-avatar>
       <img src="/static/doc-images/john.jpg" alt="John">
     </v-avatar>
-    <v-avatar
-      class="purple red--after"
-      v-badge="{ overlap: true, value: '3' }"
-    >
-      <v-icon dark>notifications</v-icon>
-    </v-avatar>
+    <v-badge overlap>
+      <span slot="badge">3</span>
+      <v-avatar
+        class="purple red--after"
+      >
+        <v-icon dark>notifications</v-icon>
+      </v-avatar>
+    </v-badge>
     <v-avatar class="teal">
       <span class="white--text headline">C</span>
     </v-avatar>

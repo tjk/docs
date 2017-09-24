@@ -56,7 +56,7 @@
           ],
           props: {
             'v-navigation-drawer': {
-              shared: ['theme', 'overlay'],
+              shared: ['app', 'theme', 'overlay'],
               model: {
                 type: ['Boolean'],
                 default: 'True'

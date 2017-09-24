@@ -25,42 +25,39 @@
           ],
           props: {
             'v-badge': {
+              model: {
+                type: '*'
+              },
               params: [
                 [
-                  'v-badge:arg.icon',
-                  'Boolean',
+                  'color',
+                  'String',
                   'False',
-                  'Specifies the use of an icon'
+                  'Designate a custom badge color from the MD color spec'
                 ],
                 [
-                  'v-badge:arg.left',
+                  'left',
                   'Boolean',
                   'False',
-                  'Positions the badge to the left of the element'
+                  'Position the badge to the left'
                 ],
                 [
-                  'v-badge:arg.overlap',
+                  'bottom',
                   'Boolean',
                   'False',
-                  'Overlaps badge on element'
+                  'Position the badge to the bottom'
                 ],
                 [
-                  'v-badge:arg.right',
-                  'Boolean',
-                  'False',
-                  'Positions the badge to the right of the element'
+                  'transition',
+                  'String',
+                  'fab-transition',
+                  'Transition used when enabling or disabling the bdage'
                 ],
                 [
-                  'v-badge:arg.bottom',
+                  'overlap',
                   'Boolean',
                   'False',
-                  'Positions the badge to the bottom of the element'
-                ],
-                [
-                  'visible',
-                  'Boolean',
-                  'False',
-                  'Badge object property for determining visibility, see example #4'
+                  'Remove the added margin and allow badge to overlap designated element'
                 ]
               ]
             }

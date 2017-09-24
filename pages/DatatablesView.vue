@@ -60,6 +60,12 @@
                   'Display text when there are no filtered results.'
                 ],
                 [
+                  'must-sort',
+                  'Boolean',
+                  'False',
+                  'Forces at least one column to always be sorted'
+                ],
+                [
                   'rows-per-page-text',
                   'String',
                   'Rows per page:',

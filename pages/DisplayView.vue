@@ -4,12 +4,13 @@
       v-flex(xs12 sm8 md12)
         section-def
           dt(slot="title") Display
-          dd(slot="desc") The display helpers allow you to control the displaying of content based upon viewport width.
+          dd(slot="desc") The display helpers allow you to control the display of content. This includes being conditionally visible based upon the current viewport, or the actual element display type.
       ad
     grid
     section
       h6 Classes
-      ul.mb-5
+      ul.mb-3
+        li.subheader.pl-0 Visibility
         li <code>hidden-xs-only</code> - hidden on extra small viewports only
         li <code>hidden-sm-and-down</code> - hidden on small viewports and down
         li <code>hidden-sm-and-up</code> - hidden on small viewports and up
@@ -20,6 +21,12 @@
         li <code>hidden-lg-and-down</code> - hidden on large viewports and down
         li <code>hidden-lg-and-up</code> - hidden on large viewports and up
         li <code>hidden-xl-only</code> - hidden on extra large viewports only
+      ul.mb-5
+        li.subheader.pl-0 Display
+        li <code>d-flex</code> - sets element display to flex
+        li <code>d-inline-flex</code> - sets element display to inline-flex
+        li <code>d-block</code> - sets element display to block
+        li <code>d-inline-block</code> - sets element display to inline-block
       component-example(header="Hidden elements" file="display/1")
         div(slot="desc") The toolbar links will be hidden on small viewport devices and down
 </template>
@@ -29,3 +36,10 @@
     name: 'display-view'
   }
 </script>
+
+<style lang="stylus">
+  #display-view
+    ul
+      li:not(:first-child)
+        margin-left: 32px
+</style>

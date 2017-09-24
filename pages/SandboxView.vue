@@ -8,14 +8,6 @@
       ad
     section
       v-layout
-        v-flex(xs12)
-          component-example(
-            header="Application"
-            file="sandbox/1"
-          )
+        v-flex(xs12).text-xs-center
+          v-btn(href="javascript:;" primary large).mt-5 Go to Sandbox
 </template>
-
-<style lang="stylus">
-  #sandbox-view .application
-    z-index: 0
-</style>

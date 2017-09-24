@@ -30,7 +30,7 @@
           ],
           props: {
             'v-toolbar': {
-              shared: ['theme'],
+              shared: ['app', 'theme'],
               params: [
                 [
                   'card',

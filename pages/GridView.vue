@@ -212,13 +212,13 @@
           },
           slots: {
             'v-container': {
-              default: true
+              shared: ['default']
             },
             'v-layout': {
-              default: true
+              shared: ['default']
             },
             'v-flex': {
-              default: true
+              shared: ['default']
             }
           },
           functional: {

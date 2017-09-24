@@ -42,6 +42,12 @@
                   'Enable autofocus'
                 ],
                 [
+                  'color',
+                  'String',
+                  'primary',
+                  'Sets a custom theme color'
+                ],
+                [
                   'auto-grow',
                   'Boolean',
                   'False',

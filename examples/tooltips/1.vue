@@ -1,11 +1,20 @@
 <template>
   <div class="text-xs-center">
-    <v-btn dark v-tooltip:top="{ html: 'Top tooltip' }" primary>Top</v-btn>
-
-    <v-btn dark v-tooltip:right="{ html: 'Right tooltip' }" primary>Right</v-btn>
-
-    <v-btn dark v-tooltip:bottom="{ html: 'Bottom tooltip' }" primary>Bottom</v-btn>
-
-    <v-btn dark v-tooltip:left="{ html: 'Left tooltip' }" primary>Left</v-btn>
+    <v-tooltip top>
+      <v-btn dark primary slot="activator">Top</v-btn>
+      <span>Top tooltip</span>
+    </v-tooltip>
+    <v-tooltip right>
+      <v-btn dark primary slot="activator">Right</v-btn>
+      <span>Right tooltip</span>
+    </v-tooltip>
+    <v-tooltip bottom>
+      <v-btn dark primary slot="activator">Bottom</v-btn>
+      <span>Bottom tooltip</span>
+    </v-tooltip>
+    <v-tooltip left>
+      <v-btn dark primary slot="activator">Left</v-btn>
+      <span>Left tooltip</span>
+    </v-tooltip>
   </div>
 </template>

@@ -22,55 +22,13 @@
           ],
           props: {
             'v-menu': {
-              shared: ['detachable'],
+              shared: ['detachable', 'menu'],
               params: [
-                [
-                  'allow-overflow',
-                  'Boolean',
-                  'False',
-                  'Removes overflow re-positioning for menu content'
-                ],
                 [
                   'full-width',
                   'Boolean',
                   'False',
                   'Changes the menu display to block, useful for filling available width in forms'
-                ],
-                [
-                  'min-width',
-                  '[Number, String]',
-                  'null',
-                  `Set's the minimum width for the menu content`
-                ],
-                [
-                  'max-width',
-                  '[Number, String]',
-                  'null',
-                  `Set's the maximum width for the menu content`
-                ],
-                [
-                  'top',
-                  'Boolean',
-                  'False',
-                  'Designates menu open up'
-                ],
-                [
-                  'right',
-                  'Boolean',
-                  'False',
-                  'Designates menu overflow to the right'
-                ],
-                [
-                  'bottom',
-                  'Boolean',
-                  'False',
-                  'Designates menu open down'
-                ],
-                [
-                  'left',
-                  'Boolean',
-                  'False',
-                  'Designates menu overflow to the left'
                 ],
                 [
                   'offset-x',
@@ -96,42 +54,7 @@
                   'null',
                   'The maximum height of the menu, will overflow-y with scroll if content is too large'
                 ],
-                [
-                  'nudge-x-auto',
-                  'Number',
-                  '-16',
-                  'Nudge the menu on the x-axis'
-                ],
-                [
-                  'nudge-y-auto',
-                  'Number',
-                  '-18',
-                  'Nudge the menu on the y-axis'
-                ],
-                [
-                  'nudge-top',
-                  'Number',
-                  '0',
-                  'Nudge the menu from the top'
-                ],
-                [
-                  'nudge-bottom',
-                  'Number',
-                  '0',
-                  'Nudge the menu from the bottom'
-                ],
-                [
-                  'nudge-left',
-                  'Number',
-                  '0',
-                  'Nudge the menu from the left'
-                ],
-                [
-                  'nudge-right',
-                  'Number',
-                  '0',
-                  'Nudge the menu from the right'
-                ],
+                
                 [
                   'open-on-hover',
                   'Boolean',
@@ -185,18 +108,6 @@
                   'Boolean',
                   'False',
                   'Conditionally renders content on mounted'
-                ],
-                [
-                  'position-x',
-                  'Number',
-                  '0',
-                  'Used to position the menu when not using an activator slot'
-                ],
-                [
-                  'position-y',
-                  'Number',
-                  '0',
-                  'Used to position the menu when not using an activator slot'
                 ],
                 [
                   'z-index',

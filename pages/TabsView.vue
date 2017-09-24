@@ -111,6 +111,12 @@
                   'Boolean',
                   'False',
                   'Will not render contents until is active for the first time'
+                ],
+                [
+                  'touchless',
+                  'Boolean',
+                  'False',
+                  'Remove mobile touch functionality'
                 ]
               ]
             }

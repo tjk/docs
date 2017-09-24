@@ -156,7 +156,10 @@
           },
           slots: {
             'v-select': {
-              shared: ['label']
+              shared: ['label'],
+              params: [
+                ['no-data', 'Used when there are no filtered items when using autocomplete']
+              ]
             }
           },
           events: {

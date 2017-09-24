@@ -59,7 +59,8 @@
                   'The id for your application'
                 ]
               ]
-            }
+            },
+            'v-content': {}
           },
           slots: {
             'v-app': {

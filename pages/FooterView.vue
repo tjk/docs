@@ -16,7 +16,7 @@
           ],
           props: {
             'v-footer': {
-              shared: ['theme'],
+              shared: ['app', 'theme'],
               params: [
                 [
                   'absolute',
