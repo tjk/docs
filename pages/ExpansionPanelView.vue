@@ -53,6 +53,12 @@
                   'Boolean',
                   'False',
                   'Applies the ripple directive'
+                ],
+                [
+                  'hide-actions',
+                  'Boolean',
+                  'False',
+                  'Hide the icon in the content header'
                 ]
               ],
               model: {
