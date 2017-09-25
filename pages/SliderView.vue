@@ -17,11 +17,18 @@
             { header: 'Icons', file: 'sliders/3', desc: 'You can add icons to the slider with the <code>append-icon</code> and <code>prepend-icon</code> props.' },
             { header: 'With an editable numeric value', file: 'sliders/4', desc: 'Sliders can be combined with other components for a better display.' },
             { header: 'Dark theme', file: 'sliders/5', desc: 'Sliders also support themeing.' },
+            { header: 'Custom colors', file: 'sliders/6', desc: 'You can set the colors of the slider using the props <code>color</code>, <code>track-color</code> and <code>thumb-color</code>.', new: '0.16.0' }
           ],
           props: {
             'v-slider': {
               shared: ['input', 'theme'],
               params: [
+                [
+                  'color',
+                  'String',
+                  '-',
+                  'Sets the track color'
+                ],
                 [
                   'min',
                   'Number',
@@ -35,10 +42,22 @@
                   'Sets maximum value'
                 ],
                 [
+                  'thumb-color',
+                  'String',
+                  '-',
+                  'Sets the thumb and thumb label color'
+                ],
+                [
                   'thumb-label',
                   'Boolean',
                   'False',
                   'Show thumb label'
+                ],
+                [
+                  'track-color',
+                  'String',
+                  '-',
+                  'Sets the track fill color'
                 ],
                 [
                   'step',
