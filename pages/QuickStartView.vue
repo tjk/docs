@@ -7,10 +7,10 @@
           dd(slot="desc") Use one of the Vuetify.js Vue CLI packages <em>(based on the official examples)</em> to get your project started in no time. Vuetify.js supports <strong>SSR</strong> (server-side rendering), <strong>SPA</strong> (single page application), <strong>PWA</strong> (progressive web application) and standard <strong>HTML</strong> pages.
       ad
 
-    v-alert(error value).mb-4 In order for your application to work properly, you <strong>must</strong> wrap it in a <code>v-app</code> component. If you absolutely cannot wrap your application, you must add corresponding class for your chosen theme. <strong>"application--light"</strong> or <strong>"application--dark"</strong>.
+    v-alert(error value).mb-4 In order for your application to work properly, you <strong>must</strong> wrap it in a <code>v-app</code> component. This component is used for dynamically managing your content area and is the mounting point for many components.
     section#cdn-install
       section-header CDN Install
-      section-text To test using Vuetify.js without installing a template from Vue CLI, copy the code below into your <code>index.html</code>. This will pull the latest version of Vue and Vuetify, allowing you to start playing with components.
+      section-text To test using Vuetify.js without installing a template from Vue CLI, copy the code below into your <code>index.html</code>. This will pull the latest version of Vue and Vuetify, allowing you to start playing with components. You can also use the <a href="https://template.vuetifyjs.com" target="_blank">Vuetify starter</a> on codepen.
       markup(lang="html")
         |&lt;!DOCTYPE html&gt;
         |&lt;html&gt;
@@ -91,20 +91,26 @@
                     ) Init copied!
                       v-btn(flat @click="copied = !copied").indigo--text close
                   v-flex(xs2).layout.column.align-end.pa-3
-                    v-btn(
-                      icon
-                      dark
-                      :href="`https://github.com/vuetifyjs/${selectedTemplate.init}`"
-                      target="_blank"
-                      rel="noopener"
-                    ).secondary
-                      v-icon fa-github
-                    v-btn(
-                      icon
-                      dark
-                      @click="copyMarkup"
-                    ).secondary
-                      v-icon content_copy
+                    v-tooltip(left debounce="300")
+                      v-btn(
+                        icon
+                        dark
+                        :href="`https://github.com/vuetifyjs/${selectedTemplate.init}`"
+                        target="_blank"
+                        rel="noopener"
+                        slot="activator"
+                      ).secondary
+                        v-icon fa-github
+                      span Github
+                    v-tooltip(left debounce="300")
+                      v-btn(
+                        icon
+                        dark
+                        @click="copyMarkup"
+                        slot="activator"
+                      ).secondary
+                        v-icon content_copy
+                      span Copy markup
 
     section#existing-applications
       section-header Existing applications
@@ -167,7 +173,7 @@
 
     section
       section-header Internet Explorer 11 Support
-      section-text To use Vuetify.js with Internet Explorer, you must include a polyfill in your project. Vuetify.js can work with either <a href="https://polyfill.io/v2/docs/" target="_blank" rel="noopener">polyfill.io</a> or <a href="https://babeljs.io/docs/usage/polyfill/#installation" target="_blank" rel="noopener">babel-polyfill</a>. The polyfill must be loaded before your project source code. Other polyfills may be needed to use specific features in your project.
+      section-text To use Vuetify.js with Internet Explorer, you must include a polyfill in your project. Vuetify.js can work with either <a href="https://polyfill.io/v2/docs/" target="_blank" rel="noopener">polyfill.io</a> or <a href="https://babeljs.io/docs/usage/polyfill/#installation" target="_blank" rel="noopener">babel-polyfill</a>. The polyfill must be loaded before your project source code. Other polyfills may be needed to use specific features in your project. <strong>Keep in mind</strong>, the CDN versions of these polyfills do not always include everything by default. It is recommended that you pull the package into your project locally and import it there.
 
       section-text Due to Internet Explorer's limited support for <code>&lt;template&gt;</code> tags, you must take care to send fully compiled dom elements to the browser. This can be done by either building your Vue code in advance or by creating helper components to replace the dom elements. For instance, if sent directly to IE, this will fail:
 

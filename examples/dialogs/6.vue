@@ -18,8 +18,9 @@ Augue curabitur duis dui volutpat, tempus sed ut pede donec. Interdum luctus, le
 Semper wisi et, sollicitudin nunc vestibulum, cursus accumsan nunc pede tempus mi ipsum, ligula sed. Non condimentum ac dolor sit. Mollis eu aliquam, vel mattis mollis massa ut dolor ante, tempus lacinia arcu. Urna vestibulum lorem, nulla fermentum, iaculis ut congue ac vivamus. Nam libero orci, pulvinar nulla, enim pellentesque consectetuer leo, feugiat rhoncus rhoncus vel. Magna sociosqu donec, dictum cursus ullamcorper viverra. Ultricies quis orci lorem, suspendisse ut vestibulum integer, purus sed lorem pulvinar habitasse turpis.
 +</v-card-text>
         <v-card-actions>
-          <v-btn class="green--text darken-1" flat="flat" @click.native="dialog = false">Disagree</v-btn>
-          <v-btn class="green--text darken-1" flat="flat" @click.native="dialog = false">Agree</v-btn>
+          <v-spacer></v-spacer>
+          <v-btn class="green--text darken-1" flat="flat" @click="dialog = false">Disagree</v-btn>
+          <v-btn class="green--text darken-1" flat="flat" @click="dialog = false">Agree</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>

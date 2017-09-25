@@ -75,6 +75,22 @@
             'v-tabs-bar': {
               params: []
             },
+            'v-tabs-items': {
+              params: [
+                [
+                  'cycle',
+                  'Boolean',
+                  'False',
+                  'Will go to the first or last tab when swiped at the start or end of items'
+                ],
+                [
+                  'touchless',
+                  'Boolean',
+                  'False',
+                  'Remove touch functionality from component'
+                ]
+              ]
+            },
             'v-tabs-item': {
               shared: ['router'],
               params: [
@@ -126,7 +142,7 @@
               params: [
                 [
                   'v-tabs-slider',
-                  '.tabs__slider'
+                  'Creates a slider component that positions itself under the currently active tab'
                 ]
               ]
             },
@@ -140,10 +156,13 @@
           },
           slots: {
             'v-tabs': {
-              params: [
-                ['activators', 'Put your <code>v-tabs-bar</code> here.'],
-                ['content', 'Put your <code>v-tabs-content</code> here.']
-              ]
+              shared: ['default']
+            },
+            'v-tabs-items': {
+              shared: ['default']
+            },
+            'v-tabs-bar': {
+              shared: ['default']
             }
           }
         }

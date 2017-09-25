@@ -5,7 +5,8 @@
         <div>{{ typeof steps }}</div>
         <v-text-field
           label="# of steps"
-          v-model="steps"
+          :value="steps"
+          @input="onInput"
           min="1"
           max="6"
           hint="This demo has a maximum of 6 steps"
@@ -59,6 +60,9 @@
     },
 
     methods: {
+      onInput (val) {
+        this.steps = parseInt(val)
+      },
       nextStep (n) {
         if (n === this.steps) {
           this.e1 = 1

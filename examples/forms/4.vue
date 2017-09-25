@@ -33,6 +33,7 @@
       :error-messages="errors.collect('checkbox')"
       v-validate="'required'"
       data-vv-name="checkbox"
+      type="checkbox"
       required
     ></v-checkbox>
 

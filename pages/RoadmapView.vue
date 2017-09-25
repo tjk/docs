@@ -22,7 +22,7 @@
                 :key="i"
               )
                 v-card
-                  v-toolbar(dark prominent).secondary
+                  v-toolbar(dark prominent flat).secondary
                     v-list(dark).pa-0
                       v-list-tile(avatar)
                         v-list-tile-content

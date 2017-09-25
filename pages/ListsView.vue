@@ -40,19 +40,19 @@
                   'subheader',
                   'Boolean',
                   'False',
-                  'Designates that list has a previous sibling subheader'
+                  'Removes top padding. Used when previous sibling is a header'
                 ],
                 [
                   'two-line',
                   'Boolean',
                   'False',
-                  'Designates list contains two-line list tiles'
+                  'Increases list-tile height for two lines'
                 ],
                 [
                   'three-line',
                   'Boolean',
                   'False',
-                  'Designates list contains three-line list tiles'
+                  'Increases list-tile height for three lines'
                 ]
               ]
             },

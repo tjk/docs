@@ -62,28 +62,31 @@
               width="150px"
             ).my-5
       v-flex(xs12 md3)
-        v-card(
-          flat
-          tile
-          v-badge="{ value: 'favorite', overlap: true, icon: true }"
-        ).red--after
-          v-list
-            v-list-tile(avatar tag="div")
-              v-list-tile-avatar
-                v-avatar
-                  img(src="/static/doc-images/john.jpg")
-              v-list-tile-content
-                v-list-tile-title John Leider
-                v-list-tile-sub-title Author of Vuetify.js
-              v-list-tile-action
-                v-btn(
-                  icon
-                  href="mailto:john@vuetifyjs.com"
-                  v-tooltip:left="{ html: 'Contact Me' }"
-                )
-                  v-icon mail
-          v-card-text I am extremely humbled that you have considered using Vuetify as your next UI Framework. A lot of care has went into forging the perfect setup for taking any idea from conception to production. I look forward to you joining the Vuetify community and am excited to see what incredible interfaces you create!
-          v-card-text.text-xs-right <em>&mdash;John Leider</em>
+        v-badge(color="error" overlap)
+          v-icon(slot="badge" left overlap class="white--text") favorite
+          v-card(
+            flat
+            tile
+          ).red--after
+            v-list
+              v-list-tile(avatar tag="div")
+                v-list-tile-avatar
+                  v-avatar
+                    img(src="/static/doc-images/john.jpg")
+                v-list-tile-content
+                  v-list-tile-title John Leider
+                  v-list-tile-sub-title Author of Vuetify.js
+                v-list-tile-action
+                  v-tooltip(left)
+                    v-btn(
+                      icon
+                      href="mailto:john@vuetifyjs.com"
+                      slot="activator"
+                    )
+                      v-icon mail
+                    span Contact Me
+            v-card-text I am extremely humbled that you have considered using Vuetify as your next UI Framework. A lot of care has went into forging the perfect setup for taking any idea from conception to production. I look forward to you joining the Vuetify community and am excited to see what incredible interfaces you create!
+            v-card-text.text-xs-right <em>&mdash;John Leider</em>
 
     div.text-xs-center.my-5
       em Still have questions?<br>

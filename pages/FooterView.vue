@@ -1,5 +1,5 @@
 <template lang="pug">
-  component-view(v-bind:doc="doc" id="footer")
+  component-view(v-bind:doc="doc" id="footer-view")
 </template>
 
 <script>
@@ -45,11 +45,11 @@
 </script>
 
 <style lang="stylus">
-  #footer
+  #footer-view
     .component-example__container
       > div
         width: 100%
 
     footer
-      max-height: 36px
+      min-height: 36px
 </style>

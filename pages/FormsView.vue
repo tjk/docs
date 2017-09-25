@@ -15,7 +15,7 @@
             { header: "VForm - Basic validation", file: "forms/1", desc: '' },
             { header: "VForm - Validation w/ submit & clear", file: "forms/2", desc: '' },
             { header: "Vuelidate", file: "forms/3", desc: '' },
-            { header: "Vee-validate", file: "forms/4", desc: '' }
+            { header: "Vee-validate", file: "forms/4", desc: 'Vee-validate is another validation plugin that allows you to check your forms. One caveat is that you must add the <strong>type="checkbox"</strong> to properly validate a <code>v-checkbox</code> when using the <strong>value</strong> prop.' }
           ],
           props: {
             'v-form': {

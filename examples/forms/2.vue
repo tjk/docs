@@ -27,7 +27,13 @@
       required
     ></v-checkbox>
 
-    <v-btn @click="submit" :class="{ green: valid, red: !valid }">submit</v-btn>
+    <v-btn
+      dark
+      @click="submit"
+      :class="{ green: valid, red: !valid }"
+    >
+      submit
+    </v-btn>
     <v-btn @click="clear">clear</v-btn>
   </v-form>
 </template>

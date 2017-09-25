@@ -17,7 +17,7 @@
           |   &lt;/main&gt;
           |   &lt;v-footer app&gt;&lt;/v-footer&gt;
           |&lt;/v-app&gt;
-        v-alert(error value="true") In order for your application to work properly, you <strong>must</strong> wrap it in a <code>v-app</code> component. This component is required for determining grid breakpoints for the layout. This can exist <strong>anywhere</strong> above 
+        v-alert(error value="true") In order for your application to work properly, you <strong>must</strong> wrap it in a <code>v-app</code> component. This component is required for determining grid breakpoints for the layout. This can exist <strong>anywhere</strong> inside the body, but must be the parent of all Vuetify components.
     section#layouts
       v-container(fluid grid-list-xl).pa-0
         v-layout(row wrap)

@@ -26,7 +26,11 @@
     data () {
       return {
         dropdown_font: ['Arial', 'Calibri', 'Courier', 'Verdana'],
-        dropdown_icon: ['list', 'favorite', 'delete'],
+        dropdown_icon: [
+          { text: 'list', callback: () => console.log('list')},
+          { text: 'favorite', callback: () => console.log('favorite')},
+          { text: 'delete', callback: () => console.log('delete')}
+        ],
         dropdown_edit: [
           { text: '100%' },
           { text: '75%' },

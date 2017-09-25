@@ -9,9 +9,14 @@
     class="elevation-1"
   >
     <template slot="headers" scope="props">
-      <span v-tooltip:bottom="{ 'html': props.item.text }">
-        {{ props.item.text }}
-      </span>
+      <v-tooltip bottom>
+        <span slot="activator">
+          {{ props.item.text }}
+        </span>
+        <span>
+          {{ props.item.text }}
+        </span>
+      </v-tooltip>
     </template>
     <template slot="items" scope="props">
       <td>

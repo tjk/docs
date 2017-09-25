@@ -29,7 +29,8 @@
             { header: 'Prefixes & suffixes', file: 'text-fields/15', desc: 'Light theme' },
             { header: 'Custom validation', file: 'text-fields/16', desc: 'While the built in <code>v-form</code> or 3rd party plugin such as <a href="https://github.com/monterail/vuelidate" target="_blank" rel="noopener">vuelidate</a> or <a href="https://github.com/logaretm/vee-validate" target="_blank" rel="noopener">vee-validation</a> can help streamline your validation process, you can choose to simply control it yourself.' },
             { header: 'Textarea', file: 'text-fields/17', desc: 'Textarea text-fields have an alternate style.'},
-            { header: 'Box style', file: 'text-fields/18', desc: 'Text-fields can be used with an alternative box design. Append and prepend icon props are <strong>not</strong> supported in this mode.' }
+            { header: 'Box style', file: 'text-fields/18', desc: 'Text-fields can be used with an alternative box design. Append and prepend icon props are <strong>not</strong> supported in this mode.' },
+            { header: 'Custom colors', file: 'text-fields/19', new: '0.16.0', desc: 'You can optionally change a text-field into any color in the Material design palette.' }
           ],
           props: {
             'v-text-field': {
