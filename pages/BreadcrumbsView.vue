@@ -16,8 +16,8 @@
             </p>
           `,
           examples: [
-            { header: 'Text dividers', file: 'breadcrumbs/1', desc: `By default, breadcrumbs use a text divider. This can be any string.` },
-            { header: 'Icon dividers', file: 'breadcrumbs/2', desc: `For the icon variant, breadcrumbs can use any icon in Material Design Icons.` }
+            { header: 'Text dividers', file: 'breadcrumbs/text-dividers', desc: `By default, breadcrumbs use a text divider. This can be any string.` },
+            { header: 'Icon dividers', file: 'breadcrumbs/icon-dividers', desc: `For the icon variant, breadcrumbs can use any icon in Material Design Icons.` }
           ],
           props: {
             'v-breadcrumbs': {
