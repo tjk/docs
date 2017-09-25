@@ -35,8 +35,9 @@
         <v-time-picker v-model="e6" actions>
           <template scope="{ save, cancel }">
             <v-card-actions>
-              <v-btn flat primary @click.native="cancel()">Cancel</v-btn>
-              <v-btn flat primary @click.native="save()">Save</v-btn>
+              <v-spacer></v-spacer>
+              <v-btn flat primary @click="cancel()">Cancel</v-btn>
+              <v-btn flat primary @click="save()">OK</v-btn>
             </v-card-actions>
           </template>
         </v-time-picker>
