@@ -12,11 +12,11 @@
           title: 'Card',
           desc: 'The <code>v-card</code> component is a versatile component that can be used for anything from a panel to a static image. The <strong>card</strong> component has numerous helper components to make markup as easy as possible. Components that have no listed options use <strong class="green--text">Vue\'s</strong> functional component option for faster rendering and serve as markup sugar to make building easier.',
           examples: [
-           { header: 'Components', file: 'cards/1', desc: `A card has 4 basic components, <code>v-card-media</code>, <code>v-card-title</code>, <code>v-card-text</code> and <code>v-card-actions</code>.` },
-           { header: 'Media with text', file: 'cards/2', desc: 'Using the layout system, we can add custom text anywhere within the background.' },
-           { header: 'Horizontal cards', file: 'cards/3', desc: 'Using <code>v-flex</code>, you can create customized horizontal cards. Use the to the <code>contain</code> property to shrink the <code>v-card-media</code> to fit inside the container, instead of covering.' },
-           { header: 'Grids', file: 'cards/4', desc: 'Using grid lists, you can create beautiful layouts.' },
-           { header: 'Custom actions', file: 'cards/5', desc: 'With a simple conditional, you can easily add supplementary text that is hidden until opened.' }
+            { header: 'Components', file: 'cards/components', desc: `A card has 4 basic components, <code>v-card-media</code>, <code>v-card-title</code>, <code>v-card-text</code> and <code>v-card-actions</code>.` },
+            { header: 'Media with text', file: 'cards/media-with-text', desc: 'Using the layout system, we can add custom text anywhere within the background.' },
+            { header: 'Horizontal cards', file: 'cards/horizontal', desc: 'Using <code>v-flex</code>, you can create customized horizontal cards. Use the to the <code>contain</code> property to shrink the <code>v-card-media</code> to fit inside the container, instead of covering.' },
+            { header: 'Grids', file: 'cards/grids', desc: 'Using grid lists, you can create beautiful layouts.' },
+            { header: 'Custom actions', file: 'cards/custom-actions', desc: 'With a simple conditional, you can easily add supplementary text that is hidden until opened.' }
           ],
           props: {
             'v-card': {
