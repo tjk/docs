@@ -45,10 +45,14 @@
           </v-flex>
           <v-flex xs12>
             <v-checkbox
+              color="green"
               v-model="form.terms"
             >
               <div slot="label">
-                Do you accept the <a href="javascript:;">terms</a> and <a href="javascript:;">conditions?</a>
+                Do you accept the
+                <a href="javascript:;">terms</a>
+                and
+                <a href="javascript:;">conditions?</a>
               </div>
             </v-checkbox>
           </v-flex>
@@ -67,7 +71,7 @@
         bio: '',
         favoriteAnimal: '',
         age: null,
-        term: false
+        terms: false
       },
       animals: ['Dog', 'Cat', 'Rabbit', 'Turtle', 'Snake']
     })
