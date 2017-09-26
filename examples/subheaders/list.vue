@@ -15,7 +15,7 @@
             <v-divider v-else-if="item.divider" v-bind:inset="item.inset"></v-divider>
             <v-list-tile avatar v-else @click="">
               <v-list-tile-avatar>
-                <img v-bind:src="item.avatar"></v-list-tile-avatar>
+                <img v-bind:src="item.avatar">
               </v-list-tile-avatar>
               <v-list-tile-content>
                 <v-list-tile-title v-html="item.title"></v-list-tile-title>

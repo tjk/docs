@@ -27,7 +27,7 @@
         li <code>d-inline-flex</code> - sets element display to inline-flex
         li <code>d-block</code> - sets element display to block
         li <code>d-inline-block</code> - sets element display to inline-block
-      component-example(header="Hidden elements" file="display/1")
+      component-example(header="Hidden elements" file="display/hidden-elements")
         div(slot="desc") The toolbar links will be hidden on small viewport devices and down
 </template>
 
