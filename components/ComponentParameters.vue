@@ -47,6 +47,8 @@
           theme: this.makeTheme(),
           input: this.makeInput(),
           label: this.makeLabel(),
+          loadable: this.makeLoadable(),
+          progress: this.makeProgress(),
           overlay: this.makeOverlay(),
           detachable: this.makeDetach(),
           positionable: this.makePosition(),
@@ -315,6 +317,20 @@
         return [[
           'label',
           'Label slot'
+        ]]
+      },
+      makeProgress () {
+        return [[
+          'progress',
+          'Slot for custom progress linear (displayed when <code>loading</code> prop is not equal to <code>false</code>'
+        ]]
+      },
+      makeLoadable () {
+        return [[
+          'loading',
+          '[Boolean, String]',
+          'false',
+          'Displays linear progress bar. Can either be a String which specifies which color is applied to the progress bar (any material color or theme color - primary, secondary, success, info, warning, error) or a Boolean which uses the component color (set by <code>color</code> prop - if it\'s supported by the component) or the primary color'
         ]]
       },
       makeTheme () {

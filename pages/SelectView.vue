@@ -25,7 +25,7 @@
           ],
           props: {
             'v-select': {
-              shared: ['input', 'filterable', 'mask'],
+              shared: ['input', 'filterable', 'loadable', 'mask'],
               params: [
                 [
                   'allow-overflow',
@@ -157,7 +157,7 @@
           },
           slots: {
             'v-select': {
-              shared: ['label'],
+              shared: ['label', 'progress'],
               params: [
                 ['no-data', 'Used when there are no filtered items when using autocomplete']
               ]

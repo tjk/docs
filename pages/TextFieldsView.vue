@@ -36,7 +36,7 @@
           ],
           props: {
             'v-text-field': {
-              shared: ['input', 'mask'],
+              shared: ['input', 'loadable', 'mask'],
               params: [
                 [
                   'autofocus',
@@ -132,7 +132,7 @@
           },
           slots: {
             'v-text-field': {
-              shared: ['label']
+              shared: ['label', 'progress']
             }
           },
           events: {
