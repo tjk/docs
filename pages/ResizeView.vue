@@ -24,7 +24,7 @@
             }
           },
           examples: [
-            { header: 'Default', file: 'resize/1', desc: 'Resize your window and observe the values change.' }
+            { header: 'Default', file: 'resize/default', desc: 'Resize your window and observe the values change.' }
           ]
         }
       }
