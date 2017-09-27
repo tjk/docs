@@ -32,7 +32,8 @@
             { header: 'Textarea', file: 'text-fields/17', desc: 'Textarea text-fields have an alternate style.'},
             { header: 'Box style', file: 'text-fields/18', desc: 'Text-fields can be used with an alternative box design. Append and prepend icon props are <strong>not</strong> supported in this mode.' },
             { header: 'Custom colors', file: 'text-fields/19', new: '0.16.0', desc: 'You can optionally change a text-field into any color in the Material design palette. Below is an example implementation of a custom form with validation.' },
-            { header: 'Masks', file: 'text-fields/20', new: '0.16.0', desc: 'Text fields can validate against character masks. Using either a pre-made or custom rules, you can optionally format and validate specific character sets.' }
+            { header: 'Masks', file: 'text-fields/20', new: '0.16.0', desc: 'Text fields can validate against character masks. Using either a pre-made or custom rules, you can optionally format and validate specific character sets.' },
+            { header: 'Progress bar', file: 'text-fields/21', new: '0.16.0', desc: 'You can display a progress bar instead of the bottom line. You can use the default indeterminate progress having same color as the text field or designate a custom one using the <code>progress</code> slot' }
           ],
           props: {
             'v-text-field': {
