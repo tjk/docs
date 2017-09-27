@@ -8,6 +8,8 @@
       return {
         doc: {
           title: 'Tooltip',
+          component: 'VTooltip',
+          edit: 'TooltipsView',
           desc: 'The <code>v-tooltip</code> component is useful for conveying information when a user hovers over an element.',
           props: {
             'v-tooltip': {
