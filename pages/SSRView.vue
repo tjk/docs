@@ -5,7 +5,7 @@
         section-def
           dt(slot="title") Overview
           dd(slot="desc")
-            p This overview is designed to help you become fluent in <strong>Vuetify's</strong> Vue SSR Template. If you have not already installed the <code>webpack-ssr</code> template, please do so <router-link to="/quick-start#webpack-ssr">here</router-link>.
+            p This overview is designed to help you become fluent in <strong>Vuetify's</strong> Vue SSR Template. If you have not already installed the <code>webpack-ssr</code> template, please do so <router-link to="/vuetify/quick-start">in the Quick start</router-link>.
       ad
     section
       section-header Introduction

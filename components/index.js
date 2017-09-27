@@ -8,6 +8,7 @@ import ComponentView from './ComponentView'
 import DocView from './DocView'
 import Grid from './Grid'
 import Markup from './Markup'
+import MaskTable from './MaskTable'
 import SectionHeader from './SectionHeader'
 import SectionText from './SectionText'
 import SectionDef from './SectionDef'
@@ -23,6 +24,7 @@ export default {
   DocView,
   Grid,
   Markup,
+  MaskTable,
   SectionHeader,
   SectionText,
   SectionDef

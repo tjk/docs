@@ -53,7 +53,8 @@
           transitionable: this.makeTransition(),
           colorable: this.makeColorable(),
           filterable: this.makeFilter(),
-          menu: this.makeMenu()
+          menu: this.makeMenu(),
+          mask: this.makeMask()
         }
       }
     },
@@ -81,9 +82,8 @@
           params = params.concat(this.shared[s])
         })
 
-        params = params.filter(p => !(c.params || []).find(pp => {
-          return pp[0] === p[0]
-        }))
+        var params2 = params;
+        params = Array.from(new Set(params2.map(JSON.stringify))).map(JSON.parse);
 
         params = params.concat(c.params || [])
 
@@ -105,6 +105,28 @@
             'Boolean',
             'False',
             'Designates the component as part of the application layout. Used for dynamically adjusting content sizing'
+          ]
+        ]
+      },
+      makeMask () {
+        return [
+          [
+            'mask',
+            'String',
+            'null',
+            'Apply a custom character mask to the input. See mask table above for more information'
+          ],
+          [
+            'fill-mask-blanks',
+            'Boolean',
+            'False',
+            'Automatically populate mask when typing in input'
+          ],
+          [
+            'return-masked-value',
+            'Boolean',
+            'False',
+            'Returns the unmodified masked string'
           ]
         ]
       },
@@ -306,7 +328,7 @@
           [
             'light',
             'Boolean',
-            'False',
+            'True',
             'Applies a light tint to the content - dark themes'
           ]
         ]
@@ -422,7 +444,7 @@
           [
             'dark',
             'Boolean',
-            'False',
+            'True',
             'Applies a dark tint to the content - light themes'
           ],
           [

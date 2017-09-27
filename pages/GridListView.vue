@@ -12,8 +12,8 @@
           edit: 'GridListView',
           desc: 'Grid lists are an addon for the <code>v-container</code> component that add gutter control between items.',
           examples: [
-            { header: 'Grid lists', file: 'grid-lists/1', desc: `Grid lists augment the <code>v-container</code> component to allow for greater flexibility with gutters. It comes in 5 variants, from xs to xl and can be dynamically changed.` },
-            { header: 'Grid lists', file: 'grid-lists/2', desc: `Grid lists will work seemless with your current grid implementation and allow you to create amazing user interfaces.` }
+            { header: 'Grid lists', file: 'grid-lists/default', desc: `Grid lists augment the <code>v-container</code> component to allow for greater flexibility with gutters. It comes in 5 variants, from xs to xl and can be dynamically changed.` },
+            { header: 'Grid lists', file: 'grid-lists/subheader', desc: `Grid lists will work seemless with your current grid implementation and allow you to create amazing user interfaces.` }
           ],
           props: {
             'v-container': {

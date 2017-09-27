@@ -8,7 +8,7 @@
       ad
     grid
     section
-      component-example(header="Examples" file="alignment/1")
+      component-example(header="Examples" file="alignment/text")
         v-card
           v-card-text
             p(class="text-lg-right") Right align on large viewport sizes

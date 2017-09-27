@@ -12,13 +12,13 @@
           edit: 'ChipsView',
           desc: `The <code>v-chip</code> component is used to convey small pieces of information. Using the <code>close</code> property, the chip becomes interactive, allowing user interaction.`,
           examples: [
-            { header: 'Default', file: 'chips/1', desc: 'Chips come in 4 primary variations. Regular, with icon, with portrait and closeable.' },
-            { header: 'Colored', file: 'chips/2', desc: 'Any color from the Material Design pallette can be used to change a chips color.' },
-            { header: 'Icon', file: 'chips/3', desc: 'Chips can use text or any icon available in the Material Icons font library.' },
-            { header: 'Outline', file: 'chips/4', desc: 'Outlined chips inherit their border color from the current text color.' },
-            { header: 'Label', file: 'chips/5', desc: 'Label chips use the <code>v-card</code> border-radius.' },
-            { header: 'Closable', file: 'chips/6', desc: 'Closable chips can be controlled with a v-model. Listen to the <code>input</code> event if you want to know when a chip has been closed.' },
-            { header: 'In selects', file: 'chips/7', desc: 'Selects can use chips to display the selected data.', new: '0.15.3' }
+            { header: 'Default', file: 'chips/default', desc: 'Chips come in 4 primary variations. Regular, with icon, with portrait and closeable.' },
+            { header: 'Colored', file: 'chips/colored', desc: 'Any color from the Material Design pallette can be used to change a chips color.' },
+            { header: 'Icon', file: 'chips/icon', desc: 'Chips can use text or any icon available in the Material Icons font library.' },
+            { header: 'Outline', file: 'chips/outline', desc: 'Outlined chips inherit their border color from the current text color.' },
+            { header: 'Label', file: 'chips/label', desc: 'Label chips use the <code>v-card</code> border-radius.' },
+            { header: 'Closable', file: 'chips/closable', desc: 'Closable chips can be controlled with a v-model. Listen to the <code>input</code> event if you want to know when a chip has been closed.' },
+            { header: 'In selects', file: 'chips/in-selects', desc: 'Selects can use chips to display the selected data.', new: '0.15.3' }
           ],
           props: {
             'v-chip': {

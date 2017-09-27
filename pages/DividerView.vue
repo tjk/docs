@@ -12,10 +12,10 @@
           edit: 'DividerView',
           desc: 'The <code>v-divider</code> component is used to separate sections of lists.',
           examples: [
-            { header: 'Full bleed', file: 'dividers/1', desc: 'Full bleed dividers extend the entire content width.' },
-            { header: 'Full bleed', file: 'dividers/2', desc: 'Dividers have light and dark variants.' },
-            { header: 'Inset dividers', file: 'dividers/3', desc: 'Inset dividers are moved 72px to the right. This will cause them to line up with list items.' },
-            { header: 'Subheaders and dividers', file: 'dividers/4', desc: 'Subheaders can be lined up with inset dividers by using the same prop.' },
+            { header: 'Full bleed', file: 'dividers/full-bleed', desc: 'Full bleed dividers extend the entire content width.' },
+            { header: 'Light and dark', file: 'dividers/light-and-dark', desc: 'Dividers have light and dark variants.' },
+            { header: 'Inset dividers', file: 'dividers/inset', desc: 'Inset dividers are moved 72px to the right. This will cause them to line up with list items.' },
+            { header: 'Subheaders and dividers', file: 'dividers/subheaders', desc: 'Subheaders can be lined up with inset dividers by using the same prop.' },
           ],
           props: {
             'v-divider': {

@@ -1,0 +1,42 @@
+<template lang="pug">
+  v-card.mb-5
+    v-table-overflow
+      table.table
+        caption.mt-3
+          strong Mask legend
+        thead
+          tr.text-xs-left
+            th Mask
+            th Description
+        tbody
+          tr(
+            v-for="(row, i) in masks"
+            :key="i"
+          )
+            td(
+              v-for="(mask, i) in row"
+              :key="i"
+              v-html="mask"
+            )
+</template>
+
+<script>
+  export default {
+    data: () => ({
+      masks: [
+        ['<strong>Masks</strong', ''],
+        ['#', 'Any numeric character'],
+        ['A', 'Any alphanumeric character (Upper)'],
+        ['a', 'Any alphanumeric character (Lower)'],
+        ['X', 'Any symbol'],
+        ['<strong>Pre-made</strong', ''],
+        ['credit-card', '#### - #### - #### - ####'],
+        ['date-with-time', '##/##/#### ##:##'],
+        ['phone', '(###) ### - ####'],
+        ['social', '###-##-####'],
+        ['time', '##:##'],
+        ['time-with-seconds', '##:##:##']
+      ]
+    })
+  }
+</script>

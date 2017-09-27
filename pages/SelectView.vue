@@ -1,5 +1,6 @@
 <template lang="pug">
   component-view(v-bind:doc="doc")
+    mask-table
 </template>
 
 <script>
@@ -13,7 +14,7 @@
           edit: 'SelectView',
           examples: [
             { header: 'Light theme', file: 'selects/1', desc: 'A standard single select has a multitude of configuration options.' },
-            { header: 'Dark theme', file: 'selects/2', desc: 'Selects also support themeing, dark and light.' },
+            { header: 'Dark theme', file: 'selects/2', desc: 'Selects also support theming, dark and light.' },
             { header: 'Icons', file: 'selects/3', desc: 'Use a custom prepended or appended icon.' },
             { header: 'Multiple', file: 'selects/4', desc: `A multi-select can utilize v-chip as the display for selected items.` },
             { header: 'Autocomplete', file: 'selects/5', desc: `Provides type-ahead autocomplete functionality.` },
@@ -24,7 +25,7 @@
           ],
           props: {
             'v-select': {
-              shared: ['input', 'filterable'],
+              shared: ['input', 'filterable', 'mask'],
               params: [
                 [
                   'allow-overflow',

@@ -16,11 +16,11 @@
           edit: 'IconView',
           desc: 'The <code>v-icon</code> component provides a large set of glyphs to provide context to various aspects of your application. Vuetify icons utilize Google\'s Material Icons font library. For a list of all available icons, visit the official <a href="https://material.io/icons/" target="_blank" rel="noopener">Material Icons</a> page.',
           examples: [
-            { header: 'Standard', file: 'icons/1', desc: 'Icons come in two themes (light and dark), and four different sizes (standard, medium, large, and x-large).' },
-            { header: 'Font Awesome', file: 'icons/2', desc: '<a href="http://fontawesome.io/icons/">Font Awesome</a> is also supported. Simply use the <code>fa-</code> prefixed icon name. Please note that you still need to include the Font Awesome icons in your project.' },
-            { header: 'Material Design Icons', file: 'icons/3', desc: '<a href="https://materialdesignicons.com/">Material Design Icons</a> is also supported. Simply use the <code>mdi-</code> prefixed icon name. Please note that you still need to include the MDI icons in your project.' },
-            { header: 'Color', file: 'icons/4', desc: 'Using color helpers you can change the color of an icon from the standard dark and light themes.' },
-            { header: 'Buttons', file: 'icons/5', desc: 'Icons can be used inside of buttons to add emphasis to the action.' }
+            { header: 'Standard', file: 'icons/standard', desc: 'Icons come in two themes (light and dark), and four different sizes (standard, medium, large, and x-large).' },
+            { header: 'Font Awesome', file: 'icons/font-awesome', desc: '<a href="http://fontawesome.io/icons/">Font Awesome</a> is also supported. Simply use the <code>fa-</code> prefixed icon name. Please note that you still need to include the Font Awesome icons in your project.' },
+            { header: 'Material Design Icons', file: 'icons/mdi', desc: '<a href="https://materialdesignicons.com/">Material Design Icons</a> is also supported. Simply use the <code>mdi-</code> prefixed icon name. Please note that you still need to include the MDI icons in your project.' },
+            { header: 'Color', file: 'icons/color', desc: 'Using color helpers you can change the color of an icon from the standard dark and light themes.' },
+            { header: 'Buttons', file: 'icons/buttons', desc: 'Icons can be used inside of buttons to add emphasis to the action.' }
           ],
           props: {
             'v-icon': {

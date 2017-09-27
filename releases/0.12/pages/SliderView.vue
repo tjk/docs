@@ -16,7 +16,7 @@
             { header: 'Discrete', file: 'sliders/2', desc: 'Discrete sliders offer a thumb label that displays the exact current amount.' },
             { header: 'Icons', file: 'sliders/3', desc: 'You can add icons to the slider with the <code>append-icon</code> and <code>prepend-icon</code> props.' },
             { header: 'With an editable numeric value', file: 'sliders/4', desc: 'Sliders can be combined with other components for a better display.' },
-            { header: 'Dark theme', file: 'sliders/5', desc: 'Sliders also support themeing.' },
+            { header: 'Dark theme', file: 'sliders/5', desc: 'Sliders also support theming.' },
           ],
           props: {
             'v-slider': {
