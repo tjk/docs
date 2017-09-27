@@ -82,9 +82,8 @@
           params = params.concat(this.shared[s])
         })
 
-        params = params.filter(p => !(c.params || []).find(pp => {
-          return pp[0] === p[0]
-        }))
+        var params2 = params;
+        params = Array.from(new Set(params2.map(JSON.stringify))).map(JSON.parse);
 
         params = params.concat(c.params || [])
 
@@ -329,7 +328,7 @@
           [
             'light',
             'Boolean',
-            'False',
+            'True',
             'Applies a light tint to the content - dark themes'
           ]
         ]
@@ -445,7 +444,7 @@
           [
             'dark',
             'Boolean',
-            'False',
+            'True',
             'Applies a dark tint to the content - light themes'
           ],
           [
