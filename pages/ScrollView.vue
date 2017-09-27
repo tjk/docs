@@ -34,8 +34,8 @@
             }
           },
           examples: [
-            { header: 'Default', file: 'scroll/1', desc: 'The default behavior is to bind to the window. If no additional configuration options are needed, you can simple pass your callback function.' },
-            { header: 'Scroll with options', file: 'scroll/2', desc: 'For a more fine tuned approach, you can designate the target to bind the scroll event listener.' }
+            { header: 'Default', file: 'scroll/default', desc: 'The default behavior is to bind to the window. If no additional configuration options are needed, you can simple pass your callback function.' },
+            { header: 'Scroll with options', file: 'scroll/options', desc: 'For a more fine tuned approach, you can designate the target to bind the scroll event listener.' }
           ]
         }
       }
