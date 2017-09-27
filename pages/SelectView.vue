@@ -1,5 +1,6 @@
 <template lang="pug">
   component-view(v-bind:doc="doc")
+    mask-table
 </template>
 
 <script>
@@ -24,7 +25,7 @@
           ],
           props: {
             'v-select': {
-              shared: ['input', 'filterable'],
+              shared: ['input', 'filterable', 'mask'],
               params: [
                 [
                   'allow-overflow',
