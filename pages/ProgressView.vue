@@ -67,12 +67,19 @@
             },
 
             'v-progress-linear': {
+              shared: ['colorable'],
               params: [
                 [
-                  'buffer',
-                  'Boolean',
-                  'False',
-                  'Designates whether the buffer bar is shown'
+                  'background-color',
+                  'String',
+                  'null',
+                  'Background color, set to component\'s color if null'
+                ],
+                [
+                  'background-opacity',
+                  '[Number, String]',
+                  'null',
+                  'Background opacity, if null it defaults to 0.3 if background color is not specified or 1 otherwise'
                 ],
                 [
                   'buffer-value',
@@ -103,36 +110,6 @@
                   'Boolean',
                   'False',
                   'Sets the query state of the component'
-                ],
-                [
-                  'secondary',
-                  'Boolean',
-                  'False',
-                  'Sets the progress context to "Secondary"'
-                ],
-                [
-                  'success',
-                  'Boolean',
-                  'False',
-                  'Sets the progress context to "Success"'
-                ],
-                [
-                  'info',
-                  'Boolean',
-                  'False',
-                  'Sets the progress context to "Info"'
-                ],
-                [
-                  'warning',
-                  'Boolean',
-                  'False',
-                  'Sets the progress context to "Warning"'
-                ],
-                [
-                  'error',
-                  'Boolean',
-                  'False',
-                  'Sets the progress context to "Error"'
                 ],
               ],
               model: {
