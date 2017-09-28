@@ -26,7 +26,7 @@
       masks: [
         ['<strong>Masks</strong', ''],
         ['#', 'Any digit'],
-        ['A', 'Any capital letteral'],
+        ['A', 'Any capital letter'],
         ['a', 'Any small letter'],
         ['N', 'Any capital aphanumeric character'],
         ['n', 'Any small aphanumeric character'],
