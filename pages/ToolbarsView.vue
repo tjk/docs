@@ -26,7 +26,7 @@
             { header: 'Dense prominent toolbars', file: 'toolbar/11', desc: 'You can combine both the prominent and dense to extend a smaller variant of the toolbar.' },
             { header: 'Scrolling techniques', file: 'toolbar/14', desc: 'A toolbar can transition off screen when scrolling. Here we demonstrate how you can specify the scroll target (default is window). Keep in mind, for this example there is special markup that will not be required in your application.' },
             { header: 'App bar with menu', file: 'toolbar/12', desc: 'You can combine both the prominent and dense' },
-            { header: 'System bars - status/window', file: 'toolbar/13', desc: 'System bars are useful for notification icons on mobile and desktop.' }
+            { header: 'System bars - status/window', file: 'toolbar/13', desc: 'System bars are useful for notification icons on mobile and desktop. For live examples of, head to the pre-defined layouts.' }
           ],
           props: {
             'v-toolbar': {
@@ -165,14 +165,9 @@
 </script>
 
 <style lang="stylus">
-  #toolbar
-    .component-example
+  #toolbar-view
+    .system-bar
       position: relative
-      z-index: 1
-
-    .toolbar
-      height: 64px !important
-      margin: 1rem 0
 
   #toolbar-image
     height: 300px
