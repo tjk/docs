@@ -1,5 +1,5 @@
 <template>
-  <v-form v-model="valid" ref="form">
+  <v-form v-model="valid" ref="form" lazy-validation>
     <v-text-field
       label="Name"
       v-model="name"
@@ -17,20 +17,19 @@
       label="Item"
       v-model="select"
       :items="items"
-      :rules="[(v) => !!v || 'Item is required']"
+      :rules="[v => !!v || 'Item is required']"
       required
     ></v-select>
     <v-checkbox
       label="Do you agree?"
       v-model="checkbox"
-      :rules="[(v) => !!v || 'You must agree to continue!']"
+      :rules="[v => !!v || 'You must agree to continue!']"
       required
     ></v-checkbox>
 
     <v-btn
-      dark
       @click="submit"
-      :class="{ green: valid, red: !valid }"
+      :disabled="!valid"
     >
       submit
     </v-btn>
@@ -42,7 +41,7 @@
   export default {
     data () {
       return {
-        valid: false,
+        valid: true,
         name: '',
         nameRules: [
           (v) => !!v || 'Name is required',
@@ -66,13 +65,18 @@
     methods: {
       submit () {
         if (this.$refs.form.validate()) {
-          this.$refs.form.$el.submit()
+          // Native form submission is not yet supported
+          axios.post('/api/submit', {
+            name: this.name,
+            email: this.email,
+            select: this.select,
+            checkbox: this.checkbox
+          })
         }
       },
       clear () {
         this.$refs.form.reset()
       }
     }
-
   }
 </script>
