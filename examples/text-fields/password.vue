@@ -34,6 +34,7 @@
               :append-icon-cb="() => (e2 = !e2)"
               value="wqfasds"
               class="input-group--focused"
+              :type="e2 ? 'password' : 'text'"
             ></v-text-field>
           </v-flex>
         </v-layout>
@@ -52,6 +53,7 @@
               value="wqfasds"
               type="password"
               class="input-group--focused"
+              :type="e3 ? 'password' : 'text'"
             ></v-text-field>
           </v-flex>
         </v-layout>
@@ -70,6 +72,7 @@
               value="Pa"
               v-bind:rules="[() => ('The email and password you entered don\'t match')]"
               error
+              :type="e4 ? 'password' : 'text'"
             ></v-text-field>
           </v-flex>
         </v-layout>
