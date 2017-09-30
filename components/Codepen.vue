@@ -13,11 +13,13 @@
 </template>
 
 <script>
+  const version = require('vuetify/package.json').version || 'latest'
+
   export default {
     data: () => ({
       title: 'Vuetify Example Pen',
-      css_external: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons;https://unpkg.com/vuetify/dist/vuetify.min.css',
-      js_external: 'https://unpkg.com/vue/dist/vue.js;https://unpkg.com/vuetify/dist/vuetify.min.js'
+      css_external: `https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons;https://unpkg.com/vuetify@${version}/dist/vuetify.min.css`,
+      js_external: `https://unpkg.com/vue/dist/vue.js;https://unpkg.com/vuetify@${version}/dist/vuetify.min.js`
     }),
 
     props: ['pen'],
