@@ -19,7 +19,6 @@
             { header: 'Column width with hierarchy', file: 'toolbar/column-width-with-hierarchy', desc: 'Toolbars come in 2 variants, light and dark. Light toolbars have dark tinted buttons and dark text whereas Dark toolbars have white tinted buttons and white text.' },
             { header: 'Flexible toolbar and card toolbar', file: 'toolbar/flexible-and-card', desc: 'With a few custom styles, you can easily create your amazing user interfaces.' },
             { header: 'Floating with search', file: 'toolbar/floating-with-search', desc: 'A floating toolbar can be placed over the content that it references.' },
-            { header: 'Detached toolbar palette', file: 'toolbar/detached-palette', desc: 'Create unique customized interfaces combining multiple components.' },
             { header: 'Variations', file: 'toolbar/variations', desc: 'An app-bar has multiple variations that can be applied with themes and helper classes. These range from light and dark themes, colored and transparent.' },
             { header: 'Prominent toolbars', file: 'toolbar/prominent', desc: 'Prominent toolbars add a slot where you can placed elements in the extended area. The content and extension areas will be locked to 64px in height.' },
             { header: 'Dense toolbars', file: 'toolbar/dense', desc: 'Dense toolbars reduce their height to 48px. This is also the default behavior for mobile landscape orientation.' },
