@@ -21,7 +21,7 @@
           ],
           props: {
             'v-alert': {
-              shared: ['contextual', 'transitionable'],
+              shared: ['colorable', 'transitionable'],
               model: {
                 type: '*'
               },
@@ -37,12 +37,6 @@
                   'String',
                   '-',
                   'Designates a specific icon'
-                ],
-                [
-                  'hide-icon',
-                  'Boolean',
-                  'False',
-                  'Hides the alert icon'
                 ]
               ]
             }
