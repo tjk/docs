@@ -25,20 +25,22 @@
     computed: {
       script () {
         const replace = /(export default {|<script>|<\/script>|}([^}]*)$)/g
-        return (this.pen.script || '').replace(replace, '').trim()
+        return (this.pen.script || '').replace(replace, '').replace(/\n {2}/g, '\n').trim()
       },
       style () {
         return (this.pen.style || '').replace(/(<style>|<\/style>)/g, '').trim()
       },
       template () {
-        let template = this.pen.template || ''
-        template = template.replace('/static/', 'https://vuetifyjs.com/static/')
+        const template = this.pen.template || ''
 
-        return (template).replace(/(<template>|<\/template>([^<\/template>]*)$)/g, '').trim()
+        return template.replace('/static/', 'https://vuetifyjs.com/static/')
+          .replace(/(<template>|<\/template>([^<\/template>]*)$)/g, '')
+          .replace(/\n/g, '\n  ')
+          .trim()
       },
       value () {
 
-        const data = Object.assign({}, {
+        const data = Object.assign({
           html: `<div id="app">
   <v-app id="inspire">
     ${this.template}

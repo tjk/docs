@@ -25,10 +25,12 @@
     data: () => ({
       masks: [
         ['<strong>Masks</strong', ''],
-        ['#', 'Any numeric character'],
-        ['A', 'Any alphanumeric character (Upper)'],
-        ['a', 'Any alphanumeric character (Lower)'],
-        ['X', 'Any symbol'],
+        ['#', 'Any digit'],
+        ['A', 'Any capital letter'],
+        ['a', 'Any small letter'],
+        ['N', 'Any capital aphanumeric character'],
+        ['n', 'Any small aphanumeric character'],
+        ['X', 'Any special symbol (-!$%^&*()_+|~=`{}[]:";\'<>?,./\\) or space'],
         ['<strong>Pre-made</strong', ''],
         ['credit-card', '#### - #### - #### - ####'],
         ['date-with-time', '##/##/#### ##:##'],
