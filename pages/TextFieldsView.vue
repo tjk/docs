@@ -21,7 +21,7 @@
             { header: 'Dark theme with icon', file: 'text-fields/icon-dark', desc: 'The icon inherits the applications primary color on text-field focus.' },
             { header: 'Multi-Line', file: 'text-fields/multi-line', desc: 'A multi-line text-field is useful for larger amounts of text.' },
             { header: 'Dark theme multi-line', file: 'text-fields/multi-line-dark', desc: 'Multi-line text-fields can be set to autogrow allowing the field to scale with the input.' },
-            { header: 'Character counter', file: 'text-fields/character-counter', desc: 'Use a counter to inform a user of the character limit.' },
+            { header: 'Character counter', file: 'text-fields/character-counter', desc: 'Use a counter to inform a user of the character limit. The counter does not perform any validation by itself. You will need to pair it with either the internal validation system, or a 3rd party library.' },
             { header: 'Password input', file: 'text-fields/password', desc: 'A password input can be used with an appended icon and callback to control the visibility.' },
             { header: 'Validation', file: 'text-fields/validation', desc: `Vuetify includes simple validation through the <code>rules</code> prop. The prop accepts an array of callbacks. While validating rules, the current v-model value will be passed to the callback. This callback should return either <code>true</code> or a <code>String</code>, the error message.` },
             { header: 'Full-width text field with character counter', file: 'text-fields/full-width-with-character-counter', desc: 'Light theme' },
