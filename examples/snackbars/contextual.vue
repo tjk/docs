@@ -6,8 +6,9 @@
           <v-flex xs12>
             <v-radio-group v-model="color" row>
               <v-radio 
-                v-for=" colorValue in ['success', 'info', 'error', 'cyan darken-2']" 
+                v-for="(colorValue, i) in ['success', 'info', 'error', 'cyan darken-2']" 
                 light 
+                :key="i"
                 :value="colorValue" 
                 :label="colorValue" 
                 :color="colorValue"
