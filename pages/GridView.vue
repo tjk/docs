@@ -1,8 +1,8 @@
 <template lang="pug">
   component-view(v-bind:doc="doc")
-    v-alert(info value="true" slot="top") If you are looking for <strong>Grid lists</strong>, please navigate <router-link class="white--text" to="/components/grid-lists">here</router-link>.
+    v-alert(color="info" icon="info" value="true" slot="top") If you are looking for <strong>Grid lists</strong>, please navigate <router-link class="white--text" to="/components/grid-lists">here</router-link>.
     grid(slot="top").mt-5
-    v-alert(info value).mb-4 Vuetify breakpoint functionality requires the use of the <code>v-app</code> component.
+    v-alert(color="info" icon="info" value).mb-4 Vuetify breakpoint functionality requires the use of the <code>v-app</code> component.
     section-header Breakpoint object
     section-text Vuetify converts the available breakpoints into an accessible object from within your application. This will allow you to assign/apply specific properties and attributes based upon viewport size. The object can be accessed from:
     markup(lang="js")
