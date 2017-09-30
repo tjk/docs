@@ -260,6 +260,16 @@
                 href: 'https://chat.vuetifyjs.com',
                 target: '_blank',
                 title: 'Chat and support'
+              },
+              {
+                href: 'https://github.com/vuetifyjs/vuetify/issues',
+                target: '_blank',
+                title: 'Issue Board'
+              },
+              {
+                href: 'https://stackoverflow.com/search?q=vuetify',
+                target: '_blank',
+                title: 'Stack Overflow'
               }
             ]
           },

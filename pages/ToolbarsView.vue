@@ -11,7 +11,7 @@
           title: 'Toolbar',
           component: 'VToolbar',
           edit: 'ToolbarsView',
-          desc: 'The <code>v-toolbar</code> component is pivotal to any gui, as it generally is the primary source of site navigation. The toolbar component works great in conjunction with a sidebar for hiding links and presenting an activator to open the sidebar on mobile.',
+          desc: 'The <code>v-toolbar</code> component is pivotal to any gui, as it generally is the primary source of site navigation. The toolbar component works great in conjunction with a navigation drawer for hiding links and presenting an activator to open the sidebar on mobile.',
           examples: [
             { header: 'Default', file: 'toolbar/default', desc: 'A toolbar is a flexible container that can be utilized in a number of ways. By default, the toolbar is 64px high on desktop, 56px high on mobile portrait and 48px high on mobile landscape. These can be overwritten using the <code>dense</code> and <code>prominent</code> props.' },
             { header: 'App bar', file: 'toolbar/app-bar', desc: 'An App bar is the primary toolbar of your application. It can contain icons, menus and more.' },
