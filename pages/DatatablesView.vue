@@ -27,7 +27,7 @@
           ],
           props: {
             'v-data-table': {
-              shared: ['filterable', 'theme'],
+              shared: ['filterable', 'loadable', 'theme'],
               params: [
                 [
                   'headers',
@@ -126,12 +126,6 @@
                   'Manually sets total number of row items, which disables built-in sort and pagination. Used together with pagination prop to enable server-side sort and pagination.'
                 ],
                 [
-                  'loading',
-                  '[Boolean, String]',
-                  'False',
-                  'Displays progress bar. Can either be a String which specifies which color is applied to the progress bar (primary, secondary, success, info, warning, error) or a Boolean (which uses the primary color)'
-                ],
-                [
                   'pagination.sync',
                   'Object',
                   `{
@@ -186,6 +180,7 @@
             }
           },
           slots: {
+            shared: ['progress'],
             'v-data-table': {
               params: [
                 [

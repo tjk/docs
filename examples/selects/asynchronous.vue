@@ -7,7 +7,7 @@
             <v-select
               label="Async items"
               autocomplete
-              :async-loading="loading"
+              :loading="loading"
               dark
               multiple
               cache-items
