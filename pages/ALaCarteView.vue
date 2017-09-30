@@ -6,8 +6,8 @@
           dt(slot="title") Single component importing
           dd(slot="desc") Being a component framework, Vuetify will always grow horizontally. Depending on your project requirements, <strong>package size</strong> may be heavily scrutinized and important for your particular use-case. Vuetify allows you to easily import only what you need, drastically lowering its footprint.
       ad
-    v-alert(value warning).mb-4 The implementation details for this feature will very likely change drastically in future versions. The <strong>a-la-carte</strong> feature should be considered to be in <strong>beta</strong>
-    v-alert(value info).mb-4 For a pre-built project demonstrating single component imports, install the <strong>a-la-carte</strong> template from the cli, using the command <code>vue init vuetifyjs/a-la-carte</code>. Some of our other templates also include options for enabling a-la-carte components.
+    v-alert(value color="warning" icon="priority_high").mb-4 The implementation details for this feature will very likely change drastically in future versions. The <strong>a-la-carte</strong> feature should be considered to be in <strong>beta</strong>
+    v-alert(value color="info" icon="info").mb-4 For a pre-built project demonstrating single component imports, install the <strong>a-la-carte</strong> template from the cli, using the command <code>vue init vuetifyjs/a-la-carte</code>. Some of our other templates also include options for enabling a-la-carte components.
     section
       section-header Importing components
       section-text
@@ -46,7 +46,7 @@
         |  }
         |})
 
-      v-alert(value info).mb-4 The options object that you pass as the second argument to <code>Vue.use</code> can also include both a <strong>directives</strong> and a <strong>transitions</strong> property.
+      v-alert(value color="info" icon="info").mb-4 The options object that you pass as the second argument to <code>Vue.use</code> can also include both a <strong>directives</strong> and a <strong>transitions</strong> property.
 
       section-text If you are not using the <code>transform-imports</code> package, you will need to import each component like this
       markup(lang="js")
@@ -55,7 +55,7 @@
         |import VNagivationDrawer from 'vuetify/es5/components/VNavigationDrawer'
         |// etc
 
-      v-alert(value error).mb-4 Be aware that both the <code>Vuetify</code> and <code>VApp</code> components are required to use Vuetify.
+      v-alert(value color="error" icon="warning").mb-4 Be aware that both the <code>Vuetify</code> and <code>VApp</code> components are required to use Vuetify.
 
     section
       section-header Required styles
@@ -64,7 +64,7 @@
         |npm install --save-dev stylus stylus-loader
         |# or
         |yarn add --dev stylus stylus-loader
-      v-alert(value info).mb-4 For a more detailed explanation on how to setup your application to handle stylus, please navigate to the <router-link to="/style/theme" class="white--text">theme page</router-link>.
+      v-alert(value color="info" icon="info").mb-4 For a more detailed explanation on how to setup your application to handle stylus, please navigate to the <router-link to="/style/theme" class="white--text">theme page</router-link>.
       section-text Now you will need a main entry point for the stylus file. Even if you don't use/understand stylus, don't worry! Just create a <kbd>main.styl</kbd> file in your assets directory. Once created, open it and add this line:
       markup(lang="stylus")
         |@import '../../node_modules/vuetify/src/stylus/app'
