@@ -5,7 +5,7 @@
       absolute
       top
       right
-      success
+      color="success"
     >
       <span>Registration successful!</span>
       <v-icon dark>check_circle</v-icon>
