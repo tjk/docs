@@ -1,8 +1,8 @@
 <template>
   <v-layout justify-center>
     <v-flex xs12 sm10 md8 lg6>
-      <v-card>
-        <v-card-text ref="form">
+      <v-card ref="form">
+        <v-card-text>
           <v-text-field
             label="Full Name"
             placeholder="John Doe"
@@ -64,14 +64,20 @@
           <v-btn class="elevation-0">Cancel</v-btn>
           <v-spacer></v-spacer>
           <v-slide-x-transition>
-            <v-btn
-              icon
-              v-tooltip:left="{ html: 'Refresh Form' }"
+            <v-tooltip
+              left
               v-if="formHasErrors"
-              @click="resetForm"
             >
-              <v-icon>refresh</v-icon>
-            </v-btn>
+              <v-btn
+                icon
+                @click="resetForm"
+                slot="activator"
+                class="my-0"
+              >
+                <v-icon>refresh</v-icon>
+              </v-btn>
+              <span>Refresh form</span>
+            </v-tooltip>
           </v-slide-x-transition>
           <v-btn success class="elevation-0" @click="submit">Submit</v-btn>
         </v-card-actions>
@@ -133,8 +139,11 @@
       submit () {
         this.formHasErrors = false
 
-        Object.values(this.form).forEach(f => {
-          if (!f) return (this.formHasErrors = true)
+        Object.keys(this.form).forEach(f => {
+          if (!this.form[f]) this.formHasErrors = true
+          this.$refs[f].shouldValidate = true
+
+          this.$refs[f].validate()
         })
       }
     }
