@@ -23,7 +23,19 @@ export function createRouter () {
   const router = new Router({
     base: release ? `/releases/${release}` : __dirname,
     mode: release ? 'hash' : 'history',
-    scrollBehavior: () => ({ y: 0 }),
+    scrollBehavior (to, from, savedPosition) {
+      if (savedPosition) {
+        return savedPosition
+      }
+
+      if (to.hash) {
+        return {
+          selector: to.hash
+        }
+      }
+
+      return { y: 0 }
+    },
     routes: [
       route('/', 'Home'),
       route('/vuetify/quick-start', 'QuickStart'),
