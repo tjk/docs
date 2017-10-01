@@ -30,7 +30,8 @@ export function createRouter () {
 
       if (to.hash) {
         return {
-          selector: to.hash
+          selector: to.hash,
+          offset: { y: 80 }
         }
       }
 
