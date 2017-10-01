@@ -9,5 +9,5 @@
     section
       v-layout
         v-flex(xs12).text-xs-center
-          v-btn(href="javascript:;" primary large).mt-5 Go to Sandbox
+          v-btn(href="/examples/sandbox" primary large).mt-5 Go to Sandbox
 </template>
