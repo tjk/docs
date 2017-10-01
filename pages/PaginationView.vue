@@ -14,7 +14,7 @@
           title: 'Pagination',
           desc: 'The <code>v-pagination</code> component is used to separate long sets of data so that it is easier for a user to consume information. Depending on the length provided, the pagination component will automatically scale. To maintain the current page, simply supply a v-model attribute.',
           examples: [
-            { header: 'Short', file: 'pagination/short', desc: 'Pagination does not truncate pages when the length is 6 or less.' },
+            { header: 'Short', file: 'pagination/short', desc: 'Pagination displays all pages if parent container is big enough.' },
             { header: 'Long', file: 'pagination/long', desc: 'When the number of page buttons exceeds the parent container, the component will truncate the list.' },
             { header: 'Limit', file: 'pagination/limit', desc: 'You can also manually set the maximum number of visible page buttons with the <code>total-visible</code> prop.' },
             { header: 'Round', file: 'pagination/round', desc: 'The alternate style for pagination is circle pages.' },

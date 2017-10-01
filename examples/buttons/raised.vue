@@ -5,10 +5,10 @@
         <v-card height="185px" class="elevation-0 white">
           <v-card-text>
             <div>
-              <v-btn light>Normal</v-btn>
+              <v-btn primary>Primary</v-btn>
             </div>
             <div>
-              <v-btn light>Another</v-btn>
+              <v-btn error>Error</v-btn>
             </div>
             <div>
               <v-btn light disabled>Disabled</v-btn>
@@ -20,7 +20,7 @@
         <v-card height="185px" class="secondary elevation-0">
           <v-card-text>
             <div>
-              <v-btn primary dark>Normal</v-btn>
+              <v-btn primary dark>Primary</v-btn>
             </div>
             <div>
               <v-btn error dark>Error</v-btn>

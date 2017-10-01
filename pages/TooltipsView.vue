@@ -49,8 +49,8 @@
             }
           },
           examples: [
-            { header: 'Default', file: 'tooltips/default', desc: 'Tooltips can be applied to any element that does not use the <code>:before</code> pseudo element' },
-            { header: 'Visibility', file: 'tooltips/visibility', desc: 'Tooltips can be disabled using the <code>visible</code> property value in the tooltip object.' }
+            { header: 'Default', file: 'tooltips/default', desc: 'Tooltips can wrap any element.' },
+            { header: 'Visibility', file: 'tooltips/visibility', desc: 'Tooltip visibility can be programmatically changed using <code>v-model</code>.' }
           ]
         }
       }
