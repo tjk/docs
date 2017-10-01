@@ -8,6 +8,8 @@
     )#main-toolbar
       v-toolbar-side-icon(@click.stop="toggleSidebar")
 
+      v-btn(icon large @click="isSearching = true")
+        v-icon search
       transition(name="slide" mode="out-in")
         v-toolbar-title(
           v-html="$store.state.h1"
@@ -15,9 +17,6 @@
           v-bind:key="$store.state.h1"
           class="d-flex"
         )
-      v-spacer
-      v-btn(icon large @click="isSearching = true")
-        v-icon search
     v-toolbar(
       :class="[$store.state.currentColor]"
       fixed
@@ -27,6 +26,8 @@
       ref="toolbar"
       flat
     )
+      v-btn(icon dark large @click="isSearching = false")
+        v-icon arrow_back
       v-text-field(
         placeholder="Search"
         prepend-icon="search"
@@ -38,9 +39,6 @@
         v-model="search"
         ref="search"
       )
-      v-spacer.hidden-md-and-down
-      v-btn(icon dark large @click="isSearching = false")
-        v-icon arrow_back
 </template>
 
 <script>
