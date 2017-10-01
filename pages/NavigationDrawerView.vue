@@ -13,46 +13,46 @@
           component: 'VNavigationDrawer',
           desc: 'The <code>v-navigation-drawer</code> component is what your users will utilize to navigate through the application. The navigation-drawer is pre-configured to work with or without <strong>vue-router</strong> right out the box.',
           examples: [
-            // {
-            //   header: 'Permanent drawer',
-            //   file: 'navigation-drawers/permanent',
-            //   desc: 'Permanent navigation drawers are default open. These are used for applications that are desktop only and are not openable or closeable.'
-            // },
-            // {
-            //   header: 'Permanent clipped drawer',
-            //   file: 'navigation-drawers/permanent-clipped',
-            //   desc: 'A clipped drawer rests under the application toolbar.'
-            // },
-            // {
-            //   header: 'Permanent floating drawer',
-            //   file: 'navigation-drawers/permanent-floating',
-            //   desc: 'A floating drawer has no visible container (no border-right).'
-            // },
-            // {
-            //   header: 'Permanent floating drawer in a card',
-            //   file: 'navigation-drawers/permanent-floating-card',
-            //   desc: 'A card can be used to contain a navigation drawer\'s items.'
-            // },
-            // {
-            //   header: 'Persistent',
-            //   file: 'navigation-drawers/persistent',
-            //   desc: 'A persistent drawer can be opened or closed. This is recommended sidebar for an application that supports both desktop and mobile.'
-            // },
-            // {
-            //   header: 'Mini',
-            //   file: 'navigation-drawers/mini',
-            //   desc: 'The navigation drawer also has a mini-variant which can be controlled using the prop <code>mini-variant.sync</code>.'
-            // },
-            // {
-            //   header: 'Temporary',
-            //   file: 'navigation-drawers/temporary',
-            //   desc: 'A temporary drawer sits above its application and uses a scrim (overlay) to darken the background. This drawer behavior is mimicked on the persistent drawer when on mobile. Clicking outside of the drawer will cause it to close.'
-            // },
-            // {
-            //   header: 'Dark theme',
-            //   file: 'navigation-drawers/dark',
-            //   desc: 'Vuetify also supports the dark application theme. This will not override components that have default themes so in some cases it will be necessary to manually set the dark theme accents.'
-            // }
+            {
+              header: 'Permanent drawer',
+              file: 'navigation-drawers/permanent',
+              desc: 'Permanent navigation drawers are default open. These are used for applications that are desktop only and are not openable or closeable.'
+            },
+            {
+              header: 'Permanent clipped drawer',
+              file: 'navigation-drawers/permanent-clipped',
+              desc: 'A clipped drawer rests under the application toolbar.'
+            },
+            {
+              header: 'Permanent floating drawer',
+              file: 'navigation-drawers/permanent-floating',
+              desc: 'A floating drawer has no visible container (no border-right).'
+            },
+            {
+              header: 'Permanent floating drawer in a card',
+              file: 'navigation-drawers/permanent-floating-card',
+              desc: 'A card can be used to contain a navigation drawer\'s items.'
+            },
+            {
+              header: 'Persistent',
+              file: 'navigation-drawers/persistent',
+              desc: 'A persistent drawer can be opened or closed. This is recommended sidebar for an application that supports both desktop and mobile.'
+            },
+            {
+              header: 'Mini',
+              file: 'navigation-drawers/mini',
+              desc: 'The navigation drawer also has a mini-variant which can be controlled using the prop <code>mini-variant.sync</code>.'
+            },
+            {
+              header: 'Temporary',
+              file: 'navigation-drawers/temporary',
+              desc: 'A temporary drawer sits above its application and uses a scrim (overlay) to darken the background. This drawer behavior is mimicked on the persistent drawer when on mobile. Clicking outside of the drawer will cause it to close.'
+            },
+            {
+              header: 'Dark theme',
+              file: 'navigation-drawers/dark',
+              desc: 'Vuetify also supports the dark application theme. This will not override components that have default themes so in some cases it will be necessary to manually set the dark theme accents.'
+            }
           ],
           props: {
             'v-navigation-drawer': {
@@ -149,22 +149,18 @@
 </script>
 
 <style lang="stylus">
+  @import '../node_modules/vuetify/src/stylus/settings/_elevations.styl'
+
   #navigation-drawer-view
-    .component-example
+    .component-example .card__text
+      overflow: hidden
+
+    .navigation-drawer
+      elevation(4)
       position: relative
       z-index: 0
-
-      [data-app]
-        border: 1px solid rgba(#000, .1)
-        overflow: hidden
-        elevation(2)
-
-        .navigation-drawer, .toolbar:not(.elevation-0), .overlay
-          position: absolute
-
-        main .container
-          min-height: calc(400px - 36px) !important
-
-        .footer
-          height: 36px
+      
+    #example-8
+      .icon
+        color: #fff !important
 </style>
