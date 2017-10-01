@@ -3,7 +3,7 @@
     div(slot='top')
       section
         h2.display-1 Default application markup
-        section-text This is the default application markup for Vuetify. The key is that drawer, toolbar, main and footer exist on the same level in the DOM. Using any one of the 5 pre-made vue-cli templates will automatically include this structure:
+        section-text This is an example of the default application markup for Vuetify. You can place your layout elements anywhere, as long as you designate them with the <strong>app</strong> property. The key component in all of this is the <code>v-content</code> element. This will be dynamically sized depending upon the structure of your designated <strong>app</strong> components. This allows you to create extremely customed solutions.
         markup(lang='html')
           |&lt;v-app&gt;
           |   &lt;v-navigation-drawer app&gt;&lt;/v-navigation-drawer&gt;
@@ -17,7 +17,7 @@
           |   &lt;/main&gt;
           |   &lt;v-footer app&gt;&lt;/v-footer&gt;
           |&lt;/v-app&gt;
-        v-alert(color="error" icon="warning" value="true") In order for your application to work properly, you <strong>must</strong> wrap it in a <code>v-app</code> component. This component is required for determining grid breakpoints for the layout. This can exist <strong>anywhere</strong> inside the body, but must be the parent of all Vuetify components.
+        v-alert(color="error" icon="warning" value="true") In order for your application to work properly, you <strong>must</strong> wrap it in a <code>v-app</code> component. This component is required for determining grid breakpoints for the layout. This can exist <strong>anywhere</strong> inside the body, but must be the parent of <strong>ALL</strong> Vuetify components.
     section#layouts
       v-container(fluid grid-list-xl).pa-0
         v-layout(row wrap)

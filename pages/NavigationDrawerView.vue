@@ -1,5 +1,23 @@
 <template lang="pug">
   component-view(v-bind:doc="doc")
+    section#layouts
+      v-container(fluid grid-list-xl).pa-0
+        v-layout(row wrap)
+          v-flex(
+            xs12 sm6 md4 lg3
+            v-for="layout in layouts"
+            :key="layout.name"
+          )
+            v-card(
+              hover
+              :href="layout.href"
+              target="_blank"
+              rel="noopener"
+            )
+              v-card-media(height="300px").grey.lighten-2
+                v-layout(align-center)
+                  v-flex.text-xs-center
+                    div.title {{ layout.name }}
 </template>
 
 <script>
@@ -142,7 +160,16 @@
               shared: ['default']
             }
           }
-        }
+        },
+        layouts: [
+          { name: 'Baseline', href: '/examples/layouts/baseline.html' },
+          { name: 'Baseline Flipped', href: '/examples/layouts/baseline-flipped.html' },
+          { name: 'Complex', href: '/examples/layouts/complex.html' },
+          { name: 'Dark Theme', href: '/examples/layouts/dark.html' },
+          { name: 'Google Contacts', href: '/examples/layouts/google-contacts.html' },
+          { name: 'Google Keep', href: '/examples/layouts/google-keep.html' },
+          { name: 'Google Youtube', href: '/examples/layouts/google-youtube.html' }
+        ]
       }
     }
   }
