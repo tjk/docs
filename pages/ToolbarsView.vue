@@ -167,6 +167,7 @@
   #toolbar-view
     .system-bar
       position: relative
+      z-index: auto
 
   #toolbar-image
     height: 300px
