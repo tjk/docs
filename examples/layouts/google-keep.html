@@ -76,8 +76,12 @@
       </v-toolbar>
       <main>
         <v-content>
-          <v-container fluid class="grey lighten-4">
-            <!--v-router-->
+          <v-container fluid fill-height class="grey lighten-4">
+            <v-layout justify-center align-center>
+              <v-btn icon large :href="source" target="_blank">
+                <v-icon large>code</v-icon>
+              </v-btn>
+            </v-layout>
           </v-container>
         </v-content>
       </main>
@@ -107,6 +111,12 @@
             { icon: 'phonelink', text: 'App downloads' },
             { icon: 'keyboard', text: 'Keyboard shortcuts' }
           ]
+        }
+      },
+      computed: {
+        source () {
+          const path = window.location.pathname
+          return `https://github.com/vuetifyjs/docs/blob/master${path}`
         }
       }
     })
