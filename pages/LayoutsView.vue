@@ -79,13 +79,13 @@
           }
         },
         layouts: [
-          { name: 'Baseline', href: '/examples/layouts/baseline.html' },
-          { name: 'Baseline Flipped', href: '/examples/layouts/baseline-flipped.html' },
-          { name: 'Complex', href: '/examples/layouts/complex.html' },
-          { name: 'Dark Theme', href: '/examples/layouts/dark.html' },
-          { name: 'Google Contacts', href: '/examples/layouts/google-contacts.html' },
-          { name: 'Google Keep', href: '/examples/layouts/google-keep.html' },
-          { name: 'Google Youtube', href: '/examples/layouts/google-youtube.html' }
+          { name: 'Baseline', href: '/examples/layouts/baseline' },
+          { name: 'Baseline Flipped', href: '/examples/layouts/baseline-flipped' },
+          { name: 'Complex', href: '/examples/layouts/complex' },
+          { name: 'Dark Theme', href: '/examples/layouts/dark' },
+          { name: 'Google Contacts', href: '/examples/layouts/google-contacts' },
+          { name: 'Google Keep', href: '/examples/layouts/google-keep' },
+          { name: 'Google Youtube', href: '/examples/layouts/google-youtube' }
         ]
       }
     }
