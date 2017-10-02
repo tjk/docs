@@ -1,6 +1,6 @@
 <template lang="pug">
-  #home-view
-    v-toolbar(fixed :class="[toolbar ? 'toolbar--home' : 'hidden']" ).white.text-xs-center
+  #home-view(v-scroll="onScroll")
+    v-toolbar(fixed :class="[toolbar ? 'toolbar--home' : 'hidden']" app).white.text-xs-center
       img(src="/static/doc-images/header-logo.svg" height="38px")
       v-spacer
       v-toolbar-items
@@ -185,13 +185,6 @@
         ],
         toolbar: false
       }
-    },
-    mounted() {
-      // TODO: change this to v-scroll
-      window.addEventListener('scroll', this.onScroll, { passive: true })
-    },
-    beforeDestroy() {
-      window.removeEventListener('scroll', this.onScroll, { passive: true })
     },
     methods: {
       onScroll() {
