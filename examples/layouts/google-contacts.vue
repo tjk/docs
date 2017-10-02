@@ -69,13 +69,14 @@
       clipped-left
       fixed
     >
-      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title>Google Contacts</v-toolbar-title>
+      <v-toolbar-title style="width: 300px" class="ml-0 pl-3">
+        <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+        Google Contacts
+      </v-toolbar-title>
       <v-text-field
         solo
         prepend-icon="search"
         placeholder="Search"
-        class="ml-5"
       ></v-text-field>
       <v-spacer></v-spacer>
       <v-btn icon>

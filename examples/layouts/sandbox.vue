@@ -13,7 +13,7 @@
       enable-resize-watcher
       app
     ></v-navigation-drawer>
-    <v-toolbar app>
+    <v-toolbar app absolute :clipped-left="primaryDrawer.clipped">
       <v-toolbar-side-icon @click.stop="primaryDrawer.model = !primaryDrawer.model"
                            v-if="primaryDrawer.type !== 'permanent'"></v-toolbar-side-icon>
       <v-toolbar-title>Vuetify</v-toolbar-title>
