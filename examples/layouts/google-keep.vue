@@ -1,125 +1,111 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
-  <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-  <style>
-    #keep main .container {
-      height: 660px;
-    }
-
-    .navigation-drawer__border {
-      display: none;
-    }
-
-    .text {
-      font-weight: 400;
-    }
-  </style>
-</head>
-<body>
-  <div id="app">
-    <v-app id="inspire">
-      <v-navigation-drawer
-        permanent
-        clipped
+<template>
+  <v-app id="inspire">
+    <v-navigation-drawer
+      permanent
+      clipped
+      class="grey lighten-4"
+      app
+    >
+      <v-list
+        dense
         class="grey lighten-4"
-        app
       >
-        <v-list
-          dense
-          class="grey lighten-4"
-        >
-          <template v-for="(item, i) in items">
-            <v-layout
-              row
-              v-if="item.heading"
-              align-center
-              :key="i"
-            >
-              <v-flex xs6>
-                <v-subheader v-if="item.heading">
-                  {{ item.heading }}
-                </v-subheader>
-              </v-flex>
-              <v-flex xs6 class="text-xs-center">
-                <v-btn small flat>edit</v-btn>
-              </v-flex>
-            </v-layout>
-            <v-divider
-              dark
-              v-else-if="item.divider"
-              class="my-4"
-              :key="i"
-            ></v-divider>
-            <v-list-tile
-              :key="i"
-              v-else
-              @click=""
-            >
-              <v-list-tile-action>
-                <v-icon>{{ item.icon }}</v-icon>
-              </v-list-tile-action>
-              <v-list-tile-content>
-                <v-list-tile-title class="grey--text">
-                  {{ item.text }}
-                </v-list-tile-title>
-              </v-list-tile-content>
-            </v-list-tile>
-          </template>
-        </v-list>
-      </v-navigation-drawer>
-      <v-toolbar class="amber" app>
-        <v-toolbar-side-icon></v-toolbar-side-icon>
-        <span class="title">Google&nbsp;<span class="text">Keep</span></span>
-      </v-toolbar>
-      <main>
-        <v-content>
-          <v-container fluid fill-height class="grey lighten-4">
-            <v-layout justify-center align-center>
-              <v-btn icon large :href="source" target="_blank">
-                <v-icon large>code</v-icon>
-              </v-btn>
-            </v-layout>
-          </v-container>
-        </v-content>
-      </main>
-    </v-app>
-  </div>
+        <template v-for="(item, i) in items">
+          <v-layout
+            row
+            v-if="item.heading"
+            align-center
+            :key="i"
+          >
+            <v-flex xs6>
+              <v-subheader v-if="item.heading">
+                {{ item.heading }}
+              </v-subheader>
+            </v-flex>
+            <v-flex xs6 class="text-xs-center">
+              <v-btn small flat>edit</v-btn>
+            </v-flex>
+          </v-layout>
+          <v-divider
+            dark
+            v-else-if="item.divider"
+            class="my-4"
+            :key="i"
+          ></v-divider>
+          <v-list-tile
+            :key="i"
+            v-else
+            @click=""
+          >
+            <v-list-tile-action>
+              <v-icon>{{ item.icon }}</v-icon>
+            </v-list-tile-action>
+            <v-list-tile-content>
+              <v-list-tile-title class="grey--text">
+                {{ item.text }}
+              </v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
+        </template>
+      </v-list>
+    </v-navigation-drawer>
+    <v-toolbar class="amber" app>
+      <v-toolbar-side-icon></v-toolbar-side-icon>
+      <span class="title">Google&nbsp;<span class="text">Keep</span></span>
+    </v-toolbar>
+    <main>
+      <v-content>
+        <v-container fluid fill-height class="grey lighten-4">
+          <v-layout justify-center align-center>
+            <v-btn icon large :href="source" target="_blank">
+              <v-icon large>code</v-icon>
+            </v-btn>
+          </v-layout>
+        </v-container>
+      </v-content>
+    </main>
+  </v-app>
+</template>
 
-  <script src="https://unpkg.com/vue/dist/vue.js"></script>
-  <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
-  <script>
-    new Vue({
-      el: '#app',
-      data () {
-        return {
-          items: [
-            { icon: 'lightbulb_outline', text: 'Notes' },
-            { icon: 'touch_app', text: 'Reminders' },
-            { divider: true },
-            { heading: 'Labels' },
-            { icon: 'add', text: 'Create new label' },
-            { divider: true },
-            { icon: 'archive', text: 'Archive' },
-            { icon: 'delete', text: 'Trash' },
-            { divider: true },
-            { icon: 'settings', text: 'Settings' },
-            { icon: 'chat_bubble', text: 'Trash' },
-            { icon: 'help', text: 'Help' },
-            { icon: 'phonelink', text: 'App downloads' },
-            { icon: 'keyboard', text: 'Keyboard shortcuts' }
-          ]
-        }
-      },
-      computed: {
-        source () {
-          const path = window.location.pathname
-          return `https://github.com/vuetifyjs/docs/blob/master${path}`
-        }
+<script>
+  export default {
+    data: () => ({
+      items: [
+        { icon: 'lightbulb_outline', text: 'Notes' },
+        { icon: 'touch_app', text: 'Reminders' },
+        { divider: true },
+        { heading: 'Labels' },
+        { icon: 'add', text: 'Create new label' },
+        { divider: true },
+        { icon: 'archive', text: 'Archive' },
+        { icon: 'delete', text: 'Trash' },
+        { divider: true },
+        { icon: 'settings', text: 'Settings' },
+        { icon: 'chat_bubble', text: 'Trash' },
+        { icon: 'help', text: 'Help' },
+        { icon: 'phonelink', text: 'App downloads' },
+        { icon: 'keyboard', text: 'Keyboard shortcuts' }
+      ]
+    }),
+    computed: {
+      source () {
+        const path = window.location.pathname
+        return `https://github.com/vuetifyjs/docs/blob/master${path}`
       }
-    })
-  </script>
-</body>
-</html>
+    }
+  }
+</script>
+
+<style>
+  #keep main .container {
+    height: 660px;
+  }
+
+  .navigation-drawer__border {
+    display: none;
+  }
+
+  .text {
+    font-weight: 400;
+  }
+</style>
