@@ -167,7 +167,7 @@
         const xmlhttp = new XMLHttpRequest()
         const vm = this
         const timeout = setTimeout(() => this.loading = true, 500)
-        xmlhttp.open('GET', `/${this.url}examples/${file}.vue`, true)
+        xmlhttp.open('GET', `/${this.url}example-source/${file}.vue`, true)
 
         xmlhttp.onreadystatechange = function () {
           if(xmlhttp.status == 200 && xmlhttp.readyState == 4) {

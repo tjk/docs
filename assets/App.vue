@@ -13,6 +13,7 @@
 
     components: {
       default: require('layouts/Default'),
+      example: require('layouts/Example'),
       home: require('layouts/Home')
     },
 
@@ -44,7 +45,9 @@
 
     computed: {
       component () {
-        return this.$route.path === '/' ? 'home' : 'default'
+        if (this.$route.path === '/') return 'home'
+        if (this.$route.path.startsWith('/examples')) return 'example'
+        return 'default'
       }
     },
 
