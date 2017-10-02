@@ -100,6 +100,7 @@ export function createRouter () {
       route('/directives/touch-support', 'Touch'),
       route('/pre-made-themes', 'PremadeThemes'),
       route('/guides/server-side-rendering', 'SSR'),
+      route('/examples/:example+', 'Example'),
       // Global redirect for 404
       { path: '*', redirect: '/' }
     ]
