@@ -44,26 +44,32 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar class="red" fixed app>
-      <v-toolbar-title>
+    <v-toolbar class="red" dense fixed clipped-left app>
+      <v-toolbar-title style="width: 300px" class="ml-0 pl-3">
         <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
         <v-icon class="ml-3">fa-youtube</v-icon>
       </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-text-field
-        label="Search..."
-        single-line
-        append-icon="search"
-        hide-details
-      ></v-text-field>
+      <v-layout row align-center style="max-width: 650px">
+        <v-text-field
+          placeholder="Search..."
+          single-line
+          append-icon="search"
+          :append-icon-cb="() => {}"
+          class="white--text"
+          hide-details
+        ></v-text-field>
+      </v-layout>
     </v-toolbar>
     <main>
       <v-content>
         <v-container fill-height>
           <v-layout justify-center align-center>
-            <v-btn icon large :href="source" target="_blank">
-              <v-icon large>code</v-icon>
-            </v-btn>
+            <v-tooltip right>
+              <v-btn icon large :href="source" target="_blank" slot="activator">
+                <v-icon large>code</v-icon>
+              </v-btn>
+              <span>Source</span>
+            </v-tooltip>
           </v-layout>
         </v-container>
       </v-content>
@@ -90,11 +96,8 @@
         { picture: 78, text: 'MKBHD' },
       ]
     }),
-    computed: {
-      source () {
-        const path = window.location.pathname
-        return `https://github.com/vuetifyjs/docs/blob/master${path}`
-      }
+    props: {
+      source: String
     }
   }
 </script>
@@ -102,9 +105,5 @@
 <style>
   .input-group__details:after {
     background-color: rgba(255, 255, 255, 0.32) !important;
-  }
-
-  .input-group--focused .input-group__append-icon {
-    color: inherit !important;
   }
 </style>

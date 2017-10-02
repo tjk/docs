@@ -36,14 +36,12 @@
             justify-center
             align-center
           >
-            <v-btn
-              icon
-              large
-              :href="source"
-              target="_blank"
-            >
-              <v-icon large>code</v-icon>
-            </v-btn>
+            <v-tooltip right>
+              <v-btn icon large :href="source" target="_blank" slot="activator">
+                <v-icon large>code</v-icon>
+              </v-btn>
+              <span>Source</span>
+            </v-tooltip>
           </v-layout>
         </v-container>
       </v-content>
@@ -59,11 +57,8 @@
     data: () => ({
       drawer: true
     }),
-    computed: {
-      source () {
-        const path = window.location.pathname
-        return `https://github.com/vuetifyjs/docs/blob/master${path}`
-      }
+    props: {
+      source: String
     }
   }
 </script>

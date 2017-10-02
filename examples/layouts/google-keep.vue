@@ -22,7 +22,7 @@
                 {{ item.heading }}
               </v-subheader>
             </v-flex>
-            <v-flex xs6 class="text-xs-center">
+            <v-flex xs6 class="text-xs-right">
               <v-btn small flat>edit</v-btn>
             </v-flex>
           </v-layout>
@@ -49,17 +49,19 @@
         </template>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar class="amber" app>
-      <v-toolbar-side-icon></v-toolbar-side-icon>
+    <v-toolbar class="amber" app absolute clipped-left>
       <span class="title">Google&nbsp;<span class="text">Keep</span></span>
     </v-toolbar>
     <main>
       <v-content>
         <v-container fluid fill-height class="grey lighten-4">
           <v-layout justify-center align-center>
-            <v-btn icon large :href="source" target="_blank">
-              <v-icon large>code</v-icon>
-            </v-btn>
+            <v-tooltip right>
+              <v-btn icon large :href="source" target="_blank" slot="activator">
+                <v-icon large>code</v-icon>
+              </v-btn>
+              <span>Source</span>
+            </v-tooltip>
           </v-layout>
         </v-container>
       </v-content>
@@ -87,11 +89,8 @@
         { icon: 'keyboard', text: 'Keyboard shortcuts' }
       ]
     }),
-    computed: {
-      source () {
-        const path = window.location.pathname
-        return `https://github.com/vuetifyjs/docs/blob/master${path}`
-      }
+    props: {
+      source: String
     }
   }
 </script>

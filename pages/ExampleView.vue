@@ -1,5 +1,5 @@
 <template lang="pug">
-  component(:is="component")
+  component(:is="component" :source="source")
 </template>
 
 <script>
@@ -7,6 +7,14 @@
     data: () => ({
       component: null
     }),
+
+    computed: {
+      source () {
+        const path = this.$route.fullPath
+        return `https://github.com/vuetifyjs/docs/blob/master${path}.vue`
+      }
+    },
+
     beforeRouteEnter (to, from, next) {
       console.log(to.params.example)
       return import(

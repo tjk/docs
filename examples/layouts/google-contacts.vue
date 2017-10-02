@@ -97,14 +97,12 @@
       <v-content>
         <v-container fluid fill-height>
           <v-layout justify-center align-center>
-            <v-btn
-              icon
-              large
-              :href="source"
-              target="_blank"
-            >
-              <v-icon large>code</v-icon>
-            </v-btn>
+            <v-tooltip right>
+              <v-btn icon large :href="source" target="_blank" slot="activator">
+                <v-icon large>code</v-icon>
+              </v-btn>
+              <span>Source</span>
+            </v-tooltip>
           </v-layout>
         </v-container>
       </v-content>
@@ -175,8 +173,8 @@
         <v-card-actions>
           <v-btn flat primary>More</v-btn>
           <v-spacer></v-spacer>
-          <v-btn flat primary>Cancel</v-btn>
-          <v-btn flat>Save</v-btn>
+          <v-btn flat primary @click="dialog = false">Cancel</v-btn>
+          <v-btn flat @click="dialog = false">Save</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -218,14 +216,11 @@
         { icon: 'chat_bubble', text: 'Send feedback' },
         { icon: 'help', text: 'Help' },
         { icon: 'phonelink', text: 'App downloads' },
-        { icon: 'keyboard', text: 'Got to the old version' }
+        { icon: 'keyboard', text: 'Go to the old version' }
       ]
     }),
-    computed: {
-      source () {
-        const path = window.location.pathname
-        return `https://github.com/vuetifyjs/docs/blob/master${path}`
-      }
+    props: {
+      source: String
     }
   }
 </script>
