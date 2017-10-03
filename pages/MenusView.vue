@@ -25,10 +25,40 @@
               shared: ['detachable', 'menu'],
               params: [
                 [
+                  'absolute',
+                  'Boolean',
+                  'False',
+                  'Position the menu absolutely, useful for context menus'
+                ],
+                [
+                  'fixed',
+                  'Boolean',
+                  'False',
+                  ''
+                ],
+                [
+                  'activator',
+                  'Element',
+                  'null',
+                  'An element that will open the menu when clicked'
+                ],
+                [
+                  'auto',
+                  'Boolean',
+                  'false',
+                  ''
+                ],
+                [
                   'full-width',
                   'Boolean',
                   'False',
                   'Changes the menu display to block, useful for filling available width in forms'
+                ],
+                [
+                  'offset-overflow',
+                  'Boolean',
+                  'False',
+                  ''
                 ],
                 [
                   'offset-x',
@@ -40,7 +70,7 @@
                   'offset-y',
                   'Boolean',
                   'False',
-                  'Offset the menu on the y-axis. Works in conjunction with direction top/rightbottom'
+                  'Offset the menu on the y-axis. Works in conjunction with direction top/bottom'
                 ],
                 [
                   'disabled',
@@ -50,11 +80,16 @@
                 ],
                 [
                   'max-height',
-                  'Number',
-                  'null',
+                  '[Number, String]',
+                  'auto',
                   'The maximum height of the menu, will overflow-y with scroll if content is too large'
                 ],
-
+                [
+                  'nudge-width',
+                  '[Number, String]',
+                  '0',
+                  ''
+                ],
                 [
                   'open-on-hover',
                   'Boolean',
@@ -108,6 +143,12 @@
                   'Boolean',
                   'False',
                   'Conditionally renders content on mounted'
+                ],
+                [
+                  'value',
+                  'Boolean',
+                  'False',
+                  'Controls whether or not the menu is open'
                 ],
                 [
                   'z-index',
