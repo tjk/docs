@@ -376,5 +376,53 @@
     "title": "Server side rendering",
     "description": "Server side rendering guide for the Vuetify framework.",
     "keywords": "server side rendering, ssr"
+  },
+  "/examples/layouts/baseline": {
+    "h1": "Baseline",
+    "title": "Baseline example",
+    "description": "Baseline layout for the Vuetify.js framework",
+    "keywords": "template, pre-made, vuetify layout"
+  },
+  "/examples/layouts/baseline-flipped": {
+    "h1": "Baseline Flipped",
+    "title": "Baseline Flipped example",
+    "description": "Baseline Flipped layout for the Vuetify.js framework",
+    "keywords": "template, pre-made, vuetify layout"
+  },
+  "/examples/layouts/complex": {
+    "h1": "Complex",
+    "title": "Complex example",
+    "description": "Complex layout for the Vuetify.js framework",
+    "keywords": "template, pre-made, vuetify layout"
+  },
+  "/examples/layouts/dark": {
+    "h1": "Dark",
+    "title": "Dark example",
+    "description": "Dark layout for the Vuetify.js framework",
+    "keywords": "template, pre-made, vuetify layout"
+  },
+  "/examples/layouts/google-contacts": {
+    "h1": "Google Contacts",
+    "title": "Google Contacts example",
+    "description": "Google Contacts layout for the Vuetify.js framework",
+    "keywords": "template, pre-made, vuetify layout"
+  },
+  "/examples/layouts/google-keep": {
+    "h1": "Google Keep",
+    "title": "Google Keep example",
+    "description": "Google Keep layout for the Vuetify.js framework",
+    "keywords": "template, pre-made, vuetify layout"
+  },
+  "/examples/layouts/google-youtube": {
+    "h1": "Google Youtube",
+    "title": "Google Youtube example",
+    "description": "Google Youtube layout for the Vuetify.js framework",
+    "keywords": "template, pre-made, vuetify layout"
+  },
+  "/examples/layouts/sandbox": {
+    "h1": "Layout Sandbox",
+    "title": "Layout Sandbox",
+    "description": "Layout Sandbox for the Vuetify.js framework",
+    "keywords": "template, pre-made, vuetify layout, sandbox"
   }
 }

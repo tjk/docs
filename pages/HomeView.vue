@@ -4,19 +4,22 @@
       img(src="/static/doc-images/header-logo.svg" height="38px")
       v-spacer
       v-toolbar-items
-        v-btn(flat to="/vuetify/quick-start") Documentation
+        v-btn(
+          flat
+          to="/vuetify/quick-start"
+        ).subheading Documentation
         v-btn(
           flat
           href="https://chat.vuetifyjs.com"
           target="_blank"
           rel="noopener"
-        ).hidden-xs-only Community
+        ).hidden-xs-only.subheading Community
         v-btn(
           flat
           href="https://github.com/vuetifyjs/vuetify/releases"
           target="_blank"
           rel="noopener"
-        ).hidden-xs-only Updates
+        ).hidden-xs-only.subheading Updates
 
     section#hero
       v-container(grid-list-xl)
@@ -86,7 +89,7 @@
               v-card-text.py-5
                 v-layout(row wrap).text-xs-center
                   v-flex(xs12).mb-5
-                    h2 Has Vuetify helped you create an amazing application?<br> <br class="hidden-md-and-up"> You can show your support by backing the project on Patreon:
+                    h2 Has Vuetify helped you create an amazing application?<br> <br class="hidden-md-and-up"> You can show your support by backing the project on Patreon or Paypal:
                   v-flex(xs12 sm3 offset-sm3)
                     a(
                       href="https://www.patreon.com/vuetify"

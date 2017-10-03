@@ -1,7 +1,7 @@
 <template>
   <v-layout row>
     <v-flex xs12 sm6 offset-sm3>
-      <v-card height="980px">
+      <v-card>
         <v-toolbar class="white elevation-0">
           <v-btn icon light>
             <v-icon class="grey--text text--darken-2">arrow_back</v-icon>

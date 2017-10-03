@@ -11,7 +11,12 @@
         v-list-tile(avatar tag="div")
           v-list-tile-avatar
             router-link(to="/")
-              img(src="/static/doc-images/logo.svg" v-bind:style="filter")
+              img(
+                src="/static/doc-images/logo.svg"
+                v-bind:style="filter"
+                alt="Vuetify"
+                title="Vuetify"
+              )
           v-list-tile-content
             v-list-tile-title Vuetify
             v-list-tile-sub-title
@@ -47,10 +52,10 @@
                 img(
                   width="150px"
                   src="/static/doc-images/backers/lmax-exchange.png"
+                  alt="LMAX Exchange"
+                  title="LMAX Exchange"
                 )
-      v-flex(xs12).layout.justify-center.pt-3.pb-1
-        v-btn(to="/vuetify/sponsors-and-backers" round dark small).blue.lighten-2 Support Vuetify
-    v-layout(row justify-center)
+    v-layout(row justify-center wrap).pt-4
       v-tooltip(
         v-for="social in socials"
         v-bind:key="social.icon"
@@ -65,6 +70,17 @@
         )
           v-icon(v-html="social.icon")
         span(v-text="social.name")
+      v-flex(xs12).pt-3.pb-1.text-xs-center
+        a(
+          href="https://vuejobs.com/?utm_source=vuetify"
+          target="_blank"
+          rel="noopener"
+        )
+          img(
+            src="/static/doc-images/affiliates/vuejobs.png"
+            alt="VueJobs"
+            title="VueJobs"
+          )
     v-list(dense)
       template(v-for="item in items")
         v-list-group(v-if="item.items" v-bind:group="item.group")
@@ -250,12 +266,6 @@
             title: 'Community',
             action: 'people',
             items: [
-              {
-                href: 'https://vuejobs.com/?ref=vuetify',
-                target: '_blank',
-                title: 'Jobs',
-                action: 'whatshot'
-              },
               {
                 href: 'https://chat.vuetifyjs.com',
                 target: '_blank',

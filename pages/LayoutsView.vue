@@ -22,7 +22,7 @@
       v-container(fluid grid-list-xl).pa-0
         v-layout(row wrap)
           v-flex(
-            xs12 sm6 md4 lg3
+            xs12 sm4
             v-for="layout in layouts"
             :key="layout.name"
           )
@@ -32,10 +32,10 @@
               target="_blank"
               rel="noopener"
             )
-              v-card-media(height="300px").grey.lighten-2
+              v-card-media(height="300px" :src="genSrc(layout.name)")
                 v-layout(align-center)
                   v-flex.text-xs-center
-                    div.title {{ layout.name }}
+                    div(:class="[layout.dark ? 'white--text' : '']").title {{ layout.name }}
 </template>
 
 <script>
@@ -82,11 +82,17 @@
           { name: 'Baseline', href: '/examples/layouts/baseline' },
           { name: 'Baseline Flipped', href: '/examples/layouts/baseline-flipped' },
           { name: 'Complex', href: '/examples/layouts/complex' },
-          { name: 'Dark Theme', href: '/examples/layouts/dark' },
+          { name: 'Dark', href: '/examples/layouts/dark', dark: true },
           { name: 'Google Contacts', href: '/examples/layouts/google-contacts' },
-          { name: 'Google Keep', href: '/examples/layouts/google-keep' },
-          { name: 'Google Youtube', href: '/examples/layouts/google-youtube' }
+          { name: 'Google Keep', href: '/examples/layouts/google-keep'},
+          { name: 'Google Youtube', href: '/examples/layouts/google-youtube', dark: true }
         ]
+      }
+    },
+
+    methods: {
+      genSrc (name) {
+        return `'/static/doc-images/layouts/${name.toLowerCase().replace(' ', '-')}.png'`
       }
     }
   }
