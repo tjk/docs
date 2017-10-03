@@ -30,7 +30,10 @@
         return (this.pen.script || '').replace(replace, '').replace(/\n {2}/g, '\n').trim()
       },
       style () {
-        return (this.pen.style || '').replace(/(<style>|<\/style>)/g, '').trim()
+        return {
+          content: (this.pen.style || '').replace(/(<style.*?>|<\/style>)/g, '').replace(/\n {2}/g, '\n').trim(),
+          language: /<style.*lang=["'](.*)["'].*>/.exec(this.pen.style || '')
+        }
       },
       template () {
         const template = this.pen.template || ''
@@ -40,18 +43,27 @@
           .replace(/\n/g, '\n  ')
           .trim()
       },
-      value () {
+      editors () {
+        const html = this.template && 0b100
+        const css = this.style.content && 0b010
+        const js = this.script && 0b001
 
+        return (html | css | js).toString(2)
+      },
+      value () {
         const data = Object.assign({
           html: `<div id="app">
   <v-app id="inspire">
     ${this.template}
   </v-app>
 </div>`,
+          css: this.style.content,
+          css_pre_processor: this.style.language ? this.style.language[1] : 'none',
           js: `new Vue({
   el: '#app',
   ${this.script}
-})`
+})`,
+          editors: this.editors
         }, this.$data)
 
         return JSON.stringify(data)
