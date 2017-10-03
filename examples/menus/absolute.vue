@@ -1,6 +1,6 @@
 <template>
-  <div class="text-xs-center">
-    <v-menu offset-y v-model="showMenu" absolute full-width>
+  <v-layout d-flex justify-center>
+    <v-menu offset-y v-model="showMenu" absolute>
       <v-card class="portrait" img="/static/doc-images/cards/girl.jpg" height="300px" slot="activator"></v-card>
       <v-list>
         <v-list-tile v-for="item in items" :key="item.title" @click="">
@@ -8,7 +8,7 @@
         </v-list-tile>
       </v-list>
     </v-menu>
-  </div>
+  </v-layout>
 </template>
 
 <script>
