@@ -7,22 +7,22 @@
             <p>Normal</p>
           </v-flex>
           <v-flex xs12 sm3>
-            <v-btn icon class="pink--text">
+            <v-btn icon color="pink">
               <v-icon>favorite</v-icon>
             </v-btn>
           </v-flex>
           <v-flex xs12 sm3>
-            <v-btn icon class="indigo--text">
+            <v-btn icon color="indigo">
               <v-icon>star</v-icon>
             </v-btn>
           </v-flex>
           <v-flex xs12 sm3>
-            <v-btn icon class="green--text">
+            <v-btn icon color="green">
               <v-icon>cached</v-icon>
             </v-btn>
           </v-flex>
           <v-flex xs12 sm3>
-            <v-btn icon class="deep-orange--text">
+            <v-btn icon color="deep-orange">
               <v-icon>thumb_up</v-icon>
             </v-btn>
           </v-flex>

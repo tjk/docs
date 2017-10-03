@@ -310,7 +310,7 @@
       },
       makeContextual () {
         return ['primary', 'secondary', 'success', 'info', 'warning', 'error'].map(c => {
-          return [ c, 'Boolean', 'False', `Applies the ${c} contextual color` ]
+          return [ c, 'Boolean', 'False', `Applies the ${c} contextual color (DEPRECATED - use <code>color</code> prop instead)` ]
         })
       },
       makeLabel () {

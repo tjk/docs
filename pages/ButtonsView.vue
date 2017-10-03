@@ -33,7 +33,7 @@
           ],
           props: {
             'v-btn': {
-              shared: ['theme', 'contextual', 'router', 'positionable'],
+              shared: ['theme', 'colorable', 'contextual', 'router', 'positionable'],
               params: [
                 [
                   'block',
