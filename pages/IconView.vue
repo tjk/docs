@@ -24,6 +24,7 @@
           ],
           props: {
             'v-icon': {
+              shared: ['colorable'],
               params: [
                 [
                   'medium',

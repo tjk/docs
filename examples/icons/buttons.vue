@@ -1,10 +1,10 @@
 <template>
   <div class="text-xs-center">
-    <v-btn class="primary white--text">Accept
+    <v-btn color="primary" dark>Accept
       <v-icon dark right>check_circle</v-icon>
     </v-btn>
 
-    <v-btn class="red white--text">Decline
+    <v-btn color="red" dark>Decline
       <v-icon dark right>block</v-icon>
     </v-btn>
 
@@ -12,15 +12,15 @@
       <v-icon dark left>remove_circle</v-icon>Cancel
     </v-btn>
 
-    <v-btn class="orange darken-2 white--text">
+    <v-btn color="orange darken-2" dark>
       <v-icon dark left>arrow_back</v-icon>Back
     </v-btn>
 
-    <v-btn class="purple white--text">
+    <v-btn color="purple" dark>
       <v-icon dark>build</v-icon>
     </v-btn>
 
-    <v-btn class="indigo white--text">
+    <v-btn color="indigo" dark>
       <v-icon dark>backup</v-icon>
     </v-btn>
 
