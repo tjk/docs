@@ -42,7 +42,7 @@
     data () {
       return {
         e1: null,
-        e2: null,
+        e2: 'Arkansas',
         e3: null,
         e4: null,
         items: [

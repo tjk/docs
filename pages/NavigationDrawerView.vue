@@ -1,23 +1,5 @@
 <template lang="pug">
   component-view(v-bind:doc="doc")
-    section#layouts
-      v-container(fluid grid-list-xl).pa-0
-        v-layout(row wrap)
-          v-flex(
-            xs12 sm6 md4 lg3
-            v-for="layout in layouts"
-            :key="layout.name"
-          )
-            v-card(
-              hover
-              :href="layout.href"
-              target="_blank"
-              rel="noopener"
-            )
-              v-card-media(height="300px").grey.lighten-2
-                v-layout(align-center)
-                  v-flex.text-xs-center
-                    div.title {{ layout.name }}
 </template>
 
 <script>
@@ -32,29 +14,29 @@
           desc: 'The <code>v-navigation-drawer</code> component is what your users will utilize to navigate through the application. The navigation-drawer is pre-configured to work with or without <strong>vue-router</strong> right out the box.',
           examples: [
             {
-              header: 'Permanent drawer',
+              header: 'Default',
               file: 'navigation-drawers/permanent',
-              desc: 'Permanent navigation drawers are default open. These are used for applications that are desktop only and are not openable or closeable.'
+              desc: 'The navigation drawer is primarily used to house links to the pages in your application'
             },
             {
-              header: 'Permanent clipped drawer',
+              header: 'Colored drawer',
               file: 'navigation-drawers/permanent-clipped',
-              desc: 'A clipped drawer rests under the application toolbar.'
+              desc: 'Navigation drawers can be cutomized to fit any application\'s design. While any component can be used within a drawer, the primary ones you will use are <code>v-list</code>, all of the <strong>list</strong> children components and <code>v-divider</code>'
             },
             {
               header: 'Permanent floating drawer',
               file: 'navigation-drawers/permanent-floating',
-              desc: 'A floating drawer has no visible container (no border-right).'
+              desc: 'A navigation drawer can be placed inside of a card and float over the content background.'
             },
+            // {
+            //   header: 'Floating drawer in a card',
+            //   file: 'navigation-drawers/permanent-floating-card',
+            //   desc: 'A card can be used to contain a navigation drawer\'s items.'
+            // },
             {
-              header: 'Permanent floating drawer in a card',
-              file: 'navigation-drawers/permanent-floating-card',
-              desc: 'A card can be used to contain a navigation drawer\'s items.'
-            },
-            {
-              header: 'Persistent',
+              header: 'Avatars',
               file: 'navigation-drawers/persistent',
-              desc: 'A persistent drawer can be opened or closed. This is recommended sidebar for an application that supports both desktop and mobile.'
+              desc: 'Since drawers support the <code>v-list</code> component, you can easily create customized dashboard solutions.'
             },
             {
               header: 'Mini',
@@ -160,16 +142,7 @@
               shared: ['default']
             }
           }
-        },
-        layouts: [
-          { name: 'Baseline', href: '/examples/layouts/baseline.html' },
-          { name: 'Baseline Flipped', href: '/examples/layouts/baseline-flipped.html' },
-          { name: 'Complex', href: '/examples/layouts/complex.html' },
-          { name: 'Dark Theme', href: '/examples/layouts/dark.html' },
-          { name: 'Google Contacts', href: '/examples/layouts/google-contacts.html' },
-          { name: 'Google Keep', href: '/examples/layouts/google-keep.html' },
-          { name: 'Google Youtube', href: '/examples/layouts/google-youtube.html' }
-        ]
+        }
       }
     }
   }
@@ -185,6 +158,9 @@
     .navigation-drawer
       elevation(4)
       position: relative
+      z-index: 0
+    
+    .overlay
       z-index: 0
       
     #example-8

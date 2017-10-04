@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer absolute persistent light :mini-variant.sync="mini" v-model="drawer" overflow>
+  <v-navigation-drawer persistent light :mini-variant.sync="mini" v-model="drawer">
     <v-toolbar flat class="transparent">
       <v-list class="pa-0">
         <v-list-tile avatar>
@@ -40,7 +40,7 @@
           { title: 'Home', icon: 'dashboard' },
           { title: 'About', icon: 'question_answer' }
         ],
-        mini: false,
+        mini: true,
         right: null
       }
     }

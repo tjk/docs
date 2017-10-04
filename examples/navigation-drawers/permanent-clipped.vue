@@ -1,9 +1,9 @@
 <template>
-  <v-navigation-drawer permanent clipped light>
-    <v-list dense class="pt-0">
+  <v-navigation-drawer dark class="blue lighten-3">
+    <v-list>
       <v-list-tile v-for="item in items" :key="item.title" @click="">
         <v-list-tile-action>
-          <v-icon>{{ item.icon }}</v-icon>
+          <v-icon dark>{{ item.icon }}</v-icon>
         </v-list-tile-action>
         <v-list-tile-content>
           <v-list-tile-title>{{ item.title }}</v-list-tile-title>
@@ -17,10 +17,10 @@
   export default {
     data () {
       return {
-        drawer: null,
         items: [
-          { title: 'Home', icon: 'dashboard' },
-          { title: 'About', icon: 'question_answer' }
+          { title: 'Dashboard', icon: 'dashboard' },
+          { title: 'Account', icon: 'account_box' },
+          { title: 'Admin', icon: 'gavel' }
         ],
         right: null
       }
