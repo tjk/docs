@@ -156,8 +156,8 @@
               { href: '/vuetify/frequently-asked-questions', title: 'Frequently asked questions' },
               { href: '/vuetify/sponsors-and-backers', title: 'Sponsors and backers' },
               { href: '/vuetify/contributing', title: 'Contributing' },
-              { href: '/vuetify/roadmap', title: 'Roadmap' },
-              { href: '/vuetify/a-la-carte', title: 'A la carte' }
+              { href: '/vuetify/roadmap', title: 'Roadmap', action: 'fa-arrow-circle-o-up' },
+              { href: '/vuetify/a-la-carte', title: 'A la carte', action: 'fa-arrow-circle-o-up' }
             ]
           },
           {
@@ -171,7 +171,7 @@
               { href: '/layout/alignment', title: 'Alignment' },
               { href: '/layout/display', title: 'Display' },
               { href: '/layout/elevation', title: 'Elevation' },
-              { href: '/layout/sandbox', title: 'Sandbox' }
+              { href: '/layout/sandbox', title: 'Sandbox', action: 'fa-arrow-circle-o-up' }
             ]
           },
           {
@@ -200,7 +200,7 @@
             items: [
               { href: '/components/alerts', title: 'Alerts' },
               { href: '/components/avatars', title: 'Avatars' },
-              { href: '/components/badges', title: 'Badges' },
+              { href: '/components/badges', title: 'Badges', action: 'fa-arrow-circle-o-up' },
               { href: '/components/breadcrumbs', title: 'Breadcrumbs' },
               { href: '/components/bottom-navigation', title: 'Bottom navigation' },
               { href: '/components/bottom-sheets', title: 'Bottom sheets' },
@@ -208,32 +208,32 @@
               { href: '/components/floating-action-buttons', title: 'Buttons: Floating Action Buttons' },
               { href: '/components/cards', title: 'Cards' },
               { href: '/components/carousels', title: 'Carousel' },
-              { href: '/components/chips', title: 'Chips', action: 'file_upload' },
-              { href: '/components/data-tables', title: 'Data tables' },
+              { href: '/components/chips', title: 'Chips' },
+              { href: '/components/data-tables', title: 'Data tables', action: 'fa-arrow-circle-o-up' },
               { href: '/components/dialogs', title: 'Dialogs' },
               { href: '/components/dividers', title: 'Dividers' },
               { href: '/components/expansion-panels', title: 'Expansion panels' },
               { href: '/components/footer', title: 'Footer' },
-              { href: '/components/forms', title: 'Forms' },
+              { href: '/components/forms', title: 'Forms', action: 'fa-arrow-circle-o-up' },
               { href: '/components/grid-lists', title: 'Grid Lists' },
               { href: '/components/icons', title: 'Icons' },
               { href: '/components/lists', title: 'Lists' },
-              { href: '/components/menus', title: 'Menus' },
+              { href: '/components/menus', title: 'Menus', action: 'fa-arrow-circle-o-up' },
               { href: '/components/navigation-drawers', title: 'Navigation drawers' },
               { href: '/components/pagination', title: 'Pagination' },
-              { href: '/components/parallax', title: 'Parallax', action: 'file_upload' },
-              { href: '/components/pickers', title: 'Pickers' },
+              { href: '/components/parallax', title: 'Parallax' },
+              { href: '/components/pickers', title: 'Pickers', action: 'fa-arrow-circle-o-up' },
               { href: '/components/progress', title: 'Progress & activity' },
-              { href: '/components/selects', title: 'Selects', action: 'file_upload' },
+              { href: '/components/selects', title: 'Selects', action: 'fa-arrow-circle-o-up' },
               { href: '/components/selection-controls', title: 'Selection controls' },
-              { href: '/components/sliders', title: 'Sliders' },
+              { href: '/components/sliders', title: 'Sliders', action: 'fa-arrow-circle-o-up' },
               { href: '/components/snackbars', title: 'Snackbars & toasts' },
               { href: '/components/steppers', title: 'Steppers' },
               { href: '/components/subheaders', title: 'Subheaders' },
               { href: '/components/tabs', title: 'Tabs' },
-              { href: '/components/text-fields', title: 'Text fields', action: 'file_upload' },
+              { href: '/components/text-fields', title: 'Text fields' },
               { href: '/components/toolbars', title: 'Toolbars' },
-              { href: '/components/tooltips', title: 'Tooltips' }
+              { href: '/components/tooltips', title: 'Tooltips', action: 'fa-arrow-circle-o-up' }
             ]
           },
           {
