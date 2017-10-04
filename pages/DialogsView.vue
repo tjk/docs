@@ -47,7 +47,7 @@
                 ]
               ],
               model: {
-                types: ['Boolean'],
+                type: ['Boolean'],
                 default: 'False'
               }
             }

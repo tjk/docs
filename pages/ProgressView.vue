@@ -60,7 +60,7 @@
                 ]
               ],
               model: {
-                types: ['Number'],
+                type: ['Number'],
                 default: '0',
                 description: 'The percentage value for current progress'
               }
@@ -113,7 +113,7 @@
                 ],
               ],
               model: {
-                types: ['Number'],
+                type: ['Number'],
                 default: '0',
                 description: 'The percentage value for current progress'
               }

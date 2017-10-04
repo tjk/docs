@@ -62,7 +62,7 @@
                 ]
               ],
               model: {
-                types: ['Boolean'],
+                type: ['Boolean'],
                 default: 'False',
                 description: 'Designates whether content is expanded or not'
               }

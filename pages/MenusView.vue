@@ -23,6 +23,10 @@
           props: {
             'v-menu': {
               shared: ['detachable', 'menu'],
+              model: {
+                type: ['Boolean'],
+                default: 'False'
+              },
               params: [
                 [
                   'absolute',
@@ -145,12 +149,6 @@
                   'Conditionally renders content on mounted'
                 ],
                 [
-                  'value',
-                  'Boolean',
-                  'False',
-                  'Controls whether or not the menu is open'
-                ],
-                [
                   'z-index',
                   '[Number, String]',
                   '6',
@@ -169,14 +167,6 @@
                 ]
               ]
             }
-          },
-          events: {
-            'v-menu': {
-              params: [
-                ['activate', 'NULL', 'Menu has been activated'],
-                ['deactivate', 'NULL', 'Menu has been deactivated'],
-              ]
-            },
           }
         }
       }

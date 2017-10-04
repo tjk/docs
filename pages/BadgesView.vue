@@ -20,7 +20,8 @@
           props: {
             'v-badge': {
               model: {
-                type: '*'
+                type: ['Boolean'],
+                default: 'False'
               },
               params: [
                 [

@@ -23,7 +23,8 @@
             'v-alert': {
               shared: ['colorable', 'transitionable'],
               model: {
-                type: '*'
+                type: ['Boolean'],
+                default: 'False'
               },
               params: [
                 [

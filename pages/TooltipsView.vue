@@ -14,6 +14,10 @@
           props: {
             'v-tooltip': {
               shared: ['menu'],
+              model: {
+                type: ['Boolean'],
+                default: 'False'
+              },
               params: [
                 [
                   'color',

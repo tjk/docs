@@ -126,7 +126,7 @@
                 ]
               ],
               model: {
-                types: ['Array', 'String', 'Number'],
+                type: ['Array', 'String', 'Number'],
                 default: '-',
                 description: 'Holds the value(s) for toggled buttons. '
               }
