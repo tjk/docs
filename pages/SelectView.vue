@@ -149,7 +149,7 @@
                 ],
               ],
               model: {
-                types: ['Array', 'Object'],
+                type: ['Array', 'Object'],
                 default: '-',
                 description: 'Single select requires model, multiple requires array'
               }
