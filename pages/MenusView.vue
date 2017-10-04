@@ -169,14 +169,6 @@
                 ]
               ]
             }
-          },
-          events: {
-            'v-menu': {
-              params: [
-                ['activate', 'NULL', 'Menu has been activated'],
-                ['deactivate', 'NULL', 'Menu has been deactivated'],
-              ]
-            },
           }
         }
       }
