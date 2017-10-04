@@ -4,7 +4,7 @@
       section
         h2.display-1 Default application markup
         section-text This is an example of the default application markup for Vuetify. You can place your layout elements anywhere, as long as you designate them with the <strong>app</strong> property. The key component in all of this is the <code>v-content</code> element. This will be dynamically sized depending upon the structure of your designated <strong>app</strong> components. This allows you to create extremely customed solutions.
-        markup(lang='html')
+        markup(lang='html' xs12 sm6)
           |&lt;v-app&gt;
           |   &lt;v-navigation-drawer app&gt;&lt;/v-navigation-drawer&gt;
           |   &lt;v-toolbar app&gt;&lt;/v-toolbar&gt;
@@ -13,6 +13,19 @@
           |       &lt;v-container fluid&gt;
           |         &lt;router-view&gt;&lt;/router-view&gt;
           |       &lt;/v-container&gt;
+          |     &lt;/v-content&gt;
+          |   &lt;/main&gt;
+          |   &lt;v-footer app&gt;&lt;/v-footer&gt;
+          |&lt;/v-app&gt;
+        markup(lang='html' xs12 sm6)
+          |&lt;v-app&gt;
+          |   &lt;v-navigation-drawer app&gt;&lt;/v-navigation-drawer&gt;
+          |   &lt;v-toolbar app&gt;&lt;/v-toolbar&gt;
+          |   &lt;main&gt;
+          |     &lt;v-content&gt;
+          |       &lt;router-view&gt;
+          |         &lt;v-container fluid;&gt;&lt;/v-container&gt;
+          |       &lt;/router-view&gt;
           |     &lt;/v-content&gt;
           |   &lt;/main&gt;
           |   &lt;v-footer app&gt;&lt;/v-footer&gt;
