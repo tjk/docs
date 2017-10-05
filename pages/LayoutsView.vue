@@ -24,7 +24,7 @@
           |   &lt;main&gt;
           |     &lt;v-content&gt;
           |       &lt;router-view&gt;
-          |         &lt;v-container fluid;&gt;&lt;/v-container&gt;
+          |         &lt;v-container fluid&gt;&lt;/v-container&gt;
           |       &lt;/router-view&gt;
           |     &lt;/v-content&gt;
           |   &lt;/main&gt;
