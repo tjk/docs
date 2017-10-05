@@ -33,7 +33,8 @@
         |  VApp,
         |  VNavigationDrawer,
         |  VFooter,
-        |  VBtn,
+        |  VList,
+        |  VBtn
         |} from 'vuetify'
         |
         |Vue.use(Vuetify, {
@@ -42,7 +43,7 @@
         |    VNavigationDrawer,
         |    VFooter,
         |    VList,
-        |    VBtn,
+        |    VBtn
         |  }
         |})
 
