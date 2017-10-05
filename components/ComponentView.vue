@@ -73,6 +73,7 @@
             component-parameters(
               v-bind:headers="headers[p]"
               v-bind:data="doc[p]"
+              v-bind:type="p"
             )
 </template>
 
