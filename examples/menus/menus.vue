@@ -5,7 +5,7 @@
         <v-card-title class="blue white--text">
           <span class="headline">Menu</span>
           <v-spacer></v-spacer>
-          <v-menu bottom right>
+          <v-menu bottom left>
             <v-btn icon slot="activator" dark>
               <v-icon>more_vert</v-icon>
             </v-btn>
@@ -24,23 +24,13 @@
 
 <script>
   export default {
-    data () {
-      return {
-        items: [
-          {
-            title: 'Click Me'
-          },
-          {
-            title: 'Click Me'
-          },
-          {
-            title: 'Click Me'
-          },
-          {
-            title: 'Click Me 2'
-          }
-        ]
-      }
-    }
+    data: () => ({
+      items: [
+        { title: 'Click Me' },
+        { title: 'Click Me' },
+        { title: 'Click Me' },
+        { title: 'Click Me 2' }
+      ]
+    })
   }
 </script>

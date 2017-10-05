@@ -7,7 +7,7 @@
           dd(slot="desc") Use one of the Vuetify.js Vue CLI packages <em>(based on the official examples)</em> to get your project started in no time. Vuetify.js supports <strong>SSR</strong> (server-side rendering), <strong>SPA</strong> (single page application), <strong>PWA</strong> (progressive web application) and standard <strong>HTML</strong> pages.
       ad
 
-    v-alert(error value).mb-4 In order for your application to work properly, you <strong>must</strong> wrap it in a <code>v-app</code> component. This component is used for dynamically managing your content area and is the mounting point for many components.
+    v-alert(color="error" icon="warning" value).mb-4 In order for your application to work properly, you <strong>must</strong> wrap it in a <code>v-app</code> component. This component is used for dynamically managing your content area and is the mounting point for many components.
     section#cdn-install
       section-header CDN Install
       section-text To test using Vuetify.js without installing a template from Vue CLI, copy the code below into your <code>index.html</code>. This will pull the latest version of Vue and Vuetify, allowing you to start playing with components. You can also use the <a href="https://template.vuetifyjs.com" target="_blank">Vuetify starter</a> on codepen.
@@ -15,24 +15,24 @@
         |&lt;!DOCTYPE html&gt;
         |&lt;html&gt;
         |&lt;head&gt;
-        |  &lt;link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet"&gt;
-        |  &lt;link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet"&gt;
-        |  &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"&gt;
+        |   &lt;link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet"&gt;
+        |   &lt;link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet"&gt;
+        |   &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"&gt;
         |&lt;/head&gt;
         |&lt;body&gt;
-        |  &lt;div id="app"&gt;
-        |    &lt;v-app&gt;
-        |      &lt;main&gt;
-        |        &lt;v-container&gt;Hello world&lt;/v-container&gt;
-        |      &lt;/main&gt;
-        |    &lt;/v-app&gt;
-        |  &lt;/div&gt;
+        |   &lt;div id="app"&gt;
+        |     &lt;v-app&gt;
+        |       &lt;main&gt;
+        |         &lt;v-container&gt;Hello world&lt;/v-container&gt;
+        |       &lt;/main&gt;
+        |     &lt;/v-app&gt;
+        |   &lt;/div&gt;
         |&nbsp;
-        |  &lt;script src="https://unpkg.com/vue/dist/vue.js"&gt;&lt;/script&gt;
-        |  &lt;script src="https://unpkg.com/vuetify/dist/vuetify.js"&gt;&lt;/script&gt;
-        |  &lt;script&gt;
-        |    new Vue({ el: '#app' })
-        |  &lt;/script&gt;
+        |   &lt;script src="https://unpkg.com/vue/dist/vue.js"&gt;&lt;/script&gt;
+        |   &lt;script src="https://unpkg.com/vuetify/dist/vuetify.js"&gt;&lt;/script&gt;
+        |   &lt;script&gt;
+        |     new Vue({ el: '#app' })
+        |   &lt;/script&gt;
         |&lt;/body&gt;
         |&lt;/html&gt;
 
@@ -63,7 +63,10 @@
                 :value="selectedIndex === i"
               )
                 v-list-tile-action
-                  v-icon(v-html="template.icon")
+                  v-icon(
+                    v-html="template.icon"
+                    :class="[selectedIndex === i ? 'primary--text' : '']"
+                  )
                 v-list-tile-content
                   v-list-tile-title(v-text="template.title")
                   v-list-tile-sub-title vue init vuetifyjs/{{ template.init }}
@@ -149,7 +152,7 @@
         |   &lt;link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet"&gt;
         |&lt;/head&gt;
 
-      v-alert(error value) Warning: While Vuetify attempts to not cause any css collision as much as possible, there is no guarantee that your custom styles will not alter your experience when integrating this framework into your existing project.
+      v-alert(color="error" icon="warning" value) Warning: While Vuetify attempts to not cause any css collision as much as possible, there is no guarantee that your custom styles will not alter your experience when integrating this framework into your existing project.
 
     section
       section-header Support Browsers
@@ -193,7 +196,7 @@
         |   &lt;cell&gt;{&zwnj;{ props.item.name }&zwnj;}&lt;/cell&gt;
         |&lt;/template&gt;
 
-      v-alert(value warning) If you still find yourself struggling with IE11, come get help from the Vuetify <a class="white--text" href="https://chat.vuetifyjs.com" target="_blank" rel="noopener">community</a>.
+      v-alert(value color="warning" icon="priority_high") If you still find yourself struggling with IE11, come get help from the Vuetify <a class="white--text" href="https://chat.vuetifyjs.com" target="_blank" rel="noopener">community</a>.
 
 </template>
 

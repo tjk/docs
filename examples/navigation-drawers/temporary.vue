@@ -1,10 +1,14 @@
 <template>
-  <v-app id="example-2" toolbar>
+  <v-layout wrap>
+    <v-container>
+      <v-layout justify-center>
+        <v-btn @click.stop="drawer = !drawer" class="pink white--text">Toggle</v-btn>
+      </v-layout>
+    </v-container>
     <v-navigation-drawer
       temporary
       v-model="drawer"
       light
-      overflow
       absolute
     >
       <v-list class="pa-1">
@@ -30,28 +34,18 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar fixed class="deep-orange" dark>
-      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title>Toolbar</v-toolbar-title>
-    </v-toolbar>
-    <main>
-      <v-container fluid>
-        <!--v-router-->
-      </v-container>
-    </main>
-  </v-app>
+  </v-layout>
 </template>
 
 <script>
   export default {
     data () {
       return {
-        drawer: null,
+        drawer: true,
         items: [
           { title: 'Home', icon: 'dashboard' },
           { title: 'About', icon: 'question_answer' }
-        ],
-        right: null
+        ]
       }
     }
   }

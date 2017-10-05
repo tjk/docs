@@ -1,72 +1,70 @@
 <template>
-  <v-container fluid>
-    <v-layout row wrap>
-      <v-flex xs12 sm6>
-        <v-menu
-          lazy
-          :close-on-content-click="false"
-          v-model="menu"
-          transition="scale-transition"
-          offset-y
-          full-width
-          :nudge-left="40"
-          max-width="290px"
-        >
-          <v-text-field
-            slot="activator"
-            label="Picker in menu"
-            v-model="e3"
-            prepend-icon="event"
-            readonly
-          ></v-text-field>
-          <v-date-picker v-model="e3" no-title scrollable actions>
-            <template scope="{ save, cancel }">
-              <v-card-actions>
-                <v-spacer></v-spacer>
-                <v-btn flat primary @click.native="cancel()">Cancel</v-btn>
-                <v-btn flat primary @click.native="save()">OK</v-btn>
-              </v-card-actions>
-            </template>
-          </v-date-picker>
-        </v-menu>
-      </v-flex>
-      <v-flex xs12 sm6>
-        <v-dialog
-          persistent
-          v-model="modal"
-          lazy
-          full-width
-        >
-          <v-text-field
-            slot="activator"
-            label="Picker in dialog"
-            v-model="e3"
-            prepend-icon="event"
-            readonly
-          ></v-text-field>
-          <v-date-picker v-model="e3" scrollable actions>
-            <template scope="{ save, cancel }">
-              <v-card-actions>
-                <v-spacer></v-spacer>
-                <v-btn flat primary @click.native="cancel()">Cancel</v-btn>
-                <v-btn flat primary @click.native="save()">OK</v-btn>
-              </v-card-actions>
-            </template>
-          </v-date-picker>
-        </v-dialog>
-      </v-flex>
-    </v-layout>
-  </v-container>
+  <v-layout row wrap>
+    <v-flex xs11 sm5>
+      <v-menu
+        lazy
+        :close-on-content-click="false"
+        v-model="menu"
+        transition="scale-transition"
+        offset-y
+        full-width
+        :nudge-right="40"
+        max-width="290px"
+        min-width="290px"
+      >
+        <v-text-field
+          slot="activator"
+          label="Picker in menu"
+          v-model="date"
+          prepend-icon="event"
+          readonly
+        ></v-text-field>
+        <v-date-picker v-model="date" no-title scrollable actions>
+          <template scope="{ save, cancel }">
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              <v-btn flat primary @click="cancel">Cancel</v-btn>
+              <v-btn flat primary @click="save">OK</v-btn>
+            </v-card-actions>
+          </template>
+        </v-date-picker>
+      </v-menu>
+    </v-flex>
+    <v-spacer></v-spacer>
+    <v-flex xs11 sm5>
+      <v-dialog
+        persistent
+        v-model="modal"
+        lazy
+        full-width
+      >
+        <v-text-field
+          slot="activator"
+          label="Picker in dialog"
+          v-model="date"
+          prepend-icon="event"
+          readonly
+        ></v-text-field>
+        <v-date-picker v-model="date" scrollable actions>
+          <template scope="{ save, cancel }">
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              <v-btn flat primary @click="cancel">Cancel</v-btn>
+              <v-btn flat primary @click="save">OK</v-btn>
+            </v-card-actions>
+          </template>
+        </v-date-picker>
+      </v-dialog>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>
   export default {
-    data () {
-      return {
-        e3: null,
-        menu: false,
-        modal: false,
-      }
-    }
+    data: () => ({
+      date: null,
+      menu: false,
+      modal: false
+    })
   }
 </script>

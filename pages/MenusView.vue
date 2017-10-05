@@ -13,8 +13,8 @@
           desc: 'The <code>v-menu</code> component shows a menu at the position of the element used to activate it.',
           examples: [
             { header: 'Activator', file: 'menus/activator', desc: 'Remember to put the element that activates the menu in the <code>activator</code> slot.' },
-            { header: 'Absolute position', file: 'menus/absolute', desc: 'Menus can also be placed absolutely on top of the activator element using the <code>position-absolutely</code> prop. Try clicking anywhere on the image.' },
-            { header: 'Absolute position without activator', file: 'menus/absolute-without-activator', desc: 'Menus can also be used without an activator by using <code>position-absolutely</code> together with the props <code>position-x</code> and <code>position-y</code>. Try right-clicking anywhere on the image.' },
+            { header: 'Absolute position', file: 'menus/absolute', desc: 'Menus can also be placed absolutely on top of the activator element using the <code>absolute</code> prop. Try clicking anywhere on the image.' },
+            { header: 'Absolute position without activator', file: 'menus/absolute-without-activator', desc: 'Menus can also be used without an activator by using <code>absolute</code> together with the props <code>position-x</code> and <code>position-y</code>. Try right-clicking anywhere on the image.' },
             { header: 'Hover', file: 'menus/hover', desc: 'Menus can be accessed using hover instead of clicking with the <code>open-on-hover</code> prop.' },
             { header: 'Menus', file: 'menus/menus', desc: 'Menus can be placed within almost any component.' },
             { header: 'Custom transitions', file: 'menus/custom-transition', desc: `Vuetify comes with 3 standard transitions, <strong>scale</strong>, <strong>slide-x</strong> and <strong>slide-y</strong>. You can also create your own and pass it as the transition argument. For an example of how the stock transitions are constructed, visit <a href="https://github.com/vuetifyjs/vuetify/blob/master/src/util/helpers.js#L13" target="_blank" rel="noopener">here</a>.` },
@@ -23,12 +23,46 @@
           props: {
             'v-menu': {
               shared: ['detachable', 'menu'],
+              model: {
+                type: ['Boolean'],
+                default: 'False'
+              },
               params: [
+                [
+                  'absolute',
+                  'Boolean',
+                  'False',
+                  'Position the menu absolutely, useful for context menus'
+                ],
+                [
+                  'fixed',
+                  'Boolean',
+                  'False',
+                  ''
+                ],
+                [
+                  'activator',
+                  'Element',
+                  'null',
+                  'An element that will open the menu when clicked'
+                ],
+                [
+                  'auto',
+                  'Boolean',
+                  'false',
+                  ''
+                ],
                 [
                   'full-width',
                   'Boolean',
                   'False',
                   'Changes the menu display to block, useful for filling available width in forms'
+                ],
+                [
+                  'offset-overflow',
+                  'Boolean',
+                  'False',
+                  ''
                 ],
                 [
                   'offset-x',
@@ -40,7 +74,7 @@
                   'offset-y',
                   'Boolean',
                   'False',
-                  'Offset the menu on the y-axis. Works in conjunction with direction top/rightbottom'
+                  'Offset the menu on the y-axis. Works in conjunction with direction top/bottom'
                 ],
                 [
                   'disabled',
@@ -50,11 +84,16 @@
                 ],
                 [
                   'max-height',
-                  'Number',
-                  'null',
+                  '[Number, String]',
+                  'auto',
                   'The maximum height of the menu, will overflow-y with scroll if content is too large'
                 ],
-
+                [
+                  'nudge-width',
+                  '[Number, String]',
+                  '0',
+                  ''
+                ],
                 [
                   'open-on-hover',
                   'Boolean',
@@ -128,14 +167,6 @@
                 ]
               ]
             }
-          },
-          events: {
-            'v-menu': {
-              params: [
-                ['activate', 'NULL', 'Menu has been activated'],
-                ['deactivate', 'NULL', 'Menu has been deactivated'],
-              ]
-            },
           }
         }
       }

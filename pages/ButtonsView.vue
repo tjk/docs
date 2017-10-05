@@ -33,7 +33,7 @@
           ],
           props: {
             'v-btn': {
-              shared: ['theme', 'contextual', 'router', 'positionable'],
+              shared: ['theme', 'colorable', 'contextual', 'router', 'positionable'],
               params: [
                 [
                   'block',
@@ -126,7 +126,7 @@
                 ]
               ],
               model: {
-                types: ['Array', 'String', 'Number'],
+                type: ['Array', 'String', 'Number'],
                 default: '-',
                 description: 'Holds the value(s) for toggled buttons. '
               }

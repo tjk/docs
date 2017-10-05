@@ -28,7 +28,7 @@
             }
           },
           examples: [
-            { header: 'Default', file: 'touch/1', desc: 'On a mobile device, try swiping in various directions.' }
+            { header: 'Default', file: 'touch/default', desc: 'On a mobile device, try swiping in various directions.' }
           ]
         }
       }

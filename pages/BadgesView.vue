@@ -10,23 +10,18 @@
           title: 'Badge directive',
           edit: 'Badges',
           directive: 'badge',
-          desc: `
-            <p>
-              Badge directives can be applied to any element using the <code>v-badge</code> directive. By default, a badge will use the application's defined <strong class="primary--text">primary color</strong>. Parameters can be passed using the arg, <code>v-badge:arg</code>, modifier, <code>v-badge:2.modifier</code>, or by passing an object by expression, <code>v-badge="{ value: 2, overlap: true }"</code>
-            </p>
-            <p>
-              The color can be changed by using the color--after helper class, or by apply a class that modifies the background of the badged elements <strong>:after</strong> pseudo-selector.
-            </p>`,
+          desc: `The <code>v-badge</code> component can wrap any type of content to highlight information to a user or to just draw attention to a specific element.`,
           examples: [
             { header: 'Character', file: 'badges/character', desc: 'Any character can be placed with a badge.' },
             { header: 'Icon', file: 'badges/icon', desc: 'The icon badge type only supports Material Design icons.' },
             { header: 'Inline', file: 'badges/inline', desc: 'Badges can also be placed inline with text.' },
-            { header: 'Visibility', file: 'badges/visibility', desc: 'The visibility of badges can be controlled either by setting the object property <code>visible</code> to <code>false</code>, or setting the entire object to either <code>false</code> or <code>null</code>.' }
+            { header: 'Visibility', file: 'badges/visibility', desc: 'The visibility of badges can be controlled using <code>v-model</code>.' }
           ],
           props: {
             'v-badge': {
               model: {
-                type: '*'
+                type: ['Boolean'],
+                default: 'False'
               },
               params: [
                 [

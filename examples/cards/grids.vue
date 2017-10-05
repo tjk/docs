@@ -1,13 +1,6 @@
 <template>
   <v-layout column>
     <v-flex xs12 sm6 offset-sm3>
-      <v-system-bar status class="indigo darken-2" dark>
-        <v-spacer></v-spacer>
-        <v-icon>network_wifi</v-icon>
-        <v-icon>signal_cellular_null</v-icon>
-        <v-icon>battery_full</v-icon>
-        <span>12:30</span>
-      </v-system-bar>
       <v-toolbar class="indigo" dark>
         <v-toolbar-side-icon></v-toolbar-side-icon>
         <v-toolbar-title>Discover</v-toolbar-title>

@@ -23,7 +23,20 @@ export function createRouter () {
   const router = new Router({
     base: release ? `/releases/${release}` : __dirname,
     mode: release ? 'hash' : 'history',
-    scrollBehavior: () => ({ y: 0 }),
+    scrollBehavior (to, from, savedPosition) {
+      if (savedPosition) {
+        return savedPosition
+      }
+
+      if (to.hash) {
+        return {
+          selector: to.hash,
+          offset: { y: 80 }
+        }
+      }
+
+      return { y: 0 }
+    },
     routes: [
       route('/', 'Home'),
       route('/vuetify/quick-start', 'QuickStart'),
@@ -87,6 +100,7 @@ export function createRouter () {
       route('/directives/touch-support', 'Touch'),
       route('/pre-made-themes', 'PremadeThemes'),
       route('/guides/server-side-rendering', 'SSR'),
+      route('/examples/:example+', 'Example'), // TODO: 404 if there's an extension (regex?)
       // Global redirect for 404
       { path: '*', redirect: '/' }
     ]

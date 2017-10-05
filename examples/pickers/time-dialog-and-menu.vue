@@ -1,42 +1,47 @@
 <template>
   <v-layout row wrap>
-    <v-flex xs12 sm6>
+    <v-flex xs11 sm5>
       <v-menu
         lazy
         :close-on-content-click="false"
         v-model="menu2"
         transition="scale-transition"
         offset-y
-        :nudge-left="40"
+        full-width
+        :nudge-right="40"
+        max-width="290px"
+        min-width="290px"
       >
         <v-text-field
           slot="activator"
           label="Picker in menu"
-          v-model="e6"
+          v-model="time"
           prepend-icon="access_time"
           readonly
         ></v-text-field>
-        <v-time-picker v-model="e6" autosave></v-time-picker>
+        <v-time-picker v-model="time" autosave></v-time-picker>
       </v-menu>
     </v-flex>
-    <v-flex xs12 sm6>
+    <v-spacer></v-spacer>
+    <v-flex xs11 sm5>
       <v-dialog
         persistent
         v-model="modal2"
         lazy
+        full-width
       >
         <v-text-field
           slot="activator"
           label="Picker in dialog"
-          v-model="e6"
+          v-model="time"
           prepend-icon="access_time"
           readonly
         ></v-text-field>
-        <v-time-picker v-model="e6" actions>
+        <v-time-picker v-model="time" actions>
           <template scope="{ save, cancel }">
             <v-card-actions>
-              <v-btn flat primary @click.native="cancel()">Cancel</v-btn>
-              <v-btn flat primary @click.native="save()">Save</v-btn>
+              <v-btn flat primary @click="cancel">Cancel</v-btn>
+              <v-btn flat primary @click="save">Save</v-btn>
             </v-card-actions>
           </template>
         </v-time-picker>
@@ -49,7 +54,7 @@
   export default {
     data () {
       return {
-        e6: null,
+        time: null,
         menu2: false,
         modal2: false,
       }

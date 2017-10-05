@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-alert info dismissible v-model="alert">
+    <v-alert color="info" icon="info" dismissible v-model="alert">
       This is a success alert that is closable.
     </v-alert>
 

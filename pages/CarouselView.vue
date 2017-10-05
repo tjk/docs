@@ -34,6 +34,9 @@
           props: {
             'v-carousel': {
               shared: ['theme'],
+              model: {
+                type: 'Number'
+              },
               params: [
                 [
                   'cycle',

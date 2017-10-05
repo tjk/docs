@@ -73,7 +73,7 @@
                 ]
               ],
               model: {
-                types: ['Boolean'],
+                type: ['Boolean'],
                 default: 'False',
                 description: 'Toggles the list tile active state'
               }
@@ -100,7 +100,7 @@
                 ]
               ],
               model: {
-                types: ['Boolean'],
+                type: ['Boolean'],
                 default: 'False',
                 description: 'Expands / Collapse list group'
               }

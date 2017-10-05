@@ -11,7 +11,12 @@
         v-list-tile(avatar tag="div")
           v-list-tile-avatar
             router-link(to="/")
-              img(src="/static/doc-images/logo.svg" v-bind:style="filter")
+              img(
+                src="/static/doc-images/logo.svg"
+                v-bind:style="filter"
+                alt="Vuetify"
+                title="Vuetify"
+              )
           v-list-tile-content
             v-list-tile-title Vuetify
             v-list-tile-sub-title
@@ -47,10 +52,10 @@
                 img(
                   width="150px"
                   src="/static/doc-images/backers/lmax-exchange.png"
+                  alt="LMAX Exchange"
+                  title="LMAX Exchange"
                 )
-      v-flex(xs12).layout.justify-center.pt-3.pb-1
-        v-btn(to="/vuetify/sponsors-and-backers" round dark small).blue.lighten-2 Support Vuetify
-    v-layout(row justify-center)
+    v-layout(row justify-center wrap).pt-4
       v-tooltip(
         v-for="social in socials"
         v-bind:key="social.icon"
@@ -65,6 +70,17 @@
         )
           v-icon(v-html="social.icon")
         span(v-text="social.name")
+      v-flex(xs12).pt-3.pb-1.text-xs-center
+        a(
+          href="https://vuejobs.com/?utm_source=vuetify"
+          target="_blank"
+          rel="noopener"
+        )
+          img(
+            src="/static/doc-images/affiliates/vuejobs.png"
+            alt="VueJobs"
+            title="VueJobs"
+          )
     v-list(dense)
       template(v-for="item in items")
         v-list-group(v-if="item.items" v-bind:group="item.group")
@@ -140,8 +156,8 @@
               { href: '/vuetify/frequently-asked-questions', title: 'Frequently asked questions' },
               { href: '/vuetify/sponsors-and-backers', title: 'Sponsors and backers' },
               { href: '/vuetify/contributing', title: 'Contributing' },
-              { href: '/vuetify/roadmap', title: 'Roadmap' },
-              { href: '/vuetify/a-la-carte', title: 'A la carte' }
+              { href: '/vuetify/roadmap', title: 'Roadmap', action: 'fa-arrow-circle-o-up' },
+              { href: '/vuetify/a-la-carte', title: 'A la carte', action: 'fa-arrow-circle-o-up' }
             ]
           },
           {
@@ -155,7 +171,7 @@
               { href: '/layout/alignment', title: 'Alignment' },
               { href: '/layout/display', title: 'Display' },
               { href: '/layout/elevation', title: 'Elevation' },
-              { href: '/layout/sandbox', title: 'Sandbox' }
+              { href: '/layout/sandbox', title: 'Sandbox', action: 'fa-arrow-circle-o-up' }
             ]
           },
           {
@@ -184,7 +200,7 @@
             items: [
               { href: '/components/alerts', title: 'Alerts' },
               { href: '/components/avatars', title: 'Avatars' },
-              { href: '/components/badges', title: 'Badges' },
+              { href: '/components/badges', title: 'Badges', action: 'fa-arrow-circle-o-up' },
               { href: '/components/breadcrumbs', title: 'Breadcrumbs' },
               { href: '/components/bottom-navigation', title: 'Bottom navigation' },
               { href: '/components/bottom-sheets', title: 'Bottom sheets' },
@@ -192,32 +208,32 @@
               { href: '/components/floating-action-buttons', title: 'Buttons: Floating Action Buttons' },
               { href: '/components/cards', title: 'Cards' },
               { href: '/components/carousels', title: 'Carousel' },
-              { href: '/components/chips', title: 'Chips', action: 'file_upload' },
-              { href: '/components/data-tables', title: 'Data tables' },
+              { href: '/components/chips', title: 'Chips' },
+              { href: '/components/data-tables', title: 'Data tables', action: 'fa-arrow-circle-o-up' },
               { href: '/components/dialogs', title: 'Dialogs' },
               { href: '/components/dividers', title: 'Dividers' },
               { href: '/components/expansion-panels', title: 'Expansion panels' },
               { href: '/components/footer', title: 'Footer' },
-              { href: '/components/forms', title: 'Forms' },
+              { href: '/components/forms', title: 'Forms', action: 'fa-arrow-circle-o-up' },
               { href: '/components/grid-lists', title: 'Grid Lists' },
               { href: '/components/icons', title: 'Icons' },
               { href: '/components/lists', title: 'Lists' },
-              { href: '/components/menus', title: 'Menus' },
+              { href: '/components/menus', title: 'Menus', action: 'fa-arrow-circle-o-up' },
               { href: '/components/navigation-drawers', title: 'Navigation drawers' },
               { href: '/components/pagination', title: 'Pagination' },
-              { href: '/components/parallax', title: 'Parallax', action: 'file_upload' },
-              { href: '/components/pickers', title: 'Pickers' },
+              { href: '/components/parallax', title: 'Parallax' },
+              { href: '/components/pickers', title: 'Pickers', action: 'fa-arrow-circle-o-up' },
               { href: '/components/progress', title: 'Progress & activity' },
-              { href: '/components/selects', title: 'Selects', action: 'file_upload' },
+              { href: '/components/selects', title: 'Selects', action: 'fa-arrow-circle-o-up' },
               { href: '/components/selection-controls', title: 'Selection controls' },
-              { href: '/components/sliders', title: 'Sliders' },
+              { href: '/components/sliders', title: 'Sliders', action: 'fa-arrow-circle-o-up' },
               { href: '/components/snackbars', title: 'Snackbars & toasts' },
               { href: '/components/steppers', title: 'Steppers' },
               { href: '/components/subheaders', title: 'Subheaders' },
               { href: '/components/tabs', title: 'Tabs' },
-              { href: '/components/text-fields', title: 'Text fields', action: 'file_upload' },
+              { href: '/components/text-fields', title: 'Text fields' },
               { href: '/components/toolbars', title: 'Toolbars' },
-              { href: '/components/tooltips', title: 'Tooltips' }
+              { href: '/components/tooltips', title: 'Tooltips', action: 'fa-arrow-circle-o-up' }
             ]
           },
           {
@@ -251,15 +267,19 @@
             action: 'people',
             items: [
               {
-                href: 'https://vuejobs.com/?ref=vuetify',
-                target: '_blank',
-                title: 'Jobs',
-                action: 'whatshot'
-              },
-              {
                 href: 'https://chat.vuetifyjs.com',
                 target: '_blank',
                 title: 'Chat and support'
+              },
+              {
+                href: 'https://github.com/vuetifyjs/vuetify/issues',
+                target: '_blank',
+                title: 'Issue Board'
+              },
+              {
+                href: 'https://stackoverflow.com/search?q=vuetify',
+                target: '_blank',
+                title: 'Stack Overflow'
               }
             ]
           },

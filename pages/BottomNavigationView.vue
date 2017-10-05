@@ -19,7 +19,8 @@
           props: {
             'v-bottom-navigation': {
               model: {
-                type: '*'
+                type: ['Boolean'],
+                default: 'False'
               },
               params: [
                 [

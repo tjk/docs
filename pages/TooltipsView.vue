@@ -10,10 +10,14 @@
           title: 'Tooltip',
           component: 'VTooltip',
           edit: 'TooltipsView',
-          desc: 'The <code>v-tooltip</code> component is useful for conveying information when a user hovers over an element.',
+          desc: 'The <code>v-tooltip</code> component is useful for conveying information when a user hovers over an element. You can also programmtically control the display of tooltips through a <strong>v-model</strong>',
           props: {
             'v-tooltip': {
               shared: ['menu'],
+              model: {
+                type: ['Boolean'],
+                default: 'False'
+              },
               params: [
                 [
                   'color',
@@ -49,8 +53,8 @@
             }
           },
           examples: [
-            { header: 'Default', file: 'tooltips/1', desc: 'Tooltips can be applied to any element that does not use the <code>:before</code> pseudo element' },
-            { header: 'Visibility', file: 'tooltips/2', desc: 'Tooltips can be disabled using the <code>visible</code> property value in the tooltip object.' }
+            { header: 'Default', file: 'tooltips/default', desc: 'Tooltips can wrap any element.' },
+            { header: 'Visibility', file: 'tooltips/visibility', desc: 'Tooltip visibility can be programmatically changed using <code>v-model</code>.' }
           ]
         }
       }
