@@ -53,7 +53,7 @@
       markup(lang="js")
         |import Vuetify from 'vuetify/es5/components/Vuetify'
         |import VApp from 'vuetify/es5/components/VApp'
-        |import VNagivationDrawer from 'vuetify/es5/components/VNavigationDrawer'
+        |import VNavigationDrawer from 'vuetify/es5/components/VNavigationDrawer'
         |// etc
 
       v-alert(value color="error" icon="warning").mb-4 Be aware that both the <code>Vuetify</code> and <code>VApp</code> components are required to use Vuetify.
