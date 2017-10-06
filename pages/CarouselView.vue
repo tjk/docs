@@ -57,6 +57,12 @@
                   'Hides the panel with carousel delimiters'
                 ],
                 [
+                  'lazy',
+                  'Boolean',
+                  'False',
+                  'Lazily load the carousel slides'
+                ],
+                [
                   'left-control-icon',
                   '[Boolean, String]',
                   'chevron_left',

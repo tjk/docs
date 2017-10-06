@@ -7,7 +7,7 @@
     data () {
       return {
         doc: {
-          title: 'Bottom navigation',
+          title: 'Bottom nav',
           edit: 'BottomNavigationView',
           component: 'VBottomNav',
           desc: `The <code>v-bottom-nav</code> is an alternative to the sidebar. It is primarily used on mobile and comes in two variants, icons and text, and shift.`,
@@ -17,7 +17,7 @@
             { header: 'Toggle', file: 'bottom-navigation/toggle', desc: `As with other Vuetify components, you can control the display state with <code>v-model</code>.` },
           ],
           props: {
-            'v-bottom-navigation': {
+            'v-bottom-nav': {
               model: {
                 type: ['Boolean'],
                 default: 'False'
@@ -34,6 +34,12 @@
                   'Boolean',
                   'False',
                   'Hide text of button when not active'
+                ],
+                [
+                  'active',
+                  'String, Number',
+                  '-',
+                  'The non-reactive version of <code>active.sync</code>. This will not update your bound value when changed internally.'
                 ],
                 [
                   'active.sync',

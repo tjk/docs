@@ -107,7 +107,10 @@
 
         params = params.concat(c.params || [])
 
-        c.model && params.push(this.makeModel(c.model))
+        if (c.model) {
+          params.push(this.makeModel('v-model', 'Controls visibility', c.model))
+          params.push(this.makeModel('value', 'The unbound version of <code>v-model</code>', c.model))
+        }
 
         if (process.env.NODE_ENV === 'development' && this.type === 'props') {
           this.findMissed(params)
@@ -330,14 +333,14 @@
           ['transition', 'String', '-', 'Sets the component transition. Can be one of the built in transitions or your own.']
         ]
       },
-      makeModel (model) {
+      makeModel (text, description, model) {
         if (!model) return false
 
         return [
-          'v-model',
+          text,
           Array.isArray(model.type) ? model.type.join(', ') : model.type,
           model.default || '-',
-          model.description ? model.description : 'Controls visibility'
+          model.description ? model.description : description
         ]
       },
       makeContextual () {
@@ -383,6 +386,12 @@
       },
       makeRouter () {
         return [
+          [
+            'active-class',
+            'String',
+            'varies',
+            'Class bound when component is active. <strong class="red--text">warning</strong> Depending upon the component, this could cause side effects. If you need to add a custom class on top of a default, just do <code>active-class="default-class your-class"</code>'
+          ],
           [
             'append',
             'Boolean',
