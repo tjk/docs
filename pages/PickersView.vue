@@ -18,7 +18,13 @@
             { header: "Date pickers - In dialog and menu", file: "pickers/date-dialog-and-menu", desc: '<p>When integrating a picker into a <code>v-text-field</code>, it is recommended to use the <strong>readonly</strong> prop. This will prevent mobile keyboards from triggering. To save vertical space, you can also hide the picker title.</p><p>Pickers expose a scoped slot that allow you to hook into save and cancel functionality. This will maintain an old value which can be replaced if the user cancels.</p>' },
             { header: "Date pickers - Allowed dates", file: "pickers/date-allowed-dates", desc: 'You can specify allowed dates using arrays, objects, and functions.'},
             { header: "Date pickers - Custom format", file: "pickers/date-custom-format", desc: 'You can specify a custom date format. This will be returned through the <prop>formatted-value</code> prop. Using the sync property (new in Vue 2.3), you can link up a formatted version of the date.'},
-            { header: "Date pickers - Internationalization", file: "pickers/date-internacionalization", desc: 'The date picker supports internationalization through the JavaScript Date object. Specify a BCP 47 language tag using the <code>locale</code> prop, and then set the first day of the week with the <code>first-day-of-week</code> prop.'},
+            { header: "Date pickers - Internationalization", file: "pickers/date-internationalization", desc: 'The date picker supports internationalization through the JavaScript Date object. Specify a BCP 47 language tag using the <code>locale</code> prop, and then set the first day of the week with the <code>first-day-of-week</code> prop.'},
+            { header: "Month pickers - Light", file: "pickers/month-light", desc: 'Month pickers come in two orientation variations, portrait <strong>(default)</strong> and landscape.'},
+            { header: "Month pickers - Dark", file: "pickers/month-dark", desc: 'Month pickers come in a dark variant which utilizes the applications primary accent color.'},
+            { header: "Month pickers - In dialog and menu", file: "pickers/month-dialog-and-menu", desc: '<p>When integrating a picker into a <code>v-text-field</code>, it is recommended to use the <strong>readonly</strong> prop. This will prevent mobile keyboards from triggering. To save vertical space, you can also hide the picker title.</p><p>Pickers expose a scoped slot that allow you to hook into save and cancel functionality. This will maintain an old value which can be replaced if the user cancels.</p>' },
+            { header: "Month pickers - Allowed months", file: "pickers/month-allowed-months", desc: 'You can specify allowed months using arrays, objects, and functions.'},
+            { header: "Month pickers - Custom format", file: "pickers/month-custom-format", desc: 'You can specify a custom month format. This will be returned through the <prop>formatted-value</code> prop. Using the sync property (new in Vue 2.3), you can link up a formatted version of the month.'},
+            { header: "Month pickers - Internationalization", file: "pickers/month-internationalization", desc: 'The month picker supports internationalization through the JavaScript Date object. Specify a BCP 47 language tag using the <code>locale</code> prop, and then set the first day of the week with the <code>first-day-of-week</code> prop.'},
             { header: "Time pickers - Light", file: "pickers/time-light", desc: 'Time pickers have the light theme enabled by default.'},
             { header: "Time pickers - Dark", file: "pickers/time-dark", desc: 'An alternate dark theme can be used for dark theme applications.'},
             { header: "Time pickers - In dialog and menu", file: "pickers/time-dialog-and-menu", desc: 'Due to the flexibility of pickers, you can really dial in the experience exactly how you want it.'},
@@ -27,12 +33,19 @@
           ],
           props: {
             'v-date-picker': {
+              shared: ['theme'],
               model: {
                 type: ['null, String, Date Object, Number'],
                 default: 'null',
                 description: 'Controls the displayed date.'
               },
               params: [
+                [
+                  'type',
+                  'String',
+                  'date',
+                  'Determines the type of the picker - <code>\'date\'</code> for date picker, <code>\'month\'</code> for month picker'
+                ],
                 [
                   'actions',
                   'Boolean',
@@ -44,12 +57,6 @@
                   'Boolean',
                   'True',
                   'Automatically save the selected value. This updates the internal previous value so if cancel is clicked, it will not revert the user changes'
-                ],
-                [
-                  'dark',
-                  'Boolean',
-                  'True',
-                  'Applies the dark theme'
                 ],
                 [
                   'landscape',
@@ -68,6 +75,12 @@
                   'Function',
                   'val => new Date(val).toISOString().substr(0, 10)',
                   'This is the date format emitted on the <strong>formatted-value</strong> prop when the picker\'s model changes.'
+                ],
+                [
+                  'month-format',
+                  '[Function, Object]',
+                  '{ month: \'short\' }',
+                  'Formatting function or object used for displaying months in the months table. If it is an object then it is passed as the second parameter of the <code>toLocaleDateString</code> method'
                 ],
                 [
                   'formatted-value',
@@ -120,6 +133,7 @@
               ]
             },
             'v-time-picker': {
+              shared: ['theme'],
               model: {
                 type: ['String'],
                 default: 'null',
@@ -137,12 +151,6 @@
                   'Boolean',
                   'True',
                   'Automatically save the selected value. This updates the internal previous value so if cancel is clicked, it will not revert the user changes'
-                ],
-                [
-                  'dark',
-                  'Boolean',
-                  'True',
-                  'Applies the dark theme'
                 ],
                 [
                   'landscape',
