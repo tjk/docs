@@ -80,7 +80,7 @@
               <span>Refresh form</span>
             </v-tooltip>
           </v-slide-x-reverse-transition>
-          <v-btn success class="elevation-0" @click="submit">Submit</v-btn>
+          <v-btn color="primary" class="elevation-0" @click="submit">Submit</v-btn>
         </v-card-actions>
       </v-card>
     </v-flex>

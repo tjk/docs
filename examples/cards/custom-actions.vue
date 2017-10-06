@@ -15,7 +15,7 @@
         </v-card-title>
         <v-card-actions>
           <v-btn flat>Share</v-btn>
-          <v-btn flat class="purple--text">Explore</v-btn>
+          <v-btn flat color="purple">Explore</v-btn>
           <v-spacer></v-spacer>
           <v-btn icon @click.native="show = !show">
             <v-icon>{{ show ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</v-icon>

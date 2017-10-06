@@ -84,7 +84,7 @@
         <v-spacer></v-spacer>
         <v-btn
           flat
-          primary
+          color="primary"
           type="submit"
           :disabled="!formIsValid"
         >Register</v-btn>
@@ -100,7 +100,7 @@
           <v-spacer></v-spacer>
           <v-btn
             flat
-            class="purple--text"
+            color="purple"
             @click="terms = false"
           >Ok</v-btn>
         </v-card-actions>
@@ -116,7 +116,7 @@
           <v-spacer></v-spacer>
           <v-btn
             flat
-            class="purple--text"
+            color="purple"
             @click="conditions = false"
           >Ok</v-btn>
         </v-card-actions>

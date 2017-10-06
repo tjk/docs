@@ -1,7 +1,7 @@
 <template>
   <div class="text-xs-center">
     <v-bottom-sheet inset>
-      <v-btn slot="activator" class="red" dark>Show player</v-btn>
+      <v-btn slot="activator" color="red" dark>Show player</v-btn>
       <v-card tile>
         <v-progress-linear height="3" :value="50" class="my-0"></v-progress-linear>
         <v-list>

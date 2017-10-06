@@ -1,7 +1,7 @@
 <template>
   <div class="text-xs-center">
     <v-bottom-sheet v-model="sheet">
-      <v-btn slot="activator" class="purple" dark>Click me</v-btn>
+      <v-btn slot="activator" color="purple" dark>Click me</v-btn>
       <v-list>
         <v-subheader>Open in</v-subheader>
         <v-list-tile

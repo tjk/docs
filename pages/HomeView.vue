@@ -35,17 +35,18 @@
               v-flex(xs12).py-1
                 h2 Material Component Framework
               v-flex(xs12 sm8 md6 lg4)
-                v-btn(block dark large to="/vuetify/quick-start").blue
+                v-btn(block color="blue" dark large to="/vuetify/quick-start")
                   span Documentation
               v-flex(xs12 sm8 md6 lg4)
                 v-btn(
                   large
                   block
+                  color="white"
                   tag="a"
                   href="https://github.com/vuetifyjs/vuetify"
                   target="_blank"
                   rel="noopener"
-                ).white.primary--text
+                ).primary--text
                   v-icon(left).primary--text fa-github
                   span Github
 
@@ -80,7 +81,7 @@
                       a(:href="sponsor.href" target="_blank" :title="sponsor.title" rel="noopener")
                         img(:src="sponsor.src").sponsor
                   v-flex(xs12).text-xs-center
-                    v-btn(to="/vuetify/sponsors-and-backers" large).white.primary--text Become a backer
+                    v-btn(to="/vuetify/sponsors-and-backers" large color="white").primary--text Become a backer
                       v-icon(right).primary--text fa-arrow-circle-right
 
       section#support.mb-3

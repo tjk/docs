@@ -54,7 +54,7 @@
                 <v-card-actions>
                   <v-spacer></v-spacer>
                   <v-btn flat>Cancel</v-btn>
-                  <v-btn flat primary>Submit</v-btn>
+                  <v-btn flat color="primary">Submit</v-btn>
                 </v-card-actions>
               </v-card>
             </v-flex>

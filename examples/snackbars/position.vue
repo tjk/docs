@@ -30,7 +30,7 @@
         </v-layout>
 
       </v-container>
-      <v-btn block primary @click.native="snackbar = true" dark>Show Snackbar</v-btn>
+      <v-btn block color="primary" @click.native="snackbar = true" dark>Show Snackbar</v-btn>
     </v-card-text>
     <v-snackbar
       :timeout="timeout"
@@ -43,7 +43,7 @@
       v-model="snackbar"
     >
       {{ text }}
-      <v-btn flat class="pink--text" @click.native="snackbar = false">Close</v-btn>
+      <v-btn flat color="pink" @click.native="snackbar = false">Close</v-btn>
     </v-snackbar>
   </v-card>
 </template>

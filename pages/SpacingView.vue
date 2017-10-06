@@ -35,7 +35,7 @@
         |&nbsp;
         |&lt;li class="pb-2"&gt;...&lt;/li&gt;
         |&nbsp;
-        |&lt;v-btn class="primary ma-3"&gt;...&lt;/v-btn&gt;
+        |&lt;v-btn color="primary" class="ma-3"&gt;...&lt;/v-btn&gt;
       markup(lang="stylus")
         |$spacer := 16px
         |$spacer-x := $spacer

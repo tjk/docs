@@ -32,13 +32,13 @@
         </v-list>
         <v-list-tile class="mt-3" @click="">
           <v-list-tile-action>
-            <v-icon class="grey--text text--darken-1">add_circle_outline</v-icon>
+            <v-icon color="grey darken-1">add_circle_outline</v-icon>
           </v-list-tile-action>
           <v-list-tile-title class="grey--text text--darken-1">Browse Channels</v-list-tile-title>
         </v-list-tile>
         <v-list-tile @click="">
           <v-list-tile-action>
-            <v-icon class="grey--text text--darken-1">settings</v-icon>
+            <v-icon color="grey darken-1">settings</v-icon>
           </v-list-tile-action>
           <v-list-tile-title class="grey--text text--darken-1">Manage Subscriptions</v-list-tile-title>
         </v-list-tile>

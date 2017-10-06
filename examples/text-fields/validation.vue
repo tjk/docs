@@ -5,11 +5,11 @@
         <v-card>
           <v-toolbar class="teal">
             <v-btn icon>
-              <v-icon class="white--text">arrow_back</v-icon>
+              <v-icon color="white">arrow_back</v-icon>
             </v-btn>
             <v-spacer></v-spacer>
             <v-btn icon>
-              <v-icon class="white--text">more_vert</v-icon>
+              <v-icon color="white">more_vert</v-icon>
             </v-btn>
           </v-toolbar>
           <v-container fluid>

@@ -7,7 +7,7 @@
           <v-btn
             fab
             small
-            class="cyan accent-2"
+            color="cyan accent-2"
             bottom
             left
             absolute
@@ -36,7 +36,7 @@
             </v-list-tile-content>
             <v-list-tile-action>
               <v-btn icon>
-                <v-icon class="grey--text text--lighten-1">info</v-icon>
+                <v-icon color="grey lighten-1">info</v-icon>
               </v-btn>
             </v-list-tile-action>
           </v-list-tile>
@@ -52,7 +52,7 @@
             </v-list-tile-content>
             <v-list-tile-action>
               <v-btn icon ripple>
-                <v-icon class="grey--text text--lighten-1">info</v-icon>
+                <v-icon color="grey lighten-1">info</v-icon>
               </v-btn>
             </v-list-tile-action>
           </v-list-tile>
@@ -65,7 +65,7 @@
            </v-card-text>
            <v-card-actions>
              <v-spacer></v-spacer>
-             <v-btn flat primary @click.native="dialog = false">Submit</v-btn>
+             <v-btn flat color="primary" @click.native="dialog = false">Submit</v-btn>
            </v-card-actions>
           </v-card>
         </v-dialog>

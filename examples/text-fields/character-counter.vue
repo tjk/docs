@@ -6,11 +6,11 @@
           <v-app top-toolbar id="example-9-1" style="min-height: 0;" standalone>
             <v-toolbar class="primary">
               <v-btn icon>
-                <v-icon class="white--text">arrow_back</v-icon>
+                <v-icon color="white">arrow_back</v-icon>
               </v-btn>
               <v-spacer></v-spacer>
               <v-btn icon>
-                <v-icon class="white--text">more_vert</v-icon>
+                <v-icon color="white">more_vert</v-icon>
               </v-btn>
             </v-toolbar>
             <main>

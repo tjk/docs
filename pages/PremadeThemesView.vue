@@ -24,8 +24,8 @@
             v-card-actions
               v-btn(
                 flat
-                success
-                :href="template.demoUrl" 
+                color="success"
+                :href="template.demoUrl"
                 v-if="!template.price"
                 target="_blank"
                 rel="noopener"
@@ -39,8 +39,8 @@
               ) Coming Soon
               v-btn(
                 flat
-                success
-                :href="`https://github.com/${template.sourceUrl}/tree/master/template`" 
+                color="success"
+                :href="`https://github.com/${template.sourceUrl}/tree/master/template`"
                 target="_blank"
                 rel="noopener"
                 v-else
@@ -61,14 +61,14 @@
           price: '25$',
           demoUrl: ''
         },
-        { 
+        {
           screenshot: '/static/doc-images/starter/vuetify-parallax-starter.png',
           title: 'Parallax',
           description:'This beautiful single page parallax is a great home page for any application.',
           sourceUrl: 'vuetifyjs/parallax-starter',
           demoUrl: '/themes/parallax-starter'
         },
-        { 
+        {
           screenshot: '/static/doc-images/starter/vuetify-blog-starter.png',
           title: 'Blog',
           description:'A simple template that features a clean interface for creating a blog or blog-like application.',

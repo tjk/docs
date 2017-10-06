@@ -23,7 +23,7 @@
         )
           div(slot="header").pr-5
             strong Question: &nbsp;
-            span(v-html="faq.q") 
+            span(v-html="faq.q")
           v-divider
           v-card.grey.lighten-4
             v-card-text
@@ -34,11 +34,11 @@
           v-if="!faqs.length"
         ).text-xs-center.mb-5
           h3 No results found
-          v-btn(primary flat @click="resetSearch") Reset search
+          v-btn(color="primary" flat @click="resetSearch") Reset search
 
       div.text-xs-center
         div.mb-3 Have something that you think belongs here?
-        v-btn(outline success round href="https://chat.vuetifyjs.com" target="_blank" rel="noopener") Let us know
+        v-btn(outline color="success" round href="https://chat.vuetifyjs.com" target="_blank" rel="noopener") Let us know
 </template>
 
 <script>
@@ -104,7 +104,7 @@
       ],
       search: ''
     }),
-    
+
     computed: {
       faqs () {
         return this.gotchas.filter(qa => {

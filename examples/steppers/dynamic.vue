@@ -35,7 +35,7 @@
         :key="n"
       >
         <v-card class="grey lighten-1 mb-5" height="200px"></v-card>
-        <v-btn primary @click="nextStep(n)">Continue</v-btn>
+        <v-btn color="primary" @click="nextStep(n)">Continue</v-btn>
         <v-btn flat>Cancel</v-btn>
       </v-stepper-content>
     </v-stepper>

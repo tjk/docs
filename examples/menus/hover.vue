@@ -1,7 +1,7 @@
 <template>
   <div class="text-xs-center">
     <v-menu open-on-hover top offset-y>
-      <v-btn primary dark slot="activator">Dropdown</v-btn>
+      <v-btn color="primary" dark slot="activator">Dropdown</v-btn>
       <v-list>
         <v-list-tile v-for="item in items" :key="item.title" @click="">
           <v-list-tile-title>{{ item.title }}</v-list-tile-title>

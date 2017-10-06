@@ -29,11 +29,11 @@
               <v-list-tile-action>
                 <v-list-tile-action-text>{{ item.action }}</v-list-tile-action-text>
                 <v-icon
-                  class="grey--text text--lighten-1"
+                  color="grey lighten-1"
                   v-if="selected.indexOf(index) < 0"
                 >star_border</v-icon>
                 <v-icon
-                  class="yellow--text text--darken-2"
+                  color="yellow darken-2"
                   v-else
                 >star</v-icon>
               </v-list-tile-action>

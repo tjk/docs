@@ -2,17 +2,17 @@
   <v-layout row wrap>
     <v-flex xs12>
       <v-btn
-        :primary="allowedDates === everyOtherDay"
+        :color="allowedDates === everyOtherDay ? 'primary' : ''"
         :class="{ 'white--text': allowedDates === everyOtherDay }"
         @click.native="allowedDates = everyOtherDay"
       >Function</v-btn>
       <v-btn
-        :primary="allowedDates === randomDays"
+        :color="allowedDates === randomDays ? 'primary' : ''"
         :class="{ 'white--text': allowedDates === randomDays }"
         @click.native="allowedDates = randomDays"
       >Array</v-btn>
       <v-btn
-        :primary="allowedDates === lastFiveDays"
+        :color="allowedDates === lastFiveDays ? 'primary' : ''"
         :class="{ 'white--text': allowedDates === lastFiveDays }"
         @click.native="allowedDates = lastFiveDays"
       >Object</v-btn>

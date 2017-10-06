@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="text-xs-center">
-      <v-btn primary @click="alert = !alert">Toggle</v-btn>
+      <v-btn color="primary" @click="alert = !alert">Toggle</v-btn>
     </div>
     <v-alert
       color="success"

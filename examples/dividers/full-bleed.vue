@@ -23,7 +23,7 @@
               </v-list-tile-content>
               <v-list-tile-action>
                 <v-list-tile-action-text>{{ item.action }}</v-list-tile-action-text>
-                <v-icon class="grey--text text--lighten-1">star_border</v-icon>
+                <v-icon color="grey lighten-1">star_border</v-icon>
               </v-list-tile-action>
             </v-list-tile>
             <v-divider v-if="index + 1 &lt; items.length"></v-divider>

@@ -16,7 +16,7 @@
         <v-list>
           <v-list-tile avatar v-for="item in items" v-bind:key="item.title" @click="">
             <v-list-tile-action>
-              <v-icon v-if="item.icon" class="pink--text">star</v-icon>
+              <v-icon v-if="item.icon" color="pink">star</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
               <v-list-tile-title v-text="item.title"></v-list-tile-title>

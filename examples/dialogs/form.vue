@@ -1,7 +1,7 @@
 <template>
   <v-layout row justify-center>
     <v-dialog v-model="dialog" persistent width="50%">
-      <v-btn primary dark slot="activator">Open Dialog</v-btn>
+      <v-btn color="primary" dark slot="activator">Open Dialog</v-btn>
       <v-card>
         <v-card-title>
           <span class="headline">User Profile</span>
@@ -49,8 +49,8 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn class="blue--text darken-1" flat @click.native="dialog = false">Close</v-btn>
-          <v-btn class="blue--text darken-1" flat @click.native="dialog = false">Save</v-btn>
+          <v-btn color="blue darken-1" flat @click.native="dialog = false">Close</v-btn>
+          <v-btn color="blue darken-1" flat @click.native="dialog = false">Save</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>

@@ -14,7 +14,7 @@
               fab
               top
               right
-              class="pink"
+              color="pink"
             >
               <v-icon>add</v-icon>
             </v-btn>
@@ -26,7 +26,7 @@
           <v-toolbar class="white" extended>
             <v-toolbar-side-icon></v-toolbar-side-icon>
             <v-btn
-              class="pink"
+              color="pink"
               dark
               small
               absolute

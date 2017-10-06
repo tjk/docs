@@ -2,17 +2,17 @@
   <v-layout row wrap>
     <v-flex xs12>
       <v-btn
-        :primary="allowedTimes === everyOtherValue"
+        :color="allowedTimes === everyOtherValue ? 'primary' : ''"
         :class="{ 'white--text': allowedTimes === everyOtherValue }"
         @click.native="allowedTimes = everyOtherValue"
       >Function</v-btn>
       <v-btn
-        :primary="allowedTimes === randomValues"
+        :color="allowedTimes === randomValues ? 'primary' : ''"
         :class="{ 'white--text': allowedTimes === randomValues }"
         @click.native="allowedTimes = randomValues"
       >Array</v-btn>
       <v-btn
-        :primary="allowedTimes === minMaxValues"
+        :color="allowedTimes === minMaxValues ? 'primary' : ''"
         :class="{ 'white--text': allowedTimes === minMaxValues }"
         @click.native="allowedTimes = minMaxValues"
       >Object</v-btn>

@@ -27,7 +27,7 @@
     </v-tabs>
     <v-fab-transition>
       <v-btn
-        :class="[activeFab.class]"
+        :color="activeFab.color"
         :key="activeFab.icon"
         dark
         fab
@@ -54,9 +54,9 @@
     computed: {
       activeFab () {
         switch (this.tabs) {
-          case 'one': return { 'class': 'indigo', icon: 'share' }
-          case 'two': return { 'class': 'red', icon: 'edit' }
-          case 'three': return { 'class': 'green', icon: 'keyboard_arrow_up' }
+          case 'one': return { 'color': 'indigo', icon: 'share' }
+          case 'two': return { 'color': 'red', icon: 'edit' }
+          case 'three': return { 'color': 'green', icon: 'keyboard_arrow_up' }
           default: return {}
         }
       }

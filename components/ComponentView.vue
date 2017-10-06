@@ -14,7 +14,8 @@
                 icon
                 slot="activator"
                 v-if="componentLink"
-                v-bind:class="[`${currentColor}--text`]"
+                flat
+                v-bind:color="currentColor"
               )
                 v-icon widgets
               span {{ `View ${doc.directive ? 'Directive' : 'Component'}` }}
@@ -26,7 +27,8 @@
                 icon
                 slot="activator"
                 v-if="doc.edit"
-                v-bind:class="[`${currentColor}--text`]"
+                flat
+                v-bind:color="currentColor"
               )
                 v-icon edit
               span Edit this page
@@ -35,7 +37,7 @@
               flat
               tag="a"
               href="#api"
-              v-bind:class="[`${currentColor}--text`]"
+              v-bind:color="currentColor"
               v-if="doc.props"
             ) Go to api
       ad

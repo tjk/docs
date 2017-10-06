@@ -5,12 +5,12 @@
         <v-layout row wrap>
           <v-flex xs12>
             <v-radio-group v-model="color" row>
-              <v-radio 
-                v-for="(colorValue, i) in ['success', 'info', 'error', 'cyan darken-2']" 
-                light 
+              <v-radio
+                v-for="(colorValue, i) in ['success', 'info', 'error', 'cyan darken-2']"
+                light
                 :key="i"
-                :value="colorValue" 
-                :label="colorValue" 
+                :value="colorValue"
+                :label="colorValue"
                 :color="colorValue"
               ></v-radio>
             </v-radio-group>
@@ -30,7 +30,7 @@
         </v-layout>
 
       </v-container>
-      <v-btn block primary @click.native="snackbar = true" dark>Show Snackbar</v-btn>
+      <v-btn block color="primary" @click.native="snackbar = true" dark>Show Snackbar</v-btn>
     </v-card-text>
     <v-snackbar
       :timeout="timeout"

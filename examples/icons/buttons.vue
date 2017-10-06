@@ -24,11 +24,11 @@
       <v-icon dark>backup</v-icon>
     </v-btn>
 
-    <v-btn icon class="blue--text text--lighten-2">
+    <v-btn flat icon color="blue lighten-2">
       <v-icon>thumb_up</v-icon>
     </v-btn>
 
-    <v-btn icon class="red--text text--lighten-2">
+    <v-btn flat icon color="red lighten-2">
       <v-icon>thumb_down</v-icon>
     </v-btn>
   </div>

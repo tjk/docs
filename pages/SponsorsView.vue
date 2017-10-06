@@ -72,7 +72,7 @@
 
       div.text-xs-center
         div.mb-3 Have additional questions?
-        v-btn(outline success round href="mailto:john@vuetifyjs.com") Contact Us
+        v-btn(outline color="success" round href="mailto:john@vuetifyjs.com") Contact Us
 </template>
 
 <script>

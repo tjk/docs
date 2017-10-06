@@ -46,7 +46,7 @@
     >
       <v-btn
         slot="activator"
-        class="blue darken-2"
+        color="blue darken-2"
         dark
         fab
         hover
@@ -59,7 +59,7 @@
         fab
         dark
         small
-        class="green"
+        color="green"
       >
         <v-icon>edit</v-icon>
       </v-btn>
@@ -67,7 +67,7 @@
         fab
         dark
         small
-        class="indigo"
+        color="indigo"
       >
         <v-icon>add</v-icon>
       </v-btn>
@@ -75,7 +75,7 @@
         fab
         dark
         small
-        class="red"
+        color="red"
       >
         <v-icon>delete</v-icon>
       </v-btn>

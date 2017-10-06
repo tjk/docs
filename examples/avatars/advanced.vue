@@ -34,7 +34,7 @@
         <v-layout align-center row spacer slot="header">
           <v-flex xs1>
             <v-avatar size="36px" slot="activator">
-              <v-icon class="red--text">people</v-icon>
+              <v-icon color="red">people</v-icon>
             </v-avatar>
           </v-flex>
           <v-flex xs3>
@@ -56,7 +56,7 @@
         <v-layout align-center row spacer slot="header">
           <v-flex xs1>
             <v-avatar size="36px" slot="activator">
-              <v-icon class="cyan--text text--darken-1">local_offer</v-icon>
+              <v-icon color="cyan darken-1">local_offer</v-icon>
             </v-avatar>
           </v-flex>
           <v-flex xs3>

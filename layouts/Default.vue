@@ -15,7 +15,7 @@
         fixed
         bottom
         right
-        class="red"
+        color="red"
         v-scroll="onScroll"
         v-show="fab"
         @click="toTop"

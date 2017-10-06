@@ -7,7 +7,7 @@
             <v-toolbar-side-icon></v-toolbar-side-icon>
             <v-fab-transition>
               <v-btn
-                class="pink"
+                color="pink"
                 fab
                 dark
                 small
@@ -21,14 +21,14 @@
             </v-fab-transition>
           </v-toolbar>
           <v-card-text style="height: 300px;" class="grey lighten-5 text-xs-center">
-            <v-btn primary @click.native="hidden = !hidden">
+            <v-btn color="primary" @click.native="hidden = !hidden">
               {{ hidden ? 'Show' : 'Hide' }}
             </v-btn>
           </v-card-text>
           <v-card-text style="height: 100px; position: relative">
             <v-fab-transition>
               <v-btn
-                class="pink"
+                color="pink"
                 dark
                 absolute
                 top

@@ -92,26 +92,28 @@
                       top
                       left
                     ) Init copied!
-                      v-btn(flat @click="copied = !copied").indigo--text close
+                      v-btn(flat @click="copied = !copied" color="light-blue") close
                   v-flex(xs2).layout.column.align-end.pa-3
                     v-tooltip(left debounce="300")
                       v-btn(
                         icon
                         dark
+                        color="secondary"
                         :href="`https://github.com/vuetifyjs/${selectedTemplate.init}`"
                         target="_blank"
                         rel="noopener"
                         slot="activator"
-                      ).secondary
+                      )
                         v-icon fa-github
                       span Github
                     v-tooltip(left debounce="300")
                       v-btn(
                         icon
+                        color="secondary"
                         dark
                         @click="copyMarkup"
                         slot="activator"
-                      ).secondary
+                      )
                         v-icon content_copy
                       span Copy markup
 

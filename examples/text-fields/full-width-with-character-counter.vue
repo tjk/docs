@@ -4,10 +4,10 @@
       <v-flex xs12 md8 offset-md2>
         <v-card>
           <v-toolbar class="pink" dark>
-            <v-icon class="white--text">arrow_back</v-icon>
+            <v-icon color="white">arrow_back</v-icon>
             <v-toolbar-title>Compose</v-toolbar-title>
             <v-spacer></v-spacer>
-            <v-icon class="white--text">send</v-icon>
+            <v-icon color="white">send</v-icon>
           </v-toolbar>
           <v-container fluid class="pa-0 mt-2">
             <v-layout wrap>

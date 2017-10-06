@@ -7,11 +7,11 @@
       <v-flex xs12 class="mt-5">
         <v-badge color="cyan" v-model="show" left>
           <span slot="badge">6</span>
-          <v-icon large class="grey--text text--lighten-1">shopping_cart</v-icon>
+          <v-icon large color="grey lighten-1">shopping_cart</v-icon>
         </v-badge>
         <v-badge color="indigo" v-model="show">
           <span slot="badge">6</span>
-          <v-icon large class="grey--text">mail</v-icon>
+          <v-icon large color="grey">mail</v-icon>
         </v-badge>
       </v-flex>
     </v-layout>

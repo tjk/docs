@@ -112,7 +112,7 @@
       fab
       bottom
       right
-      class="pink"
+      color="pink"
       dark
       fixed
       @click.stop="dialog = !dialog"
@@ -174,9 +174,9 @@
           </v-layout>
         </v-container>
         <v-card-actions>
-          <v-btn flat primary>More</v-btn>
+          <v-btn flat color="primary">More</v-btn>
           <v-spacer></v-spacer>
-          <v-btn flat primary @click="dialog = false">Cancel</v-btn>
+          <v-btn flat color="primary" @click="dialog = false">Cancel</v-btn>
           <v-btn flat @click="dialog = false">Save</v-btn>
         </v-card-actions>
       </v-card>

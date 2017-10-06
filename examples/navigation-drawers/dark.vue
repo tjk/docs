@@ -2,7 +2,7 @@
   <v-layout wrap>
     <v-container>
       <v-layout justify-center>
-        <v-btn @click.stop="drawer = !drawer" class="pink white--text">Toggle</v-btn>
+        <v-btn @click.stop="drawer = !drawer" color="pink" dark>Toggle</v-btn>
       </v-layout>
     </v-container>
     <v-navigation-drawer

@@ -6,7 +6,7 @@
       :nudge-width="200"
       v-model="menu"
     >
-      <v-btn class="indigo" dark slot="activator">Menu as Popover</v-btn>
+      <v-btn color="indigo" dark slot="activator">Menu as Popover</v-btn>
       <v-card>
         <v-list>
           <v-list-tile avatar>
@@ -46,7 +46,7 @@
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn flat @click="menu = false">Cancel</v-btn>
-          <v-btn primary flat @click="menu = false">Save</v-btn>
+          <v-btn color="primary" flat @click="menu = false">Save</v-btn>
         </v-card-actions>
       </v-card>
     </v-menu>

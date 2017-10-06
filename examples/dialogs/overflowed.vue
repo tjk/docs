@@ -1,7 +1,7 @@
 <template>
   <v-layout row justify-center>
     <v-dialog v-model="dialog" width="600px">
-      <v-btn primary dark slot="activator">Open Dialog</v-btn>
+      <v-btn color="primary" dark slot="activator">Open Dialog</v-btn>
       <v-card>
         <v-card-title>
           <span class="headline">Use Google's location service?</span>
@@ -19,8 +19,8 @@ Semper wisi et, sollicitudin nunc vestibulum, cursus accumsan nunc pede tempus m
 +</v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn class="green--text darken-1" flat="flat" @click="dialog = false">Disagree</v-btn>
-          <v-btn class="green--text darken-1" flat="flat" @click="dialog = false">Agree</v-btn>
+          <v-btn color="green darken-1" flat="flat" @click="dialog = false">Disagree</v-btn>
+          <v-btn color="green darken-1" flat="flat" @click="dialog = false">Agree</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>

@@ -90,7 +90,7 @@
 
     div.text-xs-center.my-5
       em Still have questions?<br>
-      v-btn(flat outline round success href="https://chat.vuetifyjs.com" target="_blank") Ask the Community
+      v-btn(flat outline round color="success" href="https://chat.vuetifyjs.com" target="_blank") Ask the Community
 </template>
 
 <script>
@@ -137,12 +137,12 @@
     .section-text
       margin-bottom: 24px !important
 
-  .pillars      
+  .pillars
     .flex
       display: flex
       flex: 1 1 auto
       flex-direction: column
-      
+
       .card
         flex: 1 1 auto
 </style>

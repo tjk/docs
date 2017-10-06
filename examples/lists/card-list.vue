@@ -25,7 +25,7 @@
         <v-list two-line>
           <v-list-tile @click="">
             <v-list-tile-action>
-              <v-icon class="indigo--text">phone</v-icon>
+              <v-icon color="indigo">phone</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
               <v-list-tile-title>(650) 555-1234</v-list-tile-title>
@@ -48,7 +48,7 @@
         <v-divider inset></v-divider>
           <v-list-tile @click="">
             <v-list-tile-action>
-              <v-icon class="indigo--text">mail</v-icon>
+              <v-icon color="indigo">mail</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
               <v-list-tile-title>aliconnors@example.com</v-list-tile-title>
@@ -65,7 +65,7 @@
         <v-divider inset></v-divider>
           <v-list-tile @click="">
             <v-list-tile-action>
-              <v-icon class="indigo--text">location_on</v-icon>
+              <v-icon color="indigo">location_on</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
               <v-list-tile-title>1400 Main Street</v-list-tile-title>
