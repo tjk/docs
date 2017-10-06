@@ -5,7 +5,7 @@
       v-bind:width="15"
       v-bind:rotate="360"
       v-bind:value="value"
-      class="teal--text"
+      color="teal"
     >
       {{ value }}
     </v-progress-circular>
@@ -15,7 +15,7 @@
       v-bind:width="15"
       v-bind:rotate="-90"
       v-bind:value="value"
-      class="primary--text"
+      color="primary"
     >
       {{ value }}
     </v-progress-circular>
@@ -25,7 +25,7 @@
       v-bind:width="15"
       v-bind:rotate="90"
       v-bind:value="value"
-      class="red--text"
+      color="red"
     >
       {{ value }}
     </v-progress-circular>
@@ -35,7 +35,7 @@
       v-bind:width="15"
       v-bind:rotate="180"
       v-bind:value="value"
-      class="pink--text"
+      color="pink"
     >
       {{ value }}
     </v-progress-circular>

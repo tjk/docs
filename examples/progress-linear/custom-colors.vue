@@ -4,5 +4,6 @@
 
     <v-progress-linear value="30" color="lime" background-color="blue-grey"></v-progress-linear>
 
+    <v-progress-linear value="45" color="error" background-color="success"></v-progress-linear>
   </div>
 </template>

@@ -1,14 +1,14 @@
 <template>
   <div>
-    <v-progress-circular indeterminate class="primary--text"></v-progress-circular>
+    <v-progress-circular indeterminate color="primary"></v-progress-circular>
 
-    <v-progress-circular indeterminate class="red--text"></v-progress-circular>
+    <v-progress-circular indeterminate color="red"></v-progress-circular>
 
-    <v-progress-circular indeterminate class="purple--text"></v-progress-circular>
+    <v-progress-circular indeterminate color="purple"></v-progress-circular>
 
-    <v-progress-circular indeterminate class="green--text"></v-progress-circular>
+    <v-progress-circular indeterminate color="green"></v-progress-circular>
 
-    <v-progress-circular indeterminate class="amber--text"></v-progress-circular>
+    <v-progress-circular indeterminate color="amber"></v-progress-circular>
   </div>
 </template>
 
