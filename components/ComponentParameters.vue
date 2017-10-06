@@ -18,6 +18,15 @@
         hide-details
         v-model="search"
       )
+    v-card-text(v-if="addedProps.length || removedProps.length")
+      template(v-if="addedProps.length")
+        .title Not documented
+        ul
+          li(v-for="prop in addedProps") {{ prop }}
+      template(v-if="removedProps.length")
+        .title Removed
+        ul
+          li(v-for="prop in removedProps") {{ prop }}
     v-data-table(
       v-bind:headers="headers"
       v-bind:search="search"
@@ -33,11 +42,20 @@
 </template>
 
 <script>
+  import Vue from 'vue'
+
+  const hyphenateRE = /\B([A-Z])/g
+  const hyphenate = str => (
+    str.replace(hyphenateRE, '-$1').toLowerCase()
+  )
+
   export default {
     data () {
       return {
         component: Object.keys(this.data)[0],
         search: '',
+        addedProps: [],
+        removedProps: [],
         shared: {
           app: this.makeApp(),
           dialog: this.makeDialog(),
@@ -64,7 +82,8 @@
     props: {
       id: String,
       headers: Array,
-      data: Object
+      data: Object,
+      type: String
     },
 
     computed: {
@@ -84,12 +103,15 @@
           params = params.concat(this.shared[s])
         })
 
-        var params2 = params;
-        params = Array.from(new Set(params2.map(JSON.stringify))).map(JSON.parse);
+        params = Array.from(new Set(params.map(JSON.stringify))).map(JSON.parse)
 
         params = params.concat(c.params || [])
 
         c.model && params.push(this.makeModel(c.model))
+
+        if (process.env.NODE_ENV === 'development' && this.type === 'props') {
+          this.findMissed(params)
+        }
 
         return params.map(d => {
           return {
@@ -99,6 +121,16 @@
             desc: d[3]
           }
         })
+      },
+      findMissed (params) {
+        const instance = new (Vue.extend(Vue.component(this.component)))()
+        const knownProps = params.map(p => p[0])
+        const actualProps = instance.$props ? Object.keys(instance.$props).map(_ => hyphenate(_)) : []
+        const added = actualProps.filter(p => !knownProps.includes(p))
+        const removed = knownProps.filter(p => !actualProps.includes(p) && p !== 'v-model')
+
+        this.addedProps = added
+        this.removedProps = removed
       },
       makeApp () {
         return [
