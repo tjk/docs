@@ -62,9 +62,11 @@
           contextual: this.makeContextual(),
           router: this.makeRouter(),
           default: this.makeSlot(),
+          delayable: this.makeDelayable(),
           theme: this.makeTheme(),
           input: this.makeInput(),
           label: this.makeLabel(),
+          lazy: this.makeLazy(),
           loadable: this.makeLoadable(),
           progress: this.makeProgress(),
           overlay: this.makeOverlay(),
@@ -109,7 +111,6 @@
 
         if (c.model) {
           params.push(this.makeModel('v-model', 'Controls visibility', c.model))
-          params.push(this.makeModel('value', 'The unbound version of <code>v-model</code>', c.model))
         }
 
         if (process.env.NODE_ENV === 'development' && this.type === 'props') {
@@ -145,6 +146,32 @@
           ]
         ]
       },
+      makeDelayable () {
+        return [
+          [
+            'open-delay',
+            '[Number, String]',
+            '0',
+            'Delay (in ms) after which menu opens (when open-on-hover prop is set to true)'
+          ],
+          [
+            'close-delay',
+            '[Number, String]',
+            '200',
+            'Delay (in ms) after which menu closes (when open-on-hover prop is set to true)'
+          ],
+        ]
+      },
+      makeLazy () {
+        return [
+          [
+            'lazy',
+            'Boolean',
+            'False',
+            'Conditionally renders content on mounted'
+          ]
+        ]
+      },
       makeMask () {
         return [
           [
@@ -154,10 +181,10 @@
             'Apply a custom character mask to the input. See mask table above for more information'
           ],
           [
-            'fill-mask-blanks',
+            'dont-fill-mask-blanks',
             'Boolean',
             'False',
-            'Automatically populate mask when typing in input'
+            'Disables the automatic character display when typing'
           ],
           [
             'return-masked-value',
@@ -170,16 +197,34 @@
       makeMenu () {
         return [
           [
+            'activator',
+            '[String, Object]',
+            'null',
+            'Designate a custom activator when the <strong>activator</strong> slot is not used. String can be any valid querySelector and Object can be any valid Node'
+          ],
+          [
             'allow-overflow',
             'Boolean',
             'False',
             'Removes overflow re-positioning for the content'
           ],
           [
+            'content-class',
+            'String',
+            'null',
+            'A custom class applied to the detached content'
+          ],
+          [
             'min-width',
             '[Number, String]',
             'null',
             `Set's the minimum width for the content`
+          ],
+          [
+            'offset-overflow',
+            'Boolean',
+            'False',
+            `Causes the component to flip to the opposite side when repositioned due to overflow`
           ],
           [
             'max-width',
@@ -234,6 +279,12 @@
             'Number',
             '0',
             'Nudge the content from the right'
+          ],
+          [
+            'nudge-width',
+            'Number',
+            '0',
+            'Nudge the content width'
           ],
           [
             'position-x',

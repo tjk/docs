@@ -19,6 +19,7 @@
           ],
           props: {
             'v-expansion-panel': {
+              shared: ['theme'],
               params: [
                 [
                   'expand',
@@ -59,6 +60,12 @@
                   'Boolean',
                   'False',
                   'Hide the icon in the content header'
+                ],
+                [
+                  'lazy',
+                  'Boolean',
+                  'False',
+                  'Lazily load the expansion panel contents'
                 ]
               ],
               model: {

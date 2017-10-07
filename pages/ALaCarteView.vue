@@ -20,10 +20,10 @@
       section-text When using the <code>transform-imports</code> package, you will need to add the following to the plugins section of your <kbd>.babelrc</kbd> file.
       markup(lang="js")
         |["transform-imports", {
-        |  "vuetify": {
-        |    "transform": "vuetify/es5/components/${member}",
-        |    "preventFullImport": true
-        |  }
+        |   "vuetify": {
+        |     "transform": "vuetify/es5/components/${member}",
+        |     "preventFullImport": true
+        |   }
         |}]
 
       section-text To import and use components, use the following code in your entry point.

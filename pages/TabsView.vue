@@ -94,12 +94,6 @@
             'v-tabs-item': {
               shared: ['router'],
               params: [
-                [
-                  'activeClass',
-                  'String',
-                  'toolbar__item--active',
-                  'Class to apply for the active toolbar item'
-                ]
               ]
             },
             'v-tabs-content': {
@@ -128,12 +122,13 @@
                   'False',
                   'Will not render contents until is active for the first time'
                 ],
-                [
-                  'touchless',
-                  'Boolean',
-                  'False',
-                  'Remove mobile touch functionality'
-                ]
+                //  Not implemented yet
+                //  [
+                //   'touchless',
+                //   'Boolean',
+                //   'False',
+                //   'Remove mobile touch functionality'
+                // ]
               ]
             }
           },

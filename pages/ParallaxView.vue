@@ -23,6 +23,12 @@
             'v-parallax': {
               params: [
                 [
+                  'alt',
+                  'String',
+                  'null',
+                  'Attaches an alt property to the parallax image'
+                ],
+                [
                   'jumbotron',
                   'Boolean',
                   'False',

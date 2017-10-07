@@ -24,8 +24,14 @@
           ],
           props: {
             'v-icon': {
-              shared: ['colorable'],
+              shared: ['colorable', 'theme'],
               params: [
+                [
+                  'disabled',
+                  'Boolean',
+                  'False',
+                  'Disables the icon, fading the color'
+                ],
                 [
                   'medium',
                   'Boolean',

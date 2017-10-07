@@ -136,6 +136,18 @@
                     totalItems: 0
                   }`,
                   'Used to control pagination and sorting from outside the data table. Can also be used to set default sorted column.'
+                ],
+                [
+                  'expand',
+                  'Boolean',
+                  'False',
+                  'Designates the table as containing rows that are expandable.'
+                ],
+                [
+                  'item-key',
+                  '*',
+                  'id',
+                  'The field in the item object that designates a unique key'
                 ]
               ],
               model: {
@@ -159,13 +171,13 @@
                   `Set's the default text for the save button when using the <code>large</code> prop`
                 ],
                 [
-                  'Large',
+                  'large',
                   'Boolean',
                   'False',
                   'Attachs a submit and cancel button to the dialog'
                 ],
                 [
-                  'Lazy',
+                  'lazy',
                   'Boolean',
                   'False',
                   'Lazily load the dialog contents'

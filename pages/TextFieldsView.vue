@@ -52,6 +52,18 @@
                   'Sets a custom theme color'
                 ],
                 [
+                  'box',
+                  'Boolean',
+                  'False',
+                  'Applies the alternate <strong>box</strong> input style'
+                ],
+                [
+                  'clearable',
+                  'Boolean',
+                  'False',
+                  'Add input clear functionality'
+                ],
+                [
                   'auto-grow',
                   'Boolean',
                   'False',

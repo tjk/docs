@@ -32,6 +32,18 @@
               shared: ['app', 'theme'],
               params: [
                 [
+                  'clipped-left',
+                  'Boolean',
+                  'False',
+                  'Designates that a <code>v-navigation-drawer</code> is clipped on the left side of the toolbar'
+                ],
+                [
+                  'clipped-right',
+                  'Boolean',
+                  'False',
+                  'Designates that a <code>v-navigation-drawer</code> is clipped on the right side of the toolbar'
+                ],
+                [
                   'card',
                   'Boolean',
                   'False',
@@ -48,6 +60,18 @@
                   'Boolean',
                   'False',
                   'Reduces the height of the toolbar content and extension'
+                ],
+                [
+                  'height',
+                  '[Number, String]',
+                  'null',
+                  'Designates a specific height for the toolbar'
+                ],
+                [
+                  'manual-scroll',
+                  'Boolean',
+                  'False',
+                  'Manually apply the <code>scroll-off-screen</code> functionality'
                 ],
                 [
                   'fixed',
@@ -100,7 +124,7 @@
               ]
             },
             'v-system-bar': {
-              shared: ['theme'],
+              shared: ['app', 'theme'],
               params: [
                 [
                   'lights-out',

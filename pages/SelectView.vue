@@ -25,7 +25,7 @@
           ],
           props: {
             'v-select': {
-              shared: ['input', 'filterable', 'loadable', 'mask'],
+              shared: ['input', 'filterable', 'loadable', 'mask', 'colorable'],
               params: [
                 [
                   'allow-overflow',
@@ -88,6 +88,12 @@
                   `Set property of <code>items</code>'s disabled value`
                 ],
                 [
+                  'item-avatar',
+                  'String',
+                  'avatar',
+                  `Set property of <code>items</code>'s avatar value`
+                ],
+                [
                   'max-height',
                   'Number, String',
                   '200',
@@ -142,10 +148,34 @@
                   'Changes the selection behavior to return the object directly rather than the value specified with item-value'
                 ],
                 [
+                  'multi-line',
+                  'Boolean',
+                  'False',
+                  'Causes label to float when the select component is focused or dirty'
+                ],
+                [
                   'search-input',
                   'String',
                   'null',
                   'Bound when using the autocomplete prop. Use the .sync modifier to catch user input from the autocomplete search input'
+                ],
+                [
+                  'segmented',
+                  'Boolean',
+                  'False',
+                  'Creates a segmented button - <a href="https://material.io/guidelines/components/buttons.html#buttons-dropdown-buttons" rel="noopener" target="_blank">spec</a>'
+                ],
+                [
+                  'overflow',
+                  'Boolean',
+                  'False',
+                  'Creates an overflow button - <a href="https://material.io/guidelines/components/buttons.html#buttons-dropdown-buttons" rel="noopener" target="_blank">spec</a>'
+                ],
+                [
+                  'editable',
+                  'Boolean',
+                  'False',
+                  'Creates an editable button - <a href="https://material.io/guidelines/components/buttons.html#buttons-dropdown-buttons" rel="noopener" target="_blank">spec</a>'
                 ],
               ],
               model: {

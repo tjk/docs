@@ -24,6 +24,12 @@
               shared: ['input', 'theme'],
               params: [
                 [
+                  'snap',
+                  'Boolean',
+                  'False',
+                  'Moves slider thumb at defined intervals, snapping to each step'
+                ],
+                [
                   'color',
                   'String',
                   '-',

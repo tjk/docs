@@ -28,6 +28,7 @@
           ],
           props: {
             'v-stepper': {
+              shared: ['theme'],
               params: [
                 [
                   'non-linear',

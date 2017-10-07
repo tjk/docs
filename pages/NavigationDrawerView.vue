@@ -105,6 +105,18 @@
                   'Condenses sidebar width, also accepts the <strong>.sync</strong> modifier. With this, the drawer will re-open when clicking it',
                 ],
                 [
+                  'mini-variant-width',
+                  '[Number, String]',
+                  '80',
+                  'Designates the width assigned when the <code>mini</code> prop is turned on'
+                ],
+                [
+                  'mobile-break-point',
+                  'Number',
+                  '1264',
+                  'Designates the window width for the drawer to become mobile'
+                ],
+                [
                   'permanent',
                   'Boolean',
                   'False',
@@ -133,6 +145,12 @@
                   'Boolean',
                   'False',
                   'Disable mobile touch functionality'
+                ],
+                [
+                  'width',
+                  '[Number, String]',
+                  '300',
+                  'The width of the drawer.'
                 ]
               ]
             }

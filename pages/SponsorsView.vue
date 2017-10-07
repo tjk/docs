@@ -59,8 +59,9 @@
       v-container(fluid grid-list-md).mb-5
         v-layout(row wrap justify-start align-center)
           a(
-            :href="`${backer.href}?ref=vuetifyjs.com`"
             target="_blank"
+            :class="[backer.dark ? 'black' : '']"
+            :href="`${backer.href}?ref=vuetifyjs.com`"
             :title="backer.title"
             v-for="backer in backers2"
             v-bind:key="backer.title"
@@ -88,7 +89,8 @@
       backers2: [
         { title: 'Deister Software', href: 'http://www.deister.es/', src: 'deister-logo-light.png' },
         { title: 'Cocoatech', href: 'https://cocoatech.com/', src: 'cocoatechlogo.png' },
-        { title: 'Cycloid', href: 'https://www.cycloid.io/', src: 'cycloid.png' }
+        { title: 'Cycloid', href: 'https://www.cycloid.io/', src: 'cycloid.png' },
+        { title: 'Live Casino', href: 'https://livecasino.com/', src: 'casino.webp', dark: true }
       ]
     })
   }

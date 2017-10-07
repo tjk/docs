@@ -22,7 +22,7 @@
           ],
           props: {
             'v-menu': {
-              shared: ['detachable', 'menu'],
+              shared: ['detachable', 'menu', 'delayable', 'lazy'],
               model: {
                 type: ['Boolean'],
                 default: 'False'
@@ -101,18 +101,6 @@
                   'Designates whether menu should open on activator hover'
                 ],
                 [
-                  'open-delay',
-                  'Number, String',
-                  '0',
-                  'Delay (in ms) after which menu opens (when open-on-hover prop is set to true)'
-                ],
-                [
-                  'close-delay',
-                  'Number, String',
-                  '500',
-                  'Delay (in ms) after which menu closes (when open-on-hover prop is set to true)'
-                ],
-                [
                   'open-on-click',
                   'Boolean',
                   'True',
@@ -141,12 +129,6 @@
                   'String',
                   'v-menu-transition',
                   'Set the transition component'
-                ],
-                [
-                  'lazy',
-                  'Boolean',
-                  'False',
-                  'Conditionally renders content on mounted'
                 ],
                 [
                   'z-index',

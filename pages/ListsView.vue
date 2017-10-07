@@ -29,6 +29,7 @@
           ],
           props: {
             'v-list': {
+              shared: ['theme'],
               params: [
                 [
                   'dense',
