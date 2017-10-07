@@ -103,7 +103,7 @@
         { title: 'Chat Support' },
         { title: 'Modular Component Transition System' },
         { title: 'Blazing Fast Framework' },
-        { title: 'A La Carte (coming soon)' }
+        { title: 'A La Carte components' }
       ],
       list: [
         { check: true, text: 'Good for SEO' },
