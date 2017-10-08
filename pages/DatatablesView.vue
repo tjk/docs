@@ -48,6 +48,12 @@
                   'Hide the table actions'
                 ],
                 [
+                  'hide-headers',
+                  'Boolean',
+                  'False',
+                  'Hide the table headers'
+                ],
+                [
                   'items',
                   'Array',
                   '[]',
