@@ -21,7 +21,7 @@
                 v-for="(card, i) in type"
                 :key="i"
               )
-                v-card
+                v-card(flat tile)
                   v-toolbar(dark prominent flat).secondary
                     v-list(dark).pa-0
                       v-list-tile(avatar)

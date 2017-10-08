@@ -4,7 +4,6 @@
       class="elevation-1"
       hide-actions
       hide-headers
-      dark
     >
     <template slot="items" scope="props">
       <td>{{ props.item.name }}</td>

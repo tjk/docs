@@ -20,7 +20,7 @@
           ],
           props: {
             'v-card': {
-              shared: ['router', 'theme'],
+              shared: ['router', 'theme', 'colorable'],
               params: [
                 [
                   'height',

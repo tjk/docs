@@ -22,8 +22,14 @@
           ],
           props: {
             'v-chip': {
-              shared: ['theme'],
+              shared: ['colorable', 'theme'],
               params: [
+                [
+                  'text-color',
+                  'String',
+                  'null',
+                  'Applies specified color to the control text'
+                ],
                 [
                   'close',
                   'Boolean',

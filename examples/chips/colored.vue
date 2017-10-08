@@ -1,11 +1,11 @@
 <template>
   <div class="text-xs-center">
-    <v-chip class="primary white--text">Primary</v-chip>
+    <v-chip color="primary" text-color="white">Primary</v-chip>
 
-    <v-chip class="secondary white--text">Secondary</v-chip>
+    <v-chip color="secondary" text-color="white">Secondary</v-chip>
 
-    <v-chip class="red white--text">Colored Chip</v-chip>
+    <v-chip color="red" text-color="white">Colored Chip</v-chip>
 
-    <v-chip class="green white--text">Colored Chip</v-chip>
+    <v-chip color="green" text-color="white">Colored Chip</v-chip>
   </div>
 </template>

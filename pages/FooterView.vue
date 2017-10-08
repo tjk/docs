@@ -16,7 +16,7 @@
           ],
           props: {
             'v-footer': {
-              shared: ['app', 'theme'],
+            shared: ['app', 'theme', 'colorable'],
               params: [
                 [
                   'absolute',
@@ -35,7 +35,7 @@
           },
           slots: {
             'v-footer': {
-              shared: ['default']
+              shared: ['default', 'colorable']
             }
           }
         }

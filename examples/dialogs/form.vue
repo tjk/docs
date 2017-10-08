@@ -1,6 +1,6 @@
 <template>
   <v-layout row justify-center>
-    <v-dialog v-model="dialog" persistent width="50%">
+    <v-dialog v-model="dialog" persistent max-width="500px">
       <v-btn color="primary" dark slot="activator">Open Dialog</v-btn>
       <v-card>
         <v-card-title>

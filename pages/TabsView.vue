@@ -130,17 +130,10 @@
                 //   'Remove mobile touch functionality'
                 // ]
               ]
-            }
-          },
-          functional: {
-            'v-tabs-bar': {
-              params: [
-                [
-                  'v-tabs-slider',
-                  'Creates a slider component that positions itself under the currently active tab'
-                ]
-              ]
             },
+            'v-tabs-slider': {
+              shared: ['colorable']
+            }
           },
           events: {
             'v-tabs': {

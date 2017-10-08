@@ -29,7 +29,7 @@
           ],
           props: {
             'v-toolbar': {
-              shared: ['app', 'theme'],
+              shared: ['app', 'theme', 'colorable'],
               params: [
                 [
                   'clipped-left',
@@ -124,7 +124,7 @@
               ]
             },
             'v-system-bar': {
-              shared: ['app', 'theme'],
+              shared: ['app', 'theme', 'colorable'],
               params: [
                 [
                   'lights-out',

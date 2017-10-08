@@ -327,10 +327,10 @@
             'Disabled the ability to open the dialog.'
           ],
           [
-            'width',
+            'max-width',
             '[String, Number]',
-            '320',
-            'The modal width. Cannot exceed 90% of the screen'
+            '290',
+            'The maximum width the content'
           ],
           [
             'full-width',

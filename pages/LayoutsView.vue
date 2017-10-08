@@ -42,6 +42,7 @@
             v-card(
               hover
               :href="layout.href"
+              target="_blank"
               rel="noopener"
             )
               v-card-media(height="300px" :src="genSrc(layout.name)")
