@@ -23,7 +23,8 @@
             { header: 'External pagination', file: 'tables/paginate', desc: 'Pagination can be controlled externally by using the <code>pagination</code> prop. Remember that you must apply the <code>.sync</code> modifier.' },
             { header: 'External sorting', file: 'tables/sort', desc: 'Sorting can also be controlled externally by using the <code>pagination</code> prop. Remember that you must apply the <code>.sync</code> modifier. You can also use the prop to set the default sorted column.' },
             { header: 'Paginate and sort server-side', file: 'tables/server', desc: 'If you\'re loading data from a backend and want to paginate and sort the results before displaying them, you can use the <code>total-items</code> prop. Defining this prop will disable the built-in sorting and pagination, and you will instead need to use the <code>pagination</code> prop to listen for changes. Use the <code>loading</code> prop to display a progress bar while fetching data.'},
-            { header: 'Theme support', file: 'tables/theme', desc: 'The <code>v-data-table</code> component supports the application dark theme.'}
+            { header: 'Theme support', file: 'tables/theme', desc: 'The <code>v-data-table</code> component supports the application dark theme.'},
+            { header: 'Headerless tables', file: 'tables/headerless', desc: 'Setting the <code>hide-headers</code> prop creates a headerless table.'}
           ],
           props: {
             'v-data-table': {
