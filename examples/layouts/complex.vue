@@ -20,7 +20,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar
-      class="blue-grey"
+      color="blue-grey"
       dark
       fixed
       app
@@ -73,7 +73,7 @@
         fixed
       ></v-navigation-drawer>
     </main>
-    <v-footer class="blue-grey white--text" app>
+    <v-footer color="blue-grey" class="white--text" app>
       <span>Vuetify</span>
       <v-spacer></v-spacer>
       <span>&copy; 2017</span>

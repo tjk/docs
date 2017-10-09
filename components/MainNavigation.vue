@@ -128,7 +128,9 @@
             v-else-if="item.chip"
             label
             small
-            class="caption blue lighten-2 white--text mx-0"
+            color="blue lighten-2"
+            text-color="white"
+            class="caption mx-0"
           ) {{ item.chip }}
 </template>
 

@@ -2,7 +2,7 @@
   <v-app toolbar--fixed toolbar style="overflow: hidden">
     <v-toolbar
       absolute
-      class="white teal lighten-3"
+      color="teal lighten-3"
       dark
       scroll-off-screen
       scroll-target="#scrolling-techniques"

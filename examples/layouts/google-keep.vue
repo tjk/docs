@@ -49,7 +49,7 @@
         </template>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar class="amber" app absolute clipped-left>
+    <v-toolbar color="amber" app absolute clipped-left>
       <span class="title">Google&nbsp;<span class="text">Keep</span></span>
     </v-toolbar>
     <main>

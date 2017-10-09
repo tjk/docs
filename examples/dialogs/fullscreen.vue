@@ -3,7 +3,7 @@
     <v-dialog v-model="dialog" fullscreen transition="dialog-bottom-transition" :overlay=false>
       <v-btn color="primary" dark slot="activator">Open Dialog</v-btn>
       <v-card>
-        <v-toolbar dark class="primary">
+        <v-toolbar dark color="primary">
           <v-btn icon @click.native="dialog = false" dark>
             <v-icon>close</v-icon>
           </v-btn>

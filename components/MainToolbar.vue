@@ -1,7 +1,7 @@
 <template lang="pug">
   div
     v-toolbar(
-      :class="[$store.state.currentColor]"
+      :color="$store.state.currentColor"
       fixed
       dark
       app
@@ -18,7 +18,7 @@
           class="d-flex"
         )
     v-toolbar(
-      :class="[$store.state.currentColor]"
+      :color="$store.state.currentColor"
       fixed
       dark
       app
@@ -103,7 +103,7 @@
 
 <style lang="stylus">
   @import '../node_modules/vuetify/src/stylus/settings/_elevations.styl'
-  
+
   .algolia-autocomplete
     flex: 1 1 auto
 
@@ -114,7 +114,7 @@
       left: -56px !important
       top: calc(100% + 13px) !important
       elevation(6)
-    
+
       .ds-dataset-1
         border: none !important
 </style>

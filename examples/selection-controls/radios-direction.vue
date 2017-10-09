@@ -3,7 +3,7 @@
     <v-layout row wrap>
       <v-flex xs12 md6>
         <v-subheader>Column</v-subheader>
-        <v-card class="elevation-0">
+        <v-card flat>
           <v-card-text>
             <v-radio-group v-model="column" column>
               <v-radio label="Option 1" value="radio-1" ></v-radio>
@@ -14,7 +14,7 @@
       </v-flex>
       <v-flex xs12 md6>
         <v-subheader>Row</v-subheader>
-        <v-card class="elevation-0">
+        <v-card flat>
           <v-card-text>
             <v-radio-group v-model="row" row>
               <v-radio label="Option 1" value="radio-1" ></v-radio>

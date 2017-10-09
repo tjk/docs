@@ -1,7 +1,7 @@
 <template>
   <v-tabs dark fixed icons centered>
     <v-tabs-bar class="cyan">
-      <v-tabs-slider class="yellow"></v-tabs-slider>
+      <v-tabs-slider color="yellow"></v-tabs-slider>
       <v-tabs-item href="#tab-1">
         <v-icon>phone</v-icon>
         Recents

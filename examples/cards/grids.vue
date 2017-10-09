@@ -1,7 +1,7 @@
 <template>
   <v-layout column>
     <v-flex xs12 sm6 offset-sm3>
-      <v-toolbar class="indigo" dark>
+      <v-toolbar color="indigo" dark>
         <v-toolbar-side-icon></v-toolbar-side-icon>
         <v-toolbar-title>Discover</v-toolbar-title>
         <v-spacer></v-spacer>

@@ -3,7 +3,7 @@
     <v-layout row wrap justify-center>
       <v-flex xs12 sm6>
         <v-card>
-          <v-toolbar class="teal">
+          <v-toolbar color="teal">
             <v-btn icon>
               <v-icon color="white">arrow_back</v-icon>
             </v-btn>

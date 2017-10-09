@@ -25,7 +25,7 @@
             strong Question: &nbsp;
             span(v-html="faq.q")
           v-divider
-          v-card.grey.lighten-4
+          v-card(color="grey lighten-4")
             v-card-text
               strong Answer: &nbsp;
               div(v-html="faq.a")

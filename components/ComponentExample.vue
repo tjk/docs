@@ -2,7 +2,7 @@
   div.component-example
     codepen(ref="codepen" :pen="pen")
     v-card
-      v-toolbar(v-bind:class="[currentColor]" flat dense dark)
+      v-toolbar(v-bind:color="currentColor" flat dense dark)
         span.title.white--text.layout.align-end {{ header }}
           span(v-if="newIn").ml-2.body-2.red--text.text--lighten-2 (New in {{ newIn }}+)
         v-spacer
@@ -39,7 +39,7 @@
         v-expansion-panel-content(v-model="panel")
           v-tabs(ref="tabs" dark :scrollable="false")
             v-tabs-bar(v-bind:class="[currentColor]" class="darken-4 pl-0")
-              v-tabs-slider(class="lighten-4" v-bind:class="[currentColor]")
+              v-tabs-slider(v-bind:color="currentColor + ' lighten-4'")
               v-tabs-item(
                 v-for="tab in tabs"
                 v-bind:key="tab"

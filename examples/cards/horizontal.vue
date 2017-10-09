@@ -1,6 +1,6 @@
 <template>
   <v-app id="e3" style="max-width: 400px; margin: auto;" standalone>
-    <v-toolbar class="pink">
+    <v-toolbar color="pink">
       <v-toolbar-side-icon></v-toolbar-side-icon>
       <v-toolbar-title class="white--text">My Music</v-toolbar-title>
       <v-spacer></v-spacer>
@@ -16,7 +16,7 @@
       >
         <v-layout row wrap>
           <v-flex xs12>
-            <v-card class="blue-grey darken-2 white--text">
+            <v-card color="blue-grey darken-2" class="white--text">
               <v-card-title primary-title>
                 <div class="headline">Unlimited music now</div>
                 <div>Listen to your favorite artists and albums whenenver and wherever, online and offline.</div>
@@ -27,7 +27,7 @@
             </v-card>
           </v-flex>
           <v-flex xs12>
-            <v-card class="cyan darken-2 white--text">
+            <v-card color="cyan darken-2" class="white--text">
               <v-container fluid grid-list-lg>
                 <v-layout row>
                   <v-flex xs7>
@@ -48,7 +48,7 @@
             </v-card>
           </v-flex>
           <v-flex xs12>
-            <v-card class="purple white--text">
+            <v-card color="purple" class="white--text">
               <v-container fluid grid-list-lg>
                 <v-layout row>
                   <v-flex xs7>

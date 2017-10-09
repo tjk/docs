@@ -2,7 +2,7 @@
   <v-layout row>
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
-        <v-toolbar class="teal lighten-3 white--text" dark>
+        <v-toolbar color="teal lighten-3" dark>
           <v-toolbar-side-icon></v-toolbar-side-icon>
           <v-toolbar-title>Manage</v-toolbar-title>
           <v-spacer></v-spacer>

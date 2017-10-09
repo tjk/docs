@@ -10,7 +10,7 @@
         >
           Item {{ tab.slice(-1) }}
         </v-tabs-item>
-        <v-tabs-slider class="yellow"></v-tabs-slider>
+        <v-tabs-slider color="yellow"></v-tabs-slider>
       </v-tabs-bar>
       <v-tabs-items>
         <v-tabs-content

@@ -1,6 +1,6 @@
 <template>
-    <v-card class="grey lighten-4" flat height="200px">
-      <v-toolbar class="grey darken-1" dark>
+    <v-card color="grey lighten-4" flat height="200px">
+      <v-toolbar color="grey darken-1" dark>
         <v-toolbar-side-icon></v-toolbar-side-icon>
         <v-menu :nudge-width="100">
           <v-toolbar-title slot="activator">

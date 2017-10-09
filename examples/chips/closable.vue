@@ -12,11 +12,11 @@
     </div>
     <v-chip close v-model="chip1">Closable</v-chip>
 
-    <v-chip close v-model="chip2" class="red white--text">Remove</v-chip>
+    <v-chip close v-model="chip2" color="red" text-color="white">Remove</v-chip>
 
-    <v-chip close v-model="chip3" outline class="green green--text">Success</v-chip>
+    <v-chip close v-model="chip3" outline color="green">Success</v-chip>
 
-    <v-chip close v-model="chip4" outline label class="orange orange--text">Complete</v-chip>
+    <v-chip close v-model="chip4" outline label color="orange">Complete</v-chip>
   </div>
 </template>
 

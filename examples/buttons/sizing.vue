@@ -3,7 +3,7 @@
     <v-layout row wrap>
       <v-flex xs12 sm6>
         <div class="text-xs-center">
-          <v-card class="elevation-0">
+          <v-card flat>
             <v-card-text>
               <div>
                 <v-btn small color="primary" dark>Small Button</v-btn>
@@ -20,7 +20,7 @@
       </v-flex>
       <v-flex xs12 sm6>
         <div class="text-xs-center">
-          <v-card class="elevation-0">
+          <v-card flat>
             <v-card-text>
               <div>
                 <v-btn color="primary" fab small dark>

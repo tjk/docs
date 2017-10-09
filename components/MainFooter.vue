@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-footer(app height="100px").white.main-footer.layout.wrap
+  v-footer(app color="white" height="100px").main-footer.layout.wrap
     v-layout(row grow).ma-0
       v-flex(
         v-if="previous.route"

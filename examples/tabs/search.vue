@@ -1,6 +1,6 @@
 <template>
   <v-tabs dark fixed centered>
-    <v-toolbar class="cyan">
+    <v-toolbar color="cyan">
       <v-text-field
         solo
         label="Search"
@@ -8,7 +8,7 @@
         prepend-icon="search"
       ></v-text-field>
       <v-tabs-bar class="cyan" slot="extension">
-        <v-tabs-slider class="yellow"></v-tabs-slider>
+        <v-tabs-slider color="yellow"></v-tabs-slider>
         <v-tabs-item
           v-for="i in 3"
           :key="i"

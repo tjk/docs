@@ -58,7 +58,7 @@
       section-header.mt-5(id="api") API
       v-tabs(v-model="tabs" dark v-bind:scrollable="false").elevation-1
         v-tabs-bar(v-bind:class="[currentColor]")
-          v-tabs-slider(v-bind:class="[currentColor]").lighten-4
+          v-tabs-slider(v-bind:color="currentColor + ' lighten-4'")
           v-tabs-item(
             v-for="(p, i) in ['props', 'slots', 'events', 'functional']"
             v-show="doc[p]"

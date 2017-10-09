@@ -3,7 +3,7 @@
     <v-layout row wrap>
       <v-flex xs12 md6 offset-md3>
         <v-card>
-          <v-toolbar class="indigo" dark>
+          <v-toolbar color="indigo" dark>
             <v-btn icon>
               <v-icon>arrow_back</v-icon>
             </v-btn>

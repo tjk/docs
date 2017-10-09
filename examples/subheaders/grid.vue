@@ -2,7 +2,7 @@
   <v-layout row>
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
-        <v-toolbar class="white elevation-0">
+        <v-toolbar color="white" flat>
           <v-btn icon light>
             <v-icon color="grey darken-2">arrow_back</v-icon>
           </v-btn>

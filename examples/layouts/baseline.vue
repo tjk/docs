@@ -25,7 +25,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar class="indigo" dark fixed app>
+    <v-toolbar color="indigo" dark fixed app>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title>Application</v-toolbar-title>
     </v-toolbar>
@@ -46,7 +46,7 @@
         </v-container>
       </v-content>
     </main>
-    <v-footer class="indigo" app>
+    <v-footer color="indigo" app>
       <span class="white--text">&copy; 2017</span>
     </v-footer>
   </v-app>

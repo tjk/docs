@@ -1,5 +1,5 @@
 <template>
-  <v-card class="secondary elevation-0">
+  <v-card color="secondary" flat>
     <v-card-text>
       <v-container fluid grid-list-md>
         <v-layout row>

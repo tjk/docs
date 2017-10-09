@@ -1,8 +1,8 @@
 <template>
   <v-layout row wrap>
     <v-flex xs12 sm12 md6 class="my-3" v-for="(bar, i) in bars" :key="i">
-      <v-card class="grey lighten-4" flat height="200px">
-        <v-toolbar :class="bar.class" :dark="bar.dark">
+      <v-card color="grey lighten-4" flat height="200px">
+        <v-toolbar :color="bar.class" :dark="bar.dark">
           <v-toolbar-side-icon></v-toolbar-side-icon>
           <v-toolbar-title>Title</v-toolbar-title>
           <v-spacer></v-spacer>

@@ -4,7 +4,7 @@
       <v-flex xs12 class="my-3">
         <v-card>
           <v-app top-toolbar id="example-9-1" style="min-height: 0;" standalone>
-            <v-toolbar class="primary">
+            <v-toolbar color="primary">
               <v-btn icon>
                 <v-icon color="white">arrow_back</v-icon>
               </v-btn>

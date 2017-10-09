@@ -1,18 +1,18 @@
 <template>
-  <v-card class="elevation-0">
+  <v-card flat>
     <v-card-text>
       <v-container fluid>
         <v-layout row wrap>
           <v-flex xs12 sm4 md4>
-            <v-checkbox label="red" 
-                        v-model="ex4" 
-                        color="red" 
-                        value="red" 
+            <v-checkbox label="red"
+                        v-model="ex4"
+                        color="red"
+                        value="red"
                         hide-details></v-checkbox>
-            <v-checkbox label="red darken-3" 
-                        v-model="ex4" 
-                        color="red darken-3" 
-                        value="red darken-3" 
+            <v-checkbox label="red darken-3"
+                        v-model="ex4"
+                        color="red darken-3"
+                        value="red darken-3"
                         hide-details></v-checkbox>
           </v-flex>
           <v-flex xs12 sm4 md4>
@@ -33,7 +33,7 @@
                         color="orange"
                         value="orange"
                         hide-details></v-checkbox>
-            <v-checkbox label="orange darken-3" 
+            <v-checkbox label="orange darken-3"
                         v-model="ex4"
                         color="orange darken-3"
                         value="orange darken-3"
@@ -43,19 +43,19 @@
 
         <v-layout row wrap class="mt-5">
           <v-flex xs12 sm4 md4>
-            <v-checkbox label="primary" 
+            <v-checkbox label="primary"
                         v-model="ex4"
                         color="primary"
                         value="primary"
                         hide-details></v-checkbox>
-            <v-checkbox label="secondary" 
+            <v-checkbox label="secondary"
                         v-model="ex4"
                         color="secondary"
                         value="secondary"
                         hide-details></v-checkbox>
           </v-flex>
           <v-flex xs12 sm4 md4>
-            <v-checkbox label="success" 
+            <v-checkbox label="success"
                         v-model="ex4"
                         color="success"
                         value="success"

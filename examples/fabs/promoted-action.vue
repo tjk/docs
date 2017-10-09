@@ -3,7 +3,7 @@
     <v-layout row wrap>
       <v-flex xs12 sm12 md6>
         <v-card>
-          <v-toolbar class="white">
+          <v-toolbar color="white">
             <v-toolbar-side-icon></v-toolbar-side-icon>
           </v-toolbar>
           <v-card-text style="height: 300px;" class="grey lighten-5"></v-card-text>
@@ -23,7 +23,7 @@
       </v-flex>
       <v-flex xs12 sm12 md6>
         <v-card>
-          <v-toolbar class="white" extended>
+          <v-toolbar color="white" extended>
             <v-toolbar-side-icon></v-toolbar-side-icon>
             <v-btn
               color="pink"

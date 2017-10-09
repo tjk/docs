@@ -1,5 +1,5 @@
 <template>
-  <v-card class="grey lighten-4 elevation-0">
+  <v-card color="grey lighten-4" flat>
     <v-card-text>
       <v-container fluid grid-list-md>
         <v-layout row wrap>

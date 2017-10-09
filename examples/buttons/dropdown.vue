@@ -1,5 +1,5 @@
 <template>
-  <v-card class="elevation-0 py-5 grey lighten-3">
+  <v-card flat class="py-5" color="grey lighten-3">
     <v-card-text>
       <v-container fluid grid-list-md>
         <v-layout row wrap>

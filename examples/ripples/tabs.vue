@@ -1,9 +1,9 @@
 <template>
   <v-tabs grow dark>
     <v-tabs-bar slot="activators">
-      <v-tabs-slider class="yellow"></v-tabs-slider>
-      <v-tabs-item 
-        v-for="i in 3" 
+      <v-tabs-slider color="yellow"></v-tabs-slider>
+      <v-tabs-item
+        v-for="i in 3"
         :key="i"
         :href="'#mobile-tabs-1-' + i" ripple
       >

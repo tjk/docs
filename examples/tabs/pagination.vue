@@ -1,7 +1,7 @@
 <template>
   <v-tabs dark>
     <v-tabs-bar class="cyan">
-      <v-tabs-slider class="yellow"></v-tabs-slider>
+      <v-tabs-slider color="yellow"></v-tabs-slider>
       <v-tabs-item
         v-for="i in 15"
         :key="i"

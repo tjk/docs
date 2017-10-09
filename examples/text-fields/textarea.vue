@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card class="grey lighten-4 elevation-0">
+    <v-card color="grey lighten-4" flat>
       <v-card-text>
         <v-subheader>Light Theme</v-subheader>
         <v-container fluid>
@@ -16,7 +16,7 @@
         </v-container>
       </v-card-text>
     </v-card>
-    <v-card class="secondary elevation-0">
+    <v-card color="secondary" flat>
       <v-card-text>
         <v-subheader dark>Dark Theme</v-subheader>
         <v-container fluid>

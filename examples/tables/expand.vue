@@ -18,7 +18,7 @@
       </tr>
     </template>
     <template slot="expand" scope="props">
-      <v-card class="elevation-0">
+      <v-card flat>
         <v-card-text>Peek-a-boo!</v-card-text>
       </v-card>
     </template>

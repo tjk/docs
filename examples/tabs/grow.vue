@@ -1,6 +1,6 @@
 <template>
   <v-tabs dark grow>
-    <v-toolbar class="cyan" dark>
+    <v-toolbar color="cyan" dark>
       <v-toolbar-side-icon></v-toolbar-side-icon>
       <v-toolbar-title>Page title</v-toolbar-title>
       <v-spacer></v-spacer>
@@ -11,7 +11,7 @@
         <v-icon>more_vert</v-icon>
       </v-btn>
       <v-tabs-bar class="cyan" slot="extension">
-        <v-tabs-slider class="yellow"></v-tabs-slider>
+        <v-tabs-slider color="yellow"></v-tabs-slider>
         <v-tabs-item
           v-for="(item, i) in items"
           :key="i"

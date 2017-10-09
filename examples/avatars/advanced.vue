@@ -41,7 +41,7 @@
             <strong class="red--text">Social</strong>&nbsp;<span class="grey--text">(3)</span>
           </v-flex>
           <v-flex>
-            <v-chip label small class="red lighten-4 red--text ml-0">1 new</v-chip>
+            <v-chip label small color="red lighten-4" class="ml-0">1 new</v-chip>
             <strong>Twitter</strong>
           </v-flex>
         </v-layout>
@@ -63,7 +63,7 @@
             <strong class="cyan--text text--darken-1">Promos</strong>&nbsp;<span class="grey--text">(4)</span>
           </v-flex>
           <v-flex xs3 no-wrap>
-            <v-chip label small class="cyan lighten-4 cyan--text text--darken-1 ml-0">2 new</v-chip>
+            <v-chip label small color="cyan lighten-4" class="ml-0">2 new</v-chip>
             <strong>Shop your way</strong>
             <span>, New deals available, Join Today</span>
           </v-flex>

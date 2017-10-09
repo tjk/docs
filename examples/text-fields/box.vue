@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card class="grey lighten-4 elevation-0">
+    <v-card color="grey lighten-4" flat>
       <v-container grid-list-md>
         <v-layout row wrap>
           <v-flex xs12>

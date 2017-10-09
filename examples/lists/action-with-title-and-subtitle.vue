@@ -2,7 +2,7 @@
   <v-layout row>
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
-        <v-toolbar class="purple white--text" dark>
+        <v-toolbar color="purple" dark>
           <v-toolbar-side-icon></v-toolbar-side-icon>
           <v-toolbar-title>Settings</v-toolbar-title>
           <v-spacer></v-spacer>
