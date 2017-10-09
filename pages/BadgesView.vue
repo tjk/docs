@@ -7,9 +7,9 @@
     data () {
       return {
         doc: {
-          title: 'Badge directive',
-          edit: 'Badges',
-          directive: 'badge',
+          title: 'Badge component',
+          edit: 'BadgesView',
+          component: 'badge',
           desc: `The <code>v-badge</code> component can wrap any type of content to highlight information to a user or to just draw attention to a specific element.`,
           examples: [
             { header: 'Character', file: 'badges/character', desc: 'Any character can be placed with a badge.' },
