@@ -1,8 +1,10 @@
 <template lang="pug">
-  div.component-example
+  div.component-example(v-bind:id="id")
     codepen(ref="codepen" :pen="pen")
     v-card
       v-toolbar(v-bind:color="currentColor" flat dense dark)
+        v-btn(dark icon v-bind:to="{ hash: id }")
+          v-icon link
         span.title.white--text.layout.align-end {{ header }}
           span(v-if="newIn").ml-2.body-2.red--text.text--lighten-2 (New in {{ newIn }}+)
         v-spacer
@@ -92,7 +94,8 @@
     props: {
       file: String,
       header: String,
-      newIn: String
+      newIn: String,
+      id: String
     },
 
     computed: {
