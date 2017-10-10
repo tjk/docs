@@ -37,7 +37,7 @@
       |}
     section-text That's a lot of boilerplate to write. Even if you opt to use the built in <router-link to="/directives/resizing">v-resize</router-link> directive, you are still going to have to define a resize method. With the <strong>breakpoint</strong> object you can completely skip this logic and get back to building your application.
     markup(lang="html")
-      |&lt;v-dialog :full-screen="$vuetify.breakpoint.xsOnly"&gt;
+      |&lt;v-dialog :fullscreen="$vuetify.breakpoint.xsOnly"&gt;
       |&nbsp;&nbsp;&nbsp;&nbsp;...
       |&lt;/v-dialog&gt;
 </template>
