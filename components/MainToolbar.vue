@@ -59,6 +59,8 @@
           this.$nextTick(() => {
             this.$refs.search.focus()
           })
+        } else {
+          this.search = null
         }
       },
       search (val) {
