@@ -72,7 +72,7 @@
         span(v-text="social.name")
       v-flex(xs12).pt-3.pb-1.text-xs-center
         a(
-          href="https://vuejobs.com/?utm_source=vuetify"
+          href="https://vuejobs.com/?utm_source=vuejobs&utm_medium=banner&utm_campaign=linking"
           target="_blank"
           rel="noopener"
         )
