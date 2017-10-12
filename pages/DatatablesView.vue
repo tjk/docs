@@ -64,13 +64,7 @@
                   'no-results-text',
                   'String',
                   'No matching records found',
-                  'Display text when there are no filtered results.'
-                ],
-                [
-                  'must-sort',
-                  'Boolean',
-                  'False',
-                  'Forces at least one column to always be sorted'
+                  'Display text when there are no filtered results'
                 ],
                 [
                   'rows-per-page-text',
@@ -88,13 +82,13 @@
                   'select-all',
                   '[Boolean, String]',
                   'False',
-                  'Adds header row select all checkbox. Can either be a String which specifies which color is applied to the button, or a Boolean (which uses the default color).'
+                  'Adds header row select all checkbox. Can either be a String which specifies which color is applied to the button, or a Boolean (which uses the default color)'
                 ],
                 [
                   'selected-key',
                   'String',
                   'id',
-                  'Determines the item value used for identifying selected items.'
+                  'Determines the item value used for identifying selected items'
                 ],
                 [
                   'search',
@@ -123,14 +117,14 @@
                 [
                   'must-sort',
                   'Boolean',
-                  'false',
-                  'Ensures that column is always sorted instead of toggling between <code>sorted ascending</code>/<code>sorted descending</code>/<code>unsorted</code> states'
+                  'False',
+                  'Forces at least one column to always be sorted instead of toggling between <code>sorted ascending</code>/<code>sorted descending</code>/<code>unsorted</code> states'
                 ],
                 [
                   'total-items',
                   'Number',
                   '-',
-                  'Manually sets total number of row items, which disables built-in sort and pagination. Used together with pagination prop to enable server-side sort and pagination.'
+                  'Manually sets total number of row items, which disables built-in sort and pagination. Used together with pagination prop to enable server-side sort and pagination'
                 ],
                 [
                   'pagination.sync',
@@ -142,13 +136,13 @@
                     descending: false,
                     totalItems: 0
                   }`,
-                  'Used to control pagination and sorting from outside the data table. Can also be used to set default sorted column.'
+                  'Used to control pagination and sorting from outside the data table. Can also be used to set default sorted column'
                 ],
                 [
                   'expand',
                   'Boolean',
                   'False',
-                  'Designates the table as containing rows that are expandable.'
+                  'Designates the table as containing rows that are expandable'
                 ],
                 [
                   'item-key',
