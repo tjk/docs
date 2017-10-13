@@ -36,7 +36,7 @@
             v-btn(
               flat
               tag="a"
-              href="#api"
+              to="#api"
               v-bind:color="currentColor"
               v-if="doc.props"
             ) Go to api
