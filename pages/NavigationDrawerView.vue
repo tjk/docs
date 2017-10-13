@@ -9,7 +9,7 @@
       return {
         doc: {
           title: 'Navigation drawer',
-          edit: 'NavigationDrawer',
+          edit: 'NavigationDrawerView',
           component: 'VNavigationDrawer',
           desc: 'The <code>v-navigation-drawer</code> component is what your users will utilize to navigate through the application. The navigation-drawer is pre-configured to work with or without <strong>vue-router</strong> right out the box.',
           examples: [
@@ -177,10 +177,10 @@
       elevation(4)
       position: relative
       z-index: 0
-    
+
     .overlay
       z-index: 0
-      
+
     #example-8
       .icon
         color: #fff !important
