@@ -24,7 +24,7 @@
             { header: 'Dense toolbars', file: 'toolbar/dense', desc: 'Dense toolbars reduce their height to 48px. This is also the default behavior for mobile landscape orientation.' },
             { header: 'Dense prominent toolbars', file: 'toolbar/dense-prominent', desc: 'You can combine both the prominent and dense to extend a smaller variant of the toolbar.' },
             { header: 'Scrolling techniques', file: 'toolbar/scrolling', desc: 'A toolbar can transition off screen when scrolling. Here we demonstrate how you can specify the scroll target (default is window). Keep in mind, for this example there is special markup that will not be required in your application.' },
-            { header: 'App bar with menu', file: 'toolbar/app-bar-menu', desc: 'You can combine both the prominent and dense' },
+            { header: 'App bar with menu', file: 'toolbar/app-bar-menu', desc: 'You can add menu components to a toolbar.' },
             { header: 'System bars - status/window', file: 'toolbar/system-bars-status-window', desc: 'System bars are useful for notification icons on mobile and desktop. For live examples of, head to the pre-defined layouts.' }
           ],
           props: {
