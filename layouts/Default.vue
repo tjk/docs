@@ -54,6 +54,7 @@
         this.fab = top > 300
       },
       toTop () {
+        this.$router.push({ hash: '' })
         window.scrollTo(0, 0)
       }
     }

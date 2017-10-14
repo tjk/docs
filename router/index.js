@@ -23,7 +23,17 @@ export function createRouter () {
   const router = new Router({
     base: release ? `/releases/${release}` : __dirname,
     mode: release ? 'hash' : 'history',
-    scrollBehavior (to, from, savedPosition) {
+    async scrollBehavior (to, from, savedPosition) {
+      if (document.readyState !== 'complete') {
+        await new Promise(resolve => {
+          const cb = () => {
+            window.requestAnimationFrame(resolve)
+            window.removeEventListener('load', cb)
+          }
+          window.addEventListener('load', cb)
+        })
+      }
+
       if (savedPosition) {
         return savedPosition
       }
