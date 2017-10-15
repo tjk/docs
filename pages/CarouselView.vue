@@ -29,7 +29,8 @@
             { header: 'Default', file: 'carousel/default', desc: 'A carousel by default has a slide transition.' },
             { header: 'Custom transition', file: 'carousel/custom-transition', desc: 'You can also apply your own custom transition.' },
             { header: 'Custom delimiter', file: 'carousel/custom-delimiter', desc: 'You can also change the icon for the carousel delimiter.' },
-            { header: 'Hide controls', file: 'carousel/hide-controls', desc: 'You can hide the bottom controls with the <code>hide-controls</code> prop.' }
+            { header: 'Hide controls', file: 'carousel/hide-controls', desc: 'You can hide the navigation controls with the <code>hide-controls</code> prop.' },
+            { header: 'Hide delimiters', file: 'carousel/hide-delimiters', desc: 'You can hide the bottom controls with the <code>hide-delimiters</code> prop.' }
           ],
           props: {
             'v-carousel': {
@@ -45,13 +46,19 @@
                   'Determines if carousel should cycle through images'
                 ],
                 [
-                  'icon',
+                  'delimiter-icon',
                   'String',
                   'fiber_manual_record',
                   'Sets icon for carousel delimiter'
                 ],
                 [
                   'hide-controls',
+                  'Boolean',
+                  'False',
+                  'Hides the navigation controls'
+                ],
+                [
+                  'hide-delimiters',
                   'Boolean',
                   'False',
                   'Hides the panel with carousel delimiters'
