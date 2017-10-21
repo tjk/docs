@@ -105,7 +105,7 @@
                 [
                   'custom-filter',
                   'Function',
-                  '(items, headers, search, filter) => array',
+                  '(items, search, filter, headers) => array',
                   'Custom search filter. A default implementation will be used if prop is not specified. Should return an array of items matching the search input.'
                 ],
                 [
