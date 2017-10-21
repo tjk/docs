@@ -26,6 +26,12 @@
                   'Apply a custom color to the tooltip background'
                 ],
                 [
+                  'disabled',
+                  'Boolean',
+                  'False',
+                  'Disables showing tooltip on mouse hover'
+                ],
+                [
                   'debounce',
                   '[Number, String]',
                   '100',
