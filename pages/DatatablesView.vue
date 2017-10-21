@@ -85,7 +85,7 @@
                   'Adds header row select all checkbox. Can either be a String which specifies which color is applied to the button, or a Boolean (which uses the default color)'
                 ],
                 [
-                  'selected-key',
+                  'item-key',
                   'String',
                   'id',
                   'Determines the item value used for identifying selected items'
@@ -99,14 +99,14 @@
                 [
                   'filter',
                   'Function',
-                  `(val, search) => { return val !== null && ['undefined', 'boolean'].indexOf(typeof val) === -1 && val.toString().toLowerCase().indexOf(search) !== -1 }`,
-                  'The filtering method for search'
+                  `(val, search) => boolean`,
+                  'The method used by customFilter to filter each individual item. The default function does a simple indexOf check. Should return a boolean indicating if item matches search input.'
                 ],
                 [
                   'custom-filter',
                   'Function',
-                  '-',
-                  'Custom search filter'
+                  '(items, headers, search, filter) => array',
+                  'Custom search filter. A default implementation will be used if prop is not specified. Should return an array of items matching the search input.'
                 ],
                 [
                   'custom-sort',

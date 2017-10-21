@@ -107,7 +107,10 @@
 
         params = Array.from(new Set(params.map(JSON.stringify))).map(JSON.parse)
 
-        params = params.concat(c.params || [])
+        const componentParams = (c.params || [])
+        params = params.filter(i => !componentParams.find(j => j[0] === i[0]))
+
+        params = componentParams.concat(params)
 
         if (c.model) {
           params.push(this.makeModel('v-model', 'Controls visibility', c.model))
