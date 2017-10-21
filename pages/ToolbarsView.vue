@@ -139,6 +139,18 @@
                   'Reduces the system bar height'
                 ],
                 [
+                  'fixed',
+                  'Boolean',
+                  'False',
+                  'Sets the position of the toolbar to fixed'
+                ],
+                [
+                  'absolute',
+                  'Boolean',
+                  'False',
+                  'Sets the position of the toolbar to absolute'
+                ],
+                [
                   'window',
                   'Boolean',
                   'False',
