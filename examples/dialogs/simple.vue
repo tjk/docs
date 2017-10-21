@@ -1,9 +1,6 @@
 <template>
   <div>
     <v-layout row justify-center>
-      <div>Without PR #1932</div>
-          </v-layout>
-    <v-layout row justify-center>
       <v-btn color="primary" dark @click.stop="dialog = true">Open Dialog 1</v-btn>
        <v-btn color="primary" dark @click.stop="dialog2 = true">Open Dialog 2</v-btn>
       <v-btn color="primary" dark @click.stop="dialog3 = true">Open Dialog 3</v-btn>
