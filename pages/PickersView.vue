@@ -33,7 +33,7 @@
           ],
           props: {
             'v-date-picker': {
-              shared: ['theme'],
+              shared: ['theme', 'colorable'],
               model: {
                 type: ['null, String, Date Object, Number'],
                 default: 'null',
@@ -45,6 +45,12 @@
                   'String',
                   'date',
                   'Determines the type of the picker - <code>\'date\'</code> for date picker, <code>\'month\'</code> for month picker'
+                ],
+                [
+                  'header-color',
+                  'String',
+                  '-',
+                  'Defines the header color. If not specified it will use the color defined by <code>color</code> prop or the default picker color'
                 ],
                 [
                   'actions',
@@ -133,7 +139,7 @@
               ]
             },
             'v-time-picker': {
-              shared: ['theme'],
+              shared: ['theme', 'colorable'],
               model: {
                 type: ['String'],
                 default: 'null',
@@ -145,6 +151,12 @@
                   'Boolean',
                   'True',
                   'Use this when using actions inside the picker'
+                ],
+                [
+                  'header-color',
+                  'String',
+                  '-',
+                  'Defines the header color. If not specified it will use the color defined by <code>color</code> prop or the default picker color'
                 ],
                 [
                   'autosave',
