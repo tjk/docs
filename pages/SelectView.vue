@@ -64,6 +64,12 @@
                   'Changes display of selections to chips'
                 ],
                 [
+                  'hide-selected',
+                  'Boolean',
+                  'False',
+                  'Do not display in the select menu items that are already selected'
+                ],
+                [
                   'items',
                   'Array',
                   '[]',
