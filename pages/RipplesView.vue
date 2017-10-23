@@ -16,6 +16,7 @@
             { header: 'Navigation drawers', file: 'ripples/navigation-drawers', desc: 'List items by default have ripples disabled. This can be enabled with the <code>ripple</code> prop.' },
             { header: 'Toolbars', file: 'ripples/toolbars', desc: 'Toolbar items by default have ripples disabled. This can be enabled with the <code>ripple</code> prop.' },
             { header: 'Expansion panels', file: 'ripples/expansion-panels', desc: 'Expansion panels by default have ripples disabled. This can be enabled with the <code>ripple</code> prop.' },
+            { header: 'Standard HTML element', file: 'ripples/html-element', desc: 'Add the ripple effect to a standard HTML element. This can be enabled with the <code>v-ripple</code> HTML attribute.' },
           ],
           props: {
             'v-ripple': {
