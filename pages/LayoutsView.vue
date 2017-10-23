@@ -8,26 +8,22 @@
           |&lt;v-app&gt;
           |   &lt;v-navigation-drawer app&gt;&lt;/v-navigation-drawer&gt;
           |   &lt;v-toolbar app&gt;&lt;/v-toolbar&gt;
-          |   &lt;main&gt;
-          |     &lt;v-content&gt;
-          |       &lt;v-container fluid&gt;
-          |         &lt;router-view&gt;&lt;/router-view&gt;
-          |       &lt;/v-container&gt;
-          |     &lt;/v-content&gt;
-          |   &lt;/main&gt;
+          |   &lt;v-content&gt;
+          |     &lt;v-container fluid&gt;
+          |       &lt;router-view&gt;&lt;/router-view&gt;
+          |     &lt;/v-container&gt;
+          |   &lt;/v-content&gt;
           |   &lt;v-footer app&gt;&lt;/v-footer&gt;
           |&lt;/v-app&gt;
         markup(lang='html' xs12 sm6)
           |&lt;v-app&gt;
           |   &lt;v-navigation-drawer app&gt;&lt;/v-navigation-drawer&gt;
           |   &lt;v-toolbar app&gt;&lt;/v-toolbar&gt;
-          |   &lt;main&gt;
-          |     &lt;v-content&gt;
-          |       &lt;router-view&gt;
-          |         &lt;v-container fluid&gt;&lt;/v-container&gt;
-          |       &lt;/router-view&gt;
-          |     &lt;/v-content&gt;
-          |   &lt;/main&gt;
+          |   &lt;v-content&gt;
+          |     &lt;router-view&gt;
+          |       &lt;v-container fluid&gt;&lt;/v-container&gt;
+          |     &lt;/router-view&gt;
+          |   &lt;/v-content&gt;
           |   &lt;v-footer app&gt;&lt;/v-footer&gt;
           |&lt;/v-app&gt;
         v-alert(color="error" icon="warning" value="true") In order for your application to work properly, you <strong>must</strong> wrap it in a <code>v-app</code> component. This component is required for determining grid breakpoints for the layout. This can exist <strong>anywhere</strong> inside the body, but must be the parent of <strong>ALL</strong> Vuetify components.

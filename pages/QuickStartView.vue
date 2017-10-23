@@ -22,9 +22,9 @@
         |&lt;body&gt;
         |   &lt;div id="app"&gt;
         |     &lt;v-app&gt;
-        |       &lt;main&gt;
+        |       &lt;v-content&gt;
         |         &lt;v-container&gt;Hello world&lt;/v-container&gt;
-        |       &lt;/main&gt;
+        |       &lt;v-content&gt;
         |     &lt;/v-app&gt;
         |   &lt;/div&gt;
         |&nbsp;

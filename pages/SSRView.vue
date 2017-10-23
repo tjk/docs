@@ -31,13 +31,11 @@
         |   &lt;v-toolbar app&gt;
         |     &lt;v-toolbar-logo&gt;Portfolio&lt;/v-toolbar-logo&gt;
         |   &lt;/v-toolbar&gt;
-        |   &lt;main&gt;
-        |     &lt;v-content&gt;
-        |       &lt;v-container fluid&gt;
-        |         &lt;router-view&gt;&lt;/router-view&gt;
-        |       &lt;/v-container&gt;
-        |     &lt;/v-content&gt;
-        |   &lt;/main&gt;
+        |   &lt;v-content&gt;
+        |     &lt;v-container fluid&gt;
+        |       &lt;router-view&gt;&lt;/router-view&gt;
+        |     &lt;/v-container&gt;
+        |   &lt;/v-content&gt;
         |   &lt;v-footer app&gt;2017&lt;/v-footer&gt;
         |&lt;/v-app&gt;
       h5 Static assets
