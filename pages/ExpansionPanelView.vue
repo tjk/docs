@@ -85,7 +85,12 @@
                 [
                   'header',
                   'Expansion header content'
+                ],
+                [
+                  'actions',
+                  'Expansion header actions'
                 ]
+
               ]
             }
           }
