@@ -9,6 +9,17 @@
       |export default {
       |    mounted () {
       |      console.log(this.$vuetify.breakpoint)
+      |    },
+      |    computed: {
+      |      imageHeight () {
+      |        switch (this.$vuetify.breakpoint.name) {
+      |          case 'xs': return '220px'
+      |          case 'sm': return '400px'
+      |          case 'md': return '500px'
+      |          case 'lg': return '600px'
+      |          case 'xl': return '800px'
+      |        }
+      |      }
       |    }
       |}
     section-text This object contains the same semantic properties that you are already used to using from the grid system. Let's try a real world example. You have a <code>v-dialog</code> component that you want to convert to a <strong>full-screen</strong> dialog on mobile devices. Normally you would need to bind watchers for the viewport size, and/or check whenever the page loads.
