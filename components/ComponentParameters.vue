@@ -327,9 +327,15 @@
             'Disabled the ability to open the dialog.'
           ],
           [
+            'width',
+            '[String, Number]',
+            'auto',
+            'The width the content'
+          ],
+          [
             'max-width',
             '[String, Number]',
-            '290',
+            'auto',
             'The maximum width the content'
           ],
           [
