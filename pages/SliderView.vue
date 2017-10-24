@@ -24,12 +24,6 @@
               shared: ['input', 'theme'],
               params: [
                 [
-                  'snap',
-                  'Boolean',
-                  'False',
-                  'Moves slider thumb at defined intervals, snapping to each step'
-                ],
-                [
                   'color',
                   'String',
                   '-',
@@ -66,10 +60,16 @@
                   'Sets the track fill color'
                 ],
                 [
+                  'ticks',
+                  'Boolean',
+                  'False',
+                  'Displays dots at every step (defined with <code>step</code> prop)'
+                ],
+                [
                   'step',
                   'Number',
-                  '-',
-                  'If greater than 0, sets step interval for ticks'
+                  '1',
+                  'If greater than 0, sets step interval for ticks and makes the thumb snapping to each step'
                 ]
               ],
             }
