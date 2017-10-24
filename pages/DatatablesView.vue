@@ -211,6 +211,14 @@
                 [
                   'scope[pageText]',
                   'The scoped slot for adding custom page text.'
+                ],
+                [
+                  'no-data',
+                  'Slot displayed in the table body when there is no data (see also <code>no-data-text</code> prop)'
+                ],
+                [
+                  'no-results',
+                  'Slot displayed in the table body when there are no filtered results (see also <code>no-results-text</code> prop)'
                 ]
               ]
             }
