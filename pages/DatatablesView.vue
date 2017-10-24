@@ -14,6 +14,7 @@
           desc: `The <code>v-data-table</code> component is used for displaying tabular data. Features include sorting, searching, pagination, inline-editing, header tooltips, and row selection.`,
           examples: [
             { header: 'Standard', file: 'tables/standard', desc: 'The standard data-table contains data with no additional functionality. You can opt out of displaying table actions that allow you to control the pagination of information with the <code>hide-actions</code> prop.' },
+            { header: 'Slots: no-data / no-results', file: 'tables/noData', desc: 'The <code>no-data</code> and <code>no-results</code> slots can display custom HTML when there\s no data or no filtered data in the table' },
             { header: 'Slots: items and headers', file: 'tables/headers', desc: 'The <code>items</code> and <code>headers</code> slots can accept either a collection of <kbd>td/th</kbd> tags, or if you want control of the entire row, a <kbd>tr</kbd> tag.' },
             { header: 'Slots: headerCell', file: 'tables/headerCell', desc: 'If you only want to apply some common markup or effect on each of the header cells, you can use the slot <code>headerCell</code>. In this example is has been used to apply a tooltip to each header.' },
             { header: 'Slots: footer', file: 'tables/footer', desc: 'There is also a <code>footer</code> slot for when you want to add some extra functionality to tables, for example per column filtering or search.' },
