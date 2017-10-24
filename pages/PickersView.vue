@@ -35,9 +35,9 @@
             'v-date-picker': {
               shared: ['theme'],
               model: {
-                type: ['null, String, Date Object, Number'],
+                type: ['String'],
                 default: 'null',
-                description: 'Controls the displayed date.'
+                description: 'Controls the displayed date. Must use ISO 8601 format.'
               },
               params: [
                 [
@@ -71,22 +71,10 @@
                   'Hide the picker title'
                 ],
                 [
-                  'date-format',
-                  'Function',
-                  'val => new Date(val).toISOString().substr(0, 10)',
-                  'This is the date format emitted on the <strong>formatted-value</strong> prop when the picker\'s model changes.'
-                ],
-                [
                   'month-format',
-                  '[Function, Object]',
-                  '{ month: \'short\' }',
-                  'Formatting function or object used for displaying months in the months table. If it is an object then it is passed as the second parameter of the <code>toLocaleDateString</code> method'
-                ],
-                [
-                  'formatted-value',
-                  'null, String',
-                  '',
-                  'Selected date formatted with date-format function.'
+                  'Function',
+                  'Date::toLocaleDateString(locale, { month: \'short\' })',
+                  'Formatting function used for displaying months in the months table. Called with date (ISO 8601 string) and locale (string) arguments.'
                 ],
                 [
                   'scrollable',
@@ -114,15 +102,27 @@
                 ],
                 [
                   'title-date-format',
-                  '[Object, Function]',
-                  '{ weekday: \'short\', month: \'short\', day: \'numeric\' }',
-                  'Allows you to customize the format of the date string that appears in the title of the date picker. If the format is Object it will be passed as the options argument to the <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString">Date.toLocaleString</a> function, otherwise (if it\'s a function) it will be called with Date argument.'
+                  'Function',
+                  'Date::toLocaleDateString(locale, { weekday: \'short\', month: \'short\', day: \'numeric\' })',
+                  'Allows you to customize the format of the date string that appears in the title of the date picker. Called with date (ISO 8601 string) and locale (string) arguments.'
                 ],
                 [
                   'header-date-format',
-                  '[Object, Function]',
-                  '{ month: \'long\', year: \'numeric\' }',
-                  'Allows you to customize the format of the month string that appears in the header of the calendar. If the format is Object it will be passed as the options argument to the <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString">Date.toLocaleString</a> function, otherwise (if it\'s a function) it will be called with Date argument.'
+                  'Function',
+                  'Date::loLocaleDateString(locale, { month: \'long\', year: \'numeric\' })',
+                  'Allows you to customize the format of the month string that appears in the header of the calendar. Called with date (ISO 8601 string) and locale (string) arguments.'
+                ],
+                [
+                  'year-format',
+                  'Function',
+                  'Date::loLocaleDateString(locale, { year: \'numeric\' })',
+                  'Allows you to customize the format of the year string that appears in the header of the calendar. Called with date (ISO 8601 string) and locale (string) arguments.'
+                ],
+                [
+                  'day-format',
+                  'Function',
+                  'Date::loLocaleDateString(locale, { day: \'numeric\' })',
+                  'Allows you to customize the format of the day string that appears in the date table. Called with date (ISO 8601 string) and locale (string) arguments.'
                 ],
                 [
                   'year-icon',
