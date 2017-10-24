@@ -29,7 +29,7 @@
               tags
               :items="items"
             >
-              <template slot="selection" scope="data">
+              <template slot="selection" slot-scope="data">
                 <v-chip
                   @input="data.parent.selectItem(data.item)"
                   class="chip--select-multi"

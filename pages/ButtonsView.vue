@@ -90,10 +90,10 @@
                   'Button will be round on the sides'
                 ],
                 [
-                  'raised',
+                  'depressed',
                   'Boolean',
                   'True',
-                  'Applies the raised style'
+                  'Removes the button box shadow'
                 ],
                 [
                   'ripple',

@@ -46,7 +46,7 @@
                   href="https://github.com/vuetifyjs/vuetify"
                   target="_blank"
                   rel="noopener"
-                ).primary--light--text
+                ).primary--text
                   v-icon(left).primary--text fa-github
                   span Github
 
@@ -81,7 +81,7 @@
                       a(:href="sponsor.href" target="_blank" :title="sponsor.title" rel="noopener")
                         img(:src="sponsor.src").sponsor
                   v-flex(xs12).text-xs-center
-                    v-btn(to="/vuetify/sponsors-and-backers" large color="white").primary--light--text Become a backer
+                    v-btn(to="/vuetify/sponsors-and-backers" large color="white").primary--text Become a backer
                       v-icon(right) fa-arrow-circle-right
 
       section#support.mb-3
@@ -96,14 +96,14 @@
                       href="https://www.patreon.com/vuetify"
                       target="_blank" rel="noopener"
                     )
-                      div.display-1.my-3.primary--light--text Patreon
+                      div.display-1.my-3.primary--text Patreon
                       img(src="/static/doc-images/patreon.png" width="125px")
                   v-flex(xs12 sm3)
                     a(
                       href="https://paypal.me/vuetify"
                       target="_blank" rel="noopener"
                     )
-                      div.display-1.my-3.primary--light--text PayPal
+                      div.display-1.my-3.primary--text PayPal
                       img(src="/static/doc-images/paypal.png" width="125px")
 
       section#footer-hero.mb-0

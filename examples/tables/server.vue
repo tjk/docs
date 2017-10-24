@@ -9,7 +9,7 @@
       :loading="loading"
       class="elevation-1"
     >
-      <template slot="items" scope="props">
+      <template slot="items" slot-scope="props">
         <td>{{ props.item.name }}</td>
         <td class="text-xs-right">{{ props.item.calories }}</td>
         <td class="text-xs-right">{{ props.item.fat }}</td>

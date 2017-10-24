@@ -8,7 +8,7 @@
       hide-actions
       class="elevation-1"
     >
-      <template slot="headerCell" scope="props">
+      <template slot="headerCell" slot-scope="props">
         <v-tooltip bottom>
           <span slot="activator">
             {{ props.header.text }}
@@ -18,7 +18,7 @@
           </span>
         </v-tooltip>
       </template>
-      <template slot="items" scope="props">
+      <template slot="items" slot-scope="props">
         <td>{{ props.item.name }}</td>
         <td  class="text-xs-right">{{ props.item.calories }}</td>
         <td  class="text-xs-right">{{ props.item.fat }}</td>

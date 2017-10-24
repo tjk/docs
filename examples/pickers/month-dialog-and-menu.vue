@@ -20,7 +20,7 @@
           readonly
         ></v-text-field>
         <v-date-picker type="month" v-model="date" no-title scrollable actions>
-          <template scope="{ save, cancel }">
+          <template slot-scope="{ save, cancel }">
             <v-card-actions>
               <v-spacer></v-spacer>
               <v-btn flat color="primary" @click="cancel">Cancel</v-btn>
@@ -46,7 +46,7 @@
           readonly
         ></v-text-field>
         <v-date-picker type="month" v-model="date" scrollable actions>
-          <template scope="{ save, cancel }">
+          <template slot-scope="{ save, cancel }">
             <v-card-actions>
               <v-spacer></v-spacer>
               <v-btn flat color="primary" @click="cancel">Cancel</v-btn>

@@ -38,7 +38,7 @@
           readonly
         ></v-text-field>
         <v-time-picker v-model="time" actions>
-          <template scope="{ save, cancel }">
+          <template slot-scope="{ save, cancel }">
             <v-card-actions>
               <v-btn flat color="primary" @click="cancel">Cancel</v-btn>
               <v-btn flat color="primary" @click="save">Save</v-btn>

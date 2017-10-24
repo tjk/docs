@@ -33,7 +33,7 @@
       v-bind:items="table"
       hide-actions
     )
-      template(slot="items" scope="{ item }")
+      template(slot="items" slot-scope="{ item }")
         td(
           v-for="(opt, i) in item"
           v-bind:key="i"

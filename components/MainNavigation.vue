@@ -168,8 +168,8 @@
               { href: '/vuetify/frequently-asked-questions', title: 'Frequently asked questions' },
               { href: '/vuetify/sponsors-and-backers', title: 'Sponsors and backers' },
               { href: '/vuetify/contributing', title: 'Contributing' },
-              { href: '/vuetify/roadmap', title: 'Roadmap', action: 'fa-arrow-circle-o-up' },
-              { href: '/vuetify/a-la-carte', title: 'A la carte', action: 'fa-arrow-circle-o-up' }
+              { href: '/vuetify/roadmap', title: 'Roadmap' },
+              { href: '/vuetify/a-la-carte', title: 'A la carte' }
             ]
           },
           {
@@ -183,7 +183,7 @@
               { href: '/layout/alignment', title: 'Alignment' },
               { href: '/layout/display', title: 'Display' },
               { href: '/layout/elevation', title: 'Elevation' },
-              { href: '/layout/sandbox', title: 'Sandbox', action: 'fa-arrow-circle-o-up' }
+              { href: '/layout/sandbox', title: 'Sandbox' }
             ]
           },
           {
@@ -212,39 +212,39 @@
             items: [
               { href: '/components/alerts', title: 'Alerts' },
               { href: '/components/avatars', title: 'Avatars' },
-              { href: '/components/badges', title: 'Badges', action: 'fa-arrow-circle-o-up' },
-              { href: '/components/breadcrumbs', title: 'Breadcrumbs' },
+              { href: '/components/badges', title: 'Badges' },
+              { href: '/components/breadcrumbs', title: 'Breadcrumbs', action: 'fa-arrow-circle-o-up' },
               { href: '/components/bottom-navigation', title: 'Bottom navigation' },
               { href: '/components/bottom-sheets', title: 'Bottom sheets' },
-              { href: '/components/buttons', title: 'Buttons' },
+              { href: '/components/buttons', title: 'Buttons', action: 'fa-arrow-circle-o-up' },
               { href: '/components/floating-action-buttons', title: 'Buttons: Floating Action Buttons' },
               { href: '/components/cards', title: 'Cards' },
               { href: '/components/carousels', title: 'Carousel' },
               { href: '/components/chips', title: 'Chips' },
               { href: '/components/data-tables', title: 'Data tables', action: 'fa-arrow-circle-o-up' },
-              { href: '/components/dialogs', title: 'Dialogs' },
+              { href: '/components/dialogs', title: 'Dialogs', action: 'fa-arrow-circle-o-up' },
               { href: '/components/dividers', title: 'Dividers' },
               { href: '/components/expansion-panels', title: 'Expansion panels' },
               { href: '/components/footer', title: 'Footer' },
-              { href: '/components/forms', title: 'Forms', action: 'fa-arrow-circle-o-up' },
+              { href: '/components/forms', title: 'Forms' },
               { href: '/components/grid-lists', title: 'Grid Lists' },
               { href: '/components/icons', title: 'Icons' },
               { href: '/components/lists', title: 'Lists' },
-              { href: '/components/menus', title: 'Menus', action: 'fa-arrow-circle-o-up' },
-              { href: '/components/navigation-drawers', title: 'Navigation drawers' },
+              { href: '/components/menus', title: 'Menus' },
+              { href: '/components/navigation-drawers', title: 'Navigation drawers', action: 'fa-arrow-circle-o-up' },
               { href: '/components/pagination', title: 'Pagination' },
               { href: '/components/parallax', title: 'Parallax' },
               { href: '/components/pickers', title: 'Pickers', action: 'fa-arrow-circle-o-up' },
               { href: '/components/progress', title: 'Progress & activity' },
               { href: '/components/selects', title: 'Selects', action: 'fa-arrow-circle-o-up' },
-              { href: '/components/selection-controls', title: 'Selection controls' },
+              { href: '/components/selection-controls', title: 'Selection controls', action: 'fa-arrow-circle-o-up' },
               { href: '/components/sliders', title: 'Sliders', action: 'fa-arrow-circle-o-up' },
               { href: '/components/snackbars', title: 'Snackbars & toasts' },
               { href: '/components/steppers', title: 'Steppers' },
               { href: '/components/subheaders', title: 'Subheaders' },
               { href: '/components/tabs', title: 'Tabs' },
-              { href: '/components/text-fields', title: 'Text fields' },
-              { href: '/components/toolbars', title: 'Toolbars' },
+              { href: '/components/text-fields', title: 'Text fields', action: 'fa-arrow-circle-o-up' },
+              { href: '/components/toolbars', title: 'Toolbars', action: 'fa-arrow-circle-o-up' },
               { href: '/components/tooltips', title: 'Tooltips', action: 'fa-arrow-circle-o-up' }
             ]
           },
@@ -254,7 +254,7 @@
             group: '/directives',
             items: [
               { href: '/directives/resizing', title: 'Resizing' },
-              { href: '/directives/ripples', title: 'Ripples' },
+              { href: '/directives/ripples', title: 'Ripples', action: 'fa-arrow-circle-o-up' },
               { href: '/directives/scrolling', title: 'Scrolling' },
               { href: '/directives/touch-support', title: 'Touch Support' }
             ]
@@ -262,15 +262,13 @@
           {
             title: 'Pre-made themes',
             action: 'color_lens',
-            href: '/pre-made-themes',
-            chip: 'NEW'
+            href: '/pre-made-themes'
           },
           {
             href: 'https://vuetify.threadless.com',
             title: 'Shop',
             target: '_blank',
-            action: 'shopping_cart',
-            chip: 'NEW'
+            action: 'shopping_cart'
           },
           { divider: true },
           { header: 'Additional resources' },

@@ -29,10 +29,22 @@
                   'Specifies the dividing character'
                 ],
                 [
-                  'icons',
+                  'large',
                   'Boolean',
                   'False',
-                  'Specifies that the dividers are icons'
+                  'Increases the breadcrumb text size'
+                ],
+                [
+                  'justify-center',
+                  'Boolean',
+                  'False',
+                  'Center the breadcrumbs'
+                ],
+                [
+                  'justify-end',
+                  'Boolean',
+                  'False',
+                  'Right align the breadcrumbs'
                 ]
               ]
             },

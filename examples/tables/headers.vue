@@ -8,7 +8,7 @@
       item-key="name"
       class="elevation-1"
     >
-    <template slot="headers" scope="props">
+    <template slot="headers" slot-scope="props">
       <tr>
         <th>
           <v-checkbox
@@ -28,7 +28,7 @@
         </th>
       </tr>
     </template>
-    <template slot="items" scope="props">
+    <template slot="items" slot-scope="props">
       <tr :active="props.selected" @click="props.selected = !props.selected">
         <td>
           <v-checkbox

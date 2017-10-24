@@ -18,7 +18,7 @@
               max-height="auto"
               autocomplete
             >
-              <template slot="selection" scope="data">
+              <template slot="selection" slot-scope="data">
                 <v-chip
                   close
                   @input="data.parent.selectItem(data.item)"
@@ -32,7 +32,7 @@
                   {{ data.item.name }}
                 </v-chip>
               </template>
-              <template slot="item" scope="data">
+              <template slot="item" slot-scope="data">
                 <template v-if="typeof data.item !== 'object'">
                   <v-list-tile-content v-text="data.item"></v-list-tile-content>
                 </template>

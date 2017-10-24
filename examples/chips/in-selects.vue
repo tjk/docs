@@ -9,7 +9,7 @@
     clearable
     v-model="chips"
   >
-    <template slot="selection" scope="data">
+    <template slot="selection" slot-scope="data">
       <v-chip
         close
         @input="remove(data.item)"
