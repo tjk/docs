@@ -13,7 +13,7 @@
           desc: 'The <code>v-slider</code> component is a better visualization of the number input. It is used for gathering numerical user data.',
           examples: [
             { header: 'Continuous', file: 'sliders/continuous', desc: 'Continous sliders should be used when precision is not a concern.' },
-            { header: 'Discrete', file: 'sliders/discrete', desc: 'Discrete sliders offer a thumb label that displays the exact current amount. Using the <code>snap</code> prop you can disallow selecting values outside of steps.' },
+            { header: 'Discrete', file: 'sliders/discrete', desc: 'Discrete sliders offer a thumb label that displays the exact current amount. Using the <code>step</code> prop you can disallow selecting values outside of steps.' },
             { header: 'Icons', file: 'sliders/icons', desc: 'You can add icons to the slider with the <code>append-icon</code> and <code>prepend-icon</code> props.' },
             { header: 'With an editable numeric value', file: 'sliders/editable-numeric-value', desc: 'Sliders can be combined with other components for a better display.' },
             { header: 'Dark theme', file: 'sliders/dark', desc: 'Sliders also support theming.' },
