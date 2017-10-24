@@ -183,7 +183,7 @@
       section-text Due to Internet Explorer's limited support for <code>&lt;template&gt;</code> tags, you must take care to send fully compiled dom elements to the browser. This can be done by either building your Vue code in advance or by creating helper components to replace the dom elements. For instance, if sent directly to IE, this will fail:
 
       markup(lang="html")
-        |&lt;template slot="items" scope="props"&gt;
+        |&lt;template slot="items" slot-scope="props"&gt;
         |   &lt;td&gt;{&zwnj;{ props.item.name }&zwnj;}&lt;/td&gt;
         |&lt;/template&gt;
 
@@ -194,7 +194,7 @@
         | Vue.component('cell', { template: '&lt;td&gt;&lt;slot&gt;&lt;/slot&gt;&lt;/td&gt;' });
         |&nbsp;
         |&lt;!--Example scoped slot--&gt;
-        |&lt;template slot="items" scope="props"&gt;
+        |&lt;template slot="items" slot-scope="props"&gt;
         |   &lt;cell&gt;{&zwnj;{ props.item.name }&zwnj;}&lt;/cell&gt;
         |&lt;/template&gt;
 
