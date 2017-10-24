@@ -112,7 +112,7 @@
                 ],
                 [
                   'mobile-break-point',
-                  'Number',
+                  '[Number, String]',
                   '1264',
                   'Designates the window width for the drawer to become mobile'
                 ],
