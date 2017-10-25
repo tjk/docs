@@ -6,10 +6,10 @@
     <v-avatar>
       <img src="/static/doc-images/john.jpg" alt="John">
     </v-avatar>
-    <v-badge overlap>
+    <v-badge overlap color="red">
       <span slot="badge">3</span>
       <v-avatar
-        class="purple red--after"
+        class="purple"
       >
         <v-icon dark>notifications</v-icon>
       </v-avatar>

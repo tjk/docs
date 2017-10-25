@@ -14,8 +14,8 @@
             v-card-media(:src='template.screenshot' height="350px")
             v-card-title.align-center
               h2.headline.mb-0 {{ template.title }}
-                v-chip(label small color="indigo" text-color="white--text" v-if="template.tag") {{ template.tag }}
-                v-chip(label small color="blue-grey" text-color="white--text" v-else) FREE
+                v-chip(label small color="indigo" text-color="white" v-if="template.tag") {{ template.tag }}
+                v-chip(label small color="blue-grey" text-color="white" v-else) FREE
               v-spacer
               v-avatar(v-if="template.buy").green.lighten-2
                 span.white--text.title 25$
