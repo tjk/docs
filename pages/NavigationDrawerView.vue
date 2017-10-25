@@ -21,7 +21,7 @@
             {
               header: 'Colored drawer',
               file: 'navigation-drawers/permanent-clipped',
-              desc: 'Navigation drawers can be cutomized to fit any application\'s design. While any component can be used within a drawer, the primary ones you will use are <code>v-list</code>, all of the <strong>list</strong> children components and <code>v-divider</code>'
+              desc: 'Navigation drawers can be customized to fit any application\'s design. While any component can be used within a drawer, the primary ones you will use are <code>v-list</code>, all of the <strong>list</strong> children components and <code>v-divider</code>'
             },
             {
               header: 'Permanent floating drawer',
