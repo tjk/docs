@@ -13,7 +13,7 @@
           desc: `The <code>v-chip</code> component is used to convey small pieces of information. Using the <code>close</code> property, the chip becomes interactive, allowing user interaction.`,
           examples: [
             { header: 'Default', file: 'chips/default', desc: 'Chips come in 4 primary variations. Regular, with icon, with portrait and closeable.' },
-            { header: 'Colored', file: 'chips/colored', desc: 'Any color from the Material Design pallette can be used to change a chips color.' },
+            { header: 'Colored', file: 'chips/colored', desc: 'Any color from the Material Design palette can be used to change a chips color.' },
             { header: 'Icon', file: 'chips/icon', desc: 'Chips can use text or any icon available in the Material Icons font library.' },
             { header: 'Outline', file: 'chips/outline', desc: 'Outlined chips inherit their border color from the current text color.' },
             { header: 'Label', file: 'chips/label', desc: 'Label chips use the <code>v-card</code> border-radius.' },
