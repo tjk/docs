@@ -11,7 +11,7 @@
           component: '',
           edit: 'PickersView',
           title: 'Pickers',
-          desc: 'The <code>v-date-picker</code> and <code>v-time-picker</code> are stand-alone components that can be utilized in many existing Vuetify components. They offer the user a visual reprensetation for selecting date and time.',
+          desc: 'The <code>v-date-picker</code> and <code>v-time-picker</code> are stand-alone components that can be utilized in many existing Vuetify components. They offer the user a visual representation for selecting date and time.',
           examples: [
             { header: "Date pickers - Light", file: "pickers/date-light", desc: 'Date pickers come in two orientation variations, portrait <strong>(default)</strong> and landscape.'},
             { header: "Date pickers - Dark", file: "pickers/date-dark", desc: 'Date pickers come in a dark variant which utilizes the applications primary accent color.'},
