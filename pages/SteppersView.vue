@@ -113,11 +113,19 @@
             }
           },
           functional: {
-            'v-stepper': {
+            'v-stepper-header': {
               params: [
                 [
                   'v-stepper-header',
-                  '.stepper__header'
+                  'Wrapper for horizontal stepper steps'
+                ]
+              ]
+            },
+            'v-stepper-items': {
+              params: [
+                [
+                  'v-stepper-items',
+                  'Wrapper for horizontal stepper content items'
                 ]
               ]
             }

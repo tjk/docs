@@ -41,12 +41,6 @@
                   ''
                 ],
                 [
-                  'activator',
-                  'Element',
-                  'null',
-                  'An element that will open the menu when clicked'
-                ],
-                [
                   'auto',
                   'Boolean',
                   'false',
@@ -57,12 +51,6 @@
                   'Boolean',
                   'False',
                   'Changes the menu display to block, useful for filling available width in forms'
-                ],
-                [
-                  'offset-overflow',
-                  'Boolean',
-                  'False',
-                  ''
                 ],
                 [
                   'offset-x',
@@ -87,12 +75,6 @@
                   '[Number, String]',
                   'auto',
                   'The maximum height of the menu, will overflow-y with scroll if content is too large'
-                ],
-                [
-                  'nudge-width',
-                  '[Number, String]',
-                  '0',
-                  ''
                 ],
                 [
                   'open-on-hover',

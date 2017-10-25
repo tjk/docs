@@ -3,8 +3,8 @@
     <v-flex md12 lg4>
       <v-date-picker color="green lighten-1" v-model="picker"></v-date-picker>
     </v-flex>
-    <v-flex md12 lg8 color="green lighten-1" header-color="primary" class="hidden-xs-only">
-      <v-date-picker v-model="picker2" landscape></v-date-picker>
+    <v-flex md12 lg8 class="hidden-xs-only">
+      <v-date-picker color="green lighten-1" header-color="primary" v-model="picker2" landscape></v-date-picker>
     </v-flex>
   </v-layout>
 </template>
