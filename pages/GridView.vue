@@ -9,6 +9,17 @@
       |export default {
       |    mounted () {
       |      console.log(this.$vuetify.breakpoint)
+      |    },
+      |    computed: {
+      |      imageHeight () {
+      |        switch (this.$vuetify.breakpoint.name) {
+      |          case 'xs': return '220px'
+      |          case 'sm': return '400px'
+      |          case 'md': return '500px'
+      |          case 'lg': return '600px'
+      |          case 'xl': return '800px'
+      |        }
+      |      }
       |    }
       |}
     section-text This object contains the same semantic properties that you are already used to using from the grid system. Let's try a real world example. You have a <code>v-dialog</code> component that you want to convert to a <strong>full-screen</strong> dialog on mobile devices. Normally you would need to bind watchers for the viewport size, and/or check whenever the page loads.
@@ -48,7 +59,7 @@
       return {
         doc: {
           title: 'Grid',
-          component: 'grid',
+          component: 'VGrid',
           edit: 'GridView',
           desc: `Vuetify has a 12 point grid system. Built using <kbd>flex-box</kbd>, the grid is used to layout an application\'s content.  It contains 5 types of media breakpoints that are used for targeting specific screen sizes or orientations. The props for grid components are actually classes that are derived from their defined properties. This allows you to easily specify these helper classes as props, while still providing the classes to be used anywhere.`,
           examples: [
