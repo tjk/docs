@@ -102,7 +102,8 @@
         { title: 'Deister Software', href: 'http://www.deister.es/', src: 'deister-logo-light.png' },
         { title: 'Cocoatech', href: 'https://cocoatech.com/', src: 'cocoatechlogo.png' },
         { title: 'Cycloid', href: 'https://www.cycloid.io/', src: 'cycloid.png' },
-        { title: 'Live Casino', href: 'https://livecasino.com/', src: 'casino.webp', dark: true }
+        { title: 'Live Casino', href: 'https://livecasino.com/', src: 'casino.webp', dark: true },
+        { title: 'Nate Controls', href: 'http://www.natecontrols.com/', src: 'n8controls.png' }
       ],
       affiliates: [
         { title: 'VueJobs', href: 'https://vuejobs.com/?utm_source=vuejobs&utm_medium=affiliates&utm_campaign=linking', noref: true, src: 'vuejobs-logo.svg' },

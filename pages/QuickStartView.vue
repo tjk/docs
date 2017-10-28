@@ -104,7 +104,7 @@
                         rel="noopener"
                         slot="activator"
                       )
-                        v-icon fa-github
+                        v-icon(dark) fa-github
                       span Github
                     v-tooltip(left debounce="300")
                       v-btn(
@@ -114,7 +114,7 @@
                         @click="copyMarkup"
                         slot="activator"
                       )
-                        v-icon content_copy
+                        v-icon(dark) content_copy
                       span Copy markup
 
     section#existing-applications
@@ -290,13 +290,11 @@
 
     methods: {
       copyMarkup () {
+        clearTimeout(this.copyTimeout)
         this.$refs.copy.select()
-        this.$nextTick(() => {
-          clearTimeout(this.copyTimeout)
-          document.execCommand('copy')
-          this.copied = true
-          this.copyTimeout = setTimeout(() => this.copied = false, 2000)
-        })
+        document.execCommand('copy')
+        this.copied = true
+        this.copyTimeout = setTimeout(() => this.copied = false, 2000)
       }
     }
   }
