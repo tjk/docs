@@ -7,12 +7,6 @@
       v-icon(v-on:click="copyMarkup") content_copy
       v-slide-x-transition
         span(class="component-example-copied" v-if="copied") Copied
-    textarea(
-      ref="copy" 
-      v-if="copy" 
-      class="component-example-copy" 
-      v-model="copy"
-    )
 </template>
 
 <script>
@@ -29,12 +23,11 @@
   highlight.registerLanguage('html', highlightXML)
   highlight.registerLanguage('js', highlightJS)
 
-	export default {
+  export default {
     name: 'markup',
 
     data () {
       return {
-        copy: '',
         copied: false,
         content: ''
       }
@@ -44,29 +37,27 @@
       lang: String,
     },
 
-		mounted () {
+    mounted () {
       highlight.highlightBlock(this.$refs.markup)
-		},
+    },
 
     methods: {
       copyMarkup () {
-        this.copy = this.$refs.markup.innerText
-
-        this.$nextTick(() => {
-          this.$refs.copy.select()
-          document.execCommand('copy')
-          this.copy = ''
-          this.copied = true
-          setTimeout(() => this.copied = false, 2000)
-        })
+        const markup = this.$refs.markup
+        markup.setAttribute('contenteditable', 'true')
+        markup.focus()
+        document.execCommand('selectAll', false, null)
+        this.copied = document.execCommand('copy')
+        markup.removeAttribute('contenteditable')
+        setTimeout(() => this.copied = false, 2000)
       }
     }
-	}
+  }
 </script>
 
 <style lang="stylus">
   @import '~assets/stylus/settings/_variables'
-      
+
   .markup
     font-size: 1.2rem
     transition: .3s ease-out
@@ -78,12 +69,12 @@
     border-radius: 2px
     position: relative
     align-items: center
-    
+
     .component-example-copied
       position: absolute
       top: 12px
       right: 50px
-    
+
     &__copy
       position: absolute
       right: 25px
@@ -92,7 +83,7 @@
       width: 25px
       height: 25px
       z-index: 2
-      
+
     &:after
       position: absolute
       right: 25px
@@ -102,10 +93,10 @@
       font-size: 1rem
       font-weight: 700
       top: 25px
-        
+
     &:hover
       background: rgba(#000, 0.08)
-      
+
       &:after
         opacity: 0
 
@@ -120,16 +111,16 @@
       width: 50px
       height: 50px
       z-index: 4
- 
+
     &:hover
       .icon
         opacity: 1
-        
+
     pre, code
       background: transparent
       line-height: 1.5
       width: 100%
-      
+
     code
       font-weight: 600 !important
       position: relative
@@ -140,28 +131,28 @@
       flex-wrap: wrap
       align-items: center
       vertical-align: middle
-      
+
       > div
         width: 100%
-        
+
       &:before
         display: none
-    
+
     .hljs
       color: $theme.secondary
-      
+
       .hljs-tag, .hljs-variable
         color: $purple.lighten-1
-      
+
       .hljs-attr, .hljs-keyword
         color: $theme.primary
-        
+
       .hljs-string, .hljs-literal, .hljs-number
         color: $red.lighten-2
-      
+
       .hljs-comment
         color: $grey.lighten-1
-        
+
   .tabs
     .markup
       max-width: 100%
