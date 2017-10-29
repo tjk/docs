@@ -2,7 +2,6 @@
 import 'babel-polyfill'
 import 'event-source-polyfill'
 
-
 import Vue from 'vue'
 import App from './App.vue'
 import Vuetify from 'vuetify'
