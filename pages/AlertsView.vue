@@ -39,6 +39,12 @@
                   'String',
                   '-',
                   'Designates a specific icon'
+                ],
+                [
+                  'outline',
+                  'Boolean',
+                  'False',
+                  'Alert will have an outline'
                 ]
               ]
             }
