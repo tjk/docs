@@ -4,13 +4,14 @@
       v-flex(xs12 sm8 md12)
         section-def
           dt(slot="title") Be a part of something bigger!
-          dd(slot="desc") Vuetify is made possible by an amazing community that submits issues, creates pull requests, and provides invaluable feedback. It is our job to enable you to create amazing applications, and a lot of the time, you come across something that is can be made better. Maybe you find a bug, or you have an idea for additional functionality. That's great! It's as easy as cloning the Vuetify repository to get started working in a development environment.
+          dd(slot="desc") Vuetify is made possible by an amazing community that submits issues, creates pull requests, and provides invaluable feedback. It is our job to enable you to create amazing applications. A lot of the time, you come across something that can be made better. Maybe you find a bug, or you have an idea for additional functionality. That's great! It's as easy as cloning the Vuetify repository to get started working in a development environment.
       ad
     section#reporting-issues
       section-header Reporting issues
       section-text
         ul
-          li The issue list of this repo is exclusively for bug reports and feature requests. Non-conforming issues will be closed immediately.
+          li Use the <a href="https://issues.vuetifyjs.com" target="_blank" rel="noopener">issue creator</a> when you want to report a bug or submit a feature request.
+          li Any issues not created using the issue creator will be closed immediately.
           ul
             li For general questions, please join the <a href="https://chat.vuetifyjs.com" target="_blank" rel="noopener">community</a>.
           li Try to search for your issue, it may have been answered.
