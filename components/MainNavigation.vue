@@ -44,7 +44,7 @@
         target="_blank"
         rel="noopener"
       )
-        v-card(flat hover).your-logo-here
+        v-card(flat hover light).your-logo-here
           v-card-text
             v-layout(justify-center)
               v-flex.text-xs-center

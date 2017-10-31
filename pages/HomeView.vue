@@ -35,7 +35,13 @@
               v-flex(xs12).py-1
                 h2 Material Component Framework
               v-flex(xs12 sm8 md6 lg4)
-                v-btn(block color="blue" dark large to="/vuetify/quick-start")
+                v-btn(
+                  block
+                  dark
+                  color="blue"
+                  large
+                  to="/vuetify/quick-start"
+                )
                   span Documentation
               v-flex(xs12 sm8 md6 lg4)
                 v-btn(
