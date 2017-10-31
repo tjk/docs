@@ -1,5 +1,5 @@
 <template>
-  <v-app toolbar--fixed toolbar style="overflow: hidden">
+  <v-card style="overflow: hidden">
     <v-toolbar
       absolute
       color="teal lighten-3"
@@ -25,7 +25,7 @@
       class="scroll-y"
       id="scrolling-techniques"
     >
-      <v-container></v-container>
+      <v-container style="height: 1000px;"></v-container>
     </main>
-  </v-app>
+  </v-card>
 </template>
