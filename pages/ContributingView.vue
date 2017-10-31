@@ -14,8 +14,8 @@
           ul
             li For general questions, please join the <a href="https://chat.vuetifyjs.com" target="_blank" rel="noopener">community</a>.
           li Try to search for your issue, it may have been answered.
-          li See if the error is reproduceable with the latest version.
-          li If reproduceable, please provide a simple <a href="https://template.vuetifyjs.com" target="_blank" rel="noopener">codepen</a> or repository that can be cloned to produce the expected behavior.
+          li See if the error is reproducible with the latest version.
+          li If reproducible, please provide a simple <a href="https://template.vuetifyjs.com" target="_blank" rel="noopener">codepen</a> or repository that can be cloned to produce the expected behavior.
     section#pull-requests
       section-header Pull requests
       section-text
