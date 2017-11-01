@@ -21,11 +21,11 @@
     v-card-text(v-if="addedProps.length || removedProps.length")
       template(v-if="addedProps.length")
         .title Not documented
-        ul
+        ul.list
           li(v-for="prop in addedProps") {{ prop }}
       template(v-if="removedProps.length")
         .title Removed
-        ul
+        ul.list
           li(v-for="prop in removedProps") {{ prop }}
     v-data-table(
       v-bind:headers="headers"

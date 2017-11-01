@@ -39,8 +39,8 @@
           span View source
       v-expansion-panel.elevation-0.component-example__panel
         v-expansion-panel-content(v-model="panel")
-          v-tabs(ref="tabs" dark :scrollable="false")
-            v-tabs-bar(v-bind:class="[currentColor]" class="darken-4 pl-0")
+          v-tabs(ref="tabs" :scrollable="false")
+            v-tabs-bar(dark v-bind:class="[currentColor]" class="darken-4 pl-0")
               v-tabs-slider(v-bind:color="currentColor + ' lighten-4'")
               v-tabs-item(
                 v-for="tab in tabs"

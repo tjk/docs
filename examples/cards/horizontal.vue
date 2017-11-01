@@ -1,5 +1,9 @@
 <template>
-  <v-app id="e3" style="max-width: 400px; margin: auto;" standalone>
+  <div
+    id="e3"
+    style="max-width: 400px; margin: auto;"
+    class="grey lighten-3"
+  >
     <v-toolbar color="pink">
       <v-toolbar-side-icon></v-toolbar-side-icon>
       <v-toolbar-title class="white--text">My Music</v-toolbar-title>
@@ -69,5 +73,5 @@
         </v-flex>
       </v-layout>
     </v-container>
-  </v-app>
+  </div>
 </template>
