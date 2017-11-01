@@ -5,12 +5,7 @@
       shift
       :value="true"
       :active.sync="e2"
-      :class="{
-        'blue-grey': e2 === 1,
-        'teal': e2 === 2,
-        'brown': e2 === 3,
-        'brown lighten-1': e2 === 4
-      }"
+      :color="computedColor"
     >
       <v-btn dark>
         <span>Video</span>
@@ -37,6 +32,25 @@
     data () {
       return {
         e2: 3
+      }
+    },
+
+    computed: {
+      computedColor () {
+        switch (this.e2) {
+          case 0:
+            return 'blue-grey'
+          break
+          case 1:
+            return 'teal'
+          break
+          case 2:
+            return 'brown'
+          break
+          case 4:
+            return 'brown lighten-1'
+          break
+        }
       }
     }
   }
