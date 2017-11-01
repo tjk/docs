@@ -56,8 +56,8 @@
     slot
     template(v-if="doc.props")
       section-header.mt-5(id="api") API
-      v-tabs(v-model="tabs" dark v-bind:scrollable="false").elevation-1
-        v-tabs-bar(v-bind:class="[currentColor]")
+      v-tabs(v-model="tabs" v-bind:scrollable="false").elevation-1
+        v-tabs-bar(v-bind:class="[currentColor]" dark)
           v-tabs-slider(v-bind:color="currentColor + ' lighten-4'")
           v-tabs-item(
             v-for="(p, i) in ['props', 'slots', 'events', 'functional']"

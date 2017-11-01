@@ -5,6 +5,7 @@
       clipped
       app
       v-model="drawer"
+      enable-resize-watcher
     >
       <v-list dense>
         <template v-for="(item, i) in items">
