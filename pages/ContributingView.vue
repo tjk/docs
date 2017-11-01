@@ -9,10 +9,10 @@
     section#reporting-issues
       section-header Reporting issues
       section-text
-        ul
+        ul.browser-list
           li Use the <a href="https://issues.vuetifyjs.com" target="_blank" rel="noopener">issue creator</a> when you want to report a bug or submit a feature request.
           li Any issues not created using the issue creator will be closed immediately.
-          ul
+          ul.browser-list
             li For general questions, please join the <a href="https://chat.vuetifyjs.com" target="_blank" rel="noopener">community</a>.
           li Try to search for your issue, it may have been answered.
           li See if the error is reproducible with the latest version.
@@ -20,7 +20,7 @@
     section#pull-requests
       section-header Pull requests
       section-text
-        ul
+        ul.browser-list
           li All PR's should be made to the <code>dev</code> branch of Vuetify.
           li For changes and feature requests, please include an example of what you are trying to solve and an example of the markup
           li For bug fixes please reference the issue # that the PR resolves

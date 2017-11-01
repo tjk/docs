@@ -33,8 +33,8 @@
                     span {{ card.sem }}
                     v-icon(dark).ml-3.blue--text.text--lighten-2 {{ card.icon }}
                   v-card-text
-                    v-subheader(inset) Highlights
-                    v-divider(inset)
+                    v-subheader Highlights
+                    v-divider
                     v-list(dense)
                       v-list-tile(
                         v-for="(highlight, i) in card.highlights"

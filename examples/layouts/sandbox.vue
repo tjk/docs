@@ -1,5 +1,5 @@
 <template>
-  <v-app id="sandbox" :dark="dark" :light="!dark">
+  <v-app id="sandbox" :dark="dark">
     <v-navigation-drawer
       v-model="primaryDrawer.model"
       :permanent="primaryDrawer.type === 'permanent'"

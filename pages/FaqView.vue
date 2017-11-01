@@ -90,7 +90,7 @@
           q: `How do I use Font Awesome Icons or Material Design Icons (mdi)?`,
           a: `
             <p>You must add the fonts to your index.html or otherwise import them into your project.</p>
-            <ul><li>MDI: <a href="https://materialdesignicons.com/getting-started" target="_blank" rel="noopener">https://materialdesignicons.com/getting-started</a></li><li> FA: <a href="http://fontawesome.io/get-started/" target="blank" rel="noopener">http://fontawesome.io/get-started/</a></li></ul>
+            <ul class="browser-list"><li>MDI: <a href="https://materialdesignicons.com/getting-started" target="_blank" rel="noopener">https://materialdesignicons.com/getting-started</a></li><li> FA: <a href="http://fontawesome.io/get-started/" target="blank" rel="noopener">http://fontawesome.io/get-started/</a></li></ul>
           `
         },
         {

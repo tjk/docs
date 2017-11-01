@@ -8,8 +8,8 @@
       ad
     grid
     section
-      h6 Classes
-      ul.mb-3
+      h6.subheading Classes
+      ul.mb-3.browser-list
         li.subheader.pl-0 Visibility
         li <code>hidden-xs-only</code> - hidden on extra small viewports only
         li <code>hidden-sm-and-down</code> - hidden on small viewports and down
@@ -21,7 +21,7 @@
         li <code>hidden-lg-and-down</code> - hidden on large viewports and down
         li <code>hidden-lg-and-up</code> - hidden on large viewports and up
         li <code>hidden-xl-only</code> - hidden on extra large viewports only
-      ul.mb-5
+      ul.mb-5.browser-list
         li.subheader.pl-0 Display
         li <code>d-flex</code> - sets element display to flex
         li <code>d-inline-flex</code> - sets element display to inline-flex
@@ -36,10 +36,3 @@
     name: 'display-view'
   }
 </script>
-
-<style lang="stylus">
-  #display-view
-    ul
-      li:not(:first-child)
-        margin-left: 32px
-</style>

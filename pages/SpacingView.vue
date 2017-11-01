@@ -7,12 +7,12 @@
           dd(slot="desc") Update your layout without creating new classes. Spacing helpers are useful for modifying the padding and margin of an element.
       ad
     section
-      h6 Type
-      ul.mb-5
+      h6.subheading Type
+      ul.mb-5.browser-list
         li <code>m</code> - to set margin
         li <code>p</code> - to set padding
-      h6 Direction
-      ul.mb-5
+      h6.subheading Direction
+      ul.mb-5.browser-list
         li <code>t</code> - to set top
         li <code>r</code> - to set right
         li <code>b</code> - to set bottom
@@ -20,8 +20,8 @@
         li <code>x</code> - to set x-axis
         li <code>y</code> - to set y-axis
         li <code>a</code> - to set all
-      h6 Size
-      ul.mb-5
+      h6.subheading Size
+      ul.mb-5.browser-list
         li <code>0</code> - removes margin or padding for specified direction
         li <code>1</code> - applies margin or padding with <code>16px * .25</code>
         li <code>2</code> - applies margin or padding with <code>16px * .50</code>
@@ -29,7 +29,7 @@
         li <code>4</code> - applies margin or padding with <code>16px * 1.5</code>
         li <code>5</code> - applies margin or padding with <code>16px * 3</code>
     section
-      h6 Example of spacers variable
+      h6.subheading Example of spacers variable
       markup(lang="html")
         |&lt;p class="mt-1"&gt;...&lt;/p&gt;
         |&nbsp;
