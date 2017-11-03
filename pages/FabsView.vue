@@ -1,5 +1,5 @@
 <template lang="pug">
-  component-view(v-bind:doc="doc")
+  component-view(v-bind:doc="doc" id="fab-view")
     v-alert(color="info" icon="info" value) For more information on all the options available for the <code>v-btn</code> component, please navigate to the <router-link to="/components/buttons" class="white--text">Button documentation</router-link>.
 </template>
 
@@ -49,3 +49,9 @@
     }
   }
 </script>
+
+<style lang="stylus">
+  #fab-view
+    .btn--floating.btn--absolute
+      z-index: 0 !important
+</style>
