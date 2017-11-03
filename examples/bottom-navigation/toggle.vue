@@ -5,7 +5,7 @@
     </v-card-text>
     <v-bottom-nav absolute :value="e31" :active.sync="e3" color="transparent">
       <v-btn flat color="teal">
-        <span>Recents</span>
+        <span>Recent</span>
         <v-icon>history</v-icon>
       </v-btn>
       <v-btn flat color="teal">

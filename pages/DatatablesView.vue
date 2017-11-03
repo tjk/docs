@@ -176,7 +176,7 @@
                   'large',
                   'Boolean',
                   'False',
-                  'Attachs a submit and cancel button to the dialog'
+                  'Attaches a submit and cancel button to the dialog'
                 ],
                 [
                   'lazy',
@@ -207,7 +207,7 @@
                 ],
                 [
                   'scope[items]',
-                  'The scoped slot for templating the row display. Available props are the currently iterated <code>item</code> and its <code>index</code> wthin the iterated items array. Provide either a <kbd>tr</kbd> tag or <kbd>th</kbd> tags for all columns.'
+                  'The scoped slot for templating the row display. Available props are the currently iterated <code>item</code> and its <code>index</code> within the iterated items array. Provide either a <kbd>tr</kbd> tag or <kbd>th</kbd> tags for all columns.'
                 ],
                 [
                   'scope[pageText]',
