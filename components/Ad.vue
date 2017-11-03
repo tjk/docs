@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-flex(xs12 sm4 md12).ads
+  v-flex(xs12 sm4).ads
 </template>
 
 <script>
@@ -52,9 +52,10 @@
       padding: 0 !important
       flex-basis: 0 !important
     
-    @media $display-breakpoints.md-and-down
+    @media only screen and (max-width: 1550px)
       #carbonads
         position: initial
+        margin-bottom: 25px
         
     @media $display-breakpoints.xs-only
       #carbonads

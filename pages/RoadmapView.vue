@@ -1,7 +1,7 @@
 <template lang="pug">
   doc-view#roadmap-view
     v-layout(row wrap)
-      v-flex(xs12 sm8 md12)
+      v-flex(xs12 sm8 xl12)
         section-def
           dt(slot="title") Roadmap
           dd(slot="desc") Vuetify is always under development, working to improve the existing codebase, as well as add new features and functionality that help make building applications even easier. Below is a tentative list of planned features. This is <em>not</em> an exhaustive list and may change at any time without notice.

@@ -1,7 +1,7 @@
 <template lang="pug">
   doc-view#faq-view
     v-layout(row wrap)
-      v-flex(xs12 sm8 md12)
+      v-flex(xs12 sm8 xl12)
         section-def
           dt(slot="title") Frequently asked questions
           dd(slot="desc") Stuck on a particular problem? Check some of these common gotchas before creating a ticket. If you still cannot find what you are looking for, submit an <a href="https://issues.vuetifyjs.com" target="_blank" rel="noopener">issue</a> on github or ask the community in <a href="https://chat.vuetifyjs.com" target="_blank" rel="noopener">discord</a>.

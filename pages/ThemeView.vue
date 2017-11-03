@@ -1,7 +1,7 @@
 <template lang="pug">
   doc-view
     v-layout(row wrap)
-      v-flex(xs12 sm8 md12)
+      v-flex(xs12 sm8 xl12)
         section-def
           dt(slot="title") Theme
           dd(slot="desc") Vuetify offers the ability to easily change the colors of your application.

@@ -1,7 +1,7 @@
 <template lang="pug">
   doc-view(id="colors-view")
     v-layout(row wrap)
-      v-flex(xs12 sm8 md12)
+      v-flex(xs12 sm8 xl12)
         section-def
           dt(slot="title") {{ doc.title }}
           dd(slot="desc") {{ doc.desc }}

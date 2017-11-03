@@ -1,7 +1,7 @@
 <template lang="pug">
   div(class="view" id="spacing-view")
     v-layout(row wrap)
-      v-flex(xs12 sm8 md12)
+      v-flex(xs12 sm8 xl12)
         section-def
           dt(slot="title") Alignment
           dd(slot="desc") Layouts can change when screen resolutions change. The alignment classes help you position your text based on viewport size.

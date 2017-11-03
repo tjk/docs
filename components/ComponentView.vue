@@ -1,7 +1,7 @@
 <template lang="pug">
   div.view(v-bind:id="`${doc.title.toLowerCase().replace(' ', '-')}-view`")
     v-layout(row wrap)
-      v-flex(xs12 sm8 md12)
+      v-flex(xs12 sm8 md8 lg8 xl12)
         section-def(v-bind:doc="doc")
           dt(slot="title" v-text="doc.title")
           dd(slot="desc" v-html="doc.desc")
