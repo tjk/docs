@@ -22,7 +22,7 @@
           ],
           props: {
             'v-menu': {
-              shared: ['detachable', 'menu', 'delayable', 'lazy'],
+              shared: ['menu', 'delayable', 'lazy'],
               model: {
                 type: ['Boolean'],
                 default: 'False'

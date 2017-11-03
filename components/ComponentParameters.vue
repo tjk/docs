@@ -209,12 +209,6 @@
             'Removes overflow re-positioning for the content'
           ],
           [
-            'content-class',
-            'String',
-            'null',
-            'A custom class applied to the detached content'
-          ],
-          [
             'min-width',
             '[Number, String]',
             'null',
@@ -298,7 +292,7 @@
             '0',
             'Used to position the content when not using an activator slot'
           ]
-        ]
+        ].concat(this.makeDetach())
       },
       makeDialog () {
         return [
