@@ -90,7 +90,7 @@
         } else if (this.match(path, /motion/)) {
           color = 'purple'
         } else if (this.match(path, /layout/)) {
-          color = 'darken-3 pink'
+          color = 'pink darken-3'
         } else if (this.match(path, /style/)) {
           color = 'cyan'
         } else if (this.match(path, /directives/)) {

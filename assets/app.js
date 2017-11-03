@@ -12,7 +12,13 @@ import { createStore } from 'store/index'
 import { createRouter } from 'router/index'
 import { sync } from 'vuex-router-sync'
 
-Vue.use(Vuetify)
+Vue.use(Vuetify, {
+  theme: {
+    primary: '#2196F3',
+    accent: '#82B1FF',
+    secondary: '#424242'
+  }
+})
 Vue.use(VeeValidate, { inject: false })
 
 Object.keys(Components).forEach(key => {
