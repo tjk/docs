@@ -22,7 +22,7 @@
                   'grid-list-{xs through xl}',
                   'Boolean',
                   'False',
-                  'Sets the gutter between grid list items ranging from 1px to 24px'
+                  'Sets the gutter between grid list items ranging from 2px to 24px'
                 ]
               ]
             }
