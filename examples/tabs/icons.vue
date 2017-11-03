@@ -4,7 +4,7 @@
       <v-tabs-slider color="yellow"></v-tabs-slider>
       <v-tabs-item href="#tab-1">
         <v-icon>phone</v-icon>
-        Recent
+        Recents
       </v-tabs-item>
       <v-tabs-item href="#tab-2">
         <v-icon>favorite</v-icon>
