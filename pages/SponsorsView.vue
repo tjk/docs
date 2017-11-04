@@ -103,13 +103,14 @@
         { title: 'Cocoatech', href: 'https://cocoatech.com/', src: 'cocoatechlogo.png' },
         { title: 'Cycloid', href: 'https://www.cycloid.io/', src: 'cycloid.png' },
         { title: 'Live Casino', href: 'https://livecasino.com/', src: 'casino.webp', dark: true },
-        { title: 'Nate Controls', href: 'http://www.natecontrols.com/', src: 'n8controls.png' }
+        { title: 'Nate Controls', href: 'http://www.natecontrols.com/', src: 'n8controls.png' },
+        { title: 'Trek10', href: 'https://www.trek10.com/', src: 'trek10.svg' }
       ],
       affiliates: [
         { title: 'VueJobs', href: 'https://vuejobs.com/?utm_source=vuejobs&utm_medium=affiliates&utm_campaign=linking', noref: true, src: 'vuejobs-logo.svg' },
         { title: 'Vue.js Developers', href: 'https://vuejsdevelopers.com', src: 'vuejsdevelopers.png' },
         { title: 'Made with Vue.js', href: 'https://madewithvuejs.com', src: 'madewithvuejs.png' },
-        { title: 'Vue.js Radar', href: 'https://vuejsradar.com', src: 'vueradar.png' }
+        { title: 'Vue.js Radar', href: 'https://vuejsradar.com', src: 'vueradar2.png' }
       ]
     })
   }
