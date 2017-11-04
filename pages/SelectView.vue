@@ -47,6 +47,12 @@
                   'Add input clear functionality'
                 ],
                 [
+                  'combobox',
+                  'Boolean',
+                  'False',
+                  'The single select variant of <strong>tags</strong>'
+                ],
+                [
                   'cache-items',
                   'Boolean',
                   'False',

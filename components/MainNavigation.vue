@@ -192,7 +192,7 @@
             group: 'style',
             items: [
               { href: '/style/colors', title: 'Colors' },
-              { href: '/style/theme', title: 'Theme' },
+              { href: '/style/theme', title: 'Theme', action: 'fa-arrow-circle-o-up' },
               { href: '/style/typography', title: 'Typography' },
               { href: '/style/content', title: 'Content' }
             ]
@@ -213,16 +213,16 @@
               { href: '/components/alerts', title: 'Alerts' },
               { href: '/components/avatars', title: 'Avatars' },
               { href: '/components/badges', title: 'Badges' },
-              { href: '/components/breadcrumbs', title: 'Breadcrumbs', action: 'fa-arrow-circle-o-up' },
+              { href: '/components/breadcrumbs', title: 'Breadcrumbs' },
               { href: '/components/bottom-navigation', title: 'Bottom navigation' },
               { href: '/components/bottom-sheets', title: 'Bottom sheets' },
-              { href: '/components/buttons', title: 'Buttons', action: 'fa-arrow-circle-o-up' },
+              { href: '/components/buttons', title: 'Buttons' },
               { href: '/components/floating-action-buttons', title: 'Buttons: Floating Action Buttons' },
               { href: '/components/cards', title: 'Cards' },
               { href: '/components/carousels', title: 'Carousel' },
               { href: '/components/chips', title: 'Chips' },
-              { href: '/components/data-tables', title: 'Data tables', action: 'fa-arrow-circle-o-up' },
-              { href: '/components/dialogs', title: 'Dialogs', action: 'fa-arrow-circle-o-up' },
+              { href: '/components/data-tables', title: 'Data tables' },
+              { href: '/components/dialogs', title: 'Dialogs' },
               { href: '/components/dividers', title: 'Dividers' },
               { href: '/components/expansion-panels', title: 'Expansion panels' },
               { href: '/components/footer', title: 'Footer' },
@@ -231,21 +231,21 @@
               { href: '/components/icons', title: 'Icons' },
               { href: '/components/lists', title: 'Lists' },
               { href: '/components/menus', title: 'Menus' },
-              { href: '/components/navigation-drawers', title: 'Navigation drawers', action: 'fa-arrow-circle-o-up' },
+              { href: '/components/navigation-drawers', title: 'Navigation drawers' },
               { href: '/components/pagination', title: 'Pagination' },
               { href: '/components/parallax', title: 'Parallax' },
-              { href: '/components/pickers', title: 'Pickers', action: 'fa-arrow-circle-o-up' },
+              { href: '/components/pickers', title: 'Pickers' },
               { href: '/components/progress', title: 'Progress & activity' },
-              { href: '/components/selects', title: 'Selects', action: 'fa-arrow-circle-o-up' },
-              { href: '/components/selection-controls', title: 'Selection controls', action: 'fa-arrow-circle-o-up' },
-              { href: '/components/sliders', title: 'Sliders', action: 'fa-arrow-circle-o-up' },
+              { href: '/components/selects', title: 'Selects' },
+              { href: '/components/selection-controls', title: 'Selection controls' },
+              { href: '/components/sliders', title: 'Sliders' },
               { href: '/components/snackbars', title: 'Snackbars & toasts' },
               { href: '/components/steppers', title: 'Steppers' },
               { href: '/components/subheaders', title: 'Subheaders' },
               { href: '/components/tabs', title: 'Tabs' },
-              { href: '/components/text-fields', title: 'Text fields', action: 'fa-arrow-circle-o-up' },
-              { href: '/components/toolbars', title: 'Toolbars', action: 'fa-arrow-circle-o-up' },
-              { href: '/components/tooltips', title: 'Tooltips', action: 'fa-arrow-circle-o-up' }
+              { href: '/components/text-fields', title: 'Text fields' },
+              { href: '/components/toolbars', title: 'Toolbars' },
+              { href: '/components/tooltips', title: 'Tooltips' }
             ]
           },
           {
@@ -254,7 +254,7 @@
             group: '/directives',
             items: [
               { href: '/directives/resizing', title: 'Resizing' },
-              { href: '/directives/ripples', title: 'Ripples', action: 'fa-arrow-circle-o-up' },
+              { href: '/directives/ripples', title: 'Ripples' },
               { href: '/directives/scrolling', title: 'Scrolling' },
               { href: '/directives/touch-support', title: 'Touch Support' }
             ]

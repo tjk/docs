@@ -6,7 +6,7 @@ export default {
   },
 
   render (h, { data, props, children }) {
-    data.class = 'display-1'
+    data.class = 'display-1 mb-3'
     data.style = {}
 
     if (props.first) {

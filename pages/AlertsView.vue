@@ -45,6 +45,12 @@
                   'Boolean',
                   'False',
                   'Alert will have an outline'
+                ],
+                [
+                  'type',
+                  'String',
+                  'null',
+                  'Specify a <strong>success</strong>, <strong>info</strong>, <strong>warning</strong> or <strong>error</strong> alert. Uses the contextual color and a pre-defined icon.'
                 ]
               ]
             }

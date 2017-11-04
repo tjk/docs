@@ -4,72 +4,41 @@
       v-flex(xs12 sm8 xl12)
         section-def
           dt(slot="title") Theme
-          dd(slot="desc") Vuetify offers the ability to easily change the colors of your application.
+          dd(slot="desc") Easily change the colors of your application programmatically.
       ad
     section
       section-header Light and Dark
-      section-text You can set your application's default theme by setting the <code>dark</code> or <code>light</code> prop on surrounding <code>v-app</code> component.
-      section-text This will assign default colors to all components based upon your choice. This can be confusing sometimes, for example:
+      section-text Vuetify supports both <strong>light</strong> and <strong>dark</strong> variants of the Material Design spec. This designation starts at the root application component, <code>v-app</code>.
       markup
-        |&lt;v-icon light&gt;list&lt;/v-icon&gt;
-      section-text You may expect the icon to be tinted towards white, but this is the exact opposite, as some components have a dark tint on a light theme, such as <code>v-divider</code>.
+        |&lt;v-app light&gt;
+        |...
+        |&lt;/v-app&gt;
+      section-text When you designate a component as light or dark, all of its children will inherit and apply the same unless otherwise specified.
     section
       section-header Customizing
-      section-text The default theme hash looks like the example below:
-      markup(lang="stylus")
-        |$theme := {
-        |   primary: $blue.darken-2
-        |   accent: $blue.accent-2
-        |   secondary: $grey.darken-3
-        |   info: $blue.base
-        |   warning: $amber.base
-        |   error: $red.base
-        |   success: $green.base
-        |}
-      section-text In order to change these variables, we have to create our array before the import of the Vuetify styles. You will need to setup your build process to accommodate a stylus file. If you are using one of the pre-made templates available on the <router-link to="/vuetify/quick-start">Quick Start</router-link> guide, you can skip this next section.
-      h6 Setup stylus-loader with Webpack
-      section-text In the command line, run:
-      markup(lang="cli")
-        |npm i stylus stylus-loader style-loader css-loader --save-dev
-      section-text This will install the dependecies needed to import stylus files. Once installed, open your webpack config and add an additional rule:
+      section-text By default, Vuetify has a standard theme applied for all components.
       markup(lang="javascript")
         |{
-        |   test: /\.styl$/,
-        |   loader: ['style-loader', 'css-loader', 'stylus-loader']
+        |   primary: '#1976D2',
+        |   secondary: '#424242',
+        |   accent: '#82B1FF',
+        |   error: '#FF5252',
+        |   info: '#2196F3',
+        |   success: '#4CAF50',
+        |   warning: '#FFC107'
         |}
-      section-text This will tell webpack how to handle a .styl file when imported. Next, we need to create the main entry point. Create a folder called <code>stylus</code> in your src directory with a file named <code>main.styl</code>. Once done, open the .styl file and add this entry.
-      markup(lang="stylus")
-        |// main.styl
-        |@require '../../node_modules/vuetify/src/stylus/main'
-      section-text Keep in mind that the relative location of node_modules may differ in your project so adjust accordingly. You have 2 options for import location, either your main <code>App.vue</code> or <code>app.js</code>.
+      section-text This can be easily changed. Simply pass a <strong>theme</strong> property to the <code>Vue.use</code> function. You can choose to modify all or only some of the theme properties, with the remaining inheriting from the default.
       markup(lang="javascript")
-        |// app.js
-        |require('./stylus/main.styl')
-      markup(lang="html")
-        |// App.vue
-        |&lt;style lang="stylus"&gt;
-        |   @require './stylus/main'
-        |&lt;/style&gt;
-      section-text After you have decided on your import location, if you are requiring the Vuetify stylesheet by a &lt;link&gt; tag in your index file, remove it. Restart your build processes and re-open your project. You should see all of the styles working correctly.
-      h6 Modify your theme
-      section-text Now that stylus is configured, we can create a custom <code>$theme</code> hash containing the application specific styles. Keep in mind, if you want to use the built in color pack variables, i.e. <code>$grey.lighten-3</code> you will need to import the color file at the top of your <code>main.styl</code> file. For a list of colors available, navigate to the <router-link to="/style/colors">Colors</router-link> section of the documentation.
-      markup(lang="stylus")
-        |@require '../../node_modules/vuetify/src/stylus/settings/_colors'
-        |&nbsp;
-        |@import '../../node_modules/vuetify/src/stylus/main'
-      section-text After you have decided on your color palette, simply create a new hash:
-      markup(lang="stylus")
-        |@require '../../node_modules/vuetify/src/stylus/settings/_colors'
-        |&nbsp;
-        |$theme := {
-        |   primary: $red.darken-2
-        |   accent: $red.accent-2
-        |   secondary: $grey.lighten-1
-        |   info: $blue.lighten-1
-        |   warning: $amber.darken-2
-        |   error: $red.accent-4
-        |   success: $green.lighten-2
-        |}
-        |&nbsp;
-        |@require '../../node_modules/vuetify/src/stylus/main'
+        |Vue.use(Vuetify, {
+        |   theme: {
+        |     primary: '#3f51b5',
+        |     secondary: '#b0bec5',
+        |     accent: '#8c9eff',
+        |     error: '#b71c1c'
+        |   }
+        |})
+      section-text Under the hood, Vuetify will generate css classes based upon these values that will be accessible in the DOM. These classes will follow the same markup as other helper classes, <code>primary</code> or <code>secondary--text</code> for example.
+      section-text These values will also be made available on the instance <strong>$vuetify</strong> object under the <strong>theme</strong> property. This allows you to <em>dynamically</em> modify your theme. Behind the scenes, Vuetify will regenerate and update your theme classes, seemlessly updating your application.
+      markup(lang="javascript")
+        |this.$vuetify.theme.primary = '#4caf50'
 </template>
