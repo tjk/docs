@@ -59,7 +59,7 @@
                 v-flex(xs12 md4).text-xs-center.my-3
                   img(src="/static/doc-images/feature1.svg")
                   h3.mt-4.mb-3 Vue-CLI Templates
-                  p Vuetify comes ready to go with 5 pre-made vue-cli templates. From simple html to full-blown SSR, you are ready to go in minutes.
+                  p Vuetify comes ready to go with 8 pre-made vue-cli templates. From simple html to full-blown SSR, you are ready to go in minutes.
 
                 v-flex(xs12 md4).text-xs-center.my-3
                   img(src="/static/doc-images/feature2.svg")
