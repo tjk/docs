@@ -119,7 +119,7 @@
         },
         {
           img: '/static/vuetify_sizes.svg',
-          title: 'Continous updates',
+          title: 'Continuous updates',
           caption: `Vuetify has a consistent update cycle, allowing you to get your hands on bug fixes and enhancements more often. The development team is committed to providing you with the best experience you can have.`
         },
         {

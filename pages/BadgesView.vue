@@ -46,7 +46,7 @@
                   'transition',
                   'String',
                   'fab-transition',
-                  'Transition used when enabling or disabling the bdage'
+                  'Transition used when enabling or disabling the badge'
                 ],
                 [
                   'overlap',

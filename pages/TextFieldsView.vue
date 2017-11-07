@@ -79,7 +79,7 @@
                   'full-width',
                   'Boolean',
                   'False',
-                  'Desginates input type as full-width'
+                  'Designates input type as full-width'
                 ],
                 [
                   'prefix',

@@ -69,7 +69,7 @@
             { header: 'Direction and Align', file: 'grid/direction-and-align', desc: 'Designate the direction and alignment in a variety of ways. All of the available <kbd>flex-box</kbd> api is available through intuitive helper props.' },
             { header: 'Row and column based on breakpoint', file: 'grid/row-column-breakpoint', desc: 'Dynamically change your layout based upon resolution. <strong>(resize your screen and watch the layout change to a <code>row</code> on small breakpoints)</strong>' },
             { header: 'Nested grid', file: 'grid/nested-grid', desc: 'Grids can be nested, similar to other frameworks, in order to achieve very custom layouts.'},
-            { header: 'Unique layouts', file: 'grid/unique-layouts', desc: 'The power and flexiblity of the Vuetify grid system allows you to create amazing user interfaces.'},
+            { header: 'Unique layouts', file: 'grid/unique-layouts', desc: 'The power and flexibility of the Vuetify grid system allows you to create amazing user interfaces.'},
             { header: 'Specific tags', file: 'grid/tags', desc: 'Sometimes you will want to specify a layout item as a specific tag, such as a <code>section</code> or <code>li</code> element.', new: '0.16.5' }
           ],
           props: {

@@ -23,7 +23,7 @@
             { header: "Button Dropdown Variants", file: "buttons/dropdown", desc: `Button dropdowns are regular selects with additional styling.` },
             { header: "Button Toggle", file: "buttons/toggle", desc: `Toggle buttons are essentially styled radio or checkboxes, depending on the properties selected. This component is compatible with the <code>v-toolbar</code> component.`},
             { header: "Icon", file: "buttons/icon", desc: `Icons can be used for the primary content of a button.`},
-            // { header: "App Bar", file: "buttons/app-bar", desc: `The application bar is useful for mimicing the design of a native application.`},
+            // { header: "App Bar", file: "buttons/app-bar", desc: `The application bar is useful for mimicking the design of a native application.`},
             { header: "Floating", file: "buttons/floating", desc: `Floating buttons are round and usually contain an icon.`},
             { header: "Loaders", file: "buttons/loaders", desc: `Using the loading prop, you can notify a user that there is processing taking place. The default behavior is to use a <code>v-progress-circular</code> component but this can be customized.`},
             { header: "Sizing", file: "buttons/sizing", desc: `Buttons can be given different sizing options to fit a multitude of scenarios.`},
