@@ -9,7 +9,7 @@ export function createStore () {
   return new Vuex.Store({
     state: {
       h1: null,
-      sidebar: true,
+      sidebar: null,
       currentColor: 'transparent',
       previous: {
         name: 'Components',

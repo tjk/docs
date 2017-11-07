@@ -1,9 +1,8 @@
 <template lang="pug">
   v-navigation-drawer(
     v-model="isActive"
-    persistent
+    fixed
     dark
-    enable-resize-watcher
     app
   )
     v-toolbar(flat dark).transparent

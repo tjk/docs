@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer light>
+  <v-navigation-drawer absolute light v-model="drawer">
     <v-toolbar flat>
       <v-list>
         <v-list-tile>
