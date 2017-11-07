@@ -147,7 +147,7 @@
                 ],
                 [
                   'item-key',
-                  '*',
+                  '[String, Number]',
                   'id',
                   'The field in the item object that designates a unique key'
                 ]
