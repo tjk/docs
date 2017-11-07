@@ -28,8 +28,7 @@
 
       section-text To import and use components, use the following code in your entry point.
       markup(lang="js")
-        |import {
-        |  Vuetify,
+        |import Vuetify, {
         |  VApp,
         |  VNavigationDrawer,
         |  VFooter,
